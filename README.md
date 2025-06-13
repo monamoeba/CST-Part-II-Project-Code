@@ -1,6 +1,9 @@
 High-Level Problem
  We require resource-efficient mappings of QEC cycles for the surface code onto QCCD systems with different architectures to answer the design questions. While several tool flows have been developed to map NISQ workloads on QCCD hardware, they incur large communication overheads and do not scale to high QEC code distances. This is primarily because they do not consider the local structure available in stabiliser circuits. In this chapter, I develop a surface code topology-aware compiler shown in Figure 1.1. It accepts a QEC code (stabiliser circuits, code distance) and a candidate QCCD device architecture (trap capacity, topology) as input and produces a compiled executable output, which is used for architecture evaluation.
+
+
 Repository Structure 
+
 src/:
 • compiler/: code for the QEC compiler.
 – qccd_ion_routing code for ion routing (§3.1.4). [222 lines]
