@@ -16,8 +16,8 @@ from src.compiler.qccd_parallelisation import *
 MAX_ITER = 20_000
         
 def _partitionClusterIons(
-    ions: Sequence[Ion], coords: npt.NDArray[np.float_], trapCapacity: int
-) -> Sequence[Tuple[Sequence[Ion], npt.NDArray[np.float_]]]:
+    ions: Sequence[Ion], coords: npt.NDArray[np.float64], trapCapacity: int
+) -> Sequence[Tuple[Sequence[Ion], npt.NDArray[np.float64]]]:
     partitions = [list(coords)]
     splitAxisIsX = True
     while max([len(p) for p in partitions])>trapCapacity:

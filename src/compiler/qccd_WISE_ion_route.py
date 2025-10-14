@@ -9,7 +9,7 @@ from src.utils.qccd_nodes import *
 from src.utils.qccd_operations import *
 from src.utils.qccd_operations_on_qubits import *
 from src.utils.qccd_arch import *
-from src.compiler._qccd_WISE_ion_routing import *
+#from src.compiler._qccd_WISE_ion_routing import *
 from src.compiler.qccd_qubits_to_ions import *
 
 def ionRoutingWISEArch(
