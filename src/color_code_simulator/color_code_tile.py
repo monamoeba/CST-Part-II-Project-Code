@@ -8,6 +8,12 @@ class ColorCodeTile:
     ancilla: tuple
     color: str
 
+#SVG aesthetics
+color_map = {
+    'red':'crimson',
+    'green':'lime',
+    'blue':'royalblue'
+    }
 
 def draw_tiles(tiles):
     width = max(x for tile in tiles for x,y in tile.qubits)
@@ -17,7 +23,7 @@ def draw_tiles(tiles):
     for tile in tiles:
         drawing.add(drawing.polygon(
             points = [(x*20, y*20) for x,y in tile.qubits],
-            fill = tile.color
+            fill = color_map[tile.color]
         ))
         drawing.add(drawing.circle(center=(tile.ancilla[0]*20, tile.ancilla[1]*20), r=3, fill='grey'))
         for x,y in tile.qubits:
