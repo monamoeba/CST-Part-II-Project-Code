@@ -15,6 +15,7 @@ color_map = {
     'blue':'royalblue'
     }
 
+
 def draw_tiles(tiles):
     width = max(x for tile in tiles for x,y in tile.qubits)
     height = max(y for tile in tiles for x,y in tile.qubits)
