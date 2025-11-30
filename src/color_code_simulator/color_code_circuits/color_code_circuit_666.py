@@ -3,6 +3,10 @@ from ..color_code_tile import ColorCodeTile
 import stim
 
 class ColorCodeCircuit666(AbstractColorCodeCircuit):
+    
+    def __init__(self, distance, rounds):
+        super().__init__(distance, rounds)
+        self.circuit = self.build_circuit()
 
     def generate_layout(self, distance:int):
         side = distance*3 - 2
@@ -32,8 +36,8 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
             return False
         return True
 
-    def build_circuit(self, rounds:int, distance:int, after_clifford_depolarization:float):
-        tiles = self.generate_layout(distance)
+    def build_circuit(self):
+        tiles = self.generate_layout(self.distance)
         circ = stim.Circuit()
 
         qubits = {q for tile in tiles for q in tile.qubits}
@@ -56,7 +60,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         circ += self.measure_round_Z_0(tiles, qa_index_map, chrom_annot=chrom_annot)
 
         
-        circ += (rounds-1) * self.measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot)
+        circ += (self.rounds-1) * self.measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot)
 
         # measure qubits
         sorted_qs = sorted(list(qubits))
