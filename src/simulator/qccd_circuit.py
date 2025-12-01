@@ -19,6 +19,7 @@ from src.compiler.qccd_parallelisation import *
 from src.compiler.qccd_qubits_to_ions import *
 from src.compiler.qccd_ion_routing import *
 from src.compiler.qccd_WISE_ion_route import *
+from src.color_code_utils.color_code_circuits.color_code_circuit_666 import *
 import logging
 from multiprocessing import get_logger
 
@@ -45,10 +46,20 @@ class QCCDCircuit(stim.Circuit):
         self._dataIons: List[Ion] = []
         self._originalArrangement: Dict[Trap, Sequence[Ion]] = {}
         self._arch: QCCDArch
+        self._iscolorcode: bool = False
 
     @classmethod
     def generated(cls, *args, **kwargs) -> "QCCDCircuit":
         return QCCDCircuit(stim.Circuit.generated(*args, **kwargs).__str__())
+    
+    @classmethod
+    def generate_color_code(self, distance: int, rounds: int, tesselation:tuple) -> "QCCDCircuit":
+        if tesselation == (6,6,6):
+            self._iscolorcode = True
+            circuit = ColorCodeCircuit666(distance, rounds).get_circuit()
+            return QCCDCircuit(circuit.__str__())
+        else:
+            raise ValueError(f"generate_color_code: unsupported tesselation {tesselation}")        
 
     def circuitString(self, include_annotation: bool = False) -> Sequence[str]:
         instructions = (

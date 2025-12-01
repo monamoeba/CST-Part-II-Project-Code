@@ -6,9 +6,12 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
     
     def __init__(self, distance, rounds):
         super().__init__(distance, rounds)
-        self.circuit = self.build_circuit()
+        self.circuit = self._build_circuit()
 
-    def generate_layout(self, distance:int):
+    def get_circuit(self):
+        return self.circuit
+    
+    def _generate_layout(self, distance:int):
         side = distance*3 - 2
         xtype = [['D', 'D', 'M'], ['M','D','D'], ['D','M','D']]
         dirs = [(-1,-1), (1,-1),(2,0),(1,1),(-1,1),(-2,0)]
@@ -20,14 +23,14 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
                 currtype = xpattern[patternptr % 3]
                 if currtype == 'M':
                     tile = ColorCodeTile(
-                        qubits = [(x+dx, y+dy) for dx,dy in dirs if self.within_bounds(x+dx,y+dy,side)],
+                        qubits = [(x+dx, y+dy) for dx,dy in dirs if self._within_bounds(x+dx,y+dy,side)],
                         ancilla = (x,y),
                         color = ['red','green','blue'][y % 3])
                     tiles.append(tile)
                 patternptr += 1
         return tiles
 
-    def within_bounds(self,x,y,side):
+    def _within_bounds(self,x,y,side):
         if y<0:
             return False
         if x<y:
@@ -36,8 +39,8 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
             return False
         return True
 
-    def build_circuit(self):
-        tiles = self.generate_layout(self.distance)
+    def _build_circuit(self):
+        tiles = self._generate_layout(self.distance)
         circ = stim.Circuit()
 
         qubits = {q for tile in tiles for q in tile.qubits}
@@ -56,11 +59,11 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         circ.append("TICK")
         
         # round 0:
-        self.measure_stabilizers(circ, tiles, qa_index_map, 'X')
-        circ += self.measure_round_Z_0(tiles, qa_index_map, chrom_annot=chrom_annot)
+        self._measure_stabilizers(circ, tiles, qa_index_map, 'X')
+        circ += self._measure_round_Z_0(tiles, qa_index_map, chrom_annot=chrom_annot)
 
         
-        circ += (self.rounds-1) * self.measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot)
+        circ += (self.rounds-1) * self._measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot)
 
         # measure qubits
         sorted_qs = sorted(list(qubits))
@@ -83,7 +86,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         
         return circ
 
-    def measure_round_Z_0(self, tiles:dict, qa_index_map:dict, chrom_annot:dict):
+    def _measure_round_Z_0(self, tiles:dict, qa_index_map:dict, chrom_annot:dict):
         loop = stim.Circuit()
         total_m  = len(tiles)
 
@@ -95,7 +98,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         loop.append("SHIFT_COORDS", [], [0,0,1])
         return loop
     
-    def measure_rounds(self, tiles:dict, qa_index_map:dict, measures_per_round:int, chrom_annot:dict):
+    def _measure_rounds(self, tiles:dict, qa_index_map:dict, measures_per_round:int, chrom_annot:dict):
         loop = stim.Circuit()
 
         # X 
@@ -118,7 +121,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         loop.append("SHIFT_COORDS", [], [0,0,1])
         return loop
 
-    def measure_stabilizers(self, circuit:stim.Circuit, tiles:dict, qa_index_map:dict, basis:str):
+    def _measure_stabilizers(self, circuit:stim.Circuit, tiles:dict, qa_index_map:dict, basis:str):
         # group by edge orientation
         measure_dirs = [(1,-1),(2,0),(-1,-1),(1,1),(-2,0),(-1,1)]
 
