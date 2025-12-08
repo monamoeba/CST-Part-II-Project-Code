@@ -22,6 +22,7 @@ from src.compiler.qccd_WISE_ion_route import *
 from src.color_code_utils.color_code_circuits.color_code_circuit_666 import *
 import logging
 from multiprocessing import get_logger
+import chromobius
 
 class QCCDCircuit(stim.Circuit):
     DATA_QUBIT_COLOR = "lightblue"
@@ -301,7 +302,7 @@ class QCCDCircuit(stim.Circuit):
         detection_events, observable_flips = sample
         detection_events = np.array(detection_events, order='C')
 
-        # Construct a Tanner graph, by translating the detector error model using the circuit.
+        """ # Construct a Tanner graph, by translating the detector error model using the circuit.
         detector_error_model = circuit.detector_error_model(decompose_errors=True)
         matcher = pymatching.Matching.from_detector_error_model(detector_error_model)
 
@@ -317,10 +318,34 @@ class QCCDCircuit(stim.Circuit):
             actual_for_shot = observable_flips[shot]
             predicted_for_shot = predictions[shot]
             if not np.array_equal(actual_for_shot, predicted_for_shot):
-                num_errors += 1
-        logicalError = num_errors / num_shots 
+                num_errors += 1 """
+        logicalError = self._sample(circuit, num_shots=num_shots)
         return logicalError, meanPhysicalXError, meanPhysicalZError
+    
+    def _sample(self, circuit: stim.Circuit, num_shots: int = 100_000) -> Tuple[npt.NDArray[np.int8], npt.NDArray[np.int8]]:
+        # Sample the circuit, by using the fast circuit stabilizer tableau simulator provided by Stim.
+        sampler = circuit.compile_detector_sampler()
+        detection_events, observable_flips = sampler.sample(num_shots, separate_observables=True, bit_packed=True)
+        #detection_events = np.array(detection_events, order='C')
 
+        # Construct a Tanner graph, by translating the detector error model using the circuit.
+        detector_error_model = circuit.detector_error_model(decompose_errors=True)
+        
+        predictions = []
+        if self._iscolorcode:
+            decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+            predictions = decoder.predict_obs_flips_from_det_bit_packed(detection_events)
+        else:
+            # Determine the predicted logical observable, by running the MWPM decoding algorithm on the Tanner graph
+            matcher = pymatching.Matching.from_detector_error_model(detector_error_model)
+            predictions=np.array(matcher.decode_batch(detection_events))
+
+        # Count the mistakes.
+        num_errors = int(np.count_nonzero(np.any(observable_flips != predictions, axis=1)))
+        logicalError = num_errors / num_shots 
+
+        return logicalError
+    
     def processCircuitAugmentedGrid(
         self,
         trapCapacity: int = 2,

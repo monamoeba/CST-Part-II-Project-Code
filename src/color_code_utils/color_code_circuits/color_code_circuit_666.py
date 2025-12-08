@@ -90,7 +90,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         loop = stim.Circuit()
         total_m  = len(tiles)
 
-        self.measure_stabilizers(loop,tiles,qa_index_map,'Z')
+        self._measure_stabilizers(loop,tiles,qa_index_map,'Z')
         for i, tile in enumerate(tiles):
             loop.append("DETECTOR", [stim.target_rec(-(total_m - i))],[tile.ancilla[0], tile.ancilla[1], 1, chrom_annot[tile.color]['Z']])
 
@@ -102,7 +102,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         loop = stim.Circuit()
 
         # X 
-        self.measure_stabilizers(loop,tiles,qa_index_map, 'X')
+        self._measure_stabilizers(loop,tiles,qa_index_map, 'X')
         for i, tile in enumerate(tiles):
             current_offset = -(len(tiles) - i)
             prev_offset = current_offset - measures_per_round
@@ -111,7 +111,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         loop.append("TICK")
         
         # Z
-        self.measure_stabilizers(loop,tiles,qa_index_map, 'Z')
+        self._measure_stabilizers(loop,tiles,qa_index_map, 'Z')
         for i, tile in enumerate(tiles):
             current_offset = -(len(tiles) - i)
             prev_offset = current_offset - measures_per_round
@@ -141,14 +141,17 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
                         cnot_groups[i].extend([a_idx, q_idx])
                     else:
                         cnot_groups[i].extend([q_idx, a_idx])
-
+        if basis == 'X':
+            circuit.append("RX", measured_a)
+        else:
+            circuit.append("R", measured_a)
         for i,group in cnot_groups.items():
             circuit.append("CNOT", group)
             circuit.append("TICK")
         if basis=='X':
-            circuit.append("MRX", measured_a)
+            circuit.append("MX", measured_a)
         else:
-            circuit.append("MR", measured_a)
+            circuit.append("M", measured_a)
 
 
     def add_noise_model_to_circuit(self):
