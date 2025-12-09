@@ -122,9 +122,11 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         return loop
 
     def _measure_stabilizers(self, circuit:stim.Circuit, tiles:dict, qa_index_map:dict, basis:str):
-        # group by edge orientation
-        measure_dirs = [(1,-1),(2,0),(-1,-1),(1,1),(-2,0),(-1,1)]
+        # group by edge directions
+        # order based on https://www.researchgate.net/publication/384079892_Improving_Threshold_for_Fault-Tolerant_Color-Code_Quantum_Computing_by_Flagged_Weight_Optimization
+        measure_dirs = [(-1,-1),(1,-1),(-2,0),(2,0),(-1,1),(1,1)]
 
+        #TODO: add in flag gadgets implementation for reducing error-propagation paths
         # collect all edges doing CNOTs in these dirs + do them together
         measured_a = []
         cnot_groups = {i:[] for i in range(6)}

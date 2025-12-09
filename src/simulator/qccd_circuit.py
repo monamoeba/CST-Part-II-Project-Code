@@ -744,8 +744,174 @@ def process_circuit_wise_arch(distance, capacity, gate_improvements, num_shots):
     results["DACs"][label] = Num_DACs
     results["Electrodes"][label] = Num_electrodes
 
+    logger.info(f"{distance} {capacity} {label} = {results}")
+
+    logger.info(f"Finished processing for distance {distance} and capacity {capacity}")
+    return results
+
+def process_color_code_circuit(distance, capacity, gate_improvements, num_shots, tesselation):
+    logger = get_logger()
+    logger.setLevel(logging.INFO)
+    handler = logging.FileHandler("process_log_color_code.txt")
+    formatter = logging.Formatter('%(processName)s - %(levelname)s - %(message)s')
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+
+    logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and tesselation {tesselation}")
+  
+    circuit = QCCDCircuit.generate_color_code(distance, rounds=2, tesselation=(6,6,6))
+    nqubitsNeeded = (9*distance**2 -1)//8
+
+    nrowsNeeded = int(np.sqrt(nqubitsNeeded))+2
+
+    logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {nrowsNeeded} rows")
+
+    arch, (instructions, _) = circuit.processCircuitAugmentedGrid(rows=nrowsNeeded, cols=nrowsNeeded, trapCapacity=capacity)
+   
+    arch.refreshGraph()
+
+    results = {"ElapsedTime": {}, "Operations": {}, "MeanConcurrency": {}, "QubitOperations": {}, "LogicalErrorRates": {}, "PhysicalZErrorRates": {}, "PhysicalXErrorRates": {}, "Electrodes": {}, "DACs": {}}
+
+    # FIXME legacy formatting!
+    label ="Forwarding"
+
+    logger.info(f"Processing operations using {label} for distance {distance}, capacity {capacity} and tesselation {tesselation}")
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+ 
+    parallelOpsMap = paralleliseOperationsWithBarriers(allOps, barriers)
+    logicalErrors = []
+    physicalZErrors = []
+    physicalXErrors = []
+    
+    for gate_improvement in gate_improvements:
+        logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+        logicalErrors.append(logicalError)
+        physicalZErrors.append(physicalZError)
+        physicalXErrors.append(physicalXError)
+
+    logger.info(f"Simulated {label} method with gate improvements for distance {distance}, capacity {capacity} and tesselation {tesselation}")
+    
+    
+    for op in parallelOpsMap.values():
+        op.calculateOperationTime()
+        op.calculateFidelity()
+
+    circuit.resetArch()
+    arch.refreshGraph()
+
+    results["Capacity"] = capacity
+    results["Distance"] = distance
+    results["ElapsedTime"][label] = max(parallelOpsMap.keys())
+    results["Operations"][label] = len(allOps)
+    results["MeanConcurrency"][label] = np.mean([len(op.operations) for op in parallelOpsMap.values()])
+    results["QubitOperations"][label] = len(instructions)
+    results["LogicalErrorRates"][label] = logicalErrors
+    results["PhysicalZErrorRates"][label] = physicalZErrors
+    results["PhysicalXErrorRates"][label] = physicalXErrors
+
+
+    trapSet = set()
+    junctionSet = set()
+    for op in allOps:
+        for c in op.involvedComponents:
+            if isinstance(c, Trap):
+                trapSet.add(c)
+            elif isinstance(c, Junction):
+                junctionSet.add(c)
+
+    # Every zone can contain up to two qubits
+    # Njz = 1*Nj, Nlz = Nl*k
+    # The number of zones  N = 1*Nj+k*Nl
+    Njz = len(junctionSet) # each junction is one zone
+    Nlz = len(trapSet)*capacity # each trap is k zones
+
+    # Njz = int(np.ceil(nqubitsNeeded / (2*(capacity-1))) )# 2 traps per junction
+    # Nlz = nqubitsNeeded-Njz
+    Nde = NDE_LZ*Nlz+NDE_JZ*Njz
+    Nse = NSE_Z*(Njz+Nlz)
+
+    Num_electrodes = Nde+Nse
+    Num_DACs = Num_electrodes
+    results["DACs"][label] = Num_DACs
+    results["Electrodes"][label] = Num_electrodes
 
     logger.info(f"{distance} {capacity} {label} = {results}")
     
+    logger.info(f"Finished processing for distance {distance} and capacity {capacity}")
+    return results
+
+def process_color_code_circuit_wise_arch(distance, capacity, gate_improvements, num_shots, tesselation):
+    logger = get_logger()
+    logger.setLevel(logging.INFO)
+    handler = logging.FileHandler("process_log_color_code_wise.txt")
+    formatter = logging.Formatter('%(processName)s - %(levelname)s - %(message)s')
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+
+    logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and tesselation {tesselation}")
+  
+    circuit = QCCDCircuit.generate_color_code(distance, rounds=2, tesselation=(6,6,6))
+    nqubitsNeeded = (9*distance**2 -1)//8
+
+    nrowsNeeded = int(np.sqrt(nqubitsNeeded))+2
+
+    logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {nrowsNeeded} rows")
+
+    wiseArch = QCCDWiseArch(m=int(np.sqrt(capacity*nqubitsNeeded/2))+1, n=int(np.sqrt(2*nqubitsNeeded/capacity))+1, k=capacity)
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+    
+    arch.refreshGraph()
+
+    results = {"ElapsedTime": {}, "Operations": {}, "MeanConcurrency": {}, "QubitOperations": {}, "LogicalErrorRates": {}, "PhysicalZErrorRates": {}, "PhysicalXErrorRates": {}, "Electrodes": {}, "DACs": {}}
+
+    # FIXME legacy formatting!
+    label ="Forwarding"
+
+    logger.info(f"Processing operations using {label} for distance {distance}, capacity {capacity} and tesselation {tesselation}")
+    allOps, barriers = ionRoutingWISEArch(arch, wiseArch, instructions)
+ 
+    parallelOpsMap = paralleliseOperationsWithBarriers(allOps, barriers)
+    logicalErrors = []
+    physicalZErrors = []
+    physicalXErrors = []
+    
+    for gate_improvement in gate_improvements:
+        logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+        logicalErrors.append(logicalError)
+        physicalZErrors.append(physicalZError)
+        physicalXErrors.append(physicalXError)
+
+    logger.info(f"Simulated {label} method with gate improvements for distance {distance}, capacity {capacity} and tesselation {tesselation}")
+
+    for op in parallelOpsMap.values():
+        op.calculateOperationTime()
+        op.calculateFidelity()
+
+    circuit.resetArch()
+    arch.refreshGraph()
+
+    results["Capacity"] = capacity
+    results["Distance"] = distance
+    results["ElapsedTime"][label] = max(parallelOpsMap.keys())
+    results["Operations"][label] = len(allOps)
+    results["MeanConcurrency"][label] = np.mean([len(op.operations) for op in parallelOpsMap.values()])
+    results["QubitOperations"][label] = len(instructions)
+    results["LogicalErrorRates"][label] = logicalErrors
+    results["PhysicalZErrorRates"][label] = physicalZErrors
+    results["PhysicalXErrorRates"][label] = physicalXErrors
+
+    Njz = np.ceil(nqubitsNeeded / capacity)
+    Nlz = nqubitsNeeded - Njz # note the difference because we do not have vertical traps
+
+    Nde = NDE_LZ*Nlz+NDE_JZ*Njz
+    Nse = NSE_Z*(Njz+Nlz)
+
+    Num_electrodes =int( Nde+Nse)
+    Num_DACs = int(min(100, Nde)+np.ceil(Nse/100))
+    results["DACs"][label] = Num_DACs
+    results["Electrodes"][label] = Num_electrodes
+
+    logger.info(f"{distance} {capacity} {label} = {results}")
+
     logger.info(f"Finished processing for distance {distance} and capacity {capacity}")
     return results
