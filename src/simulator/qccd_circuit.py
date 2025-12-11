@@ -19,10 +19,11 @@ from src.compiler.qccd_parallelisation import *
 from src.compiler.qccd_qubits_to_ions import *
 from src.compiler.qccd_ion_routing import *
 from src.compiler.qccd_WISE_ion_route import *
-from src.color_code_utils.color_code_circuits.color_code_circuit_666 import *
+from src.color_code_utils.color_code_circuits.color_code_circuit_666 import ColorCodeCircuit666
 import logging
 from multiprocessing import get_logger
 import chromobius
+from color_code_stim import ColorCode
 
 class QCCDCircuit(stim.Circuit):
     DATA_QUBIT_COLOR = "lightblue"
@@ -48,6 +49,7 @@ class QCCDCircuit(stim.Circuit):
         self._originalArrangement: Dict[Trap, Sequence[Ion]] = {}
         self._arch: QCCDArch
         self._iscolorcode: bool = False
+        self.dataQubitsIdxs = None
 
     @classmethod
     def generated(cls, *args, **kwargs) -> "QCCDCircuit":
@@ -57,8 +59,12 @@ class QCCDCircuit(stim.Circuit):
     def generate_color_code(self, distance: int, rounds: int, tesselation:tuple) -> "QCCDCircuit":
         if tesselation == (6,6,6):
             self._iscolorcode = True
-            circuit = ColorCodeCircuit666(distance, rounds).get_circuit()
-            return QCCDCircuit(circuit.__str__())
+            #colorcode = ColorCodeCircuit666(distance, rounds)
+            #circuit = colorcode.get_circuit()
+            colorcode = ColorCode(d=distance,rounds=rounds,circuit_type="tri")
+            qccd = QCCDCircuit(colorcode.circuit.__str__())
+            #qccd.dataQubitsIdxs = list(colorcode)
+            return qccd
         else:
             raise ValueError(f"generate_color_code: unsupported tesselation {tesselation}")        
 
@@ -294,15 +300,16 @@ class QCCDCircuit(stim.Circuit):
         meanPhysicalZError /= numZGates
         meanPhysicalXError /= numXGates
         circuit = stim.Circuit(circuitString)
+        print(circuit)
         if not decode:
             return 1, meanPhysicalXError, meanPhysicalZError
         # Sample the circuit, by using the fast circuit stabilizer tableau simulator provided by Stim.
-        sampler = circuit.compile_detector_sampler()
+        """sampler = circuit.compile_detector_sampler()
         sample =sampler.sample(num_shots, separate_observables=True)
         detection_events, observable_flips = sample
         detection_events = np.array(detection_events, order='C')
 
-        """ # Construct a Tanner graph, by translating the detector error model using the circuit.
+        # Construct a Tanner graph, by translating the detector error model using the circuit.
         detector_error_model = circuit.detector_error_model(decompose_errors=True)
         matcher = pymatching.Matching.from_detector_error_model(detector_error_model)
 
@@ -325,16 +332,19 @@ class QCCDCircuit(stim.Circuit):
     def _sample(self, circuit: stim.Circuit, num_shots: int = 100_000) -> Tuple[npt.NDArray[np.int8], npt.NDArray[np.int8]]:
         # Sample the circuit, by using the fast circuit stabilizer tableau simulator provided by Stim.
         sampler = circuit.compile_detector_sampler()
-        detection_events, observable_flips = sampler.sample(num_shots, separate_observables=True, bit_packed=True)
+        detection_events, observable_flips = sampler.sample(num_shots, separate_observables=True)
         #detection_events = np.array(detection_events, order='C')
 
         # Construct a Tanner graph, by translating the detector error model using the circuit.
-        detector_error_model = circuit.detector_error_model(decompose_errors=True)
+        if self._iscolorcode:
+            detector_error_model = circuit.detector_errror_model()
+        else:
+            detector_error_model = circuit.detector_error_model(decompose_errors=True)
         
         predictions = []
         if self._iscolorcode:
             decoder = chromobius.compile_decoder_for_dem(detector_error_model)
-            predictions = decoder.predict_obs_flips_from_det_bit_packed(detection_events)
+            predictions = decoder.predict_obs_flips_from_dets(detection_events)
         else:
             # Determine the predicted logical observable, by running the MWPM decoding algorithm on the Tanner graph
             matcher = pymatching.Matching.from_detector_error_model(detector_error_model)
@@ -766,7 +776,7 @@ def process_color_code_circuit(distance, capacity, gate_improvements, num_shots,
 
     logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {nrowsNeeded} rows")
 
-    arch, (instructions, _) = circuit.processCircuitAugmentedGrid(rows=nrowsNeeded, cols=nrowsNeeded, trapCapacity=capacity)
+    arch, (instructions, _) = circuit.processCircuitAugmentedGrid(rows=nrowsNeeded, cols=nrowsNeeded, trapCapacity=capacity, dataQubitIdxs=circuit.dataQubitsIdxs)
    
     arch.refreshGraph()
 

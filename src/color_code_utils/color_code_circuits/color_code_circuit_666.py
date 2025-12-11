@@ -6,7 +6,10 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
     
     def __init__(self, distance, rounds):
         super().__init__(distance, rounds)
+        self.qubits = set()
+        self.ancilla = set()
         self.circuit = self._build_circuit()
+        
 
     def get_circuit(self):
         return self.circuit
@@ -43,19 +46,21 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         tiles = self._generate_layout(self.distance)
         circ = stim.Circuit()
 
-        qubits = {q for tile in tiles for q in tile.qubits}
-        ancillae = {tile.ancilla for tile in tiles}
-        sorted_q_a = sorted(qubits | ancillae)
+        qubitsCoords = {q for tile in tiles for q in tile.qubits}
+        ancillaCoords = {tile.ancilla for tile in tiles}
+        sorted_q_a = sorted(qubitsCoords | ancillaCoords)
         qa_index_map = {q:i for i,q in enumerate(sorted_q_a)}
         chrom_annot = {'red':{'X':0, 'Z':3},'green':{'X':1, 'Z':4},'blue':{'X':2, 'Z':5}}
+        self.qubits = {qa_index_map[q] for q in qubitsCoords}
+        self.ancilla = {qa_index_map[a] for a in ancillaCoords}
         
         # append coords to the circuit
         for q,i in qa_index_map.items():
             circ.append("QUBIT_COORDS", [i], [q[0], q[1]])
 
         # reset everything
-        circ.append("R", [qa_index_map[q] for q in qubits])
-        circ.append("R", [qa_index_map[a] for a in ancillae])
+        circ.append("R", [qa_index_map[q] for q in qubitsCoords])
+        circ.append("R", [qa_index_map[a] for a in ancillaCoords])
         circ.append("TICK")
         
         # round 0:
@@ -66,7 +71,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         circ += (self.rounds-1) * self._measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot)
 
         # measure qubits
-        sorted_qs = sorted(list(qubits))
+        sorted_qs = sorted(list(qubitsCoords))
         q_idxs = [qa_index_map[q] for q in sorted_qs]
         circ.append("M", q_idxs)
         
