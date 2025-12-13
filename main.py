@@ -3,7 +3,7 @@ import yaml
 import logging
 import concurrent.futures
 from typing import Any, Dict
-from src.simulator.qccd_circuit import process_circuit
+from src.simulator.qccd_circuit import process_circuit, process_color_code_circuit
 from datetime import datetime
 import json  
 
@@ -51,7 +51,8 @@ def main(config_path: str):
     logger.info("Starting parallel processing of circuits")
     with concurrent.futures.ProcessPoolExecutor(max_workers=num_cores) as executor:
         futures = [
-            executor.submit(process_circuit, d, c, gate_improvements, num_shots)
+            #executor.submit(process_circuit, d, c, gate_improvements, num_shots)
+            executor.submit(process_color_code_circuit, d, c, gate_improvements, num_shots, (6,6,6))
             for d in distances for c in capacities
         ]
 
@@ -60,6 +61,11 @@ def main(config_path: str):
                 result = future.result()
                 d = result["Distance"]
                 c = result["Capacity"]
+                for metric in data.keys():
+                    if metric in result:
+                        for label, value in result[metric].items():
+                            data[metric].setdefault(label, {}).setdefault(d, {})[c] = value
+                """            
                 for label in result["ElapsedTime"]:
                     data["ElapsedTime"][label][d][c] = result["ElapsedTime"][label]
                     data["Operations"][label][d][c] = result["Operations"][label]
@@ -67,7 +73,7 @@ def main(config_path: str):
                     data["QubitOperations"][label][d][c] = result["QubitOperations"][label]
                     data["LogicalErrorRates"][label][d][c] = result["LogicalErrorRates"][label]
                     data["PhysicalXErrorRates"][label][d][c] = result["PhysicalXErrorRates"][label]
-                    data["PhysicalZErrorRates"][label][d][c] = result["PhysicalZErrorRates"][label]
+                    data["PhysicalZErrorRates"][label][d][c] = result["PhysicalZErrorRates"][label]"""
                 logger.info(f"Processed results for distance {d}, capacity {c}.")
             except Exception as e:
                 logger.error("An error occurred during processing", exc_info=e)

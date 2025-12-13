@@ -48,7 +48,7 @@ class QCCDCircuit(stim.Circuit):
         self._dataIons: List[Ion] = []
         self._originalArrangement: Dict[Trap, Sequence[Ion]] = {}
         self._arch: QCCDArch
-        self._iscolorcode: bool = False
+        self.iscolorcode: bool = False
         self.dataQubitsIdxs = None
 
     @classmethod
@@ -56,14 +56,15 @@ class QCCDCircuit(stim.Circuit):
         return QCCDCircuit(stim.Circuit.generated(*args, **kwargs).__str__())
     
     @classmethod
-    def generate_color_code(self, distance: int, rounds: int, tesselation:tuple) -> "QCCDCircuit":
+    def generate_color_code(cls, distance: int, rounds: int, tesselation:tuple) -> "QCCDCircuit":
         if tesselation == (6,6,6):
-            self._iscolorcode = True
-            #colorcode = ColorCodeCircuit666(distance, rounds)
-            #circuit = colorcode.get_circuit()
-            colorcode = ColorCode(d=distance,rounds=rounds,circuit_type="tri")
-            qccd = QCCDCircuit(colorcode.circuit.__str__())
-            #qccd.dataQubitsIdxs = list(colorcode)
+            colorcode = ColorCodeCircuit666(distance, rounds)
+            circuit = colorcode.get_circuit()
+            #for testing library implementation of color codes
+            #colorcode = ColorCode(d=distance,rounds=rounds,circuit_type="tri")
+            qccd = QCCDCircuit(circuit.__str__())
+            qccd.dataQubitsIdxs = list(colorcode.qubits)
+            qccd.iscolorcode = True
             return qccd
         else:
             raise ValueError(f"generate_color_code: unsupported tesselation {tesselation}")        
@@ -300,7 +301,7 @@ class QCCDCircuit(stim.Circuit):
         meanPhysicalZError /= numZGates
         meanPhysicalXError /= numXGates
         circuit = stim.Circuit(circuitString)
-        print(circuit)
+        
         if not decode:
             return 1, meanPhysicalXError, meanPhysicalZError
         # Sample the circuit, by using the fast circuit stabilizer tableau simulator provided by Stim.
@@ -332,27 +333,24 @@ class QCCDCircuit(stim.Circuit):
     def _sample(self, circuit: stim.Circuit, num_shots: int = 100_000) -> Tuple[npt.NDArray[np.int8], npt.NDArray[np.int8]]:
         # Sample the circuit, by using the fast circuit stabilizer tableau simulator provided by Stim.
         sampler = circuit.compile_detector_sampler()
-        detection_events, observable_flips = sampler.sample(num_shots, separate_observables=True)
-        #detection_events = np.array(detection_events, order='C')
+        detection_events, observable_flips = sampler.sample(num_shots, separate_observables=True, bit_packed=True)
 
         # Construct a Tanner graph, by translating the detector error model using the circuit.
-        if self._iscolorcode:
-            detector_error_model = circuit.detector_errror_model()
+        if self.iscolorcode:
+            # chrom setup
+            detector_error_model = circuit.detector_error_model()
+            decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+            predictions = decoder.predict_obs_flips_from_dets_bit_packed(detection_events)
         else:
             detector_error_model = circuit.detector_error_model(decompose_errors=True)
-        
-        predictions = []
-        if self._iscolorcode:
-            decoder = chromobius.compile_decoder_for_dem(detector_error_model)
-            predictions = decoder.predict_obs_flips_from_dets(detection_events)
-        else:
-            # Determine the predicted logical observable, by running the MWPM decoding algorithm on the Tanner graph
             matcher = pymatching.Matching.from_detector_error_model(detector_error_model)
-            predictions=np.array(matcher.decode_batch(detection_events))
+            predictions=matcher.decode_batch(detection_events, bit_packed_shots=True, bit_packed_predictions=True)
+
 
         # Count the mistakes.
-        num_errors = int(np.count_nonzero(np.any(observable_flips != predictions, axis=1)))
-        logicalError = num_errors / num_shots 
+        mismatches = np.any(observable_flips != predictions, axis=1)
+        num_errors = np.count_nonzero(mismatches)
+        logicalError = float(num_errors / num_shots)
 
         return logicalError
     
@@ -769,7 +767,7 @@ def process_color_code_circuit(distance, capacity, gate_improvements, num_shots,
 
     logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and tesselation {tesselation}")
   
-    circuit = QCCDCircuit.generate_color_code(distance, rounds=2, tesselation=(6,6,6))
+    circuit = QCCDCircuit.generate_color_code(distance, rounds=2, tesselation=tesselation)
     nqubitsNeeded = (9*distance**2 -1)//8
 
     nrowsNeeded = int(np.sqrt(nqubitsNeeded))+2
