@@ -25,10 +25,13 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
             for x in range(y,side-y,2):
                 currtype = xpattern[patternptr % 3]
                 if currtype == 'M':
+                    #color_idx = (x//2 + y) % 3
+                    tile_color = ['red','green','blue'][(x+y) % 3]
+                    #tile_color = ['red','green','blue'][color_idx]
                     tile = ColorCodeTile(
                         qubits = [(x+dx, y+dy) for dx,dy in dirs if self._within_bounds(x+dx,y+dy,side)],
                         ancilla = (x,y),
-                        color = ['red','green','blue'][y % 3])
+                        color = tile_color)
                     tiles.append(tile)
                 patternptr += 1
         return tiles

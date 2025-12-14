@@ -301,7 +301,7 @@ class QCCDCircuit(stim.Circuit):
         meanPhysicalZError /= numZGates
         meanPhysicalXError /= numXGates
         circuit = stim.Circuit(circuitString)
-        
+        print(circuit)
         if not decode:
             return 1, meanPhysicalXError, meanPhysicalZError
         # Sample the circuit, by using the fast circuit stabilizer tableau simulator provided by Stim.
@@ -768,8 +768,10 @@ def process_color_code_circuit(distance, capacity, gate_improvements, num_shots,
     logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and tesselation {tesselation}")
   
     circuit = QCCDCircuit.generate_color_code(distance, rounds=2, tesselation=tesselation)
+    #for single ancilla circuits
     nqubitsNeeded = (9*distance**2 -1)//8
-
+    #for dual ancilla circuits
+    #nqubitsNeeded = 3*(distance**2 - 1)//4 + (3*distance**2 + 1)//4
     nrowsNeeded = int(np.sqrt(nqubitsNeeded))+2
 
     logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {nrowsNeeded} rows")

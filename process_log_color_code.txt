@@ -1308,3 +1308,829 @@ SpawnProcess-10 - INFO - process shutting down
 SpawnProcess-10 - INFO - process shutting down
 SpawnProcess-10 - INFO - process shutting down
 SpawnProcess-10 - INFO - process shutting down
+SpawnProcess-10 - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-2 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-3 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-7 - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-9 - INFO - Starting circuit generation for distance 3, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 3, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 3, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 3, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 3, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 3, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 3, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 3, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-5 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 3, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 3, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 3, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 3, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 3, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 3, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 3, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-5 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 3, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 3, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-11 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-12 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-8 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-5 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-5 - INFO - Processing circuit with 13 qubits and 5 rows
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-11 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-11 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-12 - INFO - Starting circuit generation for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-12 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-12 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-1 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-8 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-8 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-8 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-4 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-5 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-5 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-5 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-9 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-6 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-7 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-7 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-3 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-2 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-10 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-9 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-9 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-6 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-6 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-5 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-5 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-5 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-5 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-4 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-4 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-2 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-2 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-10 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-10 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-3 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-3 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-7 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-7 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-4 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-4 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-4 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-2 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-2 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-2 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-5 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-5 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-5 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-5 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-5 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-5 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-8 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-8 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-8 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-1 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-1 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-6 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-6 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-6 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-9 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-9 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-9 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-12 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-12 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-12 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-11 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-11 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-11 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-6 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-6 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-6 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-6 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-12 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-12 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-12 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-12 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-9 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-9 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-9 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-9 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-1 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-1 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-1 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-8 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-8 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-8 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-8 - INFO - Processing circuit with 73 qubits and 10 rows
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-11 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-11 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-11 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-11 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-11 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-7 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-7 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-7 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-10 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-10 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-10 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 121 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - process exiting with exitcode 0
+SpawnProcess-8 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SSpawnProcess-2 - INFO - process exiting with exitcode 0
+pSpawnProcess-12 - INFO - process exiting with exitcode 0
+SpawnProcess-6 - INFO - process exiting with exitcode 0
+wSpawnProcess-9 - INFO - process exiting with exitcodeSpawnSpawnProcess-11 - INFO - process shutting down
+ 0
+SpawnProcess-7 - INFO - process shutting down
+th exitcodSpawnSpawnProcess-9 - INFO - process shutting dSpawnProceSpawnProcess-4 - INFO - process shuttSpawnProceSpawnProcess-4 - INFO - process shuttSpawnProceSpawnProcess-9 - INFO - process shutting down
+SpawnProcess-8 - INFO - process shuttSpawnProceSpawnProcess-8 - INFO - process shuttSpawnProcess-9 - INFO - process shutting down
+ing with exitcode 0
+s-8 - INFO - process shutting down
+SpawnProcess-5 - INFO - process exiting with exitcode 0
+
+SpawnProcess-5 - INFO - process exiting with exitcode 0
+
+SpawnProcess-11 - INFO - process shutting down
+tcode 0
+SSpawnProcess-2 - INFO - process exiting with exitcode 0
+s-5 - INFO - process shutting down
+SpawnProcess-5 - INFO - process shutting down
+SpawnProcess-11 - INFO - process shutting down
+tcode 0
+SpawnProcess-2 - INFO - process exiting with exSpawnProcess-12 - INFO - process shutting down
+pawnProcess-5 - INFO - process shutting down
+SpawnProcess-5 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+
+SpawnProcess-12 - INFO - process shutting down
+SpawnProcess-12 - INFO - process shutting down
+SpawnProcess-11 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 55 qubits and 9 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - 7 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.051154999999999964}, 'Operations': {'Forwarding': 3638}, 'MeanConcurrency': {'Forwarding': np.float64(3.925589086399339)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.46318]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020777681709108577)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02072688265950272)]}, 'Electrodes': {'Forwarding': 1980}, 'DACs': {'Forwarding': 1980}, 'Capacity': 10, 'Distance': 7}
+MainProcess - INFO - Finished processing for distance 7 and capacity 10
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 91 qubits and 11 rows
+MainProcess - INFO - Processing circuit with 91 qubits and 11 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - process shutting down
+MainProcess - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - 7 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.06434499999999994}, 'Operations': {'Forwarding': 4429}, 'MeanConcurrency': {'Forwarding': np.float64(4.21377331420373)}, 'QubitOperations': {'Forwarding': 2234}, 'LogicalErrorRates': {'Forwarding': [0.49886]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02488212308282098)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02494036809481456)]}, 'Electrodes': {'Forwarding': 3300}, 'DACs': {'Forwarding': 3300}, 'Capacity': 10, 'Distance': 7}
+MainProcess - INFO - Finished processing for distance 7 and capacity 10
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 121 qubits and 13 rows
+MainProcess - INFO - Processing circuit with 121 qubits and 13 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - process shutting down
+MainProcess - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - 7 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.06434499999999994}, 'Operations': {'Forwarding': 4429}, 'MeanConcurrency': {'Forwarding': np.float64(4.21377331420373)}, 'QubitOperations': {'Forwarding': 2234}, 'LogicalErrorRates': {'Forwarding': [0.49062]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02488212308282098)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02494036809481456)]}, 'Electrodes': {'Forwarding': 3300}, 'DACs': {'Forwarding': 3300}, 'Capacity': 10, 'Distance': 7}
+MainProcess - INFO - Finished processing for distance 7 and capacity 10
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 121 qubits and 13 rows
+MainProcess - INFO - Processing circuit with 121 qubits and 13 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.08202499999999996}, 'Operations': {'Forwarding': 7109}, 'MeanConcurrency': {'Forwarding': np.float64(6.05669099756691)}, 'QubitOperations': {'Forwarding': 3842}, 'LogicalErrorRates': {'Forwarding': [0.50058]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.024827900479402063)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024336179978884202)]}, 'Electrodes': {'Forwarding': 4620}, 'DACs': {'Forwarding': 4620}, 'Capacity': 10, 'Distance': 9}
+MainProcess - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.08202499999999996}, 'Operations': {'Forwarding': 7109}, 'MeanConcurrency': {'Forwarding': np.float64(6.05669099756691)}, 'QubitOperations': {'Forwarding': 3842}, 'LogicalErrorRates': {'Forwarding': [0.50058]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.024827900479402063)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024336179978884202)]}, 'Electrodes': {'Forwarding': 4620}, 'DACs': {'Forwarding': 4620}, 'Capacity': 10, 'Distance': 9}
+MainProcess - INFO - Finished processing for distance 9 and capacity 10
+MainProcess - INFO - Finished processing for distance 9 and capacity 10
+MainProcess - INFO - process shutting down
+MainProcess - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 55 qubits and 9 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - 7 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.051154999999999964}, 'Operations': {'Forwarding': 3638}, 'MeanConcurrency': {'Forwarding': np.float64(3.925589086399339)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.4641]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020777681709108577)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02072688265950272)]}, 'Electrodes': {'Forwarding': 1980}, 'DACs': {'Forwarding': 1980}, 'Capacity': 10, 'Distance': 7}
+MainProcess - INFO - Finished processing for distance 7 and capacity 10
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 91 qubits and 11 rows
+MainProcess - INFO - Processing circuit with 91 qubits and 11 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - process shutting down
+MainProcess - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 55 qubits and 9 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - 7 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.051154999999999964}, 'Operations': {'Forwarding': 3638}, 'MeanConcurrency': {'Forwarding': np.float64(3.925589086399339)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.46325]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020777681709108577)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02072688265950272)]}, 'Electrodes': {'Forwarding': 1980}, 'DACs': {'Forwarding': 1980}, 'Capacity': 10, 'Distance': 7}
+MainProcess - INFO - Finished processing for distance 7 and capacity 10
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 91 qubits and 11 rows
+MainProcess - INFO - Processing circuit with 91 qubits and 11 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - process shutting down
+MainProcess - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 55 qubits and 9 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 55 qubits and 9 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - 7 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.051154999999999964}, 'Operations': {'Forwarding': 3638}, 'MeanConcurrency': {'Forwarding': np.float64(3.925589086399339)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.46571]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020777681709108577)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02072688265950272)]}, 'Electrodes': {'Forwarding': 1980}, 'DACs': {'Forwarding': 1980}, 'Capacity': 10, 'Distance': 7}
+MainProcess - INFO - Finished processing for distance 7 and capacity 10
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 91 qubits and 11 rows
+MainProcess - INFO - Processing circuit with 91 qubits and 11 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
