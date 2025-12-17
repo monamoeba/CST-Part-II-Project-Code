@@ -58,13 +58,13 @@ class QCCDCircuit(stim.Circuit):
     @classmethod
     def generate_color_code(cls, distance: int, rounds: int, tesselation:tuple) -> "QCCDCircuit":
         if tesselation == (6,6,6):
-            colorcode = ColorCodeCircuit666(distance, rounds)
-            circuit = colorcode.get_circuit()
+            #colorcode = ColorCodeCircuit666(distance, rounds)
+            #circuit = colorcode.get_circuit()
             #for testing library implementation of color codes
-            #colorcode = ColorCode(d=distance,rounds=rounds,circuit_type="tri")
-            qccd = QCCDCircuit(circuit.__str__())
-            qccd.dataQubitsIdxs = list(colorcode.qubits)
-            qccd.iscolorcode = True
+            colorcode = ColorCode(d=distance,rounds=rounds,circuit_type="tri")
+            qccd = QCCDCircuit(colorcode.circuit.__str__())
+            #qccd.dataQubitsIdxs = list(colorcode.qubits)
+            #qccd.iscolorcode = True
             return qccd
         else:
             raise ValueError(f"generate_color_code: unsupported tesselation {tesselation}")        
@@ -196,7 +196,7 @@ class QCCDCircuit(stim.Circuit):
         # TODO add importance subset sampling (see notability notes)
         # TODO speed up with sinter (see stim/getting_started)
         stimInstructions = self.circuitString(include_annotation=True)
-        
+        #print(f'stimInstructions: {stimInstructions}')
         stimIdxs: List[int] = []
         ions: List[Ion] = []
         for stimIdx, (ion, _) in self._ionMapping.items():
@@ -301,32 +301,11 @@ class QCCDCircuit(stim.Circuit):
         meanPhysicalZError /= numZGates
         meanPhysicalXError /= numXGates
         circuit = stim.Circuit(circuitString)
-        print(circuit)
+        #print(f'resulting circuit:\n{circuit}')
         if not decode:
             return 1, meanPhysicalXError, meanPhysicalZError
         # Sample the circuit, by using the fast circuit stabilizer tableau simulator provided by Stim.
-        """sampler = circuit.compile_detector_sampler()
-        sample =sampler.sample(num_shots, separate_observables=True)
-        detection_events, observable_flips = sample
-        detection_events = np.array(detection_events, order='C')
-
-        # Construct a Tanner graph, by translating the detector error model using the circuit.
-        detector_error_model = circuit.detector_error_model(decompose_errors=True)
-        matcher = pymatching.Matching.from_detector_error_model(detector_error_model)
-
-        # Determine the predicted logical observable, by running the MWPM decoding algorithm on the Tanner graph
-        predictions = []
-        for i in range(num_shots):
-            predictions.append(matcher.decode(detection_events[i]))
-        predictions=np.array(predictions)
-
-        # Count the mistakes.
-        num_errors = 0
-        for shot in range(num_shots):
-            actual_for_shot = observable_flips[shot]
-            predicted_for_shot = predictions[shot]
-            if not np.array_equal(actual_for_shot, predicted_for_shot):
-                num_errors += 1 """
+        
         logicalError = self._sample(circuit, num_shots=num_shots)
         return logicalError, meanPhysicalXError, meanPhysicalZError
     
@@ -342,7 +321,8 @@ class QCCDCircuit(stim.Circuit):
             decoder = chromobius.compile_decoder_for_dem(detector_error_model)
             predictions = decoder.predict_obs_flips_from_dets_bit_packed(detection_events)
         else:
-            detector_error_model = circuit.detector_error_model(decompose_errors=True)
+            detector_error_model = circuit.detector_error_model()
+            #detector_error_model = circuit.detector_error_model(decompose_errors=True)
             matcher = pymatching.Matching.from_detector_error_model(detector_error_model)
             predictions=matcher.decode_batch(detection_events, bit_packed_shots=True, bit_packed_predictions=True)
 
@@ -769,9 +749,9 @@ def process_color_code_circuit(distance, capacity, gate_improvements, num_shots,
   
     circuit = QCCDCircuit.generate_color_code(distance, rounds=2, tesselation=tesselation)
     #for single ancilla circuits
-    nqubitsNeeded = (9*distance**2 -1)//8
+    #nqubitsNeeded = (9*distance**2 -1)//8
     #for dual ancilla circuits
-    #nqubitsNeeded = 3*(distance**2 - 1)//4 + (3*distance**2 + 1)//4
+    nqubitsNeeded = 3*(distance**2 - 1)//4 + (3*distance**2 + 1)//4
     nrowsNeeded = int(np.sqrt(nqubitsNeeded))+2
 
     logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {nrowsNeeded} rows")

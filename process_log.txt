@@ -9663,3 +9663,1128 @@ MainProcess - INFO - Processed results for distance 7, capacity 15.
 MainProcess - INFO - Processed results for distance 7, capacity 60.
 MainProcess - INFO - Processed results for distance 7, capacity 120.
 MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 4.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - INFO - Processed results for distance 3, capacity 8.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - INFO - Processed results for distance 3, capacity 9.
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 11.
+MainProcess - INFO - Processed results for distance 3, capacity 12.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - INFO - Processed results for distance 3, capacity 13.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - INFO - Processed results for distance 3, capacity 14.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 851, in process_color_code_circuit_wise_arch
+    arch, (instructions, _) = circuit.processCircuitWiseArch(wiseArch=wiseArch)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 457, in processCircuitWiseArch
+    raise ValueError("processCircuit: not enough traps")
+ValueError: processCircuit: not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: processCircuit: not enough traps
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 6.
+MainProcess - INFO - Processed results for distance 5, capacity 11.
+MainProcess - INFO - Processed results for distance 5, capacity 12.
+MainProcess - INFO - Processed results for distance 5, capacity 13.
+MainProcess - INFO - Processed results for distance 5, capacity 14.
+MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 12.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 9, capacity 120.
