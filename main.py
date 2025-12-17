@@ -51,7 +51,7 @@ def main(config_path: str):
     logger.info("Starting parallel processing of circuits")
     with concurrent.futures.ProcessPoolExecutor(max_workers=num_cores) as executor:
         futures = [
-            executor.submit(process_color_code_circuit_wise_arch, d, c, gate_improvements, num_shots, (6,6,6))
+            executor.submit(process_color_code_circuit, d, c, gate_improvements, num_shots, (6,6,6))
             #executor.submit(process_color_code_circuit, d, c, gate_improvements, num_shots, (6,6,6))
             for d in distances for c in capacities
         ]
