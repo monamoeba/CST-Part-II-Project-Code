@@ -58,13 +58,13 @@ class QCCDCircuit(stim.Circuit):
     @classmethod
     def generate_color_code(cls, distance: int, rounds: int, tesselation:tuple) -> "QCCDCircuit":
         if tesselation == (6,6,6):
-            #colorcode = ColorCodeCircuit666(distance, rounds)
-            #circuit = colorcode.get_circuit()
+            colorcode = ColorCodeCircuit666(distance, rounds)
+            circuit = colorcode.get_circuit()
             #for testing library implementation of color codes
-            colorcode = ColorCode(d=distance,rounds=rounds,circuit_type="tri")
-            qccd = QCCDCircuit(colorcode.circuit.__str__())
-            #qccd.dataQubitsIdxs = list(colorcode.qubits)
-            #qccd.iscolorcode = True
+            #colorcode = ColorCode(d=distance,rounds=rounds,circuit_type="tri")
+            qccd = QCCDCircuit(circuit.__str__())
+            qccd.dataQubitsIdxs = list(colorcode.qubits)
+            qccd.iscolorcode = True
             return qccd
         else:
             raise ValueError(f"generate_color_code: unsupported tesselation {tesselation}")        
@@ -321,8 +321,8 @@ class QCCDCircuit(stim.Circuit):
             decoder = chromobius.compile_decoder_for_dem(detector_error_model)
             predictions = decoder.predict_obs_flips_from_dets_bit_packed(detection_events)
         else:
-            detector_error_model = circuit.detector_error_model()
-            #detector_error_model = circuit.detector_error_model(decompose_errors=True)
+            #detector_error_model = circuit.detector_error_model()
+            detector_error_model = circuit.detector_error_model(decompose_errors=True)
             matcher = pymatching.Matching.from_detector_error_model(detector_error_model)
             predictions=matcher.decode_batch(detection_events, bit_packed_shots=True, bit_packed_predictions=True)
 
@@ -749,9 +749,9 @@ def process_color_code_circuit(distance, capacity, gate_improvements, num_shots,
   
     circuit = QCCDCircuit.generate_color_code(distance, rounds=2, tesselation=tesselation)
     #for single ancilla circuits
-    #nqubitsNeeded = (9*distance**2 -1)//8
+    nqubitsNeeded = (9*distance**2 -1)//8
     #for dual ancilla circuits
-    nqubitsNeeded = 3*(distance**2 - 1)//4 + (3*distance**2 + 1)//4
+    #nqubitsNeeded = 3*(distance**2 - 1)//4 + (3*distance**2 + 1)//4
     nrowsNeeded = int(np.sqrt(nqubitsNeeded))+2
 
     logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {nrowsNeeded} rows")

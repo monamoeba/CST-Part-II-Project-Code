@@ -4,12 +4,12 @@ import stim
 
 class ColorCodeCircuit666(AbstractColorCodeCircuit):
     
-    def __init__(self, distance, rounds):
+    def __init__(self, distance, rounds, noise=None):
         super().__init__(distance, rounds)
         self.qubits = set()
         self.ancilla = set()
         self._tiles = None
-        self.circuit = self._build_circuit()
+        self.circuit = self._build_circuit(noise)
         
         
 
@@ -52,7 +52,11 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
             return False
         return True
 
-    def _build_circuit(self):
+    def _build_circuit(self, noise=None):
+        if noise is not None:
+            addnoise = True
+        else:
+            addnoise = False
         tiles = self._generate_layout(self.distance)
         self._tiles = tiles
         circ = stim.Circuit()
@@ -70,16 +74,20 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
             circ.append("QUBIT_COORDS", [i], [q[0], q[1]])
 
         # reset everything
-        circ.append("R", [qa_index_map[q] for q in qubitsCoords])
-        circ.append("R", [qa_index_map[a] for a in ancillaCoords])
+        circ.append("R", list(self.qubits))
+        if addnoise:
+            circ.append("X_ERROR",self.qubits, noise)
+        circ.append("R", list(self.ancilla))
+        if addnoise:
+            circ.append("X_ERROR", self.ancilla, noise)
         circ.append("TICK")
         
         # round 0:
         #self._measure_stabilizers(circ, tiles, qa_index_map, 'X')
-        circ += self._measure_round_Z_0(tiles, qa_index_map, chrom_annot=chrom_annot)
+        circ += self._measure_round_Z_0(tiles, qa_index_map, chrom_annot=chrom_annot, noise=noise)
 
         
-        circ += (self.rounds-1) * self._measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot)
+        circ += (self.rounds-1) * self._measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot, noise=noise)
 
         # measure qubits
         sorted_qs = sorted(list(qubitsCoords))
@@ -102,46 +110,60 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         
         return circ
 
-    def _measure_round_Z_0(self, tiles:dict, qa_index_map:dict, chrom_annot:dict):
+    def _measure_round_Z_0(self, tiles:dict, qa_index_map:dict, chrom_annot:dict, noise=None):
         loop = stim.Circuit()
         total_m  = len(tiles)
 
-        self._measure_stabilizers(loop,tiles,qa_index_map,'X')
-        self._measure_stabilizers(loop,tiles,qa_index_map,'Z')
+        self._measure_stabilizers(loop,tiles,qa_index_map,'X', noise)
+        self._measure_stabilizers(loop,tiles,qa_index_map,'Z', noise)
         for i, tile in enumerate(tiles):
             loop.append("DETECTOR", [stim.target_rec(-(total_m - i))],[tile.ancilla[0], tile.ancilla[1], 1, chrom_annot[tile.color]['Z']])
-
+        if noise is not None:
+            loop.append("Z_ERROR", self.ancilla, noise)
+            loop.append("X_ERROR", self.ancilla, noise)
         loop.append("TICK")
         loop.append("SHIFT_COORDS", [], [0,0,1])
         return loop
     
-    def _measure_rounds(self, tiles:dict, qa_index_map:dict, measures_per_round:int, chrom_annot:dict):
+    def _measure_rounds(self, tiles:dict, qa_index_map:dict, measures_per_round:int, chrom_annot:dict, noise=None):
         loop = stim.Circuit()
-
+        if noise is not None:
+            addnoise = True
+        else:
+            addnoise = False
+        
         # X 
-        self._measure_stabilizers(loop,tiles,qa_index_map, 'X')
+        self._measure_stabilizers(loop,tiles,qa_index_map, 'X', noise)
         for i, tile in enumerate(tiles):
             current_offset = -(len(tiles) - i)
             prev_offset = current_offset - measures_per_round
             loop.append("DETECTOR", [stim.target_rec(current_offset), stim.target_rec(prev_offset)], [tile.ancilla[0], tile.ancilla[1], 0, chrom_annot[tile.color]['X']])
-
+        if addnoise:
+            loop.append("Z_ERROR", self.ancilla, noise)
         loop.append("TICK")
         
         # Z
-        self._measure_stabilizers(loop,tiles,qa_index_map, 'Z')
+        self._measure_stabilizers(loop,tiles,qa_index_map, 'Z', noise)
         for i, tile in enumerate(tiles):
             current_offset = -(len(tiles) - i)
             prev_offset = current_offset - measures_per_round
             loop.append("DETECTOR", [stim.target_rec(current_offset), 
                                      stim.target_rec(prev_offset)], [tile.ancilla[0], tile.ancilla[1], 1, chrom_annot[tile.color]['Z']])
+        if addnoise:
+            loop.append("X_ERROR", self.ancilla, noise)
         loop.append("TICK")
         loop.append("SHIFT_COORDS", [], [0,0,1])
         return loop
 
-    def _measure_stabilizers(self, circuit:stim.Circuit, tiles:dict, qa_index_map:dict, basis:str):
+    def _measure_stabilizers(self, circuit:stim.Circuit, tiles:dict, qa_index_map:dict, basis:str, noise=None):
+        if noise is not None:
+            addnoise = True
+        else:
+            addnoise = False
         # group by edge directions
         # order based on https://www.researchgate.net/publication/384079892_Improving_Threshold_for_Fault-Tolerant_Color-Code_Quantum_Computing_by_Flagged_Weight_Optimization
         measure_dirs = [(-1,-1),(1,-1),(-2,0),(2,0),(-1,1),(1,1)]
+        #measure_dirs = list(reversed(measure_dirs))
 
         #TODO: add in flag gadgets implementation for reducing error-propagation paths
         # collect all edges doing CNOTs in these dirs + do them together
@@ -162,15 +184,25 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
                         cnot_groups[i].extend([q_idx, a_idx])
         if basis == 'X':
             circuit.append("RX", measured_a)
+            if addnoise:
+                circuit.append("Z_ERROR", measured_a, noise)
         else:
             circuit.append("R", measured_a)
+            if addnoise:
+                circuit.append("X_ERROR", measured_a, noise)
         for i,group in cnot_groups.items():
             circuit.append("CNOT", group)
+            if addnoise:
+                circuit.append("DEPOLARIZE2", group, noise)
+                #get unCNOTTED qubits in this operation
+                circuit.append("DEPOLARIZE1", [q for q in self.qubits if q not in group], noise)
             circuit.append("TICK")
         if basis=='X':
             circuit.append("MX", measured_a)
         else:
             circuit.append("M", measured_a)
+        if addnoise:
+            circuit.append("DEPOLARIZE1", self.qubits, noise)
 
 
     def add_noise_model_to_circuit(self):
