@@ -196,7 +196,7 @@ class QCCDCircuit(stim.Circuit):
         # TODO add importance subset sampling (see notability notes)
         # TODO speed up with sinter (see stim/getting_started)
         stimInstructions = self.circuitString(include_annotation=True)
-        #print(f'stimInstructions: {stimInstructions}')
+        print(f'stimInstructions: {stimInstructions}')
         stimIdxs: List[int] = []
         ions: List[Ion] = []
         for stimIdx, (ion, _) in self._ionMapping.items():

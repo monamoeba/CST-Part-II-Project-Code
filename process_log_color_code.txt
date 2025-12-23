@@ -6608,3 +6608,6 @@ SpawnProcess-1 - INFO - process exiting with exitcode 0
 SpawnProcess-1 - INFO - process exiting with exitcode 0
 SpawnProcess-1 - INFO - process exiting with exitcode 0
 SpawnProcess-1 - INFO - process exiting with exitcode 0
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 91 qubits and 11 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
