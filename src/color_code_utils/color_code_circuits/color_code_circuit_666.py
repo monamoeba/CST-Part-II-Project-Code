@@ -163,7 +163,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         # group by edge directions
         # order based on https://www.researchgate.net/publication/384079892_Improving_Threshold_for_Fault-Tolerant_Color-Code_Quantum_Computing_by_Flagged_Weight_Optimization
         measure_dirs = [(-1,-1),(1,-1),(-2,0),(2,0),(-1,1),(1,1)]
-        #measure_dirs = list(reversed(measure_dirs))
+        #measure_dirs = [(1,-1),(2,0),(-1,-1),(1,1),(-2,0),(-1,1)]
 
         #TODO: add in flag gadgets implementation for reducing error-propagation paths
         # collect all edges doing CNOTs in these dirs + do them together
