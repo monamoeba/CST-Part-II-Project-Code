@@ -20,6 +20,7 @@ from src.compiler.qccd_qubits_to_ions import *
 from src.compiler.qccd_ion_routing import *
 from src.compiler.qccd_WISE_ion_route import *
 from src.color_code_utils.color_code_circuits.color_code_circuit_666 import ColorCodeCircuit666
+from src.color_code_utils.color_code_circuits.color_code_chrom_circuit_666 import ColorCodeChromCircuit666
 import logging
 from multiprocessing import get_logger
 import chromobius
@@ -58,7 +59,7 @@ class QCCDCircuit(stim.Circuit):
     @classmethod
     def generate_color_code(cls, distance: int, rounds: int, tesselation:tuple) -> "QCCDCircuit":
         if tesselation == (6,6,6):
-            colorcode = ColorCodeCircuit666(distance, rounds)
+            colorcode = ColorCodeChromCircuit666(distance, rounds)
             circuit = colorcode.get_circuit()
             #for testing library implementation of color codes
             #colorcode = ColorCode(d=distance,rounds=rounds,circuit_type="tri")

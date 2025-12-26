@@ -109,7 +109,7 @@ def MergeUnderfilledClusters(
 
             for j in range(i+1, len(candidates)):
                 c2 = candidates[j]
-                dist = np.linalg.norm(c1[1] - c2[1])
+                dist = np.linalg.norm(c1[1] - c2[1]) 
                 if dist < mindist and c1[0]+c2[0] <= trapCapacity:
                     mindist = dist
                     bestpartner = j

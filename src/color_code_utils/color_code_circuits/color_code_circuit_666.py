@@ -9,6 +9,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         self.qubits = set()
         self.ancilla = set()
         self._tiles = None
+        self.all_coords = set()
         self.circuit = self._build_circuit(noise)
         
         
@@ -64,6 +65,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         qubitsCoords = {q for tile in tiles for q in tile.qubits}
         ancillaCoords = {tile.ancilla for tile in tiles}
         sorted_q_a = sorted(qubitsCoords | ancillaCoords)
+        self.all_coords = set(sorted_q_a)
         qa_index_map = {q:i for i,q in enumerate(sorted_q_a)}
         chrom_annot = {'red':{'X':0, 'Z':3},'green':{'X':1, 'Z':4},'blue':{'X':2, 'Z':5}}
         self.qubits = {qa_index_map[q] for q in qubitsCoords}

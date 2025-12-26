@@ -58,6 +58,10 @@ def regularPartition(measurementIons: Sequence[Ion], dataIons: Sequence[Ion], tr
             clustersD=list(_partitionClusterIons(dataIonsL, dataIonCoords, dIonsPerTrap)) 
             clustersM=list(_partitionClusterIons(measurementIonsL, measurementIonCoords, 1)) 
             clusters = list(clustersD)
+            #temp fix for empty measurement ions
+            #TODO: proper fix
+            if not measurementIonCoords.size:
+                return clusters
             for clusterM in clustersM:
                 cl = min(clusters, key=lambda c: (c[1][0]-clusterM[1][0])**2+(c[1][1]-clusterM[1][1])**2)
                 cIons = list(cl[0])+list(clusterM[0])
