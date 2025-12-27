@@ -78,17 +78,19 @@ def TriangularPartitionIons(
             if buckets[i]:
                 stack.append((subtriangles[i], np.array(buckets[i]), depth + 1))
     
-    result = np.empty(len(all_clusters), dtype=Tuple[Sequence[Ion], npt.NDArray[np.float64]])
+    #print(f'after triangular clusters: {all_clusters}')
+    result = []
     for i in range(len(all_clusters)):
         clust = all_clusters[i]
         clusterCentre = np.mean(clust, axis=0)
-        result[i] = (clust, clusterCentre)
+        result.append((clust, clusterCentre))
     coordsToIons = {(c[0], c[1]): i for c, i in zip(coords, ions)}
-
-    return result
+    final_clusters = _mergeUnderfilledClusters(result, trapCapacity, coordsToIons)
+    #print(f'final clusters: {final_clusters}')
+    return final_clusters
     # change to reduce overclustering - add some check to see if clusters can be merged together if under capacity
 
-def MergeUnderfilledClusters(
+def _mergeUnderfilledClusters(
     clusters: Sequence[Tuple[Sequence[Ion], npt.NDArray[np.float64]]], trapCapacity: int, coordsToIons: dict
 ) -> Sequence[Tuple[Sequence[Ion], npt.NDArray[np.float64]]]:
     
@@ -96,12 +98,16 @@ def MergeUnderfilledClusters(
 
     for i, (coords, center) in enumerate(clusters):
         toCheck.append({'size': len(coords), 'center': center, 'active': True, 'coords': coords})
-    
-    while True:
-        candidates = [t for t in toCheck if t['active']]
-        candidates.sort(lambda x: x[0])
-        merged = False
+    #distance threshold value - currently considering only 6.6.6 plaquette
+    #TODO change to accomodate threshold for diff tesselations
+    thresh = 2.5
 
+    while True:
+        
+        candidates = [t for t in toCheck if t['active']]
+        candidates.sort(key=lambda x: x['size'])
+        merged = False
+        #print(f'candidates = {candidates}')
         for i in range(len(candidates)):
             c1 = candidates[i]
             bestpartner = -1
@@ -109,18 +115,19 @@ def MergeUnderfilledClusters(
 
             for j in range(i+1, len(candidates)):
                 c2 = candidates[j]
-                dist = np.linalg.norm(c1[1] - c2[1]) 
-                if dist < mindist and c1[0]+c2[0] <= trapCapacity:
+                dist = np.linalg.norm(c1['center'] - c2['center'])
+                # avoid merging clusters too far away e.g. qubits not in same plaquette
+                if dist < mindist and dist<=thresh and c1['size']+c2['size'] <= trapCapacity:
                     mindist = dist
                     bestpartner = j
             if bestpartner != -1:
                 c2 = candidates[bestpartner]
                 
-                newsize = c1[0] + c2[0]
-                newcenter = (c1[0]*c1[1] + c2[0]*c2[1]) / newsize
+                newsize = c1['size'] + c2['size']
+                newcenter = (c1['size']*c1['center'] + c2['size']*c2['center']) / newsize
 
                 newcluster = {'size': newsize, 'center': newcenter, 'active': True,
-                              'coords': c1['coords'] + c2['coords']}
+                              'coords': np.concatenate((c1['coords'], c2['coords']), axis=0)}
                 
                 c1['active'] = False
                 c2['active'] = False
@@ -132,12 +139,27 @@ def MergeUnderfilledClusters(
             break
     
     finalcoords = [t['coords'] for t in toCheck if t['active']]
+    #print(f'final coords: {finalcoords}')
     res = []
     for clust in finalcoords:
         ions = [coordsToIons[(c[0], c[1])] for c in clust] 
         res.append(ions)
     return res
-        
+
+def regularColorPartition(measurementIons: Sequence[Ion], dataIons: Sequence[Ion], trapCapacity: int):
+    dIonsPerTrap = trapCapacity
+    measurementIonsL = list(measurementIons)
+    measurementIonCoords = np.array([list(ion.pos) for ion in measurementIonsL])
+    dataIonsL = list(dataIons)
+    dataIonCoords = np.array([list(ion.pos) for ion in dataIonsL])
+
+    ids = measurementIonsL + dataIonsL
+    coords = np.concatenate([measurementIonCoords, dataIonCoords])
+
+    clusters = TriangularPartitionIons(ids, coords, dIonsPerTrap)
+
+    return clusters
+
 def _ShapePartitionions(
     ions: Sequence[Ion], coords: npt.NDArray[np.float64], trapCapacity: int
 ) -> Sequence[Tuple[Sequence[Ion], npt.NDArray[np.float64]]]:

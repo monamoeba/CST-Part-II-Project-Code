@@ -1,0 +1,73 @@
+import pytest
+import numpy as np
+# Assuming these imports are correct in your local environment
+from src.utils.qccd_nodes import QubitIon
+from src.compiler.qccd_color_qubits_to_ions import regularColorPartition
+from src.color_code_utils.color_code_circuits.color_code_circuit_666 import ColorCodeCircuit666
+
+@pytest.fixture
+def create_ions():
+    """Fixture to create ions with specific positions."""
+    def _create_ions(positions):
+        ions = [QubitIon() for _ in positions]
+        for i, (x, y) in enumerate(positions):
+            if hasattr(ions[i], 'set'):
+                ions[i].set(ions[i].idx, x, y)
+        return ions
+    return _create_ions
+
+@pytest.fixture
+def initialise_positions(create_ions):
+    def _initPos(dist):
+        CCObj = ColorCodeCircuit666(dist, 2)
+        mids = CCObj.ancilla
+        qtoid = CCObj.qtoid
+        dcoords = []
+        mcoords = []
+        for coord in qtoid.keys():
+            if qtoid[coord] in mids:
+                mcoords.append(coord)
+            else:
+                dcoords.append(coord)
+        
+        dions = create_ions(dcoords)
+        mions = create_ions(mcoords)
+        return (mions, dions)
+    
+    return _initPos
+
+
+def test_small_capacity_small_dist_clustering(initialise_positions):
+    mions, dions = initialise_positions(3)
+    trap_capacity = 1
+    expected = len(mions) + len(dions)
+
+    clusters = regularColorPartition(mions, dions, trap_capacity)
+
+    assert len(clusters) == expected
+
+
+def test_small_capacity_large_dist_clustering(initialise_positions):
+    mions, dions = initialise_positions(9)
+    trap_capacity = 1
+    expected = len(mions) + len(dions)
+
+    clusters = regularColorPartition(mions, dions, trap_capacity)
+
+    assert len(clusters) == expected
+
+def test_high_capacity_small_dist_clustering(initialise_positions):
+    mions, dions = initialise_positions(3)
+    trap_capacity = 120
+
+    clusters = regularColorPartition(mions, dions, trap_capacity)
+
+    assert len(clusters) == 1
+
+def test_high_capacity_large_dist_clustering(initialise_positions):
+    mions, dions = initialise_positions(9)
+    trap_capacity = 120
+
+    clusters = regularColorPartition(mions, dions, trap_capacity)
+
+    assert len(clusters) == 1
