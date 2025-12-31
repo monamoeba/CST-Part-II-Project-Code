@@ -14,7 +14,7 @@ from src.compiler.qccd_parallelisation import *
 
 def TriangularPartitionIons(
     ions: Sequence[Ion], coords: npt.NDArray[np.float64], trapCapacity: int
-) -> Sequence[Tuple[Sequence[Ion], npt.NDArray[np.float64]]]:
+) -> Sequence[Tuple[Sequence[Ion], Tuple[float, float]]]:
     
     #ideally want to keep track of each triangle vertex regardless of which triangle it is in to make the maths easier
     # get vertices of outer triangle to use TriangleNode clustering
@@ -138,12 +138,14 @@ def _mergeUnderfilledClusters(
         if not merged:
             break
     
-    finalcoords = [t['coords'] for t in toCheck if t['active']]
+    finalCoordCenters = [(t['coords'],t['center']) for t in toCheck if t['active']]
+
     #print(f'final coords: {finalcoords}')
     res = []
-    for clust in finalcoords:
-        ions = [coordsToIons[(c[0], c[1])] for c in clust] 
-        res.append(ions)
+    for clust in finalCoordCenters:
+        ions = [coordsToIons[(c[0], c[1])] for c in clust[0]] 
+        cent = tuple(clust[1])
+        res.append((ions,cent))
     return res
 
 def regularColorPartition(measurementIons: Sequence[Ion], dataIons: Sequence[Ion], trapCapacity: int):

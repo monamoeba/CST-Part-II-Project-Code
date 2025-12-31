@@ -2,6 +2,7 @@ import pytest
 import numpy as np
 # Assuming these imports are correct in your local environment
 from src.utils.qccd_nodes import QubitIon
+from src.compiler.qccd_qubits_to_ions import arrangeClusters
 from src.compiler.qccd_color_qubits_to_ions import regularColorPartition
 from src.color_code_utils.color_code_circuits.color_code_circuit_666 import ColorCodeCircuit666
 
@@ -71,3 +72,10 @@ def test_high_capacity_large_dist_clustering(initialise_positions):
     clusters = regularColorPartition(mions, dions, trap_capacity)
 
     assert len(clusters) == 1
+
+def test_arrange_clusters(create_ions):
+    grid_positions = [(0,0), (1,1), (2,0), (2,2), (3,1), (3,3), (4,0), (4,2), (5,1) ,(6,0)]
+    clusters = [(create_ions([(i, j), (i, j)]), (i,j)) for i, j in grid_positions]
+    arranged_positions = arrangeClusters(clusters, grid_positions)
+    for (_, clpos), pos in zip(clusters, arranged_positions):
+        assert clpos == pos

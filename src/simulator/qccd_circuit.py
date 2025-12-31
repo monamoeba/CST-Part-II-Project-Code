@@ -19,6 +19,7 @@ from src.compiler.qccd_parallelisation import *
 from src.compiler.qccd_qubits_to_ions import *
 from src.compiler.qccd_ion_routing import *
 from src.compiler.qccd_WISE_ion_route import *
+from src.compiler.qccd_color_qubits_to_ions import *
 from src.color_code_utils.color_code_circuits.color_code_circuit_666 import ColorCodeCircuit666
 from src.color_code_utils.color_code_circuits.color_code_chrom_circuit_666 import ColorCodeChromCircuit666
 import logging
@@ -59,7 +60,7 @@ class QCCDCircuit(stim.Circuit):
     @classmethod
     def generate_color_code(cls, distance: int, rounds: int, tesselation:tuple) -> "QCCDCircuit":
         if tesselation == (6,6,6):
-            colorcode = ColorCodeChromCircuit666(distance, rounds)
+            colorcode = ColorCodeCircuit666(distance, rounds)
             circuit = colorcode.get_circuit()
             #for testing library implementation of color codes
             #colorcode = ColorCode(d=distance,rounds=rounds,circuit_type="tri")
@@ -346,8 +347,119 @@ class QCCDCircuit(stim.Circuit):
         instructions, barriers = self._parseCircuitString(dataQubitsIdxs=dataQubitIdxs)
         if (trapCapacity-1) * ((rows-1) * (2*cols-1)+cols) < len(self._ionMapping):
             raise ValueError("processCircuit: not enough traps")
-           
+        
         clusters=regularPartition(self._measurementIons, self._dataIons, trapCapacity)
+
+        cs, rs = cols, rows
+        allGridPos = []
+        for r in range(rs):
+            for c in range(cs):
+                allGridPos.append((2*c, 2*r))
+                if c < cs-1 and r<rs-1:
+                    allGridPos.append((2*c+1, 2*r+1)) 
+
+        gridPositions = hillClimbOnArrangeClusters(clusters, allGridPos=allGridPos)
+        gridPositions = [(c+padding, r+padding) for (c, r) in gridPositions]
+        rows = rows+2*padding
+        cols = cols+2*padding
+        trap_for_grid = {
+            (col, row): clusters[trapIdx]
+            for trapIdx, (col, row) in enumerate(gridPositions)
+        }
+        self._originalArrangement = {}
+
+        self._arch = QCCDArch()
+        traps_dict = {}
+        for row in range(rows):
+            for col in range(cols):
+                if (2*col, 2*row) in trap_for_grid:
+                    ions = trap_for_grid[(2*col, 2*row)][0]
+                else:
+                    ions = []
+                traps_dict[(2*col, 2*row)] = self._arch.addManipulationTrap(
+                    *self._gridToCoordinate((2*col, 2*row), trapCapacity),
+                    ions,
+                    color=self.TRAP_COLOR,
+                    isHorizontal=(rows==1),
+                    capacity=trapCapacity
+                )
+                self._originalArrangement[traps_dict[(2*col, 2*row)]] = ions
+
+            if row == rows-1:
+                break
+
+            for col in range(cols-1):
+                if (2*col+1, 2*row+1) in trap_for_grid:
+                    ions = trap_for_grid[(2*col+1, 2*row+1)][0]
+                else:
+                    ions = []
+                traps_dict[(2*col+1, 2*row+1)] = self._arch.addManipulationTrap(
+                    *self._gridToCoordinate((2*col+1, 2*row+1), trapCapacity),
+                    ions,
+                    color=self.TRAP_COLOR,
+                    isHorizontal=True,
+                    capacity=trapCapacity
+                )
+                self._originalArrangement[traps_dict[(2*col+1, 2*row+1)]] = ions
+            
+        if rows == 1:
+            for (col, r), trap_node in traps_dict.items():
+                if (col + 2, r) in traps_dict:
+                    self._arch.addEdge(trap_node, traps_dict[(col + 2, r)])
+        else:
+            junctions_dict = {}
+            for (col, row), trap_node in traps_dict.items():
+                # Add vertical edges (between even rows)
+                if col % 2 == 0 and (col, row + 2) in traps_dict:
+                    junction = self._arch.addJunction(
+                        *(
+                            (
+                                self._gridToCoordinate((col, row), trapCapacity)
+                                + self._gridToCoordinate((col, row + 2), trapCapacity)
+                            )
+                            / 2
+                        ),
+                        color=self.JUNCTION_COLOR,
+                    )
+                    junctions_dict[(col, row+1)] = junction
+                    self._arch.addEdge(trap_node, junction)
+                    self._arch.addEdge(junction, traps_dict[(col, row + 2)])
+
+            # Add horizontal edges between traps and junctions in the same row
+            for row in range(rows-1):
+                for col in range(cols - 1):
+                    if (2*col, 2*row+1) in junctions_dict and (
+                        2*col + 1,
+                        2*row + 1,
+                    ) in traps_dict:
+                        self._arch.addEdge(
+                            junctions_dict[(2*col, 2*row+1)], traps_dict[(2*col + 1, 2*row+1)]
+                        )
+                    if (2*col+1, 2*row+1) in traps_dict and (
+                        2*col + 2,
+                        2*row + 1,
+                    ) in junctions_dict:
+                        self._arch.addEdge(
+                            traps_dict[(2*col+1, 2*row+1)], junctions_dict[(2*col + 2, 2*row+1)]
+                        )
+
+        if any(i.parent is None for i in self._arch.ions.values()):
+            raise ValueError(f"Ions not in traps for {trapCapacity} and {len(self._measurementIons)+len(self._dataIons)}")
+        return self._arch, (instructions, barriers)
+    
+    def processColorCircuitAugmentedGrid(
+        self,
+        trapCapacity: int = 2,
+        rows: int = 1,
+        cols: int = 5,
+        padding: int = 1,
+        dataQubitIdxs: Optional[Sequence[int]]=None,
+    ) -> Tuple[QCCDArch, Tuple[Sequence[QubitOperation], Sequence[int]]]:        
+        instructions, barriers = self._parseCircuitString(dataQubitsIdxs=dataQubitIdxs)
+        if (trapCapacity-1) * ((rows-1) * (2*cols-1)+cols) < len(self._ionMapping):
+            raise ValueError("processCircuit: not enough traps")
+        
+        clusters=regularColorPartition(self._measurementIons, self._dataIons, trapCapacity)
 
         cs, rs = cols, rows
         allGridPos = []
@@ -496,6 +608,73 @@ class QCCDCircuit(stim.Circuit):
             raise ValueError("processCircuit: not enough traps")
            
         clusters=regularPartition(self._measurementIons, self._dataIons, trapCapacity)
+
+        allGridPos = []
+        for r in range(traps):
+            allGridPos.append((0, r))
+
+        gridPositions = arrangeClusters(clusters, allGridPos=allGridPos)
+
+        trap_for_grid = {
+            row: clusters[trapIdx]
+            for trapIdx, (_, row) in enumerate(gridPositions)
+        }
+        self._originalArrangement = {}
+
+        self._arch = QCCDArch()
+        traps_dict = {}
+        for row in range(traps):
+            if row in trap_for_grid:
+                ions = trap_for_grid[row][0]
+            else:
+                ions = []
+            traps_dict[row] = self._arch.addManipulationTrap(
+                *self._gridToCoordinate((0, row), trapCapacity),
+                ions,
+                color=self.TRAP_COLOR,
+                isHorizontal=True,
+                capacity=trapCapacity
+            )
+            self._originalArrangement[traps_dict[row]] = ions
+
+
+        switch_cost = 1
+        junctions_dict = {}
+        
+        for row, trap_node in traps_dict.items():
+            for i in range(switch_cost):
+                junction2 = self._arch.addJunction(
+                    *self._gridToCoordinate((i+1, row), trapCapacity),
+                    color=self.JUNCTION_COLOR,
+                )
+                junctions_dict[(i+1, row)] = junction2
+                if i==0:
+                    self._arch.addEdge(trap_node, junction2)
+                else:
+                    self._arch.addEdge(junctions_dict[(i, row)], junction2)
+
+        for row, trap_node in traps_dict.items(): 
+            junction2 = junctions_dict[(switch_cost, row)]
+            for row2 in range(traps):
+                if row==row2:
+                    continue
+               
+                junction1 = junctions_dict[(switch_cost, row2)]
+                self._arch.addEdge(junction1, junction2)
+
+        return self._arch, (instructions, barriers)
+    
+    def processColorCircuitNetworkedGrid(self,
+        trapCapacity: int = 2,
+        traps: int = 1,
+        dataQubitIdxs: Optional[Sequence[int]]=None
+        # capacityIsInTermsOfDataIons: bool = False
+    ) -> Tuple[QCCDArch, Tuple[Sequence[QubitOperation], Sequence[int]]]:        
+        instructions, barriers = self._parseCircuitString(dataQubitsIdxs=dataQubitIdxs)
+        if (trapCapacity-1) * traps< len(self._ionMapping):
+            raise ValueError("processCircuit: not enough traps")
+           
+        clusters=regularColorPartition(self._measurementIons, self._dataIons, trapCapacity)
 
         allGridPos = []
         for r in range(traps):
@@ -757,7 +936,7 @@ def process_color_code_circuit(distance, capacity, gate_improvements, num_shots,
 
     logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {nrowsNeeded} rows")
 
-    arch, (instructions, _) = circuit.processCircuitAugmentedGrid(rows=nrowsNeeded, cols=nrowsNeeded, trapCapacity=capacity, dataQubitIdxs=circuit.dataQubitsIdxs)
+    arch, (instructions, _) = circuit.processColorCircuitAugmentedGrid(rows=nrowsNeeded, cols=nrowsNeeded, trapCapacity=capacity, dataQubitIdxs=circuit.dataQubitsIdxs)
    
     arch.refreshGraph()
 
