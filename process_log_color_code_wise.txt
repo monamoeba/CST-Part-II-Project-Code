@@ -4039,3 +4039,1274 @@ SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, c
 SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 11 and tesselation (6, 6, 6)
 SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 11 and tesselation (6, 6, 6)
 SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+pacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+pacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+pacity 120 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+acity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+acity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-3 - INFO - process exiting with exSpawnProcess-1 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
