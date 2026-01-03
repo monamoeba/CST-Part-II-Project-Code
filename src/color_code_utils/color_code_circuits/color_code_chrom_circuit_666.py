@@ -32,7 +32,8 @@ class ColorCodeChromCircuit666(AbstractColorCodeCircuit):
                     tile = ColorCodeTile(
                         qubits = [(x+dx, y+dy) for dx,dy in dirs if self._within_bounds(x+dx,y+dy,side)],
                         ancilla = (x,y),
-                        color = tile_color)
+                        color = tile_color,
+                        shape = 6)
                     tiles.append(tile)
                 patternptr += 1
         return tiles

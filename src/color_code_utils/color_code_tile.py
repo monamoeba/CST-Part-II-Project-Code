@@ -7,6 +7,7 @@ class ColorCodeTile:
     qubits: list
     ancilla: tuple
     color: str
+    shape: int
 
 #SVG aesthetics
 color_map = {
