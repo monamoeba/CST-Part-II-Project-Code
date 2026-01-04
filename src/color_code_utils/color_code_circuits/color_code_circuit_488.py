@@ -6,7 +6,7 @@ import math
 class ColorCodeCircuit488(AbstractColorCodeCircuit):
     
     def __init__(self, distance, rounds, noise=None):
-        #super().__init__(distance, rounds)
+        super().__init__(distance, rounds)
         self.qubits = set()
         self.ancilla = set()
         self._tiles = self._generate_layout(distance)
@@ -178,42 +178,45 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
     def _build_circuit(self, rounds, noise=None):
         """Implementation for building the 4.8.8 syndrome extraction circuit """
         circ = stim.Circuit()
+        add_noise = noise is not None
 
         for tile in self._tiles:
             self.qubits.update(q for q in tile.qubits)
             self.ancilla.add(tile.ancilla)
         sorted_q_a = sorted(self.qubits | self.ancilla)
         qa_index_map = {q:i for i,q in enumerate(sorted_q_a)}
-
+        qubit_idxs = []
         #append qubit coordinates
         for q,i in qa_index_map.items():
             circ.append("QUBIT_COORDS", [i], q)
+            qubit_idxs.append(i)
 
         #set qubits to 0
-        circ.append("R", [qa_index_map[q] for q in self.qubits])
-        print(f'all qubits: {self.qubits}')
-        print(f'all ancilla: {self.ancilla}')
-        circ.append("TICK")
-
-        #measure observable
-        circ += self._measure_obs(qa_index_map)
+        circ.append("R", qubit_idxs)
+        if add_noise:
+            circ.append("X_ERROR", qubit_idxs, noise)
         circ.append("TICK")
 
         #0th/initialisation round
-        circ += self._measure_stab(qa_index_map, False)
+        circ += self._measure_stab(qa_index_map, False, noise)
 
         #steady state rounds
-        circ += (rounds - 1) * self._measure_stab(qa_index_map, True)
+        circ += (rounds - 1) * self._measure_stab(qa_index_map, True, noise, noise)
         circ += self._measure_stab(qa_index_map, True)
 
         #final observable readout
-        circ += self._measure_obs(qa_index_map)
+        circ += self._measure_obs(qa_index_map, noise)
 
         return circ
 
-    def _stab_measure(self, qtoimap, basis):
+    def _stab_measure(self, qtoimap, basis, noise=None, measure_noise=None):
         stab_circ = stim.Circuit()
+        add_noise = noise is not None
+        add_m_noise = measure_noise is not None
         ancilla_idxs = [qtoimap[a] for a in self.ancilla]
+        all_idxs = {qtoimap[q] for q in self.qubits}
+        all_idxs.update(ancilla_idxs)
+        
         oct_dirs = [(-1,3),(1,3),(-3,1),(3,1),(-3,-1),(3,-1),(-1,-3),(1,-3)]
         oct0_dirs = [(-1,2),(1,2),(-3,0),(3,0),None,None,None,None]
         oct1_dirs = [None,None,None,(2,2),None,(2,0),(-2,-2),(0,-2)]
@@ -221,10 +224,15 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
         square_dirs = [(-1,1),(1,1),(-1,-1),(1,-1)]
         if basis == 'X':
             stab_circ.append("RX", ancilla_idxs)
+            if add_noise:
+                stab_circ.append("Z_ERROR", ancilla_idxs, noise)
         else:
             stab_circ.append("R", ancilla_idxs)
+            if add_noise:
+                stab_circ.append("X_ERROR", ancilla_idxs, noise)
         for step in range(8):
             measurements = []
+            depolarise_ops = set()
             for tile in self._tiles:
                 ax,ay = tile.ancilla
                 aidx = qtoimap[tile.ancilla]
@@ -253,34 +261,70 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
                 didx = qtoimap[(qx,qy)]
                 if basis == 'Z':  
                     measurements.extend([didx, aidx])
+                    depolarise_ops.update([didx, aidx])
                 else:
                     measurements.extend([aidx, didx])
+                    depolarise_ops.update([aidx, didx])
             if measurements:
                 stab_circ.append("CNOT", measurements)
+                if add_noise:
+                    #cnot noise + idle noise
+                    stab_circ.append("DEPOLARIZE2", depolarise_ops, noise)
+                    stab_circ.append("DEPOLARIZE1", [i for i in all_idxs if i not in depolarise_ops], noise)
                 stab_circ.append("TICK")
-
-        stab_circ.append("M", [qtoimap[a] for a in self.ancilla])
+        #measurement
+        if add_m_noise:
+            if basis == "Z":   
+                stab_circ.append("M", ancilla_idxs, measure_noise)
+                
+            else:
+                stab_circ.append("MX", ancilla_idxs, measure_noise)
+        else:
+            if basis == "Z":   
+                stab_circ.append("M", ancilla_idxs)
+                
+            else:
+                stab_circ.append("MX", ancilla_idxs)
         return stab_circ
 
-    def _measure_obs(self, qtoimap):
-        #measure Z + add observable
+    def _measure_obs(self, qtoimap, noise):
         obs_circ = stim.Circuit()
+        
+        # measure qubits
+        sorted_qs = sorted(list(self.qubits))
+        q_idxs = [qtoimap[q] for q in sorted_qs]
+        obs_circ.append("M", q_idxs, noise)
 
-        obs_circ += self._stab_measure(qtoimap, 'Z')
-        obs_circ.append("OBSERVABLE_INCLUDE", stim.target_rec(-1), 0)
+        # final z-detectors
+        q_rec_offsets = {q_idx : -len(q_idxs) + k for k,q_idx in enumerate(q_idxs)}
+        a_index = {a:i for i,a in enumerate(self.ancilla)}
+        for i, tile in enumerate(self._tiles):
+            targets = [stim.target_rec(q_rec_offsets[qtoimap[q]]) for q in tile.qubits]
+            a_offset = -len(q_idxs) - (len(self._tiles) - a_index[tile.ancilla])
+            targets.append(stim.target_rec(a_offset))
+            chrom_color = {'red':0,'green':1,'blue':2}[tile.color]
+            chrom_annotation = chrom_color + 3
+            obs_circ.append("DETECTOR", targets, [tile.ancilla[0], tile.ancilla[1], 0, chrom_annotation])
 
+        # logical observable
+        logical_z_qubits = [q for q in sorted_qs if q[1]==0]
+        obs_targets = [stim.target_rec(q_rec_offsets[qtoimap[q]]) for q in logical_z_qubits]
+        obs_circ.append("OBSERVABLE_INCLUDE", obs_targets, 0)
+        
         return obs_circ
 
 
-    def _measure_stab(self, qtoimap, include_detectors):
+    def _measure_stab(self, qtoimap, include_detectors, data_noise=None, measure_noise=None):
         stab_circ = stim.Circuit()
+        add_noise = data_noise is not None
+        add_m_noise = measure_noise is not None
         oct_dirs = [(-1,3),(1,3),(-3,1),(3,1),(-3,-1),(3,-1),(1,-3),(-1,-3)]
         square_dirs = [(-1,1),(1,1),(-1,-1),(1,-1)]
         
 
         for basis in ['X', 'Z']:
             #reset ancillas
-            stab_circ += self._stab_measure(qtoimap, basis)
+            stab_circ += self._stab_measure(qtoimap, basis, data_noise, measure_noise)
         
         if include_detectors:
             num_stabilizers = len(self._tiles) * 2
@@ -293,6 +337,8 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
                     stab_circ.append("DETECTOR", [stim.target_rec(-(num_stabilizers - offset)),
                                           stim.target_rec(-num_stabilizers*2+offset)],
                                           [ax, ay, 0, chrom_annotation])
+        if add_noise:
+            stab_circ.append("DEPOLARIZE1", [qtoimap[q] for q in self.qubits], data_noise)
         
         stab_circ.append("SHIFT_COORDS", [], [0,0,1])
         stab_circ.append("TICK")
