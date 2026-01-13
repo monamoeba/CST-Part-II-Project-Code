@@ -179,7 +179,8 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
         """Implementation for building the 4.8.8 syndrome extraction circuit """
         circ = stim.Circuit()
         add_noise = noise is not None
-
+        self._tiles.sort(key=lambda x:x.ancilla)
+        
         for tile in self._tiles:
             self.qubits.update(q for q in tile.qubits)
             self.ancilla.add(tile.ancilla)
@@ -195,6 +196,8 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
         circ.append("R", qubit_idxs)
         if add_noise:
             circ.append("X_ERROR", qubit_idxs, noise)
+        #print(f'all qubits: {self.qubits}')
+        #print(f'all ancilla: {self.ancilla}')
         circ.append("TICK")
 
         #0th/initialisation round
@@ -202,7 +205,7 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
 
         #steady state rounds
         circ += (rounds - 1) * self._measure_stab(qa_index_map, True, noise, noise)
-        circ += self._measure_stab(qa_index_map, True)
+        #circ += self._measure_stab(qa_index_map, True)
 
         #final observable readout
         circ += self._measure_obs(qa_index_map, noise)
@@ -213,7 +216,7 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
         stab_circ = stim.Circuit()
         add_noise = noise is not None
         add_m_noise = measure_noise is not None
-        ancilla_idxs = [qtoimap[a] for a in self.ancilla]
+        ancilla_idxs = [qtoimap[a.ancilla] for a in self._tiles]
         all_idxs = {qtoimap[q] for q in self.qubits}
         all_idxs.update(ancilla_idxs)
         
@@ -230,6 +233,7 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
             stab_circ.append("R", ancilla_idxs)
             if add_noise:
                 stab_circ.append("X_ERROR", ancilla_idxs, noise)
+        stab_circ.append("TICK")
         for step in range(8):
             measurements = []
             depolarise_ops = set()
@@ -269,7 +273,8 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
                 stab_circ.append("CNOT", measurements)
                 if add_noise:
                     #cnot noise + idle noise
-                    stab_circ.append("DEPOLARIZE2", depolarise_ops, noise)
+                    stab_circ.append("DEPOLARIZE2", depolarise_ops, noise)#temp replace w 2 dep 1s for 
+                    #stab_circ.append("DEPOLARIZE1", depolarise_ops, noise)#horrible wont recommend
                     stab_circ.append("DEPOLARIZE1", [i for i in all_idxs if i not in depolarise_ops], noise)
                 stab_circ.append("TICK")
         #measurement
@@ -285,6 +290,7 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
                 
             else:
                 stab_circ.append("MX", ancilla_idxs)
+        stab_circ.append("TICK")
         return stab_circ
 
     def _measure_obs(self, qtoimap, noise):
@@ -300,7 +306,7 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
         a_index = {a:i for i,a in enumerate(self.ancilla)}
         for i, tile in enumerate(self._tiles):
             targets = [stim.target_rec(q_rec_offsets[qtoimap[q]]) for q in tile.qubits]
-            a_offset = -len(q_idxs) - (len(self._tiles) - a_index[tile.ancilla])
+            a_offset = -len(q_idxs) - (len(self._tiles) - i)
             targets.append(stim.target_rec(a_offset))
             chrom_color = {'red':0,'green':1,'blue':2}[tile.color]
             chrom_annotation = chrom_color + 3
@@ -339,8 +345,9 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
                                           [ax, ay, 0, chrom_annotation])
         if add_noise:
             stab_circ.append("DEPOLARIZE1", [qtoimap[q] for q in self.qubits], data_noise)
-        
-        stab_circ.append("SHIFT_COORDS", [], [0,0,1])
+
+        if include_detectors:
+            stab_circ.append("SHIFT_COORDS", [], [0,0,1])
         stab_circ.append("TICK")
 
         return stab_circ
