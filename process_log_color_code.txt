@@ -19425,3 +19425,1416 @@ SpawnProcess-3 - INFO - process exiting with exitcode 0
 MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
 MainProcess - INFO - Processing circuit with 91 qubits and 11 rows
 MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-10 - INFO - Starting circuit generation for distance 3, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-8 - INFO - Starting circuit generation for distance 3, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 3, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-11 - INFO - Starting circuit generation for distance 3, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-9 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-11 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 3, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 3, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 3, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 3, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 3, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 3, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 3, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 3, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 3, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-12 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 3, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 3, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 3, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-10 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - 3 11 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.385201, 0.118024, 0.062092]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 220}, 'DACs': {'Forwarding': 220}, 'Capacity': 11, 'Distance': 3}
+SpawnProcess-5 - INFO - Finished processing for distance 3 and capacity 11
+SpawnProcess-5 - INFO - Starting circuit generation for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-5 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - 3 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.384695, 0.118582, 0.062761]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 200}, 'DACs': {'Forwarding': 200}, 'Capacity': 10, 'Distance': 3}
+SpawnProcess-7 - INFO - Finished processing for distance 3 and capacity 10
+SpawnProcess-7 - INFO - Starting circuit generation for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-7 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-3 - INFO - 3 6 Forwarding = {'ElapsedTime': {'Forwarding': 0.014515000000000002}, 'Operations': {'Forwarding': 560}, 'MeanConcurrency': {'Forwarding': np.float64(2.0134228187919465)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.328941, 0.089926, 0.046938]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.014659440387948483), np.float64(0.002931888077589699), np.float64(0.0014659440387948496)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.014460702155376334), np.float64(0.0028921404310752667), np.float64(0.0014460702155376334)]}, 'Electrodes': {'Forwarding': 600}, 'DACs': {'Forwarding': 600}, 'Capacity': 6, 'Distance': 3}
+SpawnProcess-3 - INFO - Finished processing for distance 3 and capacity 6
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - 3 7 Forwarding = {'ElapsedTime': {'Forwarding': 0.015915000000000002}, 'Operations': {'Forwarding': 560}, 'MeanConcurrency': {'Forwarding': np.float64(1.8315565031982943)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.330587, 0.091608, 0.047292]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.014876533555290023), np.float64(0.0029753067110580055), np.float64(0.0014876533555290027)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.014659052312920185), np.float64(0.0029318104625840383), np.float64(0.0014659052312920192)]}, 'Electrodes': {'Forwarding': 680}, 'DACs': {'Forwarding': 680}, 'Capacity': 7, 'Distance': 3}
+SpawnProcess-8 - INFO - Finished processing for distance 3 and capacity 7
+SpawnProcess-8 - INFO - Starting circuit generation for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-8 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - 3 9 Forwarding = {'ElapsedTime': {'Forwarding': 0.015915000000000002}, 'Operations': {'Forwarding': 560}, 'MeanConcurrency': {'Forwarding': np.float64(1.8315565031982943)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.329868, 0.091668, 0.047686]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.014876533555290023), np.float64(0.0029753067110580055), np.float64(0.0014876533555290027)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.014659052312920185), np.float64(0.0029318104625840383), np.float64(0.0014659052312920192)]}, 'Electrodes': {'Forwarding': 840}, 'DACs': {'Forwarding': 840}, 'Capacity': 9, 'Distance': 3}
+SpawnProcess-11 - INFO - Finished processing for distance 3 and capacity 9
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-11 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - 3 12 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.385219, 0.118654, 0.062213]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 240}, 'DACs': {'Forwarding': 240}, 'Capacity': 12, 'Distance': 3}
+SpawnProcess-4 - INFO - 3 12 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.385219, 0.118654, 0.062213]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 240}, 'DACs': {'Forwarding': 240}, 'Capacity': 12, 'Distance': 3}
+SpawnProcess-4 - INFO - Finished processing for distance 3 and capacity 12
+SpawnProcess-4 - INFO - Finished processing for distance 3 and capacity 12
+SpawnProcess-12 - INFO - 3 15 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.385195, 0.118655, 0.062222]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 300}, 'DACs': {'Forwarding': 300}, 'Capacity': 15, 'Distance': 3}
+SpawnProcess-12 - INFO - Finished processing for distance 3 and capacity 15
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-11 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-12 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-12 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-9 - INFO - 3 8 Forwarding = {'ElapsedTime': {'Forwarding': 0.015915000000000002}, 'Operations': {'Forwarding': 560}, 'MeanConcurrency': {'Forwarding': np.float64(1.8315565031982943)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.331019, 0.09145, 0.047266]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.014876533555290023), np.float64(0.0029753067110580055), np.float64(0.0014876533555290027)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.014659052312920185), np.float64(0.0029318104625840383), np.float64(0.0014659052312920192)]}, 'Electrodes': {'Forwarding': 760}, 'DACs': {'Forwarding': 760}, 'Capacity': 8, 'Distance': 3}
+SpawnProcess-9 - INFO - Finished processing for distance 3 and capacity 8
+SpawnProcess-9 - INFO - Starting circuit generation for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-9 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - 3 14 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.384511, 0.118704, 0.062185]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 280}, 'DACs': {'Forwarding': 280}, 'Capacity': 14, 'Distance': 3}
+SpawnProcess-1 - INFO - Finished processing for distance 3 and capacity 14
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 5, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-10 - INFO - 3 30 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.384597, 0.118576, 0.062527]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 600}, 'DACs': {'Forwarding': 600}, 'Capacity': 30, 'Distance': 3}
+SpawnProcess-10 - INFO - 3 30 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.384597, 0.118576, 0.062527]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 600}, 'DACs': {'Forwarding': 600}, 'Capacity': 30, 'Distance': 3}
+SpawnProcess-10 - INFO - Finished processing for distance 3 and capacity 30
+SpawnProcess-10 - INFO - Finished processing for distance 3 and capacity 30
+SpawnProcess-2 - INFO - 3 13 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.385762, 0.118011, 0.062212]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 260}, 'DACs': {'Forwarding': 260}, 'Capacity': 13, 'Distance': 3}
+SpawnProcess-2 - INFO - 3 13 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.385762, 0.118011, 0.062212]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 260}, 'DACs': {'Forwarding': 260}, 'Capacity': 13, 'Distance': 3}
+SpawnProcess-2 - INFO - Finished processing for distance 3 and capacity 13
+SpawnProcess-2 - INFO - Finished processing for distance 3 and capacity 13
+SpawnProcess-10 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-10 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-10 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-10 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-8 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-8 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-8 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-11 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-11 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-11 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - 3 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.017435000000000006}, 'Operations': {'Forwarding': 663}, 'MeanConcurrency': {'Forwarding': np.float64(1.9181494661921707)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.331589, 0.090734, 0.04748]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.015416318752027619), np.float64(0.003083263750405524), np.float64(0.001541631875202762)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01507585804012348), np.float64(0.003015171608024696), np.float64(0.001507585804012348)]}, 'Electrodes': {'Forwarding': 520}, 'DACs': {'Forwarding': 520}, 'Capacity': 5, 'Distance': 3}
+SpawnProcess-6 - INFO - Finished processing for distance 3 and capacity 5
+SpawnProcess-6 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-6 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - 3 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.384578, 0.11827, 0.062154]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 3}
+SpawnProcess-5 - INFO - 3 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.384578, 0.11827, 0.062154]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 3}
+SpawnProcess-5 - INFO - Finished processing for distance 3 and capacity 60
+SpawnProcess-5 - INFO - Finished processing for distance 3 and capacity 60
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-5 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-5 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - 3 120 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.384561, 0.118146, 0.062442]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 2400}, 'DACs': {'Forwarding': 2400}, 'Capacity': 120, 'Distance': 3}
+SpawnProcess-7 - INFO - 3 120 Forwarding = {'ElapsedTime': {'Forwarding': 0.011359999999999967}, 'Operations': {'Forwarding': 317}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 317}, 'LogicalErrorRates': {'Forwarding': [0.384561, 0.118146, 0.062442]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.0186250796059214), np.float64(0.003725015921184279), np.float64(0.0018625079605921395)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01911517077838216), np.float64(0.0038230341556764343), np.float64(0.0019115170778382172)]}, 'Electrodes': {'Forwarding': 2400}, 'DACs': {'Forwarding': 2400}, 'Capacity': 120, 'Distance': 3}
+SpawnProcess-7 - INFO - Finished processing for distance 3 and capacity 120
+SpawnProcess-7 - INFO - Finished processing for distance 3 and capacity 120
+SpawnProcess-7 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-7 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-7 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - 5 13 Forwarding = {'ElapsedTime': {'Forwarding': 0.04276499999999997}, 'Operations': {'Forwarding': 1509}, 'MeanConcurrency': {'Forwarding': np.float64(1.7012888551933283)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.433984, 0.074332, 0.027501]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02158133372388898), np.float64(0.004316266744777797), np.float64(0.0021581333723888984)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.021450517678669588), np.float64(0.004290103535733922), np.float64(0.002145051767866961)]}, 'Electrodes': {'Forwarding': 1100}, 'DACs': {'Forwarding': 1100}, 'Capacity': 13, 'Distance': 5}
+SpawnProcess-3 - INFO - 5 13 Forwarding = {'ElapsedTime': {'Forwarding': 0.04276499999999997}, 'Operations': {'Forwarding': 1509}, 'MeanConcurrency': {'Forwarding': np.float64(1.7012888551933283)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.433984, 0.074332, 0.027501]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02158133372388898), np.float64(0.004316266744777797), np.float64(0.0021581333723888984)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.021450517678669588), np.float64(0.004290103535733922), np.float64(0.002145051767866961)]}, 'Electrodes': {'Forwarding': 1100}, 'DACs': {'Forwarding': 1100}, 'Capacity': 13, 'Distance': 5}
+SpawnProcess-3 - INFO - 5 13 Forwarding = {'ElapsedTime': {'Forwarding': 0.04276499999999997}, 'Operations': {'Forwarding': 1509}, 'MeanConcurrency': {'Forwarding': np.float64(1.7012888551933283)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.433984, 0.074332, 0.027501]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02158133372388898), np.float64(0.004316266744777797), np.float64(0.0021581333723888984)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.021450517678669588), np.float64(0.004290103535733922), np.float64(0.002145051767866961)]}, 'Electrodes': {'Forwarding': 1100}, 'DACs': {'Forwarding': 1100}, 'Capacity': 13, 'Distance': 5}
+SpawnProcess-3 - INFO - 5 13 Forwarding = {'ElapsedTime': {'Forwarding': 0.04276499999999997}, 'Operations': {'Forwarding': 1509}, 'MeanConcurrency': {'Forwarding': np.float64(1.7012888551933283)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.433984, 0.074332, 0.027501]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02158133372388898), np.float64(0.004316266744777797), np.float64(0.0021581333723888984)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.021450517678669588), np.float64(0.004290103535733922), np.float64(0.002145051767866961)]}, 'Electrodes': {'Forwarding': 1100}, 'DACs': {'Forwarding': 1100}, 'Capacity': 13, 'Distance': 5}
+SpawnProcess-3 - INFO - Finished processing for distance 5 and capacity 13
+SpawnProcess-3 - INFO - Finished processing for distance 5 and capacity 13
+SpawnProcess-3 - INFO - Finished processing for distance 5 and capacity 13
+SpawnProcess-3 - INFO - Finished processing for distance 5 and capacity 13
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - 5 12 Forwarding = {'ElapsedTime': {'Forwarding': 0.044069999999999984}, 'Operations': {'Forwarding': 1582}, 'MeanConcurrency': {'Forwarding': np.float64(1.8109710896960711)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.429631, 0.071275, 0.027281]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02111605766110213), np.float64(0.004223211532220425), np.float64(0.0021116057661102125)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.021016040583895442), np.float64(0.004203208116779091), np.float64(0.0021016040583895453)]}, 'Electrodes': {'Forwarding': 1020}, 'DACs': {'Forwarding': 1020}, 'Capacity': 12, 'Distance': 5}
+SpawnProcess-4 - INFO - 5 12 Forwarding = {'ElapsedTime': {'Forwarding': 0.044069999999999984}, 'Operations': {'Forwarding': 1582}, 'MeanConcurrency': {'Forwarding': np.float64(1.8109710896960711)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.429631, 0.071275, 0.027281]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02111605766110213), np.float64(0.004223211532220425), np.float64(0.0021116057661102125)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.021016040583895442), np.float64(0.004203208116779091), np.float64(0.0021016040583895453)]}, 'Electrodes': {'Forwarding': 1020}, 'DACs': {'Forwarding': 1020}, 'Capacity': 12, 'Distance': 5}
+SpawnProcess-4 - INFO - 5 12 Forwarding = {'ElapsedTime': {'Forwarding': 0.044069999999999984}, 'Operations': {'Forwarding': 1582}, 'MeanConcurrency': {'Forwarding': np.float64(1.8109710896960711)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.429631, 0.071275, 0.027281]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02111605766110213), np.float64(0.004223211532220425), np.float64(0.0021116057661102125)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.021016040583895442), np.float64(0.004203208116779091), np.float64(0.0021016040583895453)]}, 'Electrodes': {'Forwarding': 1020}, 'DACs': {'Forwarding': 1020}, 'Capacity': 12, 'Distance': 5}
+SpawnProcess-4 - INFO - 5 12 Forwarding = {'ElapsedTime': {'Forwarding': 0.044069999999999984}, 'Operations': {'Forwarding': 1582}, 'MeanConcurrency': {'Forwarding': np.float64(1.8109710896960711)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.429631, 0.071275, 0.027281]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02111605766110213), np.float64(0.004223211532220425), np.float64(0.0021116057661102125)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.021016040583895442), np.float64(0.004203208116779091), np.float64(0.0021016040583895453)]}, 'Electrodes': {'Forwarding': 1020}, 'DACs': {'Forwarding': 1020}, 'Capacity': 12, 'Distance': 5}
+SpawnProcess-4 - INFO - Finished processing for distance 5 and capacity 12
+SpawnProcess-4 - INFO - Finished processing for distance 5 and capacity 12
+SpawnProcess-4 - INFO - Finished processing for distance 5 and capacity 12
+SpawnProcess-4 - INFO - Finished processing for distance 5 and capacity 12
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - 5 11 Forwarding = {'ElapsedTime': {'Forwarding': 0.04473999999999999}, 'Operations': {'Forwarding': 1657}, 'MeanConcurrency': {'Forwarding': np.float64(1.9408369408369408)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.422822, 0.06663, 0.025204]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020621089295813026), np.float64(0.004124217859162606), np.float64(0.002062108929581303)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.020476681475059277), np.float64(0.004095336295011854), np.float64(0.002047668147505927)]}, 'Electrodes': {'Forwarding': 940}, 'DACs': {'Forwarding': 940}, 'Capacity': 11, 'Distance': 5}
+SpawnProcess-2 - INFO - 5 11 Forwarding = {'ElapsedTime': {'Forwarding': 0.04473999999999999}, 'Operations': {'Forwarding': 1657}, 'MeanConcurrency': {'Forwarding': np.float64(1.9408369408369408)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.422822, 0.06663, 0.025204]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020621089295813026), np.float64(0.004124217859162606), np.float64(0.002062108929581303)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.020476681475059277), np.float64(0.004095336295011854), np.float64(0.002047668147505927)]}, 'Electrodes': {'Forwarding': 940}, 'DACs': {'Forwarding': 940}, 'Capacity': 11, 'Distance': 5}
+SpawnProcess-2 - INFO - 5 11 Forwarding = {'ElapsedTime': {'Forwarding': 0.04473999999999999}, 'Operations': {'Forwarding': 1657}, 'MeanConcurrency': {'Forwarding': np.float64(1.9408369408369408)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.422822, 0.06663, 0.025204]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020621089295813026), np.float64(0.004124217859162606), np.float64(0.002062108929581303)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.020476681475059277), np.float64(0.004095336295011854), np.float64(0.002047668147505927)]}, 'Electrodes': {'Forwarding': 940}, 'DACs': {'Forwarding': 940}, 'Capacity': 11, 'Distance': 5}
+SpawnProcess-2 - INFO - Finished processing for distance 5 and capacity 11
+SpawnProcess-2 - INFO - Finished processing for distance 5 and capacity 11
+SpawnProcess-2 - INFO - Finished processing for distance 5 and capacity 11
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - 5 15 Forwarding = {'ElapsedTime': {'Forwarding': 0.043584999999999964}, 'Operations': {'Forwarding': 1513}, 'MeanConcurrency': {'Forwarding': np.float64(1.6767143933685005)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.441331, 0.086008, 0.033477]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02218135798448868), np.float64(0.004436271596897737), np.float64(0.0022181357984488686)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02202843566516473), np.float64(0.004405687133032946), np.float64(0.002202843566516473)]}, 'Electrodes': {'Forwarding': 1260}, 'DACs': {'Forwarding': 1260}, 'Capacity': 15, 'Distance': 5}
+SpawnProcess-11 - INFO - 5 15 Forwarding = {'ElapsedTime': {'Forwarding': 0.043584999999999964}, 'Operations': {'Forwarding': 1513}, 'MeanConcurrency': {'Forwarding': np.float64(1.6767143933685005)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.441331, 0.086008, 0.033477]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02218135798448868), np.float64(0.004436271596897737), np.float64(0.0022181357984488686)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02202843566516473), np.float64(0.004405687133032946), np.float64(0.002202843566516473)]}, 'Electrodes': {'Forwarding': 1260}, 'DACs': {'Forwarding': 1260}, 'Capacity': 15, 'Distance': 5}
+SpawnProcess-11 - INFO - 5 15 Forwarding = {'ElapsedTime': {'Forwarding': 0.043584999999999964}, 'Operations': {'Forwarding': 1513}, 'MeanConcurrency': {'Forwarding': np.float64(1.6767143933685005)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.441331, 0.086008, 0.033477]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02218135798448868), np.float64(0.004436271596897737), np.float64(0.0022181357984488686)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02202843566516473), np.float64(0.004405687133032946), np.float64(0.002202843566516473)]}, 'Electrodes': {'Forwarding': 1260}, 'DACs': {'Forwarding': 1260}, 'Capacity': 15, 'Distance': 5}
+SpawnProcess-11 - INFO - Finished processing for distance 5 and capacity 15
+SpawnProcess-11 - INFO - Finished processing for distance 5 and capacity 15
+SpawnProcess-11 - INFO - Finished processing for distance 5 and capacity 15
+SpawnProcess-11 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-11 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-11 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-11 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-8 - INFO - 5 14 Forwarding = {'ElapsedTime': {'Forwarding': 0.043584999999999964}, 'Operations': {'Forwarding': 1513}, 'MeanConcurrency': {'Forwarding': np.float64(1.6767143933685005)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.441033, 0.085363, 0.033336]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02218135798448868), np.float64(0.004436271596897737), np.float64(0.0022181357984488686)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02202843566516473), np.float64(0.004405687133032946), np.float64(0.002202843566516473)]}, 'Electrodes': {'Forwarding': 1180}, 'DACs': {'Forwarding': 1180}, 'Capacity': 14, 'Distance': 5}
+SpawnProcess-8 - INFO - 5 14 Forwarding = {'ElapsedTime': {'Forwarding': 0.043584999999999964}, 'Operations': {'Forwarding': 1513}, 'MeanConcurrency': {'Forwarding': np.float64(1.6767143933685005)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.441033, 0.085363, 0.033336]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02218135798448868), np.float64(0.004436271596897737), np.float64(0.0022181357984488686)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02202843566516473), np.float64(0.004405687133032946), np.float64(0.002202843566516473)]}, 'Electrodes': {'Forwarding': 1180}, 'DACs': {'Forwarding': 1180}, 'Capacity': 14, 'Distance': 5}
+SpawnProcess-8 - INFO - 5 14 Forwarding = {'ElapsedTime': {'Forwarding': 0.043584999999999964}, 'Operations': {'Forwarding': 1513}, 'MeanConcurrency': {'Forwarding': np.float64(1.6767143933685005)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.441033, 0.085363, 0.033336]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02218135798448868), np.float64(0.004436271596897737), np.float64(0.0022181357984488686)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02202843566516473), np.float64(0.004405687133032946), np.float64(0.002202843566516473)]}, 'Electrodes': {'Forwarding': 1180}, 'DACs': {'Forwarding': 1180}, 'Capacity': 14, 'Distance': 5}
+SpawnProcess-8 - INFO - Finished processing for distance 5 and capacity 14
+SpawnProcess-8 - INFO - Finished processing for distance 5 and capacity 14
+SpawnProcess-8 - INFO - Finished processing for distance 5 and capacity 14
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-8 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-8 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-8 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-8 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-8 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-8 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-8 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - 5 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.043854999999999984}, 'Operations': {'Forwarding': 1716}, 'MeanConcurrency': {'Forwarding': np.float64(2.021784961349262)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.419468, 0.057011, 0.018243]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.021024463157346213), np.float64(0.0042048926314692415), np.float64(0.0021024463157346207)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.020893103409803205), np.float64(0.004178620681960644), np.float64(0.002089310340980322)]}, 'Electrodes': {'Forwarding': 860}, 'DACs': {'Forwarding': 860}, 'Capacity': 10, 'Distance': 5}
+SpawnProcess-10 - INFO - 5 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.043854999999999984}, 'Operations': {'Forwarding': 1716}, 'MeanConcurrency': {'Forwarding': np.float64(2.021784961349262)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.419468, 0.057011, 0.018243]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.021024463157346213), np.float64(0.0042048926314692415), np.float64(0.0021024463157346207)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.020893103409803205), np.float64(0.004178620681960644), np.float64(0.002089310340980322)]}, 'Electrodes': {'Forwarding': 860}, 'DACs': {'Forwarding': 860}, 'Capacity': 10, 'Distance': 5}
+SpawnProcess-10 - INFO - 5 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.043854999999999984}, 'Operations': {'Forwarding': 1716}, 'MeanConcurrency': {'Forwarding': np.float64(2.021784961349262)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.419468, 0.057011, 0.018243]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.021024463157346213), np.float64(0.0042048926314692415), np.float64(0.0021024463157346207)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.020893103409803205), np.float64(0.004178620681960644), np.float64(0.002089310340980322)]}, 'Electrodes': {'Forwarding': 860}, 'DACs': {'Forwarding': 860}, 'Capacity': 10, 'Distance': 5}
+SpawnProcess-10 - INFO - Finished processing for distance 5 and capacity 10
+SpawnProcess-10 - INFO - Finished processing for distance 5 and capacity 10
+SpawnProcess-10 - INFO - Finished processing for distance 5 and capacity 10
+SpawnProcess-10 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-10 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-10 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-10 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-10 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - 5 8 Forwarding = {'ElapsedTime': {'Forwarding': 0.045609999999999984}, 'Operations': {'Forwarding': 1823}, 'MeanConcurrency': {'Forwarding': np.float64(2.1972881355932206)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.439387, 0.086447, 0.034876]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020451907101707842), np.float64(0.00409038142034157), np.float64(0.002045190710170785)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02009764101583341), np.float64(0.004019528203166684), np.float64(0.002009764101583342)]}, 'Electrodes': {'Forwarding': 1460}, 'DACs': {'Forwarding': 1460}, 'Capacity': 8, 'Distance': 5}
+SpawnProcess-9 - INFO - 5 8 Forwarding = {'ElapsedTime': {'Forwarding': 0.045609999999999984}, 'Operations': {'Forwarding': 1823}, 'MeanConcurrency': {'Forwarding': np.float64(2.1972881355932206)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.439387, 0.086447, 0.034876]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020451907101707842), np.float64(0.00409038142034157), np.float64(0.002045190710170785)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02009764101583341), np.float64(0.004019528203166684), np.float64(0.002009764101583342)]}, 'Electrodes': {'Forwarding': 1460}, 'DACs': {'Forwarding': 1460}, 'Capacity': 8, 'Distance': 5}
+SpawnProcess-9 - INFO - Finished processing for distance 5 and capacity 8
+SpawnProcess-9 - INFO - Finished processing for distance 5 and capacity 8
+SpawnProcess-9 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - 5 9 Forwarding = {'ElapsedTime': {'Forwarding': 0.045609999999999984}, 'Operations': {'Forwarding': 1823}, 'MeanConcurrency': {'Forwarding': np.float64(2.1972881355932206)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.438601, 0.086759, 0.035018]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020451907101707842), np.float64(0.00409038142034157), np.float64(0.002045190710170785)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02009764101583341), np.float64(0.004019528203166684), np.float64(0.002009764101583342)]}, 'Electrodes': {'Forwarding': 1620}, 'DACs': {'Forwarding': 1620}, 'Capacity': 9, 'Distance': 5}
+SpawnProcess-1 - INFO - 5 9 Forwarding = {'ElapsedTime': {'Forwarding': 0.045609999999999984}, 'Operations': {'Forwarding': 1823}, 'MeanConcurrency': {'Forwarding': np.float64(2.1972881355932206)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.438601, 0.086759, 0.035018]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020451907101707842), np.float64(0.00409038142034157), np.float64(0.002045190710170785)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02009764101583341), np.float64(0.004019528203166684), np.float64(0.002009764101583342)]}, 'Electrodes': {'Forwarding': 1620}, 'DACs': {'Forwarding': 1620}, 'Capacity': 9, 'Distance': 5}
+SpawnProcess-1 - INFO - Finished processing for distance 5 and capacity 9
+SpawnProcess-1 - INFO - Finished processing for distance 5 and capacity 9
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-9 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-9 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - 5 7 Forwarding = {'ElapsedTime': {'Forwarding': 0.04124499999999998}, 'Operations': {'Forwarding': 1975}, 'MeanConcurrency': {'Forwarding': np.float64(2.5450847457627117)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.41974, 0.055148, 0.016684]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.019476205472843112), np.float64(0.00389524109456862), np.float64(0.00194762054728431)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.019219034932702894), np.float64(0.0038438069865405792), np.float64(0.0019219034932702896)]}, 'Electrodes': {'Forwarding': 1440}, 'DACs': {'Forwarding': 1440}, 'Capacity': 7, 'Distance': 5}
+SpawnProcess-12 - INFO - 5 7 Forwarding = {'ElapsedTime': {'Forwarding': 0.04124499999999998}, 'Operations': {'Forwarding': 1975}, 'MeanConcurrency': {'Forwarding': np.float64(2.5450847457627117)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.41974, 0.055148, 0.016684]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.019476205472843112), np.float64(0.00389524109456862), np.float64(0.00194762054728431)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.019219034932702894), np.float64(0.0038438069865405792), np.float64(0.0019219034932702896)]}, 'Electrodes': {'Forwarding': 1440}, 'DACs': {'Forwarding': 1440}, 'Capacity': 7, 'Distance': 5}
+SpawnProcess-12 - INFO - Finished processing for distance 5 and capacity 7
+SpawnProcess-12 - INFO - Finished processing for distance 5 and capacity 7
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-12 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-12 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-12 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-12 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-12 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - 5 30 Forwarding = {'ElapsedTime': {'Forwarding': 0.035420000000000305}, 'Operations': {'Forwarding': 1067}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.495481, 0.154855, 0.050743]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.038117151547413436), np.float64(0.0076234303094826865), np.float64(0.0038117151547413432)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.03827058490635657), np.float64(0.007654116981271287), np.float64(0.0038270584906356436)]}, 'Electrodes': {'Forwarding': 600}, 'DACs': {'Forwarding': 600}, 'Capacity': 30, 'Distance': 5}
+SpawnProcess-6 - INFO - 5 30 Forwarding = {'ElapsedTime': {'Forwarding': 0.035420000000000305}, 'Operations': {'Forwarding': 1067}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.495481, 0.154855, 0.050743]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.038117151547413436), np.float64(0.0076234303094826865), np.float64(0.0038117151547413432)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.03827058490635657), np.float64(0.007654116981271287), np.float64(0.0038270584906356436)]}, 'Electrodes': {'Forwarding': 600}, 'DACs': {'Forwarding': 600}, 'Capacity': 30, 'Distance': 5}
+SpawnProcess-6 - INFO - Finished processing for distance 5 and capacity 30
+SpawnProcess-6 - INFO - Finished processing for distance 5 and capacity 30
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-6 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-6 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - 5 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.035420000000000305}, 'Operations': {'Forwarding': 1067}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.494365, 0.154437, 0.051183]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.038117151547413436), np.float64(0.0076234303094826865), np.float64(0.0038117151547413432)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.03827058490635657), np.float64(0.007654116981271287), np.float64(0.0038270584906356436)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 5}
+SpawnProcess-5 - INFO - 5 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.035420000000000305}, 'Operations': {'Forwarding': 1067}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.494365, 0.154437, 0.051183]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.038117151547413436), np.float64(0.0076234303094826865), np.float64(0.0038117151547413432)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.03827058490635657), np.float64(0.007654116981271287), np.float64(0.0038270584906356436)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 5}
+SpawnProcess-5 - INFO - 5 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.035420000000000305}, 'Operations': {'Forwarding': 1067}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.494365, 0.154437, 0.051183]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.038117151547413436), np.float64(0.0076234303094826865), np.float64(0.0038117151547413432)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.03827058490635657), np.float64(0.007654116981271287), np.float64(0.0038270584906356436)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 5}
+SpawnProcess-5 - INFO - Finished processing for distance 5 and capacity 60
+SpawnProcess-5 - INFO - Finished processing for distance 5 and capacity 60
+SpawnProcess-5 - INFO - Finished processing for distance 5 and capacity 60
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - 5 120 Forwarding = {'ElapsedTime': {'Forwarding': 0.035420000000000305}, 'Operations': {'Forwarding': 1067}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.494946, 0.155057, 0.051075]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.038117151547413436), np.float64(0.0076234303094826865), np.float64(0.0038117151547413432)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.03827058490635657), np.float64(0.007654116981271287), np.float64(0.0038270584906356436)]}, 'Electrodes': {'Forwarding': 2400}, 'DACs': {'Forwarding': 2400}, 'Capacity': 120, 'Distance': 5}
+SpawnProcess-7 - INFO - 5 120 Forwarding = {'ElapsedTime': {'Forwarding': 0.035420000000000305}, 'Operations': {'Forwarding': 1067}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.494946, 0.155057, 0.051075]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.038117151547413436), np.float64(0.0076234303094826865), np.float64(0.0038117151547413432)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.03827058490635657), np.float64(0.007654116981271287), np.float64(0.0038270584906356436)]}, 'Electrodes': {'Forwarding': 2400}, 'DACs': {'Forwarding': 2400}, 'Capacity': 120, 'Distance': 5}
+SpawnProcess-7 - INFO - 5 120 Forwarding = {'ElapsedTime': {'Forwarding': 0.035420000000000305}, 'Operations': {'Forwarding': 1067}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 1067}, 'LogicalErrorRates': {'Forwarding': [0.494946, 0.155057, 0.051075]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.038117151547413436), np.float64(0.0076234303094826865), np.float64(0.0038117151547413432)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.03827058490635657), np.float64(0.007654116981271287), np.float64(0.0038270584906356436)]}, 'Electrodes': {'Forwarding': 2400}, 'DACs': {'Forwarding': 2400}, 'Capacity': 120, 'Distance': 5}
+SpawnProcess-7 - INFO - Finished processing for distance 5 and capacity 120
+SpawnProcess-7 - INFO - Finished processing for distance 5 and capacity 120
+SpawnProcess-7 - INFO - Finished processing for distance 5 and capacity 120
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - 7 30 Forwarding = {'ElapsedTime': {'Forwarding': 0.0805899999999999}, 'Operations': {'Forwarding': 3089}, 'MeanConcurrency': {'Forwarding': np.float64(1.8784551306323363)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.494707, 0.106116, 0.021942]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.030349692361042), np.float64(0.006069938472208412), np.float64(0.003034969236104206)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.029876533843421996), np.float64(0.005975306768684402), np.float64(0.002987653384342201)]}, 'Electrodes': {'Forwarding': 3120}, 'DACs': {'Forwarding': 3120}, 'Capacity': 30, 'Distance': 7}
+SpawnProcess-12 - INFO - 7 30 Forwarding = {'ElapsedTime': {'Forwarding': 0.0805899999999999}, 'Operations': {'Forwarding': 3089}, 'MeanConcurrency': {'Forwarding': np.float64(1.8784551306323363)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.494707, 0.106116, 0.021942]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.030349692361042), np.float64(0.006069938472208412), np.float64(0.003034969236104206)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.029876533843421996), np.float64(0.005975306768684402), np.float64(0.002987653384342201)]}, 'Electrodes': {'Forwarding': 3120}, 'DACs': {'Forwarding': 3120}, 'Capacity': 30, 'Distance': 7}
+SpawnProcess-12 - INFO - 7 30 Forwarding = {'ElapsedTime': {'Forwarding': 0.0805899999999999}, 'Operations': {'Forwarding': 3089}, 'MeanConcurrency': {'Forwarding': np.float64(1.8784551306323363)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.494707, 0.106116, 0.021942]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.030349692361042), np.float64(0.006069938472208412), np.float64(0.003034969236104206)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.029876533843421996), np.float64(0.005975306768684402), np.float64(0.002987653384342201)]}, 'Electrodes': {'Forwarding': 3120}, 'DACs': {'Forwarding': 3120}, 'Capacity': 30, 'Distance': 7}
+SpawnProcess-12 - INFO - 7 30 Forwarding = {'ElapsedTime': {'Forwarding': 0.0805899999999999}, 'Operations': {'Forwarding': 3089}, 'MeanConcurrency': {'Forwarding': np.float64(1.8784551306323363)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.494707, 0.106116, 0.021942]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.030349692361042), np.float64(0.006069938472208412), np.float64(0.003034969236104206)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.029876533843421996), np.float64(0.005975306768684402), np.float64(0.002987653384342201)]}, 'Electrodes': {'Forwarding': 3120}, 'DACs': {'Forwarding': 3120}, 'Capacity': 30, 'Distance': 7}
+SpawnProcess-12 - INFO - Finished processing for distance 7 and capacity 30
+SpawnProcess-12 - INFO - Finished processing for distance 7 and capacity 30
+SpawnProcess-12 - INFO - Finished processing for distance 7 and capacity 30
+SpawnProcess-12 - INFO - Finished processing for distance 7 and capacity 30
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-12 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-12 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-12 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-12 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - 7 13 Forwarding = {'ElapsedTime': {'Forwarding': 0.06994999999999993}, 'Operations': {'Forwarding': 3908}, 'MeanConcurrency': {'Forwarding': np.float64(3.2663082437275985)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.479605, 0.066943, 0.013694]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02524841245290149), np.float64(0.005049682490580308), np.float64(0.002524841245290154)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024743872655904695), np.float64(0.004948774531180931), np.float64(0.0024743872655904656)]}, 'Electrodes': {'Forwarding': 3100}, 'DACs': {'Forwarding': 3100}, 'Capacity': 13, 'Distance': 7}
+SpawnProcess-1 - INFO - 7 13 Forwarding = {'ElapsedTime': {'Forwarding': 0.06994999999999993}, 'Operations': {'Forwarding': 3908}, 'MeanConcurrency': {'Forwarding': np.float64(3.2663082437275985)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.479605, 0.066943, 0.013694]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02524841245290149), np.float64(0.005049682490580308), np.float64(0.002524841245290154)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024743872655904695), np.float64(0.004948774531180931), np.float64(0.0024743872655904656)]}, 'Electrodes': {'Forwarding': 3100}, 'DACs': {'Forwarding': 3100}, 'Capacity': 13, 'Distance': 7}
+SpawnProcess-1 - INFO - 7 13 Forwarding = {'ElapsedTime': {'Forwarding': 0.06994999999999993}, 'Operations': {'Forwarding': 3908}, 'MeanConcurrency': {'Forwarding': np.float64(3.2663082437275985)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.479605, 0.066943, 0.013694]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02524841245290149), np.float64(0.005049682490580308), np.float64(0.002524841245290154)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024743872655904695), np.float64(0.004948774531180931), np.float64(0.0024743872655904656)]}, 'Electrodes': {'Forwarding': 3100}, 'DACs': {'Forwarding': 3100}, 'Capacity': 13, 'Distance': 7}
+SpawnProcess-1 - INFO - Finished processing for distance 7 and capacity 13
+SpawnProcess-1 - INFO - Finished processing for distance 7 and capacity 13
+SpawnProcess-1 - INFO - Finished processing for distance 7 and capacity 13
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - 7 12 Forwarding = {'ElapsedTime': {'Forwarding': 0.06988999999999994}, 'Operations': {'Forwarding': 3975}, 'MeanConcurrency': {'Forwarding': np.float64(3.3650230578219227)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.478589, 0.06452, 0.012846]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.024517780019714726), np.float64(0.004903556003942942), np.float64(0.002451778001971471)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024004006325608607), np.float64(0.004800801265121729), np.float64(0.0024004006325608644)]}, 'Electrodes': {'Forwarding': 2880}, 'DACs': {'Forwarding': 2880}, 'Capacity': 12, 'Distance': 7}
+SpawnProcess-9 - INFO - 7 12 Forwarding = {'ElapsedTime': {'Forwarding': 0.06988999999999994}, 'Operations': {'Forwarding': 3975}, 'MeanConcurrency': {'Forwarding': np.float64(3.3650230578219227)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.478589, 0.06452, 0.012846]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.024517780019714726), np.float64(0.004903556003942942), np.float64(0.002451778001971471)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024004006325608607), np.float64(0.004800801265121729), np.float64(0.0024004006325608644)]}, 'Electrodes': {'Forwarding': 2880}, 'DACs': {'Forwarding': 2880}, 'Capacity': 12, 'Distance': 7}
+SpawnProcess-9 - INFO - 7 12 Forwarding = {'ElapsedTime': {'Forwarding': 0.06988999999999994}, 'Operations': {'Forwarding': 3975}, 'MeanConcurrency': {'Forwarding': np.float64(3.3650230578219227)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.478589, 0.06452, 0.012846]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.024517780019714726), np.float64(0.004903556003942942), np.float64(0.002451778001971471)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024004006325608607), np.float64(0.004800801265121729), np.float64(0.0024004006325608644)]}, 'Electrodes': {'Forwarding': 2880}, 'DACs': {'Forwarding': 2880}, 'Capacity': 12, 'Distance': 7}
+SpawnProcess-9 - INFO - Finished processing for distance 7 and capacity 12
+SpawnProcess-9 - INFO - Finished processing for distance 7 and capacity 12
+SpawnProcess-9 - INFO - Finished processing for distance 7 and capacity 12
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-9 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-9 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-9 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - 7 14 Forwarding = {'ElapsedTime': {'Forwarding': 0.07405999999999988}, 'Operations': {'Forwarding': 3898}, 'MeanConcurrency': {'Forwarding': np.float64(3.1225577264653643)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.479443, 0.0682, 0.013541]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.025407808336924614), np.float64(0.00508156166738492), np.float64(0.00254078083369246)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024887586724326317), np.float64(0.004977517344865264), np.float64(0.002488758672432632)]}, 'Electrodes': {'Forwarding': 3320}, 'DACs': {'Forwarding': 3320}, 'Capacity': 14, 'Distance': 7}
+SpawnProcess-4 - INFO - 7 14 Forwarding = {'ElapsedTime': {'Forwarding': 0.07405999999999988}, 'Operations': {'Forwarding': 3898}, 'MeanConcurrency': {'Forwarding': np.float64(3.1225577264653643)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.479443, 0.0682, 0.013541]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.025407808336924614), np.float64(0.00508156166738492), np.float64(0.00254078083369246)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024887586724326317), np.float64(0.004977517344865264), np.float64(0.002488758672432632)]}, 'Electrodes': {'Forwarding': 3320}, 'DACs': {'Forwarding': 3320}, 'Capacity': 14, 'Distance': 7}
+SpawnProcess-4 - INFO - 7 14 Forwarding = {'ElapsedTime': {'Forwarding': 0.07405999999999988}, 'Operations': {'Forwarding': 3898}, 'MeanConcurrency': {'Forwarding': np.float64(3.1225577264653643)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.479443, 0.0682, 0.013541]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.025407808336924614), np.float64(0.00508156166738492), np.float64(0.00254078083369246)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024887586724326317), np.float64(0.004977517344865264), np.float64(0.002488758672432632)]}, 'Electrodes': {'Forwarding': 3320}, 'DACs': {'Forwarding': 3320}, 'Capacity': 14, 'Distance': 7}
+SpawnProcess-4 - INFO - 7 14 Forwarding = {'ElapsedTime': {'Forwarding': 0.07405999999999988}, 'Operations': {'Forwarding': 3898}, 'MeanConcurrency': {'Forwarding': np.float64(3.1225577264653643)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.479443, 0.0682, 0.013541]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.025407808336924614), np.float64(0.00508156166738492), np.float64(0.00254078083369246)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024887586724326317), np.float64(0.004977517344865264), np.float64(0.002488758672432632)]}, 'Electrodes': {'Forwarding': 3320}, 'DACs': {'Forwarding': 3320}, 'Capacity': 14, 'Distance': 7}
+SpawnProcess-4 - INFO - 7 14 Forwarding = {'ElapsedTime': {'Forwarding': 0.07405999999999988}, 'Operations': {'Forwarding': 3898}, 'MeanConcurrency': {'Forwarding': np.float64(3.1225577264653643)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.479443, 0.0682, 0.013541]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.025407808336924614), np.float64(0.00508156166738492), np.float64(0.00254078083369246)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024887586724326317), np.float64(0.004977517344865264), np.float64(0.002488758672432632)]}, 'Electrodes': {'Forwarding': 3320}, 'DACs': {'Forwarding': 3320}, 'Capacity': 14, 'Distance': 7}
+SpawnProcess-4 - INFO - 7 14 Forwarding = {'ElapsedTime': {'Forwarding': 0.07405999999999988}, 'Operations': {'Forwarding': 3898}, 'MeanConcurrency': {'Forwarding': np.float64(3.1225577264653643)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.479443, 0.0682, 0.013541]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.025407808336924614), np.float64(0.00508156166738492), np.float64(0.00254078083369246)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024887586724326317), np.float64(0.004977517344865264), np.float64(0.002488758672432632)]}, 'Electrodes': {'Forwarding': 3320}, 'DACs': {'Forwarding': 3320}, 'Capacity': 14, 'Distance': 7}
+SpawnProcess-4 - INFO - 7 14 Forwarding = {'ElapsedTime': {'Forwarding': 0.07405999999999988}, 'Operations': {'Forwarding': 3898}, 'MeanConcurrency': {'Forwarding': np.float64(3.1225577264653643)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.479443, 0.0682, 0.013541]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.025407808336924614), np.float64(0.00508156166738492), np.float64(0.00254078083369246)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.024887586724326317), np.float64(0.004977517344865264), np.float64(0.002488758672432632)]}, 'Electrodes': {'Forwarding': 3320}, 'DACs': {'Forwarding': 3320}, 'Capacity': 14, 'Distance': 7}
+SpawnProcess-4 - INFO - Finished processing for distance 7 and capacity 14
+SpawnProcess-4 - INFO - Finished processing for distance 7 and capacity 14
+SpawnProcess-4 - INFO - Finished processing for distance 7 and capacity 14
+SpawnProcess-4 - INFO - Finished processing for distance 7 and capacity 14
+SpawnProcess-4 - INFO - Finished processing for distance 7 and capacity 14
+SpawnProcess-4 - INFO - Finished processing for distance 7 and capacity 14
+SpawnProcess-4 - INFO - Finished processing for distance 7 and capacity 14
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - 7 11 Forwarding = {'ElapsedTime': {'Forwarding': 0.07331499999999991}, 'Operations': {'Forwarding': 4151}, 'MeanConcurrency': {'Forwarding': np.float64(3.270993643358983)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.474967, 0.059562, 0.011779]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.023711943961635937), np.float64(0.004742388792327191), np.float64(0.0023711943961635955)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.023198628717463362), np.float64(0.004639725743492674), np.float64(0.002319862871746337)]}, 'Electrodes': {'Forwarding': 2660}, 'DACs': {'Forwarding': 2660}, 'Capacity': 11, 'Distance': 7}
+SpawnProcess-10 - INFO - 7 11 Forwarding = {'ElapsedTime': {'Forwarding': 0.07331499999999991}, 'Operations': {'Forwarding': 4151}, 'MeanConcurrency': {'Forwarding': np.float64(3.270993643358983)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.474967, 0.059562, 0.011779]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.023711943961635937), np.float64(0.004742388792327191), np.float64(0.0023711943961635955)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.023198628717463362), np.float64(0.004639725743492674), np.float64(0.002319862871746337)]}, 'Electrodes': {'Forwarding': 2660}, 'DACs': {'Forwarding': 2660}, 'Capacity': 11, 'Distance': 7}
+SpawnProcess-10 - INFO - 7 11 Forwarding = {'ElapsedTime': {'Forwarding': 0.07331499999999991}, 'Operations': {'Forwarding': 4151}, 'MeanConcurrency': {'Forwarding': np.float64(3.270993643358983)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.474967, 0.059562, 0.011779]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.023711943961635937), np.float64(0.004742388792327191), np.float64(0.0023711943961635955)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.023198628717463362), np.float64(0.004639725743492674), np.float64(0.002319862871746337)]}, 'Electrodes': {'Forwarding': 2660}, 'DACs': {'Forwarding': 2660}, 'Capacity': 11, 'Distance': 7}
+SpawnProcess-10 - INFO - 7 11 Forwarding = {'ElapsedTime': {'Forwarding': 0.07331499999999991}, 'Operations': {'Forwarding': 4151}, 'MeanConcurrency': {'Forwarding': np.float64(3.270993643358983)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.474967, 0.059562, 0.011779]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.023711943961635937), np.float64(0.004742388792327191), np.float64(0.0023711943961635955)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.023198628717463362), np.float64(0.004639725743492674), np.float64(0.002319862871746337)]}, 'Electrodes': {'Forwarding': 2660}, 'DACs': {'Forwarding': 2660}, 'Capacity': 11, 'Distance': 7}
+SpawnProcess-10 - INFO - Finished processing for distance 7 and capacity 11
+SpawnProcess-10 - INFO - Finished processing for distance 7 and capacity 11
+SpawnProcess-10 - INFO - Finished processing for distance 7 and capacity 11
+SpawnProcess-10 - INFO - Finished processing for distance 7 and capacity 11
+SpawnProcess-10 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-10 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-10 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-10 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-10 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 9, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - 7 8 Forwarding = {'ElapsedTime': {'Forwarding': 0.0758349999999999}, 'Operations': {'Forwarding': 4871}, 'MeanConcurrency': {'Forwarding': np.float64(3.78708498324703)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.485841, 0.07398, 0.015524]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02495132137987867), np.float64(0.004990264275975743), np.float64(0.0024951321379878713)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02423851543605611), np.float64(0.004847703087211218), np.float64(0.002423851543605609)]}, 'Electrodes': {'Forwarding': 2540}, 'DACs': {'Forwarding': 2540}, 'Capacity': 8, 'Distance': 7}
+SpawnProcess-8 - INFO - 7 8 Forwarding = {'ElapsedTime': {'Forwarding': 0.0758349999999999}, 'Operations': {'Forwarding': 4871}, 'MeanConcurrency': {'Forwarding': np.float64(3.78708498324703)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.485841, 0.07398, 0.015524]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02495132137987867), np.float64(0.004990264275975743), np.float64(0.0024951321379878713)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02423851543605611), np.float64(0.004847703087211218), np.float64(0.002423851543605609)]}, 'Electrodes': {'Forwarding': 2540}, 'DACs': {'Forwarding': 2540}, 'Capacity': 8, 'Distance': 7}
+SpawnProcess-8 - INFO - 7 8 Forwarding = {'ElapsedTime': {'Forwarding': 0.0758349999999999}, 'Operations': {'Forwarding': 4871}, 'MeanConcurrency': {'Forwarding': np.float64(3.78708498324703)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.485841, 0.07398, 0.015524]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02495132137987867), np.float64(0.004990264275975743), np.float64(0.0024951321379878713)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02423851543605611), np.float64(0.004847703087211218), np.float64(0.002423851543605609)]}, 'Electrodes': {'Forwarding': 2540}, 'DACs': {'Forwarding': 2540}, 'Capacity': 8, 'Distance': 7}
+SpawnProcess-8 - INFO - 7 8 Forwarding = {'ElapsedTime': {'Forwarding': 0.0758349999999999}, 'Operations': {'Forwarding': 4871}, 'MeanConcurrency': {'Forwarding': np.float64(3.78708498324703)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.485841, 0.07398, 0.015524]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02495132137987867), np.float64(0.004990264275975743), np.float64(0.0024951321379878713)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02423851543605611), np.float64(0.004847703087211218), np.float64(0.002423851543605609)]}, 'Electrodes': {'Forwarding': 2540}, 'DACs': {'Forwarding': 2540}, 'Capacity': 8, 'Distance': 7}
+SpawnProcess-8 - INFO - 7 8 Forwarding = {'ElapsedTime': {'Forwarding': 0.0758349999999999}, 'Operations': {'Forwarding': 4871}, 'MeanConcurrency': {'Forwarding': np.float64(3.78708498324703)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.485841, 0.07398, 0.015524]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.02495132137987867), np.float64(0.004990264275975743), np.float64(0.0024951321379878713)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02423851543605611), np.float64(0.004847703087211218), np.float64(0.002423851543605609)]}, 'Electrodes': {'Forwarding': 2540}, 'DACs': {'Forwarding': 2540}, 'Capacity': 8, 'Distance': 7}
+SpawnProcess-8 - INFO - Finished processing for distance 7 and capacity 8
+SpawnProcess-8 - INFO - Finished processing for distance 7 and capacity 8
+SpawnProcess-8 - INFO - Finished processing for distance 7 and capacity 8
+SpawnProcess-8 - INFO - Finished processing for distance 7 and capacity 8
+SpawnProcess-8 - INFO - Finished processing for distance 7 and capacity 8
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-8 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-8 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-8 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-8 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-8 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - 7 7 Forwarding = {'ElapsedTime': {'Forwarding': 0.0777149999999999}, 'Operations': {'Forwarding': 5089}, 'MeanConcurrency': {'Forwarding': np.float64(3.887007299270073)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.482315, 0.067508, 0.014312]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.023628352154711794), np.float64(0.0047256704309423594), np.float64(0.0023628352154711797)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02293971044393479), np.float64(0.004587942088786966), np.float64(0.002293971044393483)]}, 'Electrodes': {'Forwarding': 2260}, 'DACs': {'Forwarding': 2260}, 'Capacity': 7, 'Distance': 7}
+SpawnProcess-3 - INFO - 7 7 Forwarding = {'ElapsedTime': {'Forwarding': 0.0777149999999999}, 'Operations': {'Forwarding': 5089}, 'MeanConcurrency': {'Forwarding': np.float64(3.887007299270073)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.482315, 0.067508, 0.014312]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.023628352154711794), np.float64(0.0047256704309423594), np.float64(0.0023628352154711797)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02293971044393479), np.float64(0.004587942088786966), np.float64(0.002293971044393483)]}, 'Electrodes': {'Forwarding': 2260}, 'DACs': {'Forwarding': 2260}, 'Capacity': 7, 'Distance': 7}
+SpawnProcess-3 - INFO - 7 7 Forwarding = {'ElapsedTime': {'Forwarding': 0.0777149999999999}, 'Operations': {'Forwarding': 5089}, 'MeanConcurrency': {'Forwarding': np.float64(3.887007299270073)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.482315, 0.067508, 0.014312]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.023628352154711794), np.float64(0.0047256704309423594), np.float64(0.0023628352154711797)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02293971044393479), np.float64(0.004587942088786966), np.float64(0.002293971044393483)]}, 'Electrodes': {'Forwarding': 2260}, 'DACs': {'Forwarding': 2260}, 'Capacity': 7, 'Distance': 7}
+SpawnProcess-3 - INFO - 7 7 Forwarding = {'ElapsedTime': {'Forwarding': 0.0777149999999999}, 'Operations': {'Forwarding': 5089}, 'MeanConcurrency': {'Forwarding': np.float64(3.887007299270073)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.482315, 0.067508, 0.014312]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.023628352154711794), np.float64(0.0047256704309423594), np.float64(0.0023628352154711797)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02293971044393479), np.float64(0.004587942088786966), np.float64(0.002293971044393483)]}, 'Electrodes': {'Forwarding': 2260}, 'DACs': {'Forwarding': 2260}, 'Capacity': 7, 'Distance': 7}
+SpawnProcess-3 - INFO - 7 7 Forwarding = {'ElapsedTime': {'Forwarding': 0.0777149999999999}, 'Operations': {'Forwarding': 5089}, 'MeanConcurrency': {'Forwarding': np.float64(3.887007299270073)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.482315, 0.067508, 0.014312]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.023628352154711794), np.float64(0.0047256704309423594), np.float64(0.0023628352154711797)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02293971044393479), np.float64(0.004587942088786966), np.float64(0.002293971044393483)]}, 'Electrodes': {'Forwarding': 2260}, 'DACs': {'Forwarding': 2260}, 'Capacity': 7, 'Distance': 7}
+SpawnProcess-3 - INFO - 7 7 Forwarding = {'ElapsedTime': {'Forwarding': 0.0777149999999999}, 'Operations': {'Forwarding': 5089}, 'MeanConcurrency': {'Forwarding': np.float64(3.887007299270073)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.482315, 0.067508, 0.014312]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.023628352154711794), np.float64(0.0047256704309423594), np.float64(0.0023628352154711797)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02293971044393479), np.float64(0.004587942088786966), np.float64(0.002293971044393483)]}, 'Electrodes': {'Forwarding': 2260}, 'DACs': {'Forwarding': 2260}, 'Capacity': 7, 'Distance': 7}
+SpawnProcess-3 - INFO - Finished processing for distance 7 and capacity 7
+SpawnProcess-3 - INFO - Finished processing for distance 7 and capacity 7
+SpawnProcess-3 - INFO - Finished processing for distance 7 and capacity 7
+SpawnProcess-3 - INFO - Finished processing for distance 7 and capacity 7
+SpawnProcess-3 - INFO - Finished processing for distance 7 and capacity 7
+SpawnProcess-3 - INFO - Finished processing for distance 7 and capacity 7
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 9, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - 7 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.07315999999999993}, 'Operations': {'Forwarding': 5802}, 'MeanConcurrency': {'Forwarding': np.float64(4.8329258353708235)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.462544, 0.04693, 0.009173]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020999364523698747), np.float64(0.004199872904739748), np.float64(0.002099936452369874)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02016115840285877), np.float64(0.004032231680571743), np.float64(0.0020161158402858714)]}, 'Electrodes': {'Forwarding': 2060}, 'DACs': {'Forwarding': 2060}, 'Capacity': 5, 'Distance': 7}
+SpawnProcess-11 - INFO - 7 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.07315999999999993}, 'Operations': {'Forwarding': 5802}, 'MeanConcurrency': {'Forwarding': np.float64(4.8329258353708235)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.462544, 0.04693, 0.009173]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020999364523698747), np.float64(0.004199872904739748), np.float64(0.002099936452369874)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02016115840285877), np.float64(0.004032231680571743), np.float64(0.0020161158402858714)]}, 'Electrodes': {'Forwarding': 2060}, 'DACs': {'Forwarding': 2060}, 'Capacity': 5, 'Distance': 7}
+SpawnProcess-11 - INFO - 7 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.07315999999999993}, 'Operations': {'Forwarding': 5802}, 'MeanConcurrency': {'Forwarding': np.float64(4.8329258353708235)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.462544, 0.04693, 0.009173]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020999364523698747), np.float64(0.004199872904739748), np.float64(0.002099936452369874)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02016115840285877), np.float64(0.004032231680571743), np.float64(0.0020161158402858714)]}, 'Electrodes': {'Forwarding': 2060}, 'DACs': {'Forwarding': 2060}, 'Capacity': 5, 'Distance': 7}
+SpawnProcess-11 - INFO - 7 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.07315999999999993}, 'Operations': {'Forwarding': 5802}, 'MeanConcurrency': {'Forwarding': np.float64(4.8329258353708235)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.462544, 0.04693, 0.009173]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020999364523698747), np.float64(0.004199872904739748), np.float64(0.002099936452369874)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02016115840285877), np.float64(0.004032231680571743), np.float64(0.0020161158402858714)]}, 'Electrodes': {'Forwarding': 2060}, 'DACs': {'Forwarding': 2060}, 'Capacity': 5, 'Distance': 7}
+SpawnProcess-11 - INFO - Finished processing for distance 7 and capacity 5
+SpawnProcess-11 - INFO - Finished processing for distance 7 and capacity 5
+SpawnProcess-11 - INFO - Finished processing for distance 7 and capacity 5
+SpawnProcess-11 - INFO - Finished processing for distance 7 and capacity 5
+SpawnProcess-11 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-11 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-11 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-11 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-11 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - 7 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.07222999999999861}, 'Operations': {'Forwarding': 2252}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.500752, 0.348995, 0.119875]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.06376451742600252), np.float64(0.012752903485200516), np.float64(0.006376451742600258)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.06345869537923181), np.float64(0.012691739075846304), np.float64(0.006345869537923152)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 7}
+SpawnProcess-2 - INFO - 7 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.07222999999999861}, 'Operations': {'Forwarding': 2252}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.500752, 0.348995, 0.119875]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.06376451742600252), np.float64(0.012752903485200516), np.float64(0.006376451742600258)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.06345869537923181), np.float64(0.012691739075846304), np.float64(0.006345869537923152)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 7}
+SpawnProcess-2 - INFO - 7 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.07222999999999861}, 'Operations': {'Forwarding': 2252}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.500752, 0.348995, 0.119875]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.06376451742600252), np.float64(0.012752903485200516), np.float64(0.006376451742600258)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.06345869537923181), np.float64(0.012691739075846304), np.float64(0.006345869537923152)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 7}
+SpawnProcess-2 - INFO - 7 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.07222999999999861}, 'Operations': {'Forwarding': 2252}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.500752, 0.348995, 0.119875]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.06376451742600252), np.float64(0.012752903485200516), np.float64(0.006376451742600258)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.06345869537923181), np.float64(0.012691739075846304), np.float64(0.006345869537923152)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 7}
+SpawnProcess-2 - INFO - 7 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.07222999999999861}, 'Operations': {'Forwarding': 2252}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.500752, 0.348995, 0.119875]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.06376451742600252), np.float64(0.012752903485200516), np.float64(0.006376451742600258)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.06345869537923181), np.float64(0.012691739075846304), np.float64(0.006345869537923152)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 7}
+SpawnProcess-2 - INFO - 7 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.07222999999999861}, 'Operations': {'Forwarding': 2252}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.500752, 0.348995, 0.119875]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.06376451742600252), np.float64(0.012752903485200516), np.float64(0.006376451742600258)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.06345869537923181), np.float64(0.012691739075846304), np.float64(0.006345869537923152)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 7}
+SpawnProcess-2 - INFO - Finished processing for distance 7 and capacity 60
+SpawnProcess-2 - INFO - Finished processing for distance 7 and capacity 60
+SpawnProcess-2 - INFO - Finished processing for distance 7 and capacity 60
+SpawnProcess-2 - INFO - Finished processing for distance 7 and capacity 60
+SpawnProcess-2 - INFO - Finished processing for distance 7 and capacity 60
+SpawnProcess-2 - INFO - Finished processing for distance 7 and capacity 60
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-6 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - 7 120 Forwarding = {'ElapsedTime': {'Forwarding': 0.07222999999999861}, 'Operations': {'Forwarding': 2252}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.499398, 0.349068, 0.119255]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.06376451742600252), np.float64(0.012752903485200516), np.float64(0.006376451742600258)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.06345869537923181), np.float64(0.012691739075846304), np.float64(0.006345869537923152)]}, 'Electrodes': {'Forwarding': 2400}, 'DACs': {'Forwarding': 2400}, 'Capacity': 120, 'Distance': 7}
+SpawnProcess-6 - INFO - 7 120 Forwarding = {'ElapsedTime': {'Forwarding': 0.07222999999999861}, 'Operations': {'Forwarding': 2252}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.499398, 0.349068, 0.119255]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.06376451742600252), np.float64(0.012752903485200516), np.float64(0.006376451742600258)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.06345869537923181), np.float64(0.012691739075846304), np.float64(0.006345869537923152)]}, 'Electrodes': {'Forwarding': 2400}, 'DACs': {'Forwarding': 2400}, 'Capacity': 120, 'Distance': 7}
+SpawnProcess-6 - INFO - 7 120 Forwarding = {'ElapsedTime': {'Forwarding': 0.07222999999999861}, 'Operations': {'Forwarding': 2252}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 2252}, 'LogicalErrorRates': {'Forwarding': [0.499398, 0.349068, 0.119255]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.06376451742600252), np.float64(0.012752903485200516), np.float64(0.006376451742600258)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.06345869537923181), np.float64(0.012691739075846304), np.float64(0.006345869537923152)]}, 'Electrodes': {'Forwarding': 2400}, 'DACs': {'Forwarding': 2400}, 'Capacity': 120, 'Distance': 7}
+SpawnProcess-6 - INFO - Finished processing for distance 7 and capacity 120
+SpawnProcess-6 - INFO - Finished processing for distance 7 and capacity 120
+SpawnProcess-6 - INFO - Finished processing for distance 7 and capacity 120
+SpawnProcess-6 - INFO - Starting circuit generation for distance 11, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 11, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 11, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 11, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 11, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 11, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 11, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 11, capacity 4 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 3 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 6 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 11, capacity 7 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 8 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 11, capacity 9 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-9 - INFO - Starting circuit generation for distance 11, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 11, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 11, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 11, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 11, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-9 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 11, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 11, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 11, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 11, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 11, capacity 11 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 11, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 11, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 11, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 11, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 11, capacity 12 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 13 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 11, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 11, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 11, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 11, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 11, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 11, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-7 - INFO - Starting circuit generation for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-7 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-7 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-7 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-7 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-7 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-7 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-7 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-7 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 11, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 11, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 11, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 11, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 11, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 11, capacity 14 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 11, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 11, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 11, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 11, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 11, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 11, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-10 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-10 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-10 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-10 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-10 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 11, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 11, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 11, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 11, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 11, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 11, capacity 30 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-11 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-11 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-11 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-11 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-11 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - process exiting with exitcode 0
+SpawnProcess-8 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+
+SpawnProcess-12 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SSpawnProcess-12 - INFO - process exiting with exitcode 0
+SpawnProcess-8 - INFO - process exiting with exitcode 0
+SpawnProcess-6 - INFO - process exiting with exitcode 0SpawnProcess-3 - INFO - process exiting with exitcode 0
+
+SpawnProcess-6 - INFO - process exiting with exitcode 0
+
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-11 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exSpawnProceSpawnProcess-6 - INFO - process exiting with exSSpawnProcSpawnProcess-2 - INFO - process exitiSpawnProcess-3 - INFSpawnProcess-9 - INFO - process shuttSpawnProcess-2 - INFO - process exiting with exitcode 0
+SpSpawnProcess-8 - INFO - process shutting down
+SpawnProcess-4 - INFO - process exiting with exSSpawnProcSpawnProcess-11 - INFO - process shuttSpawnProceSpawnProcess-11 - INFO - process shutting downSSpawnProcess-8 - INFO - process shutSpawnProceSpawnProcess-10 - INFO - process shutSSpawnProceSpawnProcess-7 - INFO - process shutSpawnProcess-2 - INFO - process shutting down
+
+SpawnProcess-3 - INFO - process shutting down
+
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-7 - INFO - process shutting down
+SpawnProcess-7 - INFO - process shutting down
+SpawnProcess-7 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down

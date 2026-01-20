@@ -161,7 +161,7 @@ def regularColorPartition(measurementIons: Sequence[Ion], dataIons: Sequence[Ion
     clusters = TriangularPartitionIons(ids, coords, dIonsPerTrap)
 
     return clusters
-
+      
 def _ShapePartitionions(
     ions: Sequence[Ion], coords: npt.NDArray[np.float64], trapCapacity: int
 ) -> Sequence[Tuple[Sequence[Ion], npt.NDArray[np.float64]]]:

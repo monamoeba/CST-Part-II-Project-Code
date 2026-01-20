@@ -31478,3 +31478,2550 @@ Traceback (most recent call last):
   File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
     raise self._exception
 AttributeError: 'QCCDCircuit' object has no attribute 'processColorCircuitWiseArch'
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 40 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002446A730100> is at capacity 2
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 40 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002446A730100> is at capacity 2
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 41 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002393ED60100> is at capacity 4
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 41 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002393ED60100> is at capacity 4
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 49 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000012AE9EE05D0> is at capacity 3
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 49 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000012AE9EE05D0> is at capacity 3
+MainProcess - INFO - Processed results for distance 3, capacity 11.
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 6.
+MainProcess - INFO - Processed results for distance 3, capacity 7.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 46 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001C1C37C3AC0> is at capacity 2
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 46 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001C1C37C3AC0> is at capacity 2
+MainProcess - INFO - Processed results for distance 3, capacity 9.
+MainProcess - INFO - Processed results for distance 3, capacity 12.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 8.
+MainProcess - INFO - Processed results for distance 3, capacity 14.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 13.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 35 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002446A9D3C20> is at capacity 6
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 35 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002446A9D3C20> is at capacity 6
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 36 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001C1C3A2D5A0> is at capacity 4
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 36 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001C1C3A2D5A0> is at capacity 4
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 48 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000021F40C63A10> is at capacity 3
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 48 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000021F40C63A10> is at capacity 3
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 36 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000013C195E3C20> is at capacity 5
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 36 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000013C195E3C20> is at capacity 5
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 13.
+MainProcess - INFO - Processed results for distance 5, capacity 12.
+MainProcess - INFO - Processed results for distance 5, capacity 11.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 14.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 82 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001C1C3786A40> is at capacity 2
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 82 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001C1C3786A40> is at capacity 2
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 108 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000021F401E3330> is at capacity 6
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 108 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000021F401E3330> is at capacity 6
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 131 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002393F59C3C0> is at capacity 4
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 131 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002393F59C3C0> is at capacity 4
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 35 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002446C062620> is at capacity 3
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 35 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002446C062620> is at capacity 3
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 8.
+MainProcess - INFO - Processed results for distance 5, capacity 9.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 120 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002446C852E60> is at capacity 10
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 120 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002446C852E60> is at capacity 10
+MainProcess - INFO - Processed results for distance 5, capacity 7.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 88 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002832C59BD80> is at capacity 15
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 88 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002832C59BD80> is at capacity 15
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 97 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000023940308D60> is at capacity 9
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 97 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000023940308D60> is at capacity 9
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 81 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001B6C34CF330> is at capacity 3
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 81 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001B6C34CF330> is at capacity 3
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 96 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001B6C417AFC0> is at capacity 4
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 96 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001B6C417AFC0> is at capacity 4
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 114 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000015D51CDF120> is at capacity 2
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 114 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000015D51CDF120> is at capacity 2
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 91 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000015D51D8EAF0> is at capacity 6
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 91 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000015D51D8EAF0> is at capacity 6
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 185 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001B6C447BB70> is at capacity 5
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 185 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001B6C447BB70> is at capacity 5
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000974831) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000974831) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 13.
+MainProcess - INFO - Processed results for distance 7, capacity 12.
+MainProcess - INFO - Processed results for distance 7, capacity 14.
+MainProcess - INFO - Processed results for distance 7, capacity 11.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000907802) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000907802) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - INFO - Processed results for distance 7, capacity 8.
+MainProcess - INFO - Processed results for distance 7, capacity 7.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 173 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002393FA90890> is at capacity 2
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 173 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002393FA90890> is at capacity 2
+MainProcess - INFO - Processed results for distance 7, capacity 120.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 206 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000027CCED57280> is at capacity 4
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 206 <src.utils.qccd_nodes.ManipulationTrap object at 0x0000027CCED57280> is at capacity 4
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 223 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002393F9AFD80> is at capacity 3
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 223 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002393F9AFD80> is at capacity 3
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 257 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002393F46B960> is at capacity 6
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 257 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002393F46B960> is at capacity 6
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00244786) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00244786) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00260219) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00260219) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890822) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890822) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890871) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890871) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890843) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890843) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 949, in process_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 214, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 164 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002446ACD54F0> is at capacity 10
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 164 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002446ACD54F0> is at capacity 10
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890686) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890686) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890854) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890854) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890822) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890822) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890822) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000890822) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00514121) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00514121) D36 D40 D43 D61 D70 D73 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [61, 70, 73]
+    Decomposed piece: D36 D40 D43
+    The undecomposed observable mask: L0
+    Detector data:
+        D36: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D40: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D43: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D61: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D70: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D73: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00281468) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00281468) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000942273) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000942273) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000942551) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000942551) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000942551) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000942551) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00101486) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00101486) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00213339) D48 D53 D58 D93 D103 D107 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [93, 103, 107]
+    Decomposed piece: D48 D53 D58
+    The undecomposed observable mask: L0
+    Detector data:
+        D48: coords=[22, 0, 1, 1] ColorBasis{.color=G, .basis=X}
+        D53: coords=[19, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D58: coords=[22, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D93: coords=[22, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D103: coords=[22, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D107: coords=[19, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00213339) D48 D53 D58 D93 D103 D107 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [93, 103, 107]
+    Decomposed piece: D48 D53 D58
+    The undecomposed observable mask: L0
+    Detector data:
+        D48: coords=[22, 0, 1, 1] ColorBasis{.color=G, .basis=X}
+        D53: coords=[19, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D58: coords=[22, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D93: coords=[22, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D103: coords=[22, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D107: coords=[19, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000894258) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000894258) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00281468) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00281468) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000903674) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000903674) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000913688) D52 D61 D97 D102 D111 D114
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [97, 102, 111, 114]
+    Decomposed piece: D52 D61
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D97: coords=[13, 1, 2, 5] ColorBasis{.color=B, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D111: coords=[16, 4, 2, 5] ColorBasis{.color=B, .basis=Z}
+        D114: coords=[13, 5, 2, 3] ColorBasis{.color=R, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000913688) D52 D61 D97 D102 D111 D114
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [97, 102, 111, 114]
+    Decomposed piece: D52 D61
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D97: coords=[13, 1, 2, 5] ColorBasis{.color=B, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D111: coords=[16, 4, 2, 5] ColorBasis{.color=B, .basis=Z}
+        D114: coords=[13, 5, 2, 3] ColorBasis{.color=R, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00268021) D52 D61 D97 D102 D111 D114
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [97, 102, 111, 114]
+    Decomposed piece: D52 D61
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D97: coords=[13, 1, 2, 5] ColorBasis{.color=B, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D111: coords=[16, 4, 2, 5] ColorBasis{.color=B, .basis=Z}
+        D114: coords=[13, 5, 2, 3] ColorBasis{.color=R, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00268021) D52 D61 D97 D102 D111 D114
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [97, 102, 111, 114]
+    Decomposed piece: D52 D61
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D97: coords=[13, 1, 2, 5] ColorBasis{.color=B, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D111: coords=[16, 4, 2, 5] ColorBasis{.color=B, .basis=Z}
+        D114: coords=[13, 5, 2, 3] ColorBasis{.color=R, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 957, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 311, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 323, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000845507) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000845507) D52 D57 D61 D91 D102 D106 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [91, 102, 106]
+    Decomposed piece: D52 D57 D61
+    The undecomposed observable mask: L0
+    Detector data:
+        D52: coords=[13, 1, 1, 2] ColorBasis{.color=B, .basis=X}
+        D57: coords=[16, 2, 1, 0] ColorBasis{.color=R, .basis=X}
+        D61: coords=[13, 3, 1, 1] ColorBasis{.color=G, .basis=X}
+        D91: coords=[10, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D102: coords=[16, 2, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D106: coords=[13, 3, 2, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+

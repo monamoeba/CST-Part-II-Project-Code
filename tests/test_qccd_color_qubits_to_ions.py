@@ -78,4 +78,4 @@ def test_arrange_clusters(create_ions):
     clusters = [(create_ions([(i, j), (i, j)]), (i,j)) for i, j in grid_positions]
     arranged_positions = arrangeClusters(clusters, grid_positions)
     for (_, clpos), pos in zip(clusters, arranged_positions):
-        assert clpos == pos
+        assert np.array_equal(clpos, pos)
