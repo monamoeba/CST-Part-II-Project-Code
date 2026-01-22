@@ -2076,7 +2076,8 @@ SpawnProcess-6 - INFO - process shutting down
 
 SpawnProcess-5 - INFO - process shutting down
 
-SpawnProcess-11 - INFO - process shutting downSpawnProcess-12 - INFO - process shutting down
+SpawnProcess-11 - INFO - process shutting down
+SpawnProcess-12 - INFO - process shutting down
 SpawnProcess-7 - INFO - process shutting down
 
 SpawnProcess-11 - INFO - process shutting down
@@ -3634,7 +3635,8 @@ SpawnProcess-1 - INFO - process shutting down
 tcode 0
 
 SpawnProcess-10 - INFO - process exiting with exitcode 0
-SpawnProcess-10 - INFO - process exiting with exitcode 0SpawnProcess-11 - INFO - process shutting down
+SpawnProcess-10 - INFO - process exiting with exitcode 0
+SpawnProcess-11 - INFO - process shutting down
 SpawnProcess-1 - INFO - process shutting down
 SpawnProcess-5 - INFO - process shutting down
 SpawnProcess-5 - INFO - process shutting down
@@ -34025,3 +34027,194 @@ This problem can unfortunately be quite difficult to debug. Likely causes are:
     (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
     (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
 
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 261, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1024, in process_model_color_code_circuit
+    with open(path, 'r') as f:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../color_code_experiments/r=20,d=5,p=0.001,noise=uniform,c=midout_color_code_488_Z,gates=all.stim'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+FileNotFoundError: [Errno 2] No such file or directory: '../color_code_experiments/r=20,d=5,p=0.001,noise=uniform,c=midout_color_code_488_Z,gates=all.stim'
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 261, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1033, in process_model_color_code_circuit
+    d_qubit_ids.append(int(line.split(' ')[2]))
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'set' object has no attribute 'append'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+AttributeError: 'set' object has no attribute 'append'
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 261, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1047, in process_model_color_code_circuit
+    circuit.dataQubitsIdxs(d_qubit_ids)
+TypeError: 'NoneType' object is not callable
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+TypeError: 'NoneType' object is not callable
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 261, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1066, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 64, in ionRouting
+    twoqubitGatesForAncillaIons[ion1.idx].remove(op)
+ValueError: list.remove(x): x not in list
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: list.remove(x): x not in list
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 261, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1066, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 64, in ionRouting
+    twoqubitGatesForAncillaIons[ion1.idx].remove(op)
+ValueError: list.remove(x): x not in list
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 61, in main
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: list.remove(x): x not in list
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 261, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1068, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 64, in ionRouting
+    twoqubitGatesForAncillaIons[ion1.idx].remove(op)
+ValueError: list.remove(x): x not in list
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: list.remove(x): x not in list
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 261, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1068, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 66, in ionRouting
+    twoqubitGatesForAncillaIons[ion1.idx].remove(op)
+ValueError: list.remove(x): x not in list
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: list.remove(x): x not in list

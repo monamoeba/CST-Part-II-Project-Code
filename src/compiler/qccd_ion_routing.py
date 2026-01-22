@@ -60,7 +60,9 @@ def ionRouting(
                 operationsLeft.remove(op)
                 if isinstance(op, TwoQubitMSGate):
                     ion1, ion2 = op.ions
+                    print(f"ion 1.idx = {ion1.idx} in {op}")
                     if ion1.idx in twoqubitGatesForAncillaIons:
+                        print(f"twgfai ion1 = {twoqubitGatesForAncillaIons[ion1.idx]}")
                         twoqubitGatesForAncillaIons[ion1.idx].remove(op)
                     else:
                         twoqubitGatesForAncillaIons[ion2.idx].remove(op)

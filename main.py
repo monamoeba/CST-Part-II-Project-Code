@@ -3,8 +3,9 @@ import yaml
 import logging
 import concurrent.futures
 from typing import Any, Dict
-from src.simulator.qccd_circuit import process_circuit, process_color_code_circuit, process_circuit_wise_arch, process_color_code_circuit_wise_arch
+from src.simulator.qccd_circuit import process_circuit, process_color_code_circuit, process_circuit_wise_arch, process_color_code_circuit_wise_arch, process_model_color_code_circuit
 from datetime import datetime
+from tqdm import tqdm
 import json  
 
 def get_logger(log_file: str) -> logging.Logger:
@@ -51,10 +52,12 @@ def main(config_path: str):
     logger.info("Starting parallel processing of circuits")
     with concurrent.futures.ProcessPoolExecutor(max_workers=num_cores) as executor:
         futures = [
-            executor.submit(process_color_code_circuit, d, c, gate_improvements, num_shots, (6,6,6))
+            executor.submit(process_model_color_code_circuit, d, c, gate_improvements, num_shots, "midout_color_code_488_Z")
             #executor.submit(process_color_code_circuit, d, c, gate_improvements, num_shots, (6,6,6))
             for d in distances for c in capacities
         ]
+
+        pbar = tqdm(total=(len(distances)*len(capacities)*len(gate_improvements)))
 
         for future in concurrent.futures.as_completed(futures):
             try:
@@ -75,9 +78,10 @@ def main(config_path: str):
                     data["PhysicalXErrorRates"][label][d][c] = result["PhysicalXErrorRates"][label]
                     data["PhysicalZErrorRates"][label][d][c] = result["PhysicalZErrorRates"][label]"""
                 logger.info(f"Processed results for distance {d}, capacity {c}.")
+                pbar.update(1)
             except Exception as e:
                 logger.error("An error occurred during processing", exc_info=e)
-
+        pbar.close()
     save_results(data, output_dir="data")
 
 if __name__ == "__main__":
