@@ -34218,3 +34218,638 @@ Traceback (most recent call last):
   File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
     raise self._exception
 ValueError: list.remove(x): x not in list
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1024, in process_model_color_code_circuit
+    with open(path, 'r') as f:
+         ~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '.\\color_code_experiments\\r=20,d=5,p=0.001,noise=uniform,c=phenom_color_code_488_Z,gates=all.stim'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+FileNotFoundError: [Errno 2] No such file or directory: '.\\color_code_experiments\\r=20,d=5,p=0.001,noise=uniform,c=phenom_color_code_488_Z,gates=all.stim'
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1024, in process_model_color_code_circuit
+    with open(path, 'r') as f:
+         ~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '.\\color_code_experiments\\r=20,d=5,p=0.01,noise=uniform,c=phenom_color_code_488_Z,gates=all.stim'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+FileNotFoundError: [Errno 2] No such file or directory: '.\\color_code_experiments\\r=20,d=5,p=0.01,noise=uniform,c=phenom_color_code_488_Z,gates=all.stim'
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1024, in process_model_color_code_circuit
+    with open(path, 'r') as f:
+         ~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '.\\color_code_experiments\\r=20,d=5,p=0.01,noise=uniform,c=phenom_color_code_488_Z,gates=all.stim'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+FileNotFoundError: [Errno 2] No such file or directory: '.\\color_code_experiments\\r=20,d=5,p=0.01,noise=uniform,c=phenom_color_code_488,gates=all.stim'
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1024, in process_model_color_code_circuit
+    with open(path, 'r') as f:
+         ~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '.\\color_code_experiments\\r=20,d=5,p=0.01,noise=uniform,c=phenom_color_code_488_Z,gates=all.stim'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+FileNotFoundError: [Errno 2] No such file or directory: '.\\color_code_experiments\\r=20,d=5,p=0.01,noise=uniform,c=phenom_color_code_488_Z,gates=all.stim'
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1058, in process_model_color_code_circuit
+    arch, (instructions, _) = circuit.processColorCircuitAugmentedGrid(rows=nrowsNeeded, cols=nrowsNeeded, trapCapacity=capacity, dataQubitIdxs=circuit.dataQubitsIdxs)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 462, in processColorCircuitAugmentedGrid
+    clusters=regularColorPartition(self._measurementIons, self._dataIons, trapCapacity)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_color_qubits_to_ions.py", line 159, in regularColorPartition
+    coords = np.concatenate([measurementIonCoords, dataIonCoords])
+ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 1 dimension(s) and the array at index 1 has 2 dimension(s)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 1 dimension(s) and the array at index 1 has 2 dimension(s)
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1068, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 78, in ionRouting
+    twoqubitGatesForAncillaIons[ion1.idx].remove(op)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+ValueError: list.remove(x): x not in list
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: list.remove(x): x not in list
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1068, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 80, in ionRouting
+    twoqubitGatesForAncillaIons[ion1.idx].remove(op)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+ValueError: list.remove(x): x not in list
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: list.remove(x): x not in list
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1068, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 81, in ionRouting
+    twoqubitGatesForAncillaIons[ion1.idx].remove(op)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+ValueError: list.remove(x): x not in list
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: list.remove(x): x not in list
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1068, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 81, in ionRouting
+    twoqubitGatesForAncillaIons[ion1.idx].remove(op)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+ValueError: list.remove(x): x not in list
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: list.remove(x): x not in list
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1068, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 82, in ionRouting
+    twoqubitGatesForAncillaIons[ion1.idx].remove(op)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+ValueError: list.remove(x): x not in list
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: list.remove(x): x not in list
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1068, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 70, in ionRouting
+    ancilla, data = (ion1, ion2) if ion1.idx == ancillaIdx else (ion2, ion1)
+                                                ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'ancillaIdx' where it is not associated with a value
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+UnboundLocalError: cannot access local variable 'ancillaIdx' where it is not associated with a value
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1068, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 238, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 73 <src.utils.qccd_nodes.ManipulationTrap object at 0x00000247BF3ADD30> is at capacity 3
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 73 <src.utils.qccd_nodes.ManipulationTrap object at 0x00000247BF3ADD30> is at capacity 3
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1068, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 238, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 73 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001A5DCD6DD30> is at capacity 3
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 73 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001A5DCD6DD30> is at capacity 3
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1061, in process_model_color_code_circuit
+    arch, (instructions, _) = circuit.processColorCircuitAugmentedGrid(rows=nrowsNeeded, cols=nrowsNeeded, trapCapacity=capacity, dataQubitIdxs=circuit.dataQubitsIdxs)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 465, in processColorCircuitAugmentedGrid
+    print(f'cluster {ci}: {[ion.idx for ion in c]}')
+                            ^^^^^^^
+AttributeError: 'list' object has no attribute 'idx'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+AttributeError: 'list' object has no attribute 'idx'
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1071, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 238, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 73 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001E6A2BBDD30> is at capacity 3
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 73 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001E6A2BBDD30> is at capacity 3
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1071, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 238, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 73 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001FC18ECDD30> is at capacity 3
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 73 <src.utils.qccd_nodes.ManipulationTrap object at 0x000001FC18ECDD30> is at capacity 3
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1072, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 238, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 73 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002DBADD0DDE0> is at capacity 3
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 73 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002DBADD0DDE0> is at capacity 3
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1072, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 238, in ionRouting
+    m.run()
+    ~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 82, in run
+    self._run(())
+    ~~~~~~~~~^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 339, in <lambda>
+    run=lambda _: run(),
+                  ~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations.py", line 335, in run
+    trap.addIon(ion, adjacentIon=adjacentIon, offset=offset)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 296, in addIon
+    super().addIon(ion, adjacentIon, offset)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_nodes.py", line 190, in addIon
+    raise ValueError(
+        f"addIon: QCCDNode {self.idx} {self} is at capacity {self._capacity}"
+    )
+ValueError: addIon: QCCDNode 73 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002394209DDE0> is at capacity 3
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: addIon: QCCDNode 73 <src.utils.qccd_nodes.ManipulationTrap object at 0x000002394209DDE0> is at capacity 3
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1072, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 209, in ionRouting
+    op.run()
+    ~~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations_on_qubits.py", line 75, in run
+    self._checkApplicability()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations_on_qubits.py", line 57, in _checkApplicability
+    raise ValueError(f"QubitOperation: ion {ion.idx} not in trap {self._trap.idx}")
+ValueError: QubitOperation: ion 52 not in trap 64
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: QubitOperation: ion 52 not in trap 64
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1072, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 211, in ionRouting
+    op.run()
+    ~~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations_on_qubits.py", line 75, in run
+    self._checkApplicability()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations_on_qubits.py", line 57, in _checkApplicability
+    raise ValueError(f"QubitOperation: ion {ion.idx} not in trap {self._trap.idx}")
+ValueError: QubitOperation: ion 52 not in trap 64
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: QubitOperation: ion 52 not in trap 64

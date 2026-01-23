@@ -149,7 +149,7 @@ def _mergeUnderfilledClusters(
     return res
 
 def regularColorPartition(measurementIons: Sequence[Ion], dataIons: Sequence[Ion], trapCapacity: int):
-    dIonsPerTrap = trapCapacity
+    """Arranges ions into clusters based on a regular triangular partitioning scheme filling with at most trapCapacity-1 ions to allow for movement in routing"""
     measurementIonsL = list(measurementIons)
     measurementIonCoords = np.array([list(ion.pos) for ion in measurementIonsL])
     dataIonsL = list(dataIons)
@@ -158,7 +158,7 @@ def regularColorPartition(measurementIons: Sequence[Ion], dataIons: Sequence[Ion
     ids = measurementIonsL + dataIonsL
     coords = np.concatenate([measurementIonCoords, dataIonCoords])
 
-    clusters = TriangularPartitionIons(ids, coords, dIonsPerTrap)
+    clusters = TriangularPartitionIons(ids, coords, trapCapacity-1)
 
     return clusters
       
