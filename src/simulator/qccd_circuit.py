@@ -63,7 +63,7 @@ class QCCDCircuit(stim.Circuit):
             colorcode = ColorCodeCircuit666(distance, rounds)
             circuit = colorcode.get_circuit()
             #for testing library implementation of color codes
-            #colorcode = ColorCode(d=distance,rounds=rounds,circuit_type="tri")
+            #olorcode = ColorCode(d=distance,rounds=rounds,circuit_type="tri")
             qccd = QCCDCircuit(circuit.__str__())
             qccd.dataQubitsIdxs = list(colorcode.qubits)
             qccd.iscolorcode = True
@@ -458,12 +458,13 @@ class QCCDCircuit(stim.Circuit):
         instructions, barriers = self._parseCircuitString(dataQubitsIdxs=dataQubitIdxs)
         if (trapCapacity-1) * ((rows-1) * (2*cols-1)+cols) < len(self._ionMapping):
             raise ValueError("processCircuit: not enough traps")
-        print(f' measurement ions: {[ion.label for ion in self._measurementIons]}')
-        print(f' data ions: {[ion.label for ion in self._dataIons]}')
-        clusters=regularColorPartition(self._measurementIons, self._dataIons, trapCapacity)
-        ###temp cluster printing
+        #print(f' measurement ions: {[ion.label for ion in self._measurementIons]}')
+        #print(f' data ions: {[ion.label for ion in self._dataIons]}')
+        clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
+        #clusters=regularColorPartition(self._measurementIons, self._dataIons, trapCapacity)
+        """ temp cluster printing
         for ci, c in enumerate(clusters):
-            print(f'cluster {ci}: {[ion.label for ion in c[0]]}')
+            print(f'cluster {ci}: {[ion.label for ion in c[0]]}') """
         
         cs, rs = cols, rows
         allGridPos = []
@@ -1047,8 +1048,8 @@ def process_model_color_code_circuit(distance, capacity, gate_improvements, num_
 
     for mqubit in m_qubit_ids:
         d_qubit_ids.remove(mqubit)
-    print(f'mqubits = {m_qubit_ids}')
-    print(f'dqubits = {d_qubit_ids}')
+    #print(f'mqubits = {m_qubit_ids}')
+    #print(f'dqubits = {d_qubit_ids}')
     circuit = QCCDCircuit(raw)
     circuit.dataQubitsIdxs = list(d_qubit_ids)
 

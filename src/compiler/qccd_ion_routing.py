@@ -70,7 +70,7 @@ def ionRouting(
                     ancilla, data = sorted(
                         (ion1, ion2), key=lambda ion: ion.label[0]=='D'
                     )
-                    print(f"ion 1, ion2 = {ion1.label}, {ion2.label} in {op}")
+                    #print(f"ion 1, ion2 = {ion1.label}, {ion2.label} in {op}")
                     # case: both ions are ancilla ions
                     if ion1.label[0]==ion2.label[0]:
                         ancilla,data = sorted(
@@ -78,7 +78,7 @@ def ionRouting(
                         )
                         
 
-                    print(f"ancilla, data = {ancilla.idx}, {data.idx} in {op}")
+                    #print(f"ancilla, data = {ancilla.idx}, {data.idx} in {op}")
                     if ancilla.idx in twoqubitGatesForAncillaIons:
                         twoqubitGatesForAncillaIons[ancilla.idx].remove(op)
 
@@ -205,8 +205,8 @@ def ionRouting(
                 srcTrap = goBackTrap
             
                 if n1Idx == trap.idx and not startedGoingBack[op]:
-                    print(f"Completing operation {op} at trap {trap.idx}")
-                    print(f" requires ions {[(ion.label,ion.idx) for ion in op.ions]}")
+                    #print(f"Completing operation {op} at trap {trap.idx}")
+                    #print(f" requires ions {[(ion.label,ion.idx) for ion in op.ions]}")
                     op.setTrap(trap)
                     op.run()
                     allOps.append(op)
