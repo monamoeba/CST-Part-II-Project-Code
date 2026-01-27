@@ -10,6 +10,7 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
         self.qubits = set()
         self.ancilla = set()
         self._tiles = self._generate_layout(distance)
+        self.qtoid = dict()
         self.circuit = self._build_circuit(rounds, noise)
         
         
@@ -186,6 +187,7 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
             self.ancilla.add(tile.ancilla)
         sorted_q_a = sorted(self.qubits | self.ancilla)
         qa_index_map = {q:i for i,q in enumerate(sorted_q_a)}
+        self.qtoid = qa_index_map
         qubit_idxs = []
         #append qubit coordinates
         for q,i in qa_index_map.items():
