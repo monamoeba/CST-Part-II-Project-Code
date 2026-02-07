@@ -24,10 +24,6 @@ def setup_circuit():
     arch.refreshGraph()
     return arch, instructions
 
-@pytest.fixture
-def setup_circuit_inter_ancilla_ops():
-    pass
-
 def test_no_operations(setup_circuit):
     """
     Test `ionRouting` when no operations are provided.

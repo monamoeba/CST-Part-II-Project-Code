@@ -26,6 +26,13 @@ def ionRouting(
             ancilla, data = sorted(
                 (ion1, ion2), key=lambda ion: ion.label[0]=='D'
             )
+            # extra logic in the case that both ions are ancilla ions
+            # future opt could be moving ion with less future operations 
+            # or based on number of ops needed to move to the "data" ion trap 
+            if ion1.label[0]==ion2.label[0]:
+                ancilla,data = sorted(
+                    (ion1, ion2), key=lambda ion: ion.idx
+                )
             trap = ancilla.parent
             if ancilla.idx in twoqubitGatesForAncillaIons:
                 twoqubitGatesForAncillaIons[ancilla.idx].append(op)
@@ -60,10 +67,27 @@ def ionRouting(
                 operationsLeft.remove(op)
                 if isinstance(op, TwoQubitMSGate):
                     ion1, ion2 = op.ions
-                    if ion1.idx in twoqubitGatesForAncillaIons:
+                    ancilla, data = sorted(
+                        (ion1, ion2), key=lambda ion: ion.label[0]=='D'
+                    )
+                    #print(f"ion 1, ion2 = {ion1.label}, {ion2.label} in {op}")
+                    # case: both ions are ancilla ions
+                    if ion1.label[0]==ion2.label[0]:
+                        ancilla,data = sorted(
+                            (ion1, ion2), key=lambda ion: ion.idx
+                        )
+                        
+
+                    #print(f"ancilla, data = {ancilla.idx}, {data.idx} in {op}")
+                    if ancilla.idx in twoqubitGatesForAncillaIons:
+                        twoqubitGatesForAncillaIons[ancilla.idx].remove(op)
+
+                    """ if ion1.idx in twoqubitGatesForAncillaIons:
+                        print(ion1.label)
+                        print(f"twgfai ion1 = {twoqubitGatesForAncillaIons[ion1.idx]}")
                         twoqubitGatesForAncillaIons[ion1.idx].remove(op)
                     else:
-                        twoqubitGatesForAncillaIons[ion2.idx].remove(op)
+                        twoqubitGatesForAncillaIons[ion2.idx].remove(op) """
             
             if len(toRemove) == 0:
                 break
@@ -181,6 +205,8 @@ def ionRouting(
                 srcTrap = goBackTrap
             
                 if n1Idx == trap.idx and not startedGoingBack[op]:
+                    #print(f"Completing operation {op} at trap {trap.idx}")
+                    #print(f" requires ions {[(ion.label,ion.idx) for ion in op.ions]}")
                     op.setTrap(trap)
                     op.run()
                     allOps.append(op)
@@ -220,4 +246,5 @@ def ionRouting(
         barriers.append(len(allOps))
 
     return allOps, barriers
+
 
