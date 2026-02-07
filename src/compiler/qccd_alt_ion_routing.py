@@ -8,53 +8,60 @@ from typing import (
     Dict,
 )
 import networkx as nx
+from collections import defaultdict
 from src.utils.qccd_nodes import *
 from src.utils.qccd_operations import *
 from src.utils.qccd_operations_on_qubits import *
 from src.utils.qccd_arch import *
 
 
-def ionRouting(
+
+def _determineRouted(ion1:Ion, ion2:Ion):
+    """ Determines the ion that will be routed between the pair """
+    if ion1.label[0]==ion2.label[0]:
+        # Same type - tiebreak with index
+        r_ion, s_ion = sorted(
+            (ion1, ion2), key=lambda ion: ion.idx
+        )
+    else:
+        # prioritise routing ancilla otherwise
+        r_ion, s_ion = sorted(
+            (ion1, ion2), key=lambda ion: ion.label[0]=="D"
+        )
+
+    return (r_ion, s_ion)
+    
+def naiveAltIonRouting(
     qccdArch: QCCDArch,
     operations: Sequence[QubitOperation],
     trapCapacity: int
 ) -> Tuple[Sequence[Operation], Sequence[int]]:
-    twoqubitGatesForAncillaIons: Dict[int, List[TwoQubitMSGate]] = {}
+
+    twoQubitGates: defaultdict[int, List[TwoQubitMSGate]] = defaultdict(list)
+
     for op in operations:
         if isinstance(op, TwoQubitMSGate):
-            ion1, ion2 = op.ions
-            ancilla, data = sorted(
-                (ion1, ion2), key=lambda ion: ion.label[0]=='D'
-            )
-            # extra logic in the case that both ions are ancilla ions
-            # future opt could be moving ion with less future operations 
-            # or based on number of ops needed to move to the "data" ion trap 
-            if ion1.label[0]==ion2.label[0]:
-                ancilla,data = sorted(
-                    (ion1, ion2), key=lambda ion: ion.idx
-                )
-            trap = ancilla.parent
-            if ancilla.idx in twoqubitGatesForAncillaIons:
-                twoqubitGatesForAncillaIons[ancilla.idx].append(op)
-            else:
-                twoqubitGatesForAncillaIons[ancilla.idx] = [op]
-    
-    opPriorities: Dict[Operation, int] = {op: i for i, op in enumerate(operations)}
+            # routed and stationary ion
+            # give preference to route ancilla 
+            r_ion, s_ion = _determineRouted(*op.ions)
+
+            trap = r_ion.parent
+            if r_ion.idx in twoQubitGates:
+                twoQubitGates[r_ion.idx].append(op)
+
+    opPriorities: Dict[Operation, int] = {op:i for i, op in enumerate(operations)}
 
     allOps: List[Operation] = []
     barriers: List[int] = []
-    operationsLeft = list(operations)
+    operationsRemaining = list(operations)
     toMoveCandidates: Dict[int, TwoQubitMSGate] = {}
 
-    while operationsLeft:
-
-
-        # Run the operations that do not need routing
-        
+    while operationsRemaining:
+        # Run ops that don't need routing
         while True:
             toRemove: List[Operation] = []
             ionsInvolved: Set[Ion] = set()
-            for op in operationsLeft:
+            for op in operationsRemaining:
                 trap = op.getTrapForIons()
                 if ionsInvolved.isdisjoint(op.ions) and trap:
                     op.setTrap(trap)
@@ -64,153 +71,126 @@ def ionRouting(
             for op in toRemove:
                 op.run()
                 allOps.append(op)
-                operationsLeft.remove(op)
                 if isinstance(op, TwoQubitMSGate):
-                    ion1, ion2 = op.ions
-                    ancilla, data = sorted(
-                        (ion1, ion2), key=lambda ion: ion.label[0]=='D'
-                    )
-                    #print(f"ion 1, ion2 = {ion1.label}, {ion2.label} in {op}")
-                    # case: both ions are ancilla ions
-                    if ion1.label[0]==ion2.label[0]:
-                        ancilla,data = sorted(
-                            (ion1, ion2), key=lambda ion: ion.idx
-                        )
-                        
+                    r_ion, s_ion = _determineRouted(*op.ions)
+                    twoQubitGates[r_ion.idx].remove(op)
 
-                    #print(f"ancilla, data = {ancilla.idx}, {data.idx} in {op}")
-                    if ancilla.idx in twoqubitGatesForAncillaIons:
-                        twoqubitGatesForAncillaIons[ancilla.idx].remove(op)
-
-                    """ if ion1.idx in twoqubitGatesForAncillaIons:
-                        print(ion1.label)
-                        print(f"twgfai ion1 = {twoqubitGatesForAncillaIons[ion1.idx]}")
-                        twoqubitGatesForAncillaIons[ion1.idx].remove(op)
-                    else:
-                        twoqubitGatesForAncillaIons[ion2.idx].remove(op) """
-            
             if len(toRemove) == 0:
                 break
 
-        # Determine the operations that need routing
-        for ancillaIdx in twoqubitGatesForAncillaIons.keys():
-            if ancillaIdx in toMoveCandidates:
+        # Find the ops that need routing
+        for rIdx in twoQubitGates.keys():
+            if rIdx in toMoveCandidates:
                 continue
-            if len(twoqubitGatesForAncillaIons[ancillaIdx]) == 0:
+            if len(twoQubitGates[rIdx]) == 0:
                 continue
-            gate = twoqubitGatesForAncillaIons[ancillaIdx][0]
+            gate = twoQubitGates[rIdx][0]
             trap = gate.getTrapForIons()
             if trap:
+                # Skip if ions in the same trap for gate op
                 continue
-            toMoveCandidates[ancillaIdx] = twoqubitGatesForAncillaIons[ancillaIdx].pop(0)
+            toMoveCandidates[rIdx] = twoQubitGates[rIdx].pop(0)
 
-        # move operations with priority according to the original happens before
-        toMove = sorted([(k,o) for k,o in toMoveCandidates.items()], key=lambda ko: opPriorities[ko[1]])
+        # Move ops with original happens-before priority (oldest first)
+        toMove = sorted([(k,o) for k,o in toMoveCandidates.items()], key = lambda ko: opPriorities[ko[1]])
 
-        crossingsUsed: Set[Crossing] = set()
-        qccdNodesFull: Set[QCCDNode] = set()
-        # ancillaIdx: op, pathChosen, destTrap, goBack
+        usedCrossings: Set[Crossing] = set()
+        fullQccdNodes: Set[QCCDNode] = set()
+        # routedIdx: op, pathChosen, destinationTrap, goBack
         movements: Dict[int, Tuple[TwoQubitMSGate, List[QCCDNode], Trap]] = {}
 
+        for rIdx, op in toMove:
+            r_ion, s_ion = _determineRouted(*op.ions)
 
-        # ionsInvolved = set()
-        for ancillaIdx, op in toMove:
-            ion1, ion2 = op.ions
-
-            ancilla, data = (ion1, ion2) if ion1.idx == ancillaIdx else (ion2, ion1)
-            trap = data.parent
+            trap = s_ion.parent
             if not isinstance(trap, Trap):
-                raise ValueError(f"Data Ion not in a trap {trap}")
-            
-            src = ancillaIdx
+                raise ValueError(f"Data Ion not in trap {trap}")
+
+            src = rIdx
             dest = trap.idx
             paths = list(nx.all_shortest_paths(qccdArch.graph, src, dest))
-            
-            qccdNodesChosen: List[QCCDNode] = []
-            crossingsChosen: List[Crossing] = []
 
+            chosenQccdNodes: List[QCCDNode] = []
+            chosenCrossings: List[Crossing] = []
+
+            # choosing possible routing path
             for path in paths:
                 crossingsInPath: List[Crossing] = []
+                # iterate over adjacent pairs in path
                 for n1, n2 in zip(path[:-1], path[1:]):
                     if (n1, n2) not in qccdArch.crossingEdges:
                         continue
                     crossingsInPath.append(qccdArch.crossingEdges[(n1,n2)])
 
                 qccdNodesInPath: List[QCCDNode] = []
-                for n in path: 
+                for n in path:
                     nd = qccdArch.nodes[n] if n in qccdArch.nodes else qccdArch.ions[n].parent
                     if nd not in qccdNodesInPath:
-                        qccdNodesInPath.append(nd)   
-
+                        qccdNodesInPath.append(nd)
+                    
                 qccdNodesInPathFull: List[QCCDNode] = []
-                # Do not include source since the source is going to decrease in ions or stay the same at all points
+
                 for qccdNode in qccdNodesInPath[1:]:
-                    if isinstance(qccdNode, Junction) and qccdNode.numIons==1:
-                        qccdNodesInPathFull.append(qccdNode)      
+                    if isinstance(qccdNode, Junction) and qccdNode.numIons == 1:
+                        qccdNodesInPathFull.append(qccdNode)
                     elif qccdNode.numIons == trapCapacity:
-                        qccdNodesInPathFull.append(qccdNode)        
-                            
-                if crossingsUsed.isdisjoint(crossingsInPath) and qccdNodesFull.isdisjoint(qccdNodesInPathFull):
-                    qccdNodesChosen = qccdNodesInPath
-                    crossingsChosen = crossingsInPath
-                    break 
+                        qccdNodesInPathFull.append(qccdNode)
 
-            # unable to complete move operation this time round
-            if len(qccdNodesChosen) == 0:
-                continue 
+                # Choose path if no overlap with full nodes + used crossings
+                if usedCrossings.isdisjoint(crossingsInPath) and fullQccdNodes.isdisjoint(qccdNodesInPathFull):
+                    chosenQccdNodes = qccdNodesInPath
+                    chosenCrossings = crossingsInPath
+                    break
 
-            # able to complete move operation 
-            toMoveCandidates.pop(ancillaIdx)
-            movements[ancillaIdx]=(op, qccdNodesChosen, trap)
-            # remove crossings that are reserved
-            crossingsUsed = crossingsUsed.union(crossingsChosen)
-            # increment traps and junctions number of ions by 1 EXCEPT the source
-            # remove traps and junctions if currently at capacity EXCEPT the source 
-            for qccdNode in qccdNodesChosen[1:]:
-                qccdNode.numIons+=1
-                if isinstance(qccdNode, Junction) and qccdNode.numIons==1:
-                    qccdNodesFull.add(qccdNode)
+            # can't do move ops
+            if len(chosenQccdNodes) == 0:
+                continue
+
+            # able to do move op
+            toMoveCandidates.pop(rIdx)
+            movements[rIdx] = (op, chosenQccdNodes, trap)
+
+            # remove reserved crossings
+            usedCrossings = usedCrossings.union(chosenCrossings)
+
+            # increment traps + juncs by 1 ion + remove traps + juncs at capacity
+            for qccdNode in chosenQccdNodes[1:]:
+                qccdNode.numIons += 1
+                if isinstance(qccdNode, Junction) and qccdNode.numIons == 1:
+                    fullQccdNodes.add(qccdNode)
                 elif qccdNode.numIons == trapCapacity:
-                    qccdNodesFull.add(qccdNode)
+                    fullQccdNodes.add(qccdNode)
 
-
-        # if destination trap is at capacity then we need to send the ancilla back to original trap at start of barrier to maintain invariant
+        # send back routed ion to og trap
         toForward: Dict[TwoQubitMSGate, Tuple[int, List[QCCDNode], Trap, Optional[Trap]]] = {}
-        for ancillaIdx, (op, qccdNodes, destTrap) in movements.items():
-            if destTrap.numIons == trapCapacity:
-                goBackTrap=qccdNodes[0]
-                for nd in qccdNodes[::-1][:-1]:
-                    # note we have already reserved the goBackTrap (qccdNode.numIons+=1) so no need to increment again
-                    if nd.numIons <= trapCapacity-1 and isinstance(nd, Trap):
-                        goBackTrap = nd
-                destTrap.numIons -= 1
-                # no need to increment srcTrap.numIons because we never decremented it in the first place
-            else: 
-                goBackTrap=None
-            toForward[op] = (ancillaIdx, qccdNodes, goBackTrap)
+        for rIdx, (op, qccdNodes, destTrap) in movements.items():
+            goBackTrap = qccdNodes[0]
+            # naive impl reroute ion back to original trap 
+            """for nd in qccdNodes[::-1][:-1]:
+                if nd.numIons <= trapCapacity-1 and isinstance(nd, Trap):
+                    goBackTrap = nd"""
+            destTrap.numIons -= 1
 
-        startedGoingBack = {op: False for op in toForward.keys()}
+        startedGoingBack = {op:False for op in toForward.keys()}
         while toForward:
             ionsInvolved = set()
             orderedToForward = sorted([(o, rc) for o, rc in toForward.items()], key=lambda orc: opPriorities[orc[0]])
-            for op, (ancillaIdx, qccdNodes, goBackTrap) in orderedToForward:
+            for op, (rIdx, qccdNodes, goBackTrap) in orderedToForward:
                 if not ionsInvolved.isdisjoint(op.ions):
-                    continue 
+                    continue
 
-                ionsInvolvedNow = [qccdArch.ions[ancillaIdx]]
+                ionsInvolvedNow = [qccdArch.ions[rIdx]]
 
-                n1 = ancillaIdx
-                n1Idx = qccdArch.ions[ancillaIdx].parent.idx
+                n1 = rIdx
+                n1Idx = qccdArch.ions[rIdx].parent.idx
                 trap = qccdNodes[-1]
                 srcTrap = goBackTrap
-            
+
                 if n1Idx == trap.idx and not startedGoingBack[op]:
-                    #print(f"Completing operation {op} at trap {trap.idx}")
-                    #print(f" requires ions {[(ion.label,ion.idx) for ion in op.ions]}")
                     op.setTrap(trap)
                     op.run()
                     allOps.append(op)
-                    operationsLeft.remove(op)
+                    operationsRemaining.remove(op)
                     ionsInvolved = ionsInvolved.union(op.ions)
                     if goBackTrap is not None:
                         startedGoingBack[op] = True
@@ -221,30 +201,25 @@ def ionRouting(
                     toForward.pop(op)
                     continue
 
-
                 if startedGoingBack[op]:
-                    n2Idx = [dn.idx for sn, dn in zip(qccdNodes[::-1][:-1], qccdNodes[::-1][1:]) if sn.idx == n1Idx][0]
+                    n2Idx = [dn.idx for sn, dn in zip(qccdNodes[::-1][-1], qccdNodes[::-1][1:]) if sn.idx == n1Idx][0]
                 else:
                     n2Idx = [dn.idx for sn, dn in zip(qccdNodes[:-1], qccdNodes[1:]) if sn.idx == n1Idx][0]
                 forwardingPath = nx.shortest_path(qccdArch.graph, n1, n2Idx)
-                ms: List[Operation] = []
+                ms = List[Operation] = []
                 for n1, n2 in zip(forwardingPath[:-1], forwardingPath[1:]):
-                    ms.extend(qccdArch.graph.edges[n1, n2]["operations"])
-                    
+                    ms.extend(qccdArch.graph.edges[n1,n2]["operations"])
+
                 for m in ms:
                     if isinstance(m, CrystalOperation):
                         ionsInvolvedNow.extend(m.ionsInfluenced)
-                    # Hack FIXME
                     if isinstance(m, GateSwap) and m._ion1==m._ion2:
                         continue
                     m.run()
                     allOps.append(m)
-                
+
                 qccdArch.refreshGraph()
                 ionsInvolved = ionsInvolved.union(ionsInvolvedNow)
-
         barriers.append(len(allOps))
 
     return allOps, barriers
-
-

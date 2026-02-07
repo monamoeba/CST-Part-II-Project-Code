@@ -26127,3 +26127,8 @@ SpawnProcess-3 - INFO - process shutting down
 
 SpawnProcess-12 - INFO - process shutting down
 SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 5 and type superdense
+SpawnProcess-1 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 5, capacity 5 and type <class 'type'>
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process exiting with exitcode 0

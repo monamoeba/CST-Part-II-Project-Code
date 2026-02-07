@@ -44739,3 +44739,31 @@ This problem can unfortunately be quite difficult to debug. Likely causes are:
     (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
     (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
 
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 261, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1080, in process_model_color_code_circuit
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_ion_routing.py", line 83, in ionRouting
+    twoqubitGatesForAncillaIons[ancilla.idx].remove(op)
+ValueError: list.remove(x): x not in list
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 64, in main
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: list.remove(x): x not in list
