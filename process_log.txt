@@ -44767,3 +44767,5 @@ Traceback (most recent call last):
   File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
     raise self._exception
 ValueError: list.remove(x): x not in list
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Starting parallel processing of circuits

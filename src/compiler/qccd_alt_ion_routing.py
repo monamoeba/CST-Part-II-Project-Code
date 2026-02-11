@@ -44,10 +44,8 @@ def naiveAltIonRouting(
             # routed and stationary ion
             # give preference to route ancilla 
             r_ion, s_ion = _determineRouted(*op.ions)
-
             trap = r_ion.parent
-            if r_ion.idx in twoQubitGates:
-                twoQubitGates[r_ion.idx].append(op)
+            twoQubitGates[r_ion.idx].append(op)
 
     opPriorities: Dict[Operation, int] = {op:i for i, op in enumerate(operations)}
 
@@ -55,9 +53,9 @@ def naiveAltIonRouting(
     barriers: List[int] = []
     operationsRemaining = list(operations)
     toMoveCandidates: Dict[int, TwoQubitMSGate] = {}
-
     while operationsRemaining:
-        # Run ops that don't need routing
+        
+        # Find and run ops that don't need routing
         while True:
             toRemove: List[Operation] = []
             ionsInvolved: Set[Ion] = set()
@@ -71,6 +69,7 @@ def naiveAltIonRouting(
             for op in toRemove:
                 op.run()
                 allOps.append(op)
+                operationsRemaining.remove(op)
                 if isinstance(op, TwoQubitMSGate):
                     r_ion, s_ion = _determineRouted(*op.ions)
                     twoQubitGates[r_ion.idx].remove(op)
@@ -78,7 +77,6 @@ def naiveAltIonRouting(
             if len(toRemove) == 0:
                 break
 
-        # Find the ops that need routing
         for rIdx in twoQubitGates.keys():
             if rIdx in toMoveCandidates:
                 continue
@@ -93,15 +91,15 @@ def naiveAltIonRouting(
 
         # Move ops with original happens-before priority (oldest first)
         toMove = sorted([(k,o) for k,o in toMoveCandidates.items()], key = lambda ko: opPriorities[ko[1]])
-
         usedCrossings: Set[Crossing] = set()
         fullQccdNodes: Set[QCCDNode] = set()
-        # routedIdx: op, pathChosen, destinationTrap, goBack
         movements: Dict[int, Tuple[TwoQubitMSGate, List[QCCDNode], Trap]] = {}
+        # routedIdx: op, pathChosen, destinationTrap, goBackTrap
 
+        #determining path each routing operation should take
         for rIdx, op in toMove:
             r_ion, s_ion = _determineRouted(*op.ions)
-
+            # destination trap (where stationary ion is)
             trap = s_ion.parent
             if not isinstance(trap, Trap):
                 raise ValueError(f"Data Ion not in trap {trap}")
@@ -127,14 +125,12 @@ def naiveAltIonRouting(
                     nd = qccdArch.nodes[n] if n in qccdArch.nodes else qccdArch.ions[n].parent
                     if nd not in qccdNodesInPath:
                         qccdNodesInPath.append(nd)
-                    
-                qccdNodesInPathFull: List[QCCDNode] = []
 
-                for qccdNode in qccdNodesInPath[1:]:
-                    if isinstance(qccdNode, Junction) and qccdNode.numIons == 1:
-                        qccdNodesInPathFull.append(qccdNode)
-                    elif qccdNode.numIons == trapCapacity:
-                        qccdNodesInPathFull.append(qccdNode)
+                qccdNodesInPathFull = {
+                    qccdNode
+                    for qccdNode in qccdNodesInPath[1:]
+                    if (isinstance(qccdNode, Junction) and qccdNode.numIons == 1) or (qccdNode.numIons == trapCapacity)
+                }
 
                 # Choose path if no overlap with full nodes + used crossings
                 if usedCrossings.isdisjoint(crossingsInPath) and fullQccdNodes.isdisjoint(qccdNodesInPathFull):
@@ -166,12 +162,12 @@ def naiveAltIonRouting(
         for rIdx, (op, qccdNodes, destTrap) in movements.items():
             goBackTrap = qccdNodes[0]
             # naive impl reroute ion back to original trap 
-            """for nd in qccdNodes[::-1][:-1]:
-                if nd.numIons <= trapCapacity-1 and isinstance(nd, Trap):
-                    goBackTrap = nd"""
             destTrap.numIons -= 1
 
+            toForward[op] = (rIdx, qccdNodes, goBackTrap)
+
         startedGoingBack = {op:False for op in toForward.keys()}
+        # forwarding the ions and sending them back after running operation
         while toForward:
             ionsInvolved = set()
             orderedToForward = sorted([(o, rc) for o, rc in toForward.items()], key=lambda orc: opPriorities[orc[0]])
@@ -179,13 +175,18 @@ def naiveAltIonRouting(
                 if not ionsInvolved.isdisjoint(op.ions):
                     continue
 
-                ionsInvolvedNow = [qccdArch.ions[rIdx]]
+                r_idx, s_idx = (i.idx for i in _determineRouted(*op.ions))
+                # include stationary ion (to ensure it is actually stationary
+                ionsInvolvedNow = [qccdArch.ions[r_idx], qccdArch.ions[s_idx]]
 
                 n1 = rIdx
+                #index of the trap the routing ion is in 
                 n1Idx = qccdArch.ions[rIdx].parent.idx
+                #index of the destination trap
                 trap = qccdNodes[-1]
                 srcTrap = goBackTrap
 
+                # arrived at stationary ion's trap and haven't ran operation yet
                 if n1Idx == trap.idx and not startedGoingBack[op]:
                     op.setTrap(trap)
                     op.run()
@@ -197,16 +198,19 @@ def naiveAltIonRouting(
                     else:
                         toForward.pop(op)
                         continue
+                # have ran operation, started going back and arrived at start trap 
                 elif startedGoingBack[op] and n1Idx == srcTrap.idx:
                     toForward.pop(op)
                     continue
 
+                # op has run started going back (or hasn't - needs to be routed)
                 if startedGoingBack[op]:
-                    n2Idx = [dn.idx for sn, dn in zip(qccdNodes[::-1][-1], qccdNodes[::-1][1:]) if sn.idx == n1Idx][0]
+                    n2Idx = [dn.idx for sn, dn in zip(qccdNodes[::-1][:-1], qccdNodes[::-1][1:]) if sn.idx == n1Idx][0]
                 else:
                     n2Idx = [dn.idx for sn, dn in zip(qccdNodes[:-1], qccdNodes[1:]) if sn.idx == n1Idx][0]
                 forwardingPath = nx.shortest_path(qccdArch.graph, n1, n2Idx)
-                ms = List[Operation] = []
+                
+                ms: List[Operation] = []
                 for n1, n2 in zip(forwardingPath[:-1], forwardingPath[1:]):
                     ms.extend(qccdArch.graph.edges[n1,n2]["operations"])
 
@@ -217,9 +221,10 @@ def naiveAltIonRouting(
                         continue
                     m.run()
                     allOps.append(m)
-
+                    
                 qccdArch.refreshGraph()
                 ionsInvolved = ionsInvolved.union(ionsInvolvedNow)
+
         barriers.append(len(allOps))
 
     return allOps, barriers

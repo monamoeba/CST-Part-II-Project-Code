@@ -26132,3 +26132,99 @@ SpawnProcess-1 - INFO - Processing circuit with 37 qubits and 8 rows
 SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 5, capacity 5 and type <class 'type'>
 SpawnProcess-1 - INFO - process shutting down
 SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 2 and type superdense
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 3 and type superdense
+SpawnProcess-7 - INFO - Starting circuit generation for distance 5, capacity 4 and type superdense
+SpawnProcess-7 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-4 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-3 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 5 and type superdense
+SpawnProcess-2 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-6 - INFO - Starting circuit generation for distance 5, capacity 6 and type superdense
+SpawnProcess-6 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-10 - INFO - Starting circuit generation for distance 5, capacity 7 and type superdense
+SpawnProcess-10 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 8 and type superdense
+SpawnProcess-5 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-9 - INFO - Starting circuit generation for distance 5, capacity 9 and type superdense
+SpawnProcess-9 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-12 - INFO - Starting circuit generation for distance 5, capacity 10 and type superdense
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 11 and type superdense
+SpawnProcess-12 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-1 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 5 and type <class 'type'>
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 5, capacity 7 and type <class 'type'>
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 5, capacity 6 and type <class 'type'>
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 8 and type <class 'type'>
+SpawnProcess-8 - INFO - Starting circuit generation for distance 5, capacity 12 and type superdense
+SpawnProcess-8 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 5, capacity 11 and type <class 'type'>
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 5, capacity 9 and type <class 'type'>
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 5, capacity 10 and type <class 'type'>
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 5, capacity 4 and type <class 'type'>
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 5, capacity 12 and type <class 'type'>
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 3 and type <class 'type'>
+SpawnProcess-11 - INFO - Starting circuit generation for distance 5, capacity 13 and type superdense
+SpawnProcess-11 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 5, capacity 13 and type <class 'type'>
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 2 and type <class 'type'>
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 14 and type superdense
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 14 and type superdense
+SpawnProcess-1 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-1 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 15 and type superdense
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 15 and type superdense
+SpawnProcess-2 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-2 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 30 and type superdense
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 30 and type superdense
+SpawnProcess-5 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-5 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-11 - INFO - Starting circuit generation for distance 5, capacity 60 and type superdense
+SpawnProcess-11 - INFO - Starting circuit generation for distance 5, capacity 60 and type superdense
+SpawnProcess-11 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-11 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-8 - INFO - Starting circuit generation for distance 5, capacity 120 and type superdense
+SpawnProcess-8 - INFO - Starting circuit generation for distance 5, capacity 120 and type superdense
+SpawnProcess-8 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-8 - INFO - Processing circuit with 37 qubits and 8 rows
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 5, capacity 14 and type <class 'type'>
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 5, capacity 14 and type <class 'type'>
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 30 and type <class 'type'>
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 30 and type <class 'type'>
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 5, capacity 60 and type <class 'type'>
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 5, capacity 60 and type <class 'type'>
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 5, capacity 120 and type <class 'type'>
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 5, capacity 120 and type <class 'type'>
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 15 and type <class 'type'>
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 15 and type <class 'type'>
+SpawnProcess-12 - INFO - process exiting with exitcode 1
+SpawnProcess-12 - INFO - process shutting down
+SpawnProcess-6 - INFO - process exiting with exitcode 1
+SpawnProcess-5 - INFO - process exiting with exitcode 1
+SpawnProcess-6 - INFO - process shutting down
+SpawnProcess-5 - INFO - process exiting with exitcode 1
+SpawnProcess-5 - INFO - process shutting down
+SpawnProcess-4 - INFO - process exiting with exitcode 1
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-10 - INFO - process exiting with exitcode 1
+SpawnProcess-3 - INFO - process exiting with exitcode 1
+SpawnProcess-10 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-7 - INFO - process exiting with exitcode 1
+SpawnProcess-1 - INFO - process exiting with exitcode 1
+SpawnProcess-7 - INFO - process shutting down
+itcode 1
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-2 - INFO - process exiting with exitcode 1
+SpawnProcess-2 - INFO - process exiting with exitcode 1
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-11 - INFO - process exiting with exitcode 0SpawnProcess-8 - INFO - process exiting with exitcode 0
+SpawnProcess-11 - INFO - process exiting with exitcode 0
+SpawnProcess-9 - INFO - process shutting down
+SpawnProcess-8 - INFO - process shutting down
+SpawnProcess-8 - INFO - process shutting down
+SpawnProcess-11 - INFO - process shutting down
+SpawnProcess-11 - INFO - process shutting down

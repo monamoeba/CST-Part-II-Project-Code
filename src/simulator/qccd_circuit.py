@@ -18,6 +18,7 @@ from src.utils.qccd_arch import *
 from src.compiler.qccd_parallelisation import *
 from src.compiler.qccd_qubits_to_ions import *
 from src.compiler.qccd_ion_routing import *
+from src.compiler.qccd_alt_ion_routing import *
 from src.compiler.qccd_WISE_ion_route import *
 from src.compiler.qccd_color_qubits_to_ions import *
 from src.color_code_utils.color_code_circuits.color_code_circuit_666 import ColorCodeCircuit666
@@ -458,10 +459,10 @@ class QCCDCircuit(stim.Circuit):
         instructions, barriers = self._parseCircuitString(dataQubitsIdxs=dataQubitIdxs)
         if (trapCapacity-1) * ((rows-1) * (2*cols-1)+cols) < len(self._ionMapping):
             raise ValueError("processCircuit: not enough traps")
-        print(f' measurement ions: {[ion.label for ion in self._measurementIons]}')
-        print(f' data ions: {[ion.label for ion in self._dataIons]}')
+        #print(f' measurement ions: {[ion.label for ion in self._measurementIons]}')
+        #print(f' data ions: {[ion.label for ion in self._dataIons]}')
         clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
-        print(f"clusters = {clusters}")
+        #print(f"clusters = {clusters}")
         #clusters=regularColorPartition(self._measurementIons, self._dataIons, trapCapacity)
         """ temp cluster printing
         for ci, c in enumerate(clusters):
@@ -1078,7 +1079,7 @@ def process_model_color_code_circuit(distance, capacity, gate_improvements, num_
     label ="Forwarding"
 
     logger.info(f"Processing operations using {label} for distance {distance}, capacity {capacity} and type {type}")
-    allOps, barriers = ionRouting(arch, instructions, capacity)
+    allOps, barriers = naiveAltIonRouting(arch, instructions, capacity)
  
     parallelOpsMap = paralleliseOperationsWithBarriers(allOps, barriers)
     logicalErrors = []

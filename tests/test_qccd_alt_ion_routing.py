@@ -1,27 +1,38 @@
 import pytest
 from src.compiler.qccd_alt_ion_routing import naiveAltIonRouting
 from src.simulator.qccd_circuit import QCCDCircuit
+import numpy as np
 
-TEST_DISTANCE = 3
+TEST_DISTANCE = 5
 TEST_CAPACITY = 2
 
 @pytest.fixture
-def setup_normal_circuit():
+def setup_circuit():
     """
     Generate a QCCDCircuit for testing.
     """
 
-    circuit = QCCDCircuit.generated(
-        "surface_code:rotated_memory_z",
-        rounds=1,
-        distance=TEST_DISTANCE,
-    )
-    arch, (instructions, _) = circuit.processCircuitAugmentedGrid(
-        rows=TEST_DISTANCE + 1, 
-        cols=TEST_DISTANCE + 1, 
+    path = ".\\color_code_experiments\\r=20,d=5,p=0.001,noise=uniform,c=midout_color_code_488_Z,gates=all.stim"
+
+    with open(path, "r") as f:
+        raw = f.read()
+
+    circuit = QCCDCircuit(raw)
+
+    s = "17 15 14 13 12 11 10 5 4 3 0"
+    d_qubits = list(int(i) for i in s.strip().split(" "))
+    circuit.dataQubitsIdxs = list(d_qubits)
+    qcount = 21
+    nrowsNeeded = int(np.sqrt(qcount))+2
+
+    arch, (instructions, _) = circuit.processColorCircuitAugmentedGrid(
+        rows=nrowsNeeded, 
+        cols=nrowsNeeded,
         trapCapacity=TEST_CAPACITY, 
+        dataQubitIdxs=d_qubits
     )
     arch.refreshGraph()
+
     return arch, instructions
 
 def test_no_operations(setup_circuit):
@@ -70,15 +81,24 @@ def test_high_trap_capacity(setup_circuit):
     Test `ionRouting` with high trap capacity.
     """
     trapCapacity = 2*TEST_DISTANCE**2+1
-    circuit = QCCDCircuit.generated(
-        "surface_code:rotated_memory_z",
-        rounds=1,
-        distance=TEST_DISTANCE,
-    )
-    arch, (instructions, _) = circuit.processCircuitAugmentedGrid(
-        rows=TEST_DISTANCE + 1, 
-        cols=TEST_DISTANCE + 1, 
-        trapCapacity=trapCapacity, 
+    path = ".\\color_code_experiments\\r=20,d=5,p=0.001,noise=uniform,c=midout_color_code_488_Z,gates=all.stim"
+
+    with open(path, "r") as f:
+        raw = f.read()
+
+    circuit = QCCDCircuit(raw)
+
+    s = "17 15 14 13 12 11 10 5 4 3 0"
+    d_qubits = list(int(i) for i in s.strip().split(" "))
+    circuit.dataQubitsIdxs = list(d_qubits)
+    qcount = 21
+    nrowsNeeded = int(np.sqrt(qcount))+2
+
+    arch, (instructions, _) = circuit.processColorCircuitAugmentedGrid(
+        rows=nrowsNeeded, 
+        cols=nrowsNeeded,
+        trapCapacity=TEST_CAPACITY, 
+        dataQubitIdxs=d_qubits
     )
     arch.refreshGraph()
     
