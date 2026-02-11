@@ -15,7 +15,6 @@ from src.utils.qccd_operations_on_qubits import *
 from src.utils.qccd_arch import *
 
 
-
 def _determineRouted(ion1:Ion, ion2:Ion):
     """ Determines the ion that will be routed between the pair """
     if ion1.label[0]==ion2.label[0]:
@@ -37,15 +36,16 @@ def naiveAltIonRouting(
     trapCapacity: int
 ) -> Tuple[Sequence[Operation], Sequence[int]]:
 
-    twoQubitGates: defaultdict[int, List[TwoQubitMSGate]] = defaultdict(list)
-
+    twoQubitGates: defaultdict[int, Tuple[int, List[Tuple[int,TwoQubitMSGate]]]] = defaultdict(list)
+    #stores r_idx: [(s_idx, op), ...]
+    
     for op in operations:
         if isinstance(op, TwoQubitMSGate):
             # routed and stationary ion
             # give preference to route ancilla 
             r_ion, s_ion = _determineRouted(*op.ions)
             trap = r_ion.parent
-            twoQubitGates[r_ion.idx].append(op)
+            twoQubitGates[r_ion.idx].append((s_ion.idx, op))
 
     opPriorities: Dict[Operation, int] = {op:i for i, op in enumerate(operations)}
 
@@ -53,8 +53,9 @@ def naiveAltIonRouting(
     barriers: List[int] = []
     operationsRemaining = list(operations)
     toMoveCandidates: Dict[int, TwoQubitMSGate] = {}
+    ionReserved: defaultdict[int, bool] = defaultdict(bool)
     while operationsRemaining:
-        
+        prevOperationsRemaining = len(operationsRemaining)
         # Find and run ops that don't need routing
         while True:
             toRemove: List[Operation] = []
@@ -72,7 +73,9 @@ def naiveAltIonRouting(
                 operationsRemaining.remove(op)
                 if isinstance(op, TwoQubitMSGate):
                     r_ion, s_ion = _determineRouted(*op.ions)
-                    twoQubitGates[r_ion.idx].remove(op)
+                    twoQubitGates[r_ion.idx].remove((s_ion.idx, op))
+                    # ensure stationary ion is not left permanently reserved
+                    ionReserved[s_ion.idx] = False
 
             if len(toRemove) == 0:
                 break
@@ -82,12 +85,16 @@ def naiveAltIonRouting(
                 continue
             if len(twoQubitGates[rIdx]) == 0:
                 continue
-            gate = twoQubitGates[rIdx][0]
+            sIdx, gate = twoQubitGates[rIdx][0]
             trap = gate.getTrapForIons()
             if trap:
-                # Skip if ions in the same trap for gate op
                 continue
-            toMoveCandidates[rIdx] = twoQubitGates[rIdx].pop(0)
+            if sIdx in toMoveCandidates or ionReserved[sIdx]:
+                continue
+            # At this point, the gate is non-local and the stationary ion is free.
+            ionReserved[sIdx] = True
+            #operation not moved into toMoveCandidates if sIon reserved or going to be moved
+            toMoveCandidates[rIdx] = twoQubitGates[rIdx].pop(0)[1]
 
         # Move ops with original happens-before priority (oldest first)
         toMove = sorted([(k,o) for k,o in toMoveCandidates.items()], key = lambda ko: opPriorities[ko[1]])
@@ -140,6 +147,9 @@ def naiveAltIonRouting(
 
             # can't do move ops
             if len(chosenQccdNodes) == 0:
+                # Release the stationary ion for future batches if routing this
+                # candidate is not currently possible.
+                ionReserved[s_ion.idx] = False
                 continue
 
             # able to do move op
@@ -163,7 +173,6 @@ def naiveAltIonRouting(
             goBackTrap = qccdNodes[0]
             # naive impl reroute ion back to original trap 
             destTrap.numIons -= 1
-
             toForward[op] = (rIdx, qccdNodes, goBackTrap)
 
         startedGoingBack = {op:False for op in toForward.keys()}
@@ -190,6 +199,7 @@ def naiveAltIonRouting(
                 if n1Idx == trap.idx and not startedGoingBack[op]:
                     op.setTrap(trap)
                     op.run()
+                    ionReserved[s_idx] = False
                     allOps.append(op)
                     operationsRemaining.remove(op)
                     ionsInvolved = ionsInvolved.union(op.ions)
@@ -226,5 +236,7 @@ def naiveAltIonRouting(
                 ionsInvolved = ionsInvolved.union(ionsInvolvedNow)
 
         barriers.append(len(allOps))
-
+        if len(operationsRemaining) == prevOperationsRemaining:
+            raise ValueError(f"No progress made in outer loop")
+        
     return allOps, barriers
