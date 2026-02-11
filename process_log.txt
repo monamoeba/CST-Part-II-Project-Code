@@ -44769,3 +44769,109 @@ Traceback (most recent call last):
 ValueError: list.remove(x): x not in list
 MainProcess - INFO - Starting parallel processing of circuits
 MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1090, in process_model_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 312, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 328, in _sample
+    detector_error_model = circuit.detector_error_model(decompose_errors=True)
+ValueError: Failed to decompose errors into graphlike components with at most two symptoms.
+The error component that failed to decompose is 'D2, D3, D6, D16, D17, D23, L0'.
+
+In Python, you can ignore this error by passing `ignore_decomposition_failures=True` to `stim.Circuit.detector_error_model(...)`.
+From the command line, you can ignore this error by passing the flag `--ignore_decomposition_failures` to `stim analyze_errors`.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 65, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose errors into graphlike components with at most two symptoms.
+The error component that failed to decompose is 'D2, D3, D6, D16, D17, D23, L0'.
+
+In Python, you can ignore this error by passing `ignore_decomposition_failures=True` to `stim.Circuit.detector_error_model(...)`.
+From the command line, you can ignore this error by passing the flag `--ignore_decomposition_failures` to `stim analyze_errors`.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 1091, in process_model_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 312, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 324, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00265853) D13 D16 D27 D28 D29 D30 D31 D34 D35 D40 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [16, 29, 30, 34, 35, 40]
+    Decomposed piece: D27 D28 L0
+    Decomposed piece: D13 D31
+    Detector data:
+        D13: coords=[3, 1, 1, 1] ColorBasis{.color=G, .basis=X}
+        D16: coords=[4, 1, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D27: coords=[1, 0, 2, 0] ColorBasis{.color=R, .basis=X}
+        D28: coords=[1, 2, 2, 2] ColorBasis{.color=B, .basis=X}
+        D29: coords=[2, 0, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D30: coords=[2, 2, 2, 5] ColorBasis{.color=B, .basis=Z}
+        D31: coords=[3, 1, 2, 1] ColorBasis{.color=G, .basis=X}
+        D34: coords=[4, 1, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D35: coords=[4, 3, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D40: coords=[6, 0, 2, 3] ColorBasis{.color=R, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 65, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00265853) D13 D16 D27 D28 D29 D30 D31 D34 D35 D40 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [16, 29, 30, 34, 35, 40]
+    Decomposed piece: D27 D28 L0
+    Decomposed piece: D13 D31
+    Detector data:
+        D13: coords=[3, 1, 1, 1] ColorBasis{.color=G, .basis=X}
+        D16: coords=[4, 1, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D27: coords=[1, 0, 2, 0] ColorBasis{.color=R, .basis=X}
+        D28: coords=[1, 2, 2, 2] ColorBasis{.color=B, .basis=X}
+        D29: coords=[2, 0, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D30: coords=[2, 2, 2, 5] ColorBasis{.color=B, .basis=Z}
+        D31: coords=[3, 1, 2, 1] ColorBasis{.color=G, .basis=X}
+        D34: coords=[4, 1, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D35: coords=[4, 3, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D40: coords=[6, 0, 2, 3] ColorBasis{.color=R, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+

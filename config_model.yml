@@ -1,6 +1,6 @@
 # QCCD Hardware Parameters
 hardware:
-  trap_capacity: [5] 
+  trap_capacity: [2,5,10] 
   topology: "grid" 
 
 # QEC Code Properties

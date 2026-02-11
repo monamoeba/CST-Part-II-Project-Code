@@ -1061,6 +1061,7 @@ def process_model_color_code_circuit(distance, capacity, gate_improvements, num_
 
     circuit = QCCDCircuit(raw)
     circuit.dataQubitsIdxs = list(d_qubit_ids)
+    circuit.iscolorcode = True #ensure chromobius used when simulate
 
     #for single ancilla circuits
     nqubitsNeeded = qcount
