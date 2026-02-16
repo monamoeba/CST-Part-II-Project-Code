@@ -3,6 +3,8 @@ import numpy.typing as npt
 from scipy.spatial import distance_matrix
 from scipy.optimize import linear_sum_assignment
 from typing import (
+    Dict,
+    List,
     Sequence,
     Tuple,
 )
