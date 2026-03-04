@@ -1,12 +1,12 @@
 # QCCD Hardware Parameters
 hardware:
-  trap_capacity: [2,5,10] 
+  trap_capacity: [2,5,10,120] 
   topology: "grid" 
 
 # QEC Code Properties
 qec:
   code_type: "surface_code:rotated_memory_z"
-  distances: [5]  
+  distances: [3,5,7,9]  
   gate_improvements: [1.0]
 
 # Simulation Settings

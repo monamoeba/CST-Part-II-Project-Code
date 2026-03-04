@@ -5,6 +5,7 @@ from typing import (
     Tuple,
 )
 from collections import deque
+from scipy.spatial import cKDTree
 from src.utils.qccd_nodes import *
 from src.utils.qccd_operations import *
 from src.utils.qccd_operations_on_qubits import *
@@ -90,6 +91,193 @@ def TriangularPartitionIons(
     return final_clusters
     # change to reduce overclustering - add some check to see if clusters can be merged together if under capacity
 
+
+def TriangularPartitionIons_vectorised(
+    ions: Sequence[Ion], coords: npt.NDArray[np.float64], trapCapacity: int
+) -> Sequence[Tuple[Sequence[Ion], Tuple[float, float]]]:
+    """
+    Vectorised draft of TriangularPartitionIons for benchmarking.
+    Same API as TriangularPartitionIons but classifies points per triangle
+    using batched NumPy operations instead of a Python loop.
+    """
+    A = np.array([np.min(coords[:, 0]) - 1.0, np.min(coords[:, 1]) - 1.0])
+    B = np.array([np.max(coords[:, 0]) + 1.0, np.min(coords[:, 1]) - 1.0])
+    C = np.array([np.mean(coords[:, 0]), np.max(coords[:, 1]) + 1.0])
+    all_clusters = []
+    stack = deque([(np.array([A, B, C]), coords, 0)])
+
+    while stack:
+        vertices, points, depth = stack.popleft()
+
+        if len(points) <= trapCapacity:
+            if len(points) > 0:
+                all_clusters.append(points)
+            continue
+
+        A, B, C = vertices
+
+        mAB = (A + B) / 2
+        mBC = (B + C) / 2
+        mCA = (C + A) / 2
+
+        subtriangles = {
+            "top": [A, mAB, mCA],
+            "left": [mAB, B, mBC],
+            "right": [mCA, mBC, C],
+            "center": [mAB, mBC, mCA],
+        }
+
+        ba = B - A
+        ca = C - A
+        dot00 = np.dot(ba, ba)
+        dot01 = np.dot(ba, ca)
+        dot11 = np.dot(ca, ca)
+        denom = dot00 * dot11 - dot01 * dot01
+        idenom = 1.0 / denom if abs(denom) > 1e-10 else 0.0
+
+        # Vectorised computation of barycentric coordinates for all points in this triangle.
+        # points has shape (n, 2). PA, dot20, dot21, u, v, w are all computed in one batch.
+        PA = points - A  # (n, 2)
+        dot20 = PA @ ba  # (n,)
+        dot21 = PA @ ca  # (n,)
+
+        v = (dot11 * dot20 - dot01 * dot21) * idenom
+        w = (dot00 * dot21 - dot01 * dot20) * idenom
+        u = 1.0 - v - w
+
+        top_mask = u > 0.5
+        left_mask = (~top_mask) & (v > 0.5)
+        right_mask = (~top_mask) & (~left_mask) & (w > 0.5)
+        center_mask = ~(top_mask | left_mask | right_mask)
+
+        top_points = points[top_mask]
+        left_points = points[left_mask]
+        right_points = points[right_mask]
+        center_points = points[center_mask]
+
+        for name, subpts in [
+            ("top", top_points),
+            ("left", left_points),
+            ("right", right_points),
+            ("center", center_points),
+        ]:
+            if len(subpts) > 0:
+                stack.append((np.array(subtriangles[name]), subpts, depth + 1))
+
+    result = []
+    for clust in all_clusters:
+        clusterCentre = np.mean(clust, axis=0)
+        result.append((clust, clusterCentre))
+
+    coordsToIons = {(c[0], c[1]): i for c, i in zip(coords, ions)}
+    # Use KD-tree based merging if SciPy is available; otherwise fall back to the original method
+    if cKDTree is not None:
+        final_clusters = _mergeUnderfilledClusters_kdtree(result, trapCapacity, coordsToIons)
+    else:
+        final_clusters = _mergeUnderfilledClusters(result, trapCapacity, coordsToIons)
+    return final_clusters
+
+
+def _mergeUnderfilledClusters_kdtree(
+    clusters: Sequence[Tuple[npt.NDArray[np.float64], npt.NDArray[np.float64]]],
+    trapCapacity: int,
+    coordsToIons: dict,
+    thresh: float = 2.5,
+) -> Sequence[Tuple[Sequence[Ion], Tuple[float, float]]]:
+    """
+    KD-tree based variant of _mergeUnderfilledClusters for benchmarking.
+    Uses a spatial index on cluster centres to avoid exhaustive pairwise scans.
+    """
+
+    # Initialise cluster records
+    toCheck = []
+    for coords, center in clusters:
+        toCheck.append(
+            {
+                "size": len(coords),
+                "center": np.asarray(center, dtype=float),
+                "active": True,
+                "coords": np.asarray(coords),
+            }
+        )
+
+    while True:
+        # Indices of currently active clusters
+        active_indices = [i for i, c in enumerate(toCheck) if c["active"]]
+        if len(active_indices) < 2:
+            break
+
+        centers = np.array([toCheck[i]["center"] for i in active_indices])
+        sizes = np.array([toCheck[i]["size"] for i in active_indices])
+
+        # Build KD-tree over current centres
+        tree = cKDTree(centers)
+
+        # Process clusters in ascending size order (prefer merging small ones)
+        order = np.argsort(sizes)
+        merged = False
+
+        for ord_pos in order:
+            idx0 = active_indices[ord_pos]
+            c1 = toCheck[idx0]
+            if not c1["active"]:
+                continue
+
+            # Query neighbours within thresh of this centre
+            nbr_positions = tree.query_ball_point(c1["center"], r=thresh)
+            bestpartner_global = -1
+            bestdist2 = float("inf")
+
+            for pos in nbr_positions:
+                if pos == ord_pos:
+                    continue
+                idx_other = active_indices[pos]
+                c2 = toCheck[idx_other]
+                if not c2["active"]:
+                    continue
+
+                if c1["size"] + c2["size"] > trapCapacity:
+                    continue
+
+                diff = c1["center"] - c2["center"]
+                dist2 = diff[0] * diff[0] + diff[1] * diff[1]
+                if dist2 < bestdist2:
+                    bestdist2 = dist2
+                    bestpartner_global = idx_other
+
+            if bestpartner_global != -1:
+                c2 = toCheck[bestpartner_global]
+
+                newsize = c1["size"] + c2["size"]
+                newcenter = (c1["size"] * c1["center"] + c2["size"] * c2["center"]) / newsize
+                newcoords = np.concatenate((c1["coords"], c2["coords"]), axis=0)
+
+                newcluster = {
+                    "size": newsize,
+                    "center": newcenter,
+                    "active": True,
+                    "coords": newcoords,
+                }
+
+                c1["active"] = False
+                c2["active"] = False
+                toCheck.append(newcluster)
+
+                merged = True
+                break
+
+        if not merged:
+            break
+
+    finalCoordCenters = [(t["coords"], t["center"]) for t in toCheck if t["active"]]
+
+    res = []
+    for clust in finalCoordCenters:
+        ions = [coordsToIons[(c[0], c[1])] for c in clust[0]]
+        cent = tuple(clust[1])
+        res.append((ions, cent))
+    return res
+
 def _mergeUnderfilledClusters(
     clusters: Sequence[Tuple[Sequence[Ion], npt.NDArray[np.float64]]], trapCapacity: int, coordsToIons: dict
 ) -> Sequence[Tuple[Sequence[Ion], npt.NDArray[np.float64]]]:
@@ -149,7 +337,9 @@ def _mergeUnderfilledClusters(
     return res
 
 def regularColorPartition(measurementIons: Sequence[Ion], dataIons: Sequence[Ion], trapCapacity: int):
-    """Arranges ions into clusters based on a regular triangular partitioning scheme filling with at most trapCapacity-1 ions to allow for movement in routing"""
+    """Arranges ions into clusters based on a regular triangular partitioning
+    scheme filling with at most trapCapacity-1 ions to allow for movement in routing"""
+    
     measurementIonsL = list(measurementIons)
     measurementIonCoords = np.array([list(ion.pos) for ion in measurementIonsL])
     dataIonsL = list(dataIons)
@@ -159,6 +349,27 @@ def regularColorPartition(measurementIons: Sequence[Ion], dataIons: Sequence[Ion
     coords = np.concatenate([measurementIonCoords, dataIonCoords])
 
     clusters = TriangularPartitionIons(ids, coords, trapCapacity-1)
+
+    return clusters
+
+
+def regularColorPartition_vectorised(
+    measurementIons: Sequence[Ion], dataIons: Sequence[Ion], trapCapacity: int
+):
+    """
+    Vectorised version of regularColorPartition for benchmarking.
+    Uses TriangularPartitionIons_vectorised (with KD-tree merging if available)
+    to assess the impact of clustering optimisations on the full compilation pass.
+    """
+    measurementIonsL = list(measurementIons)
+    measurementIonCoords = np.array([list(ion.pos) for ion in measurementIonsL])
+    dataIonsL = list(dataIons)
+    dataIonCoords = np.array([list(ion.pos) for ion in dataIonsL])
+
+    ids = measurementIonsL + dataIonsL
+    coords = np.concatenate([measurementIonCoords, dataIonCoords])
+
+    clusters = TriangularPartitionIons_vectorised(ids, coords, trapCapacity - 1)
 
     return clusters
       
