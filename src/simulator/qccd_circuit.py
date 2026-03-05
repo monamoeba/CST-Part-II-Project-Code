@@ -355,6 +355,10 @@ class QCCDCircuit(stim.Circuit):
         
         clusters=regularPartition(self._measurementIons, self._dataIons, trapCapacity)
 
+        print(f"printing clusters for capacity {trapCapacity}")
+        for ci, c in enumerate(clusters):
+            print(f'cluster {ci}: {[ion.pos for ion in c[0]]}')
+        
         cs, rs = cols, rows
         allGridPos = []
         for r in range(rs):
@@ -465,9 +469,9 @@ class QCCDCircuit(stim.Circuit):
             raise ValueError("processCircuit: not enough traps")
         #print(f' measurement ions: {[ion.label for ion in self._measurementIons]}')
         #print(f' data ions: {[ion.label for ion in self._dataIons]}')
-        #clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
+        clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
         #print(f"clusters = {clusters}")
-        clusters=regularColorPartition(self._measurementIons, self._dataIons, trapCapacity)
+        #clusters=regularColorPartition(self._measurementIons, self._dataIons, trapCapacity)
         """ temp cluster printing"""
         print(f"printing clusters for capacity {trapCapacity}")
         for ci, c in enumerate(clusters):
