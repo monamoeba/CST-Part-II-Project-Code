@@ -28,6 +28,7 @@ from multiprocessing import get_logger
 import chromobius
 from color_code_stim import ColorCode
 
+DEBUG = False
 class QCCDCircuit(stim.Circuit):
     DATA_QUBIT_COLOR = "lightblue"
     MEASUREMENT_QUBIT_COLOR = "red"
@@ -469,14 +470,55 @@ class QCCDCircuit(stim.Circuit):
             raise ValueError("processCircuit: not enough traps")
         #print(f' measurement ions: {[ion.label for ion in self._measurementIons]}')
         #print(f' data ions: {[ion.label for ion in self._dataIons]}')
-        #clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
+        clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
         #print(f"clusters = {clusters}")
-        clusters=regularColorPartition_vectorised(self._measurementIons, self._dataIons, trapCapacity)
+        #clusters=regularColorPartition_vectorised(self._measurementIons, self._dataIons, trapCapacity)
         """ temp cluster printing"""
-        print(f"printing clusters for capacity {trapCapacity}")
-        for ci, c in enumerate(clusters):
-            print(f'cluster {ci}: {[ion.pos for ion in c[0]]}')
+        def visualize_clusters(clusters, trapCapacity):
+            # Set up the figure size
+            plt.figure(figsize=(10, 6))
+            plt.title(f"Ion Clusters (Trap Capacity: {trapCapacity})")
+            
+            # Iterate through each cluster
+            for ci, c in enumerate(clusters):
+                # Extract the (x, y) coordinates from the ion objects
+                points = [ion.pos for ion in c[0]]
+                
+                # Skip if the cluster is empty
+                if not points:
+                    continue
+                    
+                # Unzip the list of tuples into separate X and Y lists
+                x_coords, y_coords = zip(*points)
+                
+                # Plot the cluster points
+                # matplotlib will automatically assign a new color to each cluster
+                scatter = plt.scatter(x_coords, y_coords, label=f'Cluster {ci}', s=100, alpha=0.7)
+                
+                # Plot the centroid (c[1])
+                if len(c) > 1 and c[1] is not None:
+                    centroid_x, centroid_y = c[1]
+                    
+                    # Match the centroid color to the cluster points, use an 'X' marker, and add a black edge
+                    plt.scatter(centroid_x, centroid_y, color=scatter.get_facecolor()[0], 
+                                marker='X', s=100, edgecolor='black', zorder=3, alpha=0.5)
+                    
+            # Add labels and grid for readability
+            plt.xlabel("X Position")
+            plt.ylabel("Y Position")
+            plt.grid(True, linestyle='--', alpha=0.5)
+            plt.gca().invert_yaxis()
+            # Place the legend outside the plot so it doesn't cover your data
+            plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+            
+            # Adjust layout and display the plot right in the Jupyter cell output
+            plt.tight_layout()
+            #plt.savefig(f'halving_clusters_tc={trapCapacity}_d=5.png')  # Save the figure as a PNG file
+            plt.show()
         
+        if DEBUG:
+            visualize_clusters(clusters, trapCapacity)
+
         cs, rs = cols, rows
         allGridPos = []
         for r in range(rs):
