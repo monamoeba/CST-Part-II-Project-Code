@@ -171,10 +171,12 @@ def TriangularPartitionIons_vectorised(
 
     coordsToIons = {(c[0], c[1]): i for c, i in zip(coords, ions)}
     # Use KD-tree based merging if SciPy is available; otherwise fall back to the original method
-    if cKDTree is not None:
+    """if cKDTree is not None:
         final_clusters = _mergeUnderfilledClusters_kdtree(result, trapCapacity, coordsToIons)
     else:
-        final_clusters = _mergeUnderfilledClusters(result, trapCapacity, coordsToIons)
+        final_clusters = _mergeUnderfilledClusters(result, trapCapacity, coordsToIons)"""
+    #temp testing merging methods
+    final_clusters = _merge_knn(result, trapCapacity, coordsToIons)
     return final_clusters
 
 
@@ -336,6 +338,153 @@ def _mergeUnderfilledClusters(
         res.append((ions,cent))
     return res
 
+def _merge_unbounded_nn(
+    clusters: Sequence[Tuple[npt.NDArray[np.float64], npt.NDArray[np.float64]]],
+    trapCapacity: int,
+    coordsToIons: dict,
+) -> Sequence[Tuple[Sequence[Ion], Tuple[float, float]]]:
+
+    toCheck = [
+        {"size": len(coords), "center": np.asarray(center, dtype=float), "active": True, "coords": np.asarray(coords)}
+        for coords, center in clusters
+    ]
+
+    while True:
+        active_indices = [i for i, c in enumerate(toCheck) if c["active"]]
+        if len(active_indices) < 2:
+            break
+
+        centers = np.array([toCheck[i]["center"] for i in active_indices])
+        sizes = np.array([toCheck[i]["size"] for i in active_indices])
+        tree = cKDTree(centers)
+        order = np.argsort(sizes)
+        merged = False
+
+        for ord_pos in order:
+            idx0 = active_indices[ord_pos]
+            c1 = toCheck[idx0]
+            if not c1["active"]:
+                continue
+
+            k_query = len(active_indices)
+            distances, positions = tree.query(c1["center"], k=k_query)
+            
+            if k_query == 1:
+                positions = [positions]
+
+            bestpartner_global = -1
+
+            for pos in positions:
+                if pos == ord_pos:
+                    continue
+                
+                idx_other = active_indices[pos]
+                c2 = toCheck[idx_other]
+                
+                if c2["active"] and (c1["size"] + c2["size"] <= trapCapacity):
+                    bestpartner_global = idx_other
+                    break
+
+            if bestpartner_global != -1:
+                c2 = toCheck[bestpartner_global]
+                newsize = c1["size"] + c2["size"]
+                newcenter = (c1["size"] * c1["center"] + c2["size"] * c2["center"]) / newsize
+                newcoords = np.concatenate((c1["coords"], c2["coords"]), axis=0)
+
+                toCheck.append({
+                    "size": newsize,
+                    "center": newcenter,
+                    "active": True,
+                    "coords": newcoords,
+                })
+
+                c1["active"] = False
+                c2["active"] = False
+                merged = True
+                break
+
+        if not merged:
+            break
+
+    return [
+        ([coordsToIons[(c[0], c[1])] for c in t["coords"]], tuple(t["center"]))
+        for t in toCheck if t["active"]
+    ]
+
+def _merge_knn(
+    clusters: Sequence[Tuple[npt.NDArray[np.float64], npt.NDArray[np.float64]]],
+    trapCapacity: int,
+    coordsToIons: dict,
+    k_neighbors: int = 3,
+) -> Sequence[Tuple[Sequence[Ion], Tuple[float, float]]]:
+    #k-nearest neighbour merging variant of _mergeUnderfilledClusters -> default 3 nearest neighbours checked if mergeable
+    #ignores distance threshold and just merges with closest neighbour if merge remains <= capacity
+    toCheck = [
+        {"size": len(coords), "center": np.asarray(center, dtype=float), "active": True, "coords": np.asarray(coords)}
+        for coords, center in clusters
+    ]
+
+    while True:
+        active_indices = [i for i, c in enumerate(toCheck) if c["active"]]
+        if len(active_indices) < 2:
+            break
+
+        centers = np.array([toCheck[i]["center"] for i in active_indices])
+        sizes = np.array([toCheck[i]["size"] for i in active_indices])
+        tree = cKDTree(centers)
+        order = np.argsort(sizes)
+        merged = False
+
+        for ord_pos in order:
+            idx0 = active_indices[ord_pos]
+            c1 = toCheck[idx0]
+            if not c1["active"]:
+                continue
+
+            k_query = min(k_neighbors + 1, len(active_indices))
+            distances, positions = tree.query(c1["center"], k=k_query)
+
+            if k_query == 1:
+                positions = [positions]
+
+            bestpartner_global = -1
+
+            for pos in positions:
+                if pos == ord_pos:
+                    continue
+                
+                idx_other = active_indices[pos]
+                c2 = toCheck[idx_other]
+                
+                if c2["active"] and (c1["size"] + c2["size"] <= trapCapacity):
+                    bestpartner_global = idx_other
+                    break
+
+            if bestpartner_global != -1:
+                c2 = toCheck[bestpartner_global]
+                newsize = c1["size"] + c2["size"]
+                newcenter = (c1["size"] * c1["center"] + c2["size"] * c2["center"]) / newsize
+                newcoords = np.concatenate((c1["coords"], c2["coords"]), axis=0)
+
+                toCheck.append({
+                    "size": newsize,
+                    "center": newcenter,
+                    "active": True,
+                    "coords": newcoords,
+                })
+
+                c1["active"] = False
+                c2["active"] = False
+                merged = True
+                break
+
+        if not merged:
+            break
+
+    return [
+        ([coordsToIons[(c[0], c[1])] for c in t["coords"]], tuple(t["center"]))
+        for t in toCheck if t["active"]
+    ]
 def regularColorPartition(measurementIons: Sequence[Ion], dataIons: Sequence[Ion], trapCapacity: int):
     """Arranges ions into clusters based on a regular triangular partitioning
     scheme filling with at most trapCapacity-1 ions to allow for movement in routing"""

@@ -28,7 +28,7 @@ from multiprocessing import get_logger
 import chromobius
 from color_code_stim import ColorCode
 
-DEBUG = False
+DEBUG = True
 class QCCDCircuit(stim.Circuit):
     DATA_QUBIT_COLOR = "lightblue"
     MEASUREMENT_QUBIT_COLOR = "red"
@@ -268,13 +268,13 @@ class QCCDCircuit(stim.Circuit):
                             dephasing = [dephasingFidelity for opAtEndOfIdle, dephasingFidelity in dephasingSchedule[ion] if opAtEndOfIdle==op]
                             if dephasing:
                                 # TODO - run with smaller default 
-                                #dephasingInFidelity = min((1-dephasing[0])/error_scaling, 0.5)
-                                dephasingInFidelity = min((1-dephasing[0])/error_scaling, 0.00001)
+                                dephasingInFidelity = min((1-dephasing[0])/error_scaling, 0.5)
+                                #dephasingInFidelity = min((1-dephasing[0])/error_scaling, 0.00001)
                                 physicalZError += dephasingInFidelity
                                 circuitString+=f"Z_ERROR({dephasingInFidelity}) {stimIdxs[ions.index(ion)]}\n"
                     for gs in gateSwapsForOperations[op]:
-                        #gsInfidelity = min((1-gs.fidelity())/error_scaling, 0.5)
-                        gsInfidelity = min((1-gs.fidelity())/error_scaling, 0.00001)
+                        gsInfidelity = min((1-gs.fidelity())/error_scaling, 0.5)
+                        #gsInfidelity = min((1-gs.fidelity())/error_scaling, 0.00001)
                         physicalXError += gsInfidelity/2
                         physicalZError += gsInfidelity/2
                         circuitString+=f"DEPOLARIZE2({gsInfidelity}) {stimIdxs[ions.index(gs.ions[0])]} {stimIdxs[ions.index(gs.ions[1])]}\n"
@@ -284,8 +284,8 @@ class QCCDCircuit(stim.Circuit):
                 circuitString+=f'{i}\n'
 
             for op in ops:
-                #opInfidelity = min((1-op.fidelity())/error_scaling, 0.5)
-                opInfidelity = min((1-op.fidelity())/error_scaling, 0.00001)
+                opInfidelity = min((1-op.fidelity())/error_scaling, 0.5)
+                #opInfidelity = min((1-op.fidelity())/error_scaling, 0.00001)
                 if len(op.ions)==1: 
                     if isinstance(op, QubitReset) or isinstance(op, Measurement):
                         physicalXError+=opInfidelity
@@ -470,9 +470,9 @@ class QCCDCircuit(stim.Circuit):
             raise ValueError("processCircuit: not enough traps")
         #print(f' measurement ions: {[ion.label for ion in self._measurementIons]}')
         #print(f' data ions: {[ion.label for ion in self._dataIons]}')
-        clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
+        #clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
         #print(f"clusters = {clusters}")
-        #clusters=regularColorPartition_vectorised(self._measurementIons, self._dataIons, trapCapacity)
+        clusters=regularColorPartition_vectorised(self._measurementIons, self._dataIons, trapCapacity)
         """ temp cluster printing"""
         def visualize_clusters(clusters, trapCapacity):
             # Set up the figure size
