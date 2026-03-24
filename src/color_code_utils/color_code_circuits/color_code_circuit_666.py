@@ -4,8 +4,9 @@ import stim
 
 class ColorCodeCircuit666(AbstractColorCodeCircuit):
     
-    def __init__(self, distance, rounds, noise=None):
+    def __init__(self, distance, rounds, noise=None, basis='Z'):
         super().__init__(distance, rounds)
+        self.basis = basis.upper()
         self.qubits = set()
         self.ancilla = set()
         self._tiles = None
@@ -77,9 +78,14 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
             circ.append("QUBIT_COORDS", [i], [q[0], q[1]])
 
         # reset everything
-        circ.append("R", list(self.qubits))
+        if self.basis == 'Z':
+            circ.append("R", list(self.qubits))
+        else:
+            circ.append("RX", list(self.qubits))
+        
         if addnoise:
-            circ.append("X_ERROR",self.qubits, noise)
+            circ.append("X_ERROR" if self.basis == 'Z' else "Z_ERROR",self.qubits, noise)
+
         circ.append("R", list(self.ancilla))
         if addnoise:
             circ.append("X_ERROR", self.ancilla, noise)
@@ -87,7 +93,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         
         # round 0:
         #self._measure_stabilizers(circ, tiles, qa_index_map, 'X')
-        circ += self._measure_round_Z_0(tiles, qa_index_map, chrom_annot=chrom_annot, noise=noise)
+        circ += self._measure_round_0(tiles, qa_index_map, chrom_annot=chrom_annot, noise=noise)
 
         
         circ += (self.rounds-1) * self._measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot, noise=noise)
@@ -95,16 +101,24 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         # measure qubits
         sorted_qs = sorted(list(qubitsCoords))
         q_idxs = [qa_index_map[q] for q in sorted_qs]
-        circ.append("M", q_idxs)
+        if self.basis == 'Z':
+            circ.append("M", q_idxs)
+        else:
+            circ.append("MX", q_idxs)
         
-        # final z-detectors
+        # final detectors
         q_rec_offsets = {q_idx : -len(q_idxs) + k for k,q_idx in enumerate(q_idxs)}
         for i, tile in enumerate(tiles):
             targets = [stim.target_rec(q_rec_offsets[qa_index_map[q]]) for q in tile.qubits]
-            a_offset = -len(q_idxs) - (len(tiles) - i)
+            if self.basis == 'Z':
+                a_offset = -len(q_idxs) - (len(tiles) - i)
+                detector_basis = chrom_annot[tile.color]['Z']
+            else:
+                a_offset = -len(q_idxs) - 2*len(tiles) + i
+                detector_basis = chrom_annot[tile.color]['X']
             targets.append(stim.target_rec(a_offset))
 
-            circ.append("DETECTOR", targets, [tile.ancilla[0], tile.ancilla[1], 1, chrom_annot[tile.color]['Z']])
+            circ.append("DETECTOR", targets, [tile.ancilla[0], tile.ancilla[1], 1, detector_basis])
 
         # logical observable
         logical_z_qubits = [q for q in sorted_qs if q[1]==0]
@@ -113,14 +127,20 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         
         return circ
 
-    def _measure_round_Z_0(self, tiles:dict, qa_index_map:dict, chrom_annot:dict, noise=None):
+    def _measure_round_0(self, tiles:dict, qa_index_map:dict, chrom_annot:dict, noise=None):
         loop = stim.Circuit()
         total_m  = len(tiles)
 
         self._measure_stabilizers(loop,tiles,qa_index_map,'X', noise)
+        if self.basis == 'X':
+            for i, tile in enumerate(tiles):
+                loop.append("DETECTOR", [stim.target_rec(-(total_m - i))],[tile.ancilla[0], tile.ancilla[1], 1, chrom_annot[tile.color]['X']])
+        
         self._measure_stabilizers(loop,tiles,qa_index_map,'Z', noise)
-        for i, tile in enumerate(tiles):
-            loop.append("DETECTOR", [stim.target_rec(-(total_m - i))],[tile.ancilla[0], tile.ancilla[1], 1, chrom_annot[tile.color]['Z']])
+        if self.basis == 'Z':
+            for i, tile in enumerate(tiles):
+                loop.append("DETECTOR", [stim.target_rec(-(total_m - i))],[tile.ancilla[0], tile.ancilla[1], 1, chrom_annot[tile.color]['Z']])
+        
         if noise is not None:
             loop.append("Z_ERROR", self.ancilla, noise)
             loop.append("X_ERROR", self.ancilla, noise)
