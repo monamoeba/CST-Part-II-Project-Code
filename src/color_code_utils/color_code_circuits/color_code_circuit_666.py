@@ -101,11 +101,14 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         # measure qubits
         sorted_qs = sorted(list(qubitsCoords))
         q_idxs = [qa_index_map[q] for q in sorted_qs]
+
+        measure_args = [q_idxs, noise] if addnoise else [q_idxs]
+
         if self.basis == 'Z':
-            circ.append("M", q_idxs)
+            circ.append("M", *measure_args)
         else:
-            circ.append("MX", q_idxs)
-        
+            circ.append("MX", *measure_args)
+
         # final detectors
         q_rec_offsets = {q_idx : -len(q_idxs) + k for k,q_idx in enumerate(q_idxs)}
         for i, tile in enumerate(tiles):
@@ -141,19 +144,12 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
             for i, tile in enumerate(tiles):
                 loop.append("DETECTOR", [stim.target_rec(-(total_m - i))],[tile.ancilla[0], tile.ancilla[1], 1, chrom_annot[tile.color]['Z']])
         
-        if noise is not None:
-            loop.append("Z_ERROR", self.ancilla, noise)
-            loop.append("X_ERROR", self.ancilla, noise)
         loop.append("TICK")
         loop.append("SHIFT_COORDS", [], [0,0,1])
         return loop
     
     def _measure_rounds(self, tiles:dict, qa_index_map:dict, measures_per_round:int, chrom_annot:dict, noise=None):
         loop = stim.Circuit()
-        if noise is not None:
-            addnoise = True
-        else:
-            addnoise = False
         
         # X 
         self._measure_stabilizers(loop,tiles,qa_index_map, 'X', noise)
@@ -161,8 +157,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
             current_offset = -(len(tiles) - i)
             prev_offset = current_offset - measures_per_round
             loop.append("DETECTOR", [stim.target_rec(current_offset), stim.target_rec(prev_offset)], [tile.ancilla[0], tile.ancilla[1], 0, chrom_annot[tile.color]['X']])
-        if addnoise:
-            loop.append("Z_ERROR", self.ancilla, noise)
+
         loop.append("TICK")
         
         # Z
@@ -172,8 +167,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
             prev_offset = current_offset - measures_per_round
             loop.append("DETECTOR", [stim.target_rec(current_offset), 
                                      stim.target_rec(prev_offset)], [tile.ancilla[0], tile.ancilla[1], 1, chrom_annot[tile.color]['Z']])
-        if addnoise:
-            loop.append("X_ERROR", self.ancilla, noise)
+
         loop.append("TICK")
         loop.append("SHIFT_COORDS", [], [0,0,1])
         return loop
@@ -205,6 +199,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
                         cnot_groups[i].extend([a_idx, q_idx])
                     else:
                         cnot_groups[i].extend([q_idx, a_idx])
+        # ancilla resets
         if basis == 'X':
             circuit.append("RX", measured_a)
             if addnoise:
@@ -213,17 +208,35 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
             circuit.append("R", measured_a)
             if addnoise:
                 circuit.append("X_ERROR", measured_a, noise)
-        for i,group in cnot_groups.items():
+        
+        circuit.append("TICK")
+
+        for i, group in cnot_groups.items():
+            if not group: 
+                continue 
+    
             circuit.append("CNOT", group)
+            
             if addnoise:
                 circuit.append("DEPOLARIZE2", group, noise)
-                #get unCNOTTED qubits in this operation
-                circuit.append("DEPOLARIZE1", [q for q in self.qubits if q not in group], noise)
+                
+                # find all idling qubits (both data and ancilla)
+                idle_qubits = [q for q in self.qubits if q not in group]
+                idle_ancillas = [a for a in self.ancilla if a not in group]
+                all_idling = idle_qubits + idle_ancillas
+                
+                # apply idling noise to everything not in the CNOT group
+                if all_idling:
+                    circuit.append("DEPOLARIZE1", all_idling, noise)
+                    
             circuit.append("TICK")
+
+        measure_args = [measured_a, noise] if addnoise else [measured_a]
+
         if basis=='X':
-            circuit.append("MX", measured_a)
+            circuit.append("MX", *measure_args)
         else:
-            circuit.append("M", measured_a)
+            circuit.append("M", *measure_args)
         if addnoise:
             circuit.append("DEPOLARIZE1", self.qubits, noise)
 

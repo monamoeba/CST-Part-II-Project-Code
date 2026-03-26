@@ -27,7 +27,7 @@ def generate_frozen_dataset():
         max_shots=50_000_000,   
         max_errors=5000,        
         save_resume_filepath="final_report_666_CC_ZL_data.csv", 
-        print_progress=True,    
+        print_progress=False,    
         decoders=['chromobius'],
         custom_decoders=chromobius.sinter_decoders(),
     )
