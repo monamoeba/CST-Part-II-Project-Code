@@ -26,12 +26,12 @@ def generate_frozen_dataset():
         num_workers=os.cpu_count(),
         max_shots=50_000_000,   
         max_errors=5000,        
-        save_resume_filepath="final_report_666_CC_ZL_data.csv", 
+        save_resume_filepath="final_report_666_CC_ZL_data_2.csv", 
         print_progress=False,    
         decoders=['chromobius'],
         custom_decoders=chromobius.sinter_decoders(),
     )
-    print("Data collection complete and saved to final_report_data.csv!")
+    print("Data collection complete and saved to final_report_666_CC_ZL_data_2.csv!")
 
 if __name__ == '__main__':
     generate_frozen_dataset()

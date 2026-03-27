@@ -98,11 +98,14 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         
         circ += (self.rounds-1) * self._measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot, noise=noise)
 
+        circ += self._measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot, noise=None)
         # measure qubits
         sorted_qs = sorted(list(qubitsCoords))
         q_idxs = [qa_index_map[q] for q in sorted_qs]
 
-        measure_args = [q_idxs, noise] if addnoise else [q_idxs]
+        #measure_args = [q_idxs, noise] if addnoise else [q_idxs]
+        # model ideal error correction at final stage
+        measure_args = [q_idxs]
 
         if self.basis == 'Z':
             circ.append("M", *measure_args)
