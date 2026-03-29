@@ -3,7 +3,8 @@ import yaml
 import logging
 import concurrent.futures
 from typing import Any, Dict
-from src.simulator.qccd_circuit import process_circuit, process_color_code_circuit, process_circuit_wise_arch, process_color_code_circuit_wise_arch, process_model_color_code_circuit
+from src.simulator.qccd_circuit import process_circuit, process_circuit_wise_arch
+from src.simulator.color_code_processor import process_color_code_circuit, process_color_code_circuit_wise_arch, process_model_color_code_circuit
 from datetime import datetime
 from tqdm import tqdm
 import json  

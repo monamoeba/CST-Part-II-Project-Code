@@ -490,9 +490,9 @@ def regularColorPartition(measurementIons: Sequence[Ion], dataIons: Sequence[Ion
     scheme filling with at most trapCapacity-1 ions to allow for movement in routing"""
     
     measurementIonsL = list(measurementIons)
-    measurementIonCoords = np.array([list(ion.pos) for ion in measurementIonsL])
+    measurementIonCoords = np.array([list(ion.pos) for ion in measurementIonsL]).reshape(-1, 2)
     dataIonsL = list(dataIons)
-    dataIonCoords = np.array([list(ion.pos) for ion in dataIonsL])
+    dataIonCoords = np.array([list(ion.pos) for ion in dataIonsL]).reshape(-1, 2)
 
     ids = measurementIonsL + dataIonsL
     coords = np.concatenate([measurementIonCoords, dataIonCoords])
@@ -511,9 +511,9 @@ def regularColorPartition_vectorised(
     to assess the impact of clustering optimisations on the full compilation pass.
     """
     measurementIonsL = list(measurementIons)
-    measurementIonCoords = np.array([list(ion.pos) for ion in measurementIonsL])
+    measurementIonCoords = np.array([list(ion.pos) for ion in measurementIonsL]).reshape(-1, 2)
     dataIonsL = list(dataIons)
-    dataIonCoords = np.array([list(ion.pos) for ion in dataIonsL])
+    dataIonCoords = np.array([list(ion.pos) for ion in dataIonsL]).reshape(-1, 2)
 
     ids = measurementIonsL + dataIonsL
     coords = np.concatenate([measurementIonCoords, dataIonCoords])
