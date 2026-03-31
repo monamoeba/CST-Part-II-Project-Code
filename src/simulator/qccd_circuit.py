@@ -513,7 +513,7 @@ class QCCDCircuit(stim.Circuit):
             
             # Adjust layout and display the plot right in the Jupyter cell output
             plt.tight_layout()
-            #plt.savefig(f'halving_clusters_tc={trapCapacity}_d=5.png')  # Save the figure as a PNG file
+            plt.savefig(f'plots/tri_dist_bounded_nn_clusters_tc={trapCapacity}_d=5.png')  # Save the figure as a PNG file
             plt.show()
         
         if DEBUG:

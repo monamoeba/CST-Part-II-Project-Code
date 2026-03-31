@@ -38,7 +38,7 @@ def process_color_code_circuit(distance, capacity, gate_improvements, num_shots,
     logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and tesselation {tesselation}")
   
     circuit = QCCDCircuit.generate_color_code(distance, rounds=2, tesselation=tesselation)
-    #for single ancilla circuits
+    #for single ancilla circuits (6.6.6)
     nqubitsNeeded = (9*distance**2 -1)//8
     #for dual ancilla circuits
     #nqubitsNeeded = 3*(distance**2 - 1)//4 + (3*distance**2 + 1)//4
