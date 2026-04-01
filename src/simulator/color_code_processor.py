@@ -27,7 +27,7 @@ NDE_LZ = 10
 NDE_JZ = 20
 NSE_Z = 10
 
-def process_color_code_circuit(distance, capacity, gate_improvements, num_shots, tesselation):
+def process_color_code_circuit(distance, rounds, capacity, gate_improvements, num_shots, tesselation):
     logger = get_logger()
     logger.setLevel(logging.INFO)
     handler = logging.FileHandler("process_log_color_code.txt")
@@ -37,7 +37,7 @@ def process_color_code_circuit(distance, capacity, gate_improvements, num_shots,
 
     logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and tesselation {tesselation}")
   
-    circuit = QCCDCircuit.generate_color_code(distance, rounds=2, tesselation=tesselation)
+    circuit = QCCDCircuit.generate_color_code(distance, rounds=rounds, tesselation=tesselation)
     #for single ancilla circuits (6.6.6)
     nqubitsNeeded = (9*distance**2 -1)//8
     #for dual ancilla circuits

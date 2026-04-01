@@ -28,7 +28,7 @@ from multiprocessing import get_logger
 import chromobius
 from color_code_stim import ColorCode
 
-DEBUG = True
+DEBUG = False
 class QCCDCircuit(stim.Circuit):
     DATA_QUBIT_COLOR = "lightblue"
     MEASUREMENT_QUBIT_COLOR = "red"
@@ -470,9 +470,9 @@ class QCCDCircuit(stim.Circuit):
             raise ValueError("processCircuit: not enough traps")
         #print(f' measurement ions: {[ion.label for ion in self._measurementIons]}')
         #print(f' data ions: {[ion.label for ion in self._dataIons]}')
-        #clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
+        clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
         #print(f"clusters = {clusters}")
-        clusters=regularColorPartition_vectorised(self._measurementIons, self._dataIons, trapCapacity)
+        #clusters=regularColorPartition_vectorised(self._measurementIons, self._dataIons, trapCapacity)
         """ temp cluster printing"""
         def visualize_clusters(clusters, trapCapacity):
             # Set up the figure size
