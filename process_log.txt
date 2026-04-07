@@ -53358,3 +53358,561 @@ This problem can unfortunately be quite difficult to debug. Likely causes are:
     (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
 
 MainProcess - INFO - Processed results for distance 7, capacity 4.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 4.
+MainProcess - INFO - Processed results for distance 3, capacity 3.
+MainProcess - INFO - Processed results for distance 3, capacity 6.
+MainProcess - INFO - Processed results for distance 3, capacity 9.
+MainProcess - INFO - Processed results for distance 3, capacity 8.
+MainProcess - INFO - Processed results for distance 3, capacity 7.
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 11.
+MainProcess - INFO - Processed results for distance 3, capacity 12.
+MainProcess - INFO - Processed results for distance 3, capacity 13.
+MainProcess - INFO - Processed results for distance 3, capacity 14.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 4.
+MainProcess - INFO - Processed results for distance 5, capacity 3.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 6.
+MainProcess - INFO - Processed results for distance 5, capacity 7.
+MainProcess - INFO - Processed results for distance 5, capacity 8.
+MainProcess - INFO - Processed results for distance 5, capacity 9.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 12.
+MainProcess - INFO - Processed results for distance 5, capacity 11.
+MainProcess - INFO - Processed results for distance 5, capacity 13.
+MainProcess - INFO - Processed results for distance 5, capacity 14.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 4.
+MainProcess - INFO - Processed results for distance 7, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 7.
+MainProcess - INFO - Processed results for distance 7, capacity 6.
+MainProcess - INFO - Processed results for distance 7, capacity 8.
+MainProcess - INFO - Processed results for distance 7, capacity 9.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 11.
+MainProcess - INFO - Processed results for distance 7, capacity 12.
+MainProcess - INFO - Processed results for distance 7, capacity 13.
+MainProcess - INFO - Processed results for distance 7, capacity 14.
+MainProcess - INFO - Processed results for distance 7, capacity 15.
+MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 120.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 4.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 3.
+MainProcess - INFO - Processed results for distance 3, capacity 6.
+MainProcess - INFO - Processed results for distance 3, capacity 7.
+MainProcess - INFO - Processed results for distance 3, capacity 8.
+MainProcess - INFO - Processed results for distance 3, capacity 9.
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 11.
+MainProcess - INFO - Processed results for distance 3, capacity 12.
+MainProcess - INFO - Processed results for distance 3, capacity 13.
+MainProcess - INFO - Processed results for distance 3, capacity 14.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 4.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 3.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 6.
+MainProcess - INFO - Processed results for distance 5, capacity 7.
+MainProcess - INFO - Processed results for distance 5, capacity 8.
+MainProcess - INFO - Processed results for distance 5, capacity 9.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 11.
+MainProcess - INFO - Processed results for distance 5, capacity 12.
+MainProcess - INFO - Processed results for distance 5, capacity 13.
+MainProcess - INFO - Processed results for distance 5, capacity 14.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - INFO - Processed results for distance 7, capacity 4.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 6.
+MainProcess - INFO - Processed results for distance 7, capacity 8.
+MainProcess - INFO - Processed results for distance 7, capacity 7.
+MainProcess - INFO - Processed results for distance 7, capacity 9.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 12.
+MainProcess - INFO - Processed results for distance 7, capacity 11.
+MainProcess - INFO - Processed results for distance 7, capacity 13.
+MainProcess - INFO - Processed results for distance 7, capacity 14.
+MainProcess - INFO - Processed results for distance 7, capacity 15.
+MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 120.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 4.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 3.
+MainProcess - INFO - Processed results for distance 3, capacity 6.
+MainProcess - INFO - Processed results for distance 3, capacity 7.
+MainProcess - INFO - Processed results for distance 3, capacity 8.
+MainProcess - INFO - Processed results for distance 3, capacity 9.
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 11.
+MainProcess - INFO - Processed results for distance 3, capacity 12.
+MainProcess - INFO - Processed results for distance 3, capacity 13.
+MainProcess - INFO - Processed results for distance 3, capacity 14.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 4.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 3.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 6.
+MainProcess - INFO - Processed results for distance 5, capacity 7.
+MainProcess - INFO - Processed results for distance 5, capacity 8.
+MainProcess - INFO - Processed results for distance 5, capacity 9.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 11.
+MainProcess - INFO - Processed results for distance 5, capacity 12.
+MainProcess - INFO - Processed results for distance 5, capacity 13.
+MainProcess - INFO - Processed results for distance 5, capacity 14.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - INFO - Processed results for distance 7, capacity 4.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 6.
+MainProcess - INFO - Processed results for distance 7, capacity 8.
+MainProcess - INFO - Processed results for distance 7, capacity 9.
+MainProcess - INFO - Processed results for distance 7, capacity 7.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 11.
+MainProcess - INFO - Processed results for distance 7, capacity 12.
+MainProcess - INFO - Processed results for distance 7, capacity 13.
+MainProcess - INFO - Processed results for distance 7, capacity 14.
+MainProcess - INFO - Processed results for distance 7, capacity 15.
+MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 120.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 4.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 3.
+MainProcess - INFO - Processed results for distance 3, capacity 6.
+MainProcess - INFO - Processed results for distance 3, capacity 7.
+MainProcess - INFO - Processed results for distance 3, capacity 8.
+MainProcess - INFO - Processed results for distance 3, capacity 9.
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 11.
+MainProcess - INFO - Processed results for distance 3, capacity 12.
+MainProcess - INFO - Processed results for distance 3, capacity 13.
+MainProcess - INFO - Processed results for distance 3, capacity 14.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 4.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 3.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 6.
+MainProcess - INFO - Processed results for distance 5, capacity 7.
+MainProcess - INFO - Processed results for distance 5, capacity 8.
+MainProcess - INFO - Processed results for distance 5, capacity 9.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 11.
+MainProcess - INFO - Processed results for distance 5, capacity 12.
+MainProcess - INFO - Processed results for distance 5, capacity 13.
+MainProcess - INFO - Processed results for distance 5, capacity 14.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 4.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 6.
+MainProcess - INFO - Processed results for distance 7, capacity 8.
+MainProcess - INFO - Processed results for distance 7, capacity 9.
+MainProcess - INFO - Processed results for distance 7, capacity 7.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 11.
+MainProcess - INFO - Processed results for distance 7, capacity 12.
+MainProcess - INFO - Processed results for distance 7, capacity 13.
+MainProcess - INFO - Processed results for distance 7, capacity 14.
+MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 15.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 120.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - INFO - Processed results for distance 9, capacity 4.
+MainProcess - INFO - Processed results for distance 9, capacity 3.
+MainProcess - INFO - Processed results for distance 9, capacity 2.
+MainProcess - INFO - Processed results for distance 9, capacity 6.
+MainProcess - INFO - Processed results for distance 9, capacity 7.
+MainProcess - INFO - Processed results for distance 9, capacity 8.
+MainProcess - INFO - Processed results for distance 9, capacity 9.
+MainProcess - INFO - Processed results for distance 9, capacity 10.
+MainProcess - INFO - Processed results for distance 9, capacity 11.
+MainProcess - INFO - Processed results for distance 9, capacity 12.
+MainProcess - INFO - Processed results for distance 9, capacity 13.
+MainProcess - INFO - Processed results for distance 9, capacity 14.
+MainProcess - INFO - Processed results for distance 9, capacity 15.
+MainProcess - INFO - Processed results for distance 9, capacity 30.
+MainProcess - INFO - Processed results for distance 9, capacity 60.
+MainProcess - INFO - Processed results for distance 9, capacity 120.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 4.
+MainProcess - INFO - Processed results for distance 3, capacity 3.
+MainProcess - INFO - Processed results for distance 3, capacity 6.
+MainProcess - INFO - Processed results for distance 3, capacity 7.
+MainProcess - INFO - Processed results for distance 3, capacity 8.
+MainProcess - INFO - Processed results for distance 3, capacity 9.
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 11.
+MainProcess - INFO - Processed results for distance 3, capacity 12.
+MainProcess - INFO - Processed results for distance 3, capacity 13.
+MainProcess - INFO - Processed results for distance 3, capacity 14.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 4.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 3.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 6.
+MainProcess - INFO - Processed results for distance 5, capacity 7.
+MainProcess - INFO - Processed results for distance 5, capacity 8.
+MainProcess - INFO - Processed results for distance 5, capacity 9.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 11.
+MainProcess - INFO - Processed results for distance 5, capacity 12.
+MainProcess - INFO - Processed results for distance 5, capacity 13.
+MainProcess - INFO - Processed results for distance 5, capacity 14.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - INFO - Processed results for distance 7, capacity 4.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 6.
+MainProcess - INFO - Processed results for distance 7, capacity 8.
+MainProcess - INFO - Processed results for distance 7, capacity 9.
+MainProcess - INFO - Processed results for distance 7, capacity 7.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 11.
+MainProcess - INFO - Processed results for distance 7, capacity 12.
+MainProcess - INFO - Processed results for distance 7, capacity 13.
+MainProcess - INFO - Processed results for distance 7, capacity 14.
+MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 15.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 120.
+MainProcess - INFO - Processed results for distance 9, capacity 4.
+MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - INFO - Processed results for distance 9, capacity 3.
+MainProcess - INFO - Processed results for distance 9, capacity 2.
+MainProcess - INFO - Processed results for distance 9, capacity 6.
+MainProcess - INFO - Processed results for distance 9, capacity 7.
+MainProcess - INFO - Processed results for distance 9, capacity 8.
+MainProcess - INFO - Processed results for distance 9, capacity 9.
+MainProcess - INFO - Processed results for distance 9, capacity 10.
+MainProcess - INFO - Processed results for distance 9, capacity 12.
+MainProcess - INFO - Processed results for distance 9, capacity 11.
+MainProcess - INFO - Processed results for distance 9, capacity 13.
+MainProcess - INFO - Processed results for distance 9, capacity 14.
+MainProcess - INFO - Processed results for distance 9, capacity 30.
+MainProcess - INFO - Processed results for distance 9, capacity 15.
+MainProcess - INFO - Processed results for distance 9, capacity 60.
+MainProcess - INFO - Processed results for distance 9, capacity 120.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 4.
+MainProcess - INFO - Processed results for distance 3, capacity 3.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 6.
+MainProcess - INFO - Processed results for distance 3, capacity 7.
+MainProcess - INFO - Processed results for distance 3, capacity 8.
+MainProcess - INFO - Processed results for distance 3, capacity 9.
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 11.
+MainProcess - INFO - Processed results for distance 3, capacity 12.
+MainProcess - INFO - Processed results for distance 3, capacity 13.
+MainProcess - INFO - Processed results for distance 3, capacity 14.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 4.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 3.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 6.
+MainProcess - INFO - Processed results for distance 5, capacity 7.
+MainProcess - INFO - Processed results for distance 5, capacity 8.
+MainProcess - INFO - Processed results for distance 5, capacity 9.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 11.
+MainProcess - INFO - Processed results for distance 5, capacity 12.
+MainProcess - INFO - Processed results for distance 5, capacity 13.
+MainProcess - INFO - Processed results for distance 5, capacity 14.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - INFO - Processed results for distance 7, capacity 4.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 6.
+MainProcess - INFO - Processed results for distance 7, capacity 7.
+MainProcess - INFO - Processed results for distance 7, capacity 8.
+MainProcess - INFO - Processed results for distance 7, capacity 9.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 12.
+MainProcess - INFO - Processed results for distance 7, capacity 11.
+MainProcess - INFO - Processed results for distance 7, capacity 13.
+MainProcess - INFO - Processed results for distance 7, capacity 14.
+MainProcess - INFO - Processed results for distance 7, capacity 15.
+MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 120.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 261, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 67, in process_color_code_circuit
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 317, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 329, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00842396) D13 D16 D22 D24
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [13, 16, 22, 24]
+    Detector data:
+        D13: coords=[13, 3, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D16: coords=[10, 4, 1, 5] ColorBasis{.color=B, .basis=Z}
+        D22: coords=[16, 6, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D24: coords=[13, 7, 1, 5] ColorBasis{.color=B, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 67, in main
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00842396) D13 D16 D22 D24
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [13, 16, 22, 24]
+    Detector data:
+        D13: coords=[13, 3, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D16: coords=[10, 4, 1, 5] ColorBasis{.color=B, .basis=Z}
+        D22: coords=[16, 6, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D24: coords=[13, 7, 1, 5] ColorBasis{.color=B, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - INFO - Processed results for distance 9, capacity 4.
+MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - INFO - Processed results for distance 9, capacity 2.
+MainProcess - INFO - Processed results for distance 9, capacity 6.
+MainProcess - INFO - Processed results for distance 9, capacity 7.
+MainProcess - INFO - Processed results for distance 9, capacity 8.
+MainProcess - INFO - Processed results for distance 9, capacity 9.
+MainProcess - INFO - Processed results for distance 9, capacity 10.
+MainProcess - INFO - Processed results for distance 9, capacity 11.
+MainProcess - INFO - Processed results for distance 9, capacity 12.
+MainProcess - INFO - Processed results for distance 9, capacity 13.
+MainProcess - INFO - Processed results for distance 9, capacity 14.
+MainProcess - INFO - Processed results for distance 9, capacity 15.
+MainProcess - INFO - Processed results for distance 9, capacity 30.
+MainProcess - INFO - Processed results for distance 9, capacity 60.
+MainProcess - INFO - Processed results for distance 9, capacity 120.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 4.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 3.
+MainProcess - INFO - Processed results for distance 3, capacity 6.
+MainProcess - INFO - Processed results for distance 3, capacity 7.
+MainProcess - INFO - Processed results for distance 3, capacity 9.
+MainProcess - INFO - Processed results for distance 3, capacity 8.
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 11.
+MainProcess - INFO - Processed results for distance 3, capacity 12.
+MainProcess - INFO - Processed results for distance 3, capacity 13.
+MainProcess - INFO - Processed results for distance 3, capacity 14.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 4.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 3.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 6.
+MainProcess - INFO - Processed results for distance 5, capacity 7.
+MainProcess - INFO - Processed results for distance 5, capacity 8.
+MainProcess - INFO - Processed results for distance 5, capacity 9.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 11.
+MainProcess - INFO - Processed results for distance 5, capacity 12.
+MainProcess - INFO - Processed results for distance 5, capacity 13.
+MainProcess - INFO - Processed results for distance 5, capacity 14.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 4.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 6.
+MainProcess - INFO - Processed results for distance 7, capacity 8.
+MainProcess - INFO - Processed results for distance 7, capacity 9.
+MainProcess - INFO - Processed results for distance 7, capacity 7.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 11.
+MainProcess - INFO - Processed results for distance 7, capacity 12.
+MainProcess - INFO - Processed results for distance 7, capacity 13.
+MainProcess - INFO - Processed results for distance 7, capacity 14.
+MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 15.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 120.
+MainProcess - INFO - Processed results for distance 9, capacity 4.
+MainProcess - INFO - Processed results for distance 9, capacity 3.
+MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - INFO - Processed results for distance 9, capacity 2.
+MainProcess - INFO - Processed results for distance 9, capacity 7.
+MainProcess - INFO - Processed results for distance 9, capacity 6.
+MainProcess - INFO - Processed results for distance 9, capacity 8.
+MainProcess - INFO - Processed results for distance 9, capacity 9.
+MainProcess - INFO - Processed results for distance 9, capacity 10.
+MainProcess - INFO - Processed results for distance 9, capacity 11.
+MainProcess - INFO - Processed results for distance 9, capacity 12.
+MainProcess - INFO - Processed results for distance 9, capacity 13.
+MainProcess - INFO - Processed results for distance 9, capacity 14.
+MainProcess - INFO - Processed results for distance 9, capacity 15.
+MainProcess - INFO - Processed results for distance 9, capacity 30.
+MainProcess - INFO - Processed results for distance 9, capacity 60.
+MainProcess - INFO - Processed results for distance 9, capacity 120.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 4.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 3.
+MainProcess - INFO - Processed results for distance 3, capacity 6.
+MainProcess - INFO - Processed results for distance 3, capacity 8.
+MainProcess - INFO - Processed results for distance 3, capacity 9.
+MainProcess - INFO - Processed results for distance 3, capacity 7.
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 11.
+MainProcess - INFO - Processed results for distance 3, capacity 12.
+MainProcess - INFO - Processed results for distance 3, capacity 13.
+MainProcess - INFO - Processed results for distance 3, capacity 14.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 4.
+MainProcess - INFO - Processed results for distance 5, capacity 3.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 6.
+MainProcess - INFO - Processed results for distance 5, capacity 7.
+MainProcess - INFO - Processed results for distance 5, capacity 8.
+MainProcess - INFO - Processed results for distance 5, capacity 9.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 11.
+MainProcess - INFO - Processed results for distance 5, capacity 12.
+MainProcess - INFO - Processed results for distance 5, capacity 13.
+MainProcess - INFO - Processed results for distance 5, capacity 14.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 4.
+MainProcess - INFO - Processed results for distance 7, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 7.
+MainProcess - INFO - Processed results for distance 7, capacity 6.
+MainProcess - INFO - Processed results for distance 7, capacity 8.
+MainProcess - INFO - Processed results for distance 7, capacity 9.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 11.
+MainProcess - INFO - Processed results for distance 7, capacity 12.
+MainProcess - INFO - Processed results for distance 7, capacity 13.
+MainProcess - INFO - Processed results for distance 7, capacity 14.
+MainProcess - INFO - Processed results for distance 7, capacity 15.
+MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 120.
+MainProcess - INFO - Processed results for distance 9, capacity 4.
+MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - INFO - Processed results for distance 9, capacity 3.
+MainProcess - INFO - Processed results for distance 9, capacity 2.
+MainProcess - INFO - Processed results for distance 9, capacity 6.
+MainProcess - INFO - Processed results for distance 9, capacity 7.
+MainProcess - INFO - Processed results for distance 9, capacity 8.
+MainProcess - INFO - Processed results for distance 9, capacity 9.
+MainProcess - INFO - Processed results for distance 9, capacity 10.
+MainProcess - INFO - Processed results for distance 9, capacity 11.
+MainProcess - INFO - Processed results for distance 9, capacity 12.
+MainProcess - INFO - Processed results for distance 9, capacity 13.
+MainProcess - INFO - Processed results for distance 9, capacity 15.
+MainProcess - INFO - Processed results for distance 9, capacity 14.
+MainProcess - INFO - Processed results for distance 9, capacity 30.
+MainProcess - INFO - Processed results for distance 9, capacity 60.
+MainProcess - INFO - Processed results for distance 9, capacity 120.
