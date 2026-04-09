@@ -176,7 +176,7 @@ def TriangularPartitionIons_vectorised(
     else:
         final_clusters = _mergeUnderfilledClusters(result, trapCapacity, coordsToIons)"""
     #temp testing merging methods
-    final_clusters = _merge_knn(result, trapCapacity, coordsToIons)
+    final_clusters = _mergeUnderfilledClusters_kdtree(result, trapCapacity, coordsToIons)
     return final_clusters
 
 
