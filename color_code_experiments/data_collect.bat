@@ -6,13 +6,8 @@ set PYTHONPATH=C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-
 :: 2. Navigate to where your scripts actually are
 cd C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\color_code_experiments
 
-echo Starting Z-basis data collection...
-python 666_cc_datacollector.py
-
-echo.
-echo Z-basis collection finished!
-echo Starting X-basis data collection...
-python 666_cc_datacollector_XL.py
+echo Starting Z-basis and Z-basis data collection...
+python 488_cc_datacollector.py
 
 echo.
 echo All data collection is complete!
