@@ -11,7 +11,6 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
         self.ancilla = set()
         self._tiles = self._generate_layout(distance)
         self.qtoid = dict()
-        self.circuit = self._build_circuit(rounds, noise)
         self.basis = basis
         self.is_mirrored = (distance - 1) % 4 == 0
         self.circuit = self._build_circuit(noise)
@@ -221,7 +220,7 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
         circ.append("TICK")
 
         #round 0 
-        circ += self._measure_round_Z_0(qa_index_map, chrom_annot, noise)
+        circ += self._measure_round_0(qa_index_map, chrom_annot, noise)
 
         #normal rounds
         circ += (self.rounds-1)*self._measure_rounds(qa_index_map, measures_per_round=2*len(self._tiles), chrom_annot=chrom_annot, noise=noise) #noise=noise)
@@ -280,7 +279,7 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
         
         return sorted(list(logical_boundary_qubits))
 
-    def _measure_round_Z_0(self, qa_index_map, chrom_annot, noise=None):
+    def _measure_round_0(self, qa_index_map, chrom_annot, noise=None):
         loop = stim.Circuit()
         total_m = len(self._tiles)
 
@@ -301,7 +300,6 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
     def _measure_rounds(self, qa_index_map:dict, measures_per_round:int, chrom_annot:dict, noise=None):
         """Measuring the repeated rounds"""
         loop = stim.Circuit()
-        add_noise = noise is not None
 
         #X
         self._measure_stabilizers(loop, qa_index_map, 'X', noise)

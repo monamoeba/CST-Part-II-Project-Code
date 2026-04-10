@@ -22,7 +22,7 @@ from src.compiler.qccd_alt_ion_routing import *
 from src.compiler.qccd_WISE_ion_route import *
 from src.compiler.qccd_color_qubits_to_ions import *
 from src.color_code_utils.color_code_circuits.color_code_circuit_666 import ColorCodeCircuit666
-from src.color_code_utils.color_code_circuits.color_code_chrom_circuit_666 import ColorCodeChromCircuit666
+from src.color_code_utils.color_code_circuits.color_code_circuit_488 import ColorCodeCircuit488
 import logging
 from multiprocessing import get_logger
 import chromobius
@@ -54,20 +54,30 @@ class QCCDCircuit(stim.Circuit):
         self._arch: QCCDArch
         self.iscolorcode: bool = False
         self.dataQubitsIdxs = None
+        self.measureQubitsIdxs = None
 
     @classmethod
     def generated(cls, *args, **kwargs) -> "QCCDCircuit":
         return QCCDCircuit(stim.Circuit.generated(*args, **kwargs).__str__())
     
     @classmethod
-    def generate_color_code(cls, distance: int, rounds: int, tesselation:tuple) -> "QCCDCircuit":
+    def generate_color_code(cls, distance: int, rounds: int, tesselation:tuple, basis:str='Z') -> "QCCDCircuit":
         if tesselation == (6,6,6):
-            colorcode = ColorCodeCircuit666(distance, rounds)
+            colorcode = ColorCodeCircuit666(distance, rounds, basis=basis)
             circuit = colorcode.get_circuit()
             #for testing library implementation of color codes
             #olorcode = ColorCode(d=distance,rounds=rounds,circuit_type="tri")
             qccd = QCCDCircuit(circuit.__str__())
             qccd.dataQubitsIdxs = list(colorcode.qubits)
+            qccd.measureQubitsIdxs = list(colorcode.ancilla)
+            qccd.iscolorcode = True
+            return qccd
+        elif tesselation == (4,8,8):
+            colorcode = ColorCodeCircuit488(distance, rounds, basis=basis)
+            circuit = colorcode.get_circuit()
+            qccd = QCCDCircuit(circuit.__str__())
+            qccd.dataQubbitsIdxs = list(colorcode.qubits)
+            qccd.measureQubitsIdxs = list(colorcode.ancilla)
             qccd.iscolorcode = True
             return qccd
         else:
@@ -100,7 +110,7 @@ class QCCDCircuit(stim.Circuit):
     def ionMapping(self) -> Mapping[int, Tuple[Ion, Tuple[int, int]]]:
         return self._ionMapping
 
-    def _parseCircuitString(self, dataQubitsIdxs: Optional[Sequence[int]]=None) -> Tuple[Sequence[QubitOperation], Sequence[int]]:
+    def _parseCircuitString(self, dataQubitsIdxs: Optional[Sequence[int]]=None, measureQubitsIdxs: Optional[Sequence[int]]=None) -> Tuple[Sequence[QubitOperation], Sequence[int]]:
         instructions = self.circuitString()
 
         self._measurementIons = []
@@ -123,6 +133,7 @@ class QCCDCircuit(stim.Circuit):
         operations = []
         barriers = []
         dataQubits = []
+        measureQubits = []
         # TODO establish correct mapping of qubit operations from QIP toolkit with references
         for j, i in enumerate(instructions):
             if i.startswith("BARRIER"):
@@ -165,12 +176,21 @@ class QCCDCircuit(stim.Circuit):
                     dataQubits.clear()
         if dataQubitsIdxs is not None:
             dataQubits = [self._ionMapping[j][0] for j in dataQubitsIdxs]
+        if measureQubitsIdxs is not None:
+            measureQubits = [self._ionMapping[j][0] for j in measureQubitsIdxs]
         # TODO use cooling ions? probs not here since architecture dependent
         for d in dataQubits:
             d._color = self.DATA_QUBIT_COLOR
             d._label = "D"
             self._dataIons.append(d)
             self._measurementIons.remove(d)
+        for m in measureQubits:
+            m._color = self.MEASUREMENT_QUBIT_COLOR
+            m._label = "M"
+            if m not in self._measurementIons:
+                self._measurementIons.append(m)
+            if m in self._dataIons:
+                self._dataIons.remove(m)
         return operations, barriers
 
     def _gridToCoordinate(
@@ -267,14 +287,11 @@ class QCCDCircuit(stim.Circuit):
                         if len(dephasingSchedule[ion])>0:
                             dephasing = [dephasingFidelity for opAtEndOfIdle, dephasingFidelity in dephasingSchedule[ion] if opAtEndOfIdle==op]
                             if dephasing:
-                                # TODO - run with smaller default 
                                 dephasingInFidelity = min((1-dephasing[0])/error_scaling, 0.5)
-                                #dephasingInFidelity = min((1-dephasing[0])/error_scaling, 0.00001)
                                 physicalZError += dephasingInFidelity
                                 circuitString+=f"Z_ERROR({dephasingInFidelity}) {stimIdxs[ions.index(ion)]}\n"
                     for gs in gateSwapsForOperations[op]:
                         gsInfidelity = min((1-gs.fidelity())/error_scaling, 0.5)
-                        #gsInfidelity = min((1-gs.fidelity())/error_scaling, 0.00001)
                         physicalXError += gsInfidelity/2
                         physicalZError += gsInfidelity/2
                         circuitString+=f"DEPOLARIZE2({gsInfidelity}) {stimIdxs[ions.index(gs.ions[0])]} {stimIdxs[ions.index(gs.ions[1])]}\n"
@@ -285,7 +302,6 @@ class QCCDCircuit(stim.Circuit):
 
             for op in ops:
                 opInfidelity = min((1-op.fidelity())/error_scaling, 0.5)
-                #opInfidelity = min((1-op.fidelity())/error_scaling, 0.00001)
                 if len(op.ions)==1: 
                     if isinstance(op, QubitReset) or isinstance(op, Measurement):
                         physicalXError+=opInfidelity
@@ -356,7 +372,7 @@ class QCCDCircuit(stim.Circuit):
         
         clusters=regularPartition(self._measurementIons, self._dataIons, trapCapacity)
 
-        print(f"printing clusters for capacity {trapCapacity}")
+        #print(f"printing clusters for capacity {trapCapacity}")
         for ci, c in enumerate(clusters):
             print(f'cluster {ci}: {[ion.pos for ion in c[0]]}')
         
@@ -464,54 +480,43 @@ class QCCDCircuit(stim.Circuit):
         cols: int = 5,
         padding: int = 1,
         dataQubitIdxs: Optional[Sequence[int]]=None,
+        measureQubitIdxs: Optional[Sequence[int]]=None,
     ) -> Tuple[QCCDArch, Tuple[Sequence[QubitOperation], Sequence[int]]]:        
-        instructions, barriers = self._parseCircuitString(dataQubitsIdxs=dataQubitIdxs)
+        instructions, barriers = self._parseCircuitString(dataQubitsIdxs=dataQubitIdxs, measureQubitsIdxs=measureQubitIdxs)
         if (trapCapacity-1) * ((rows-1) * (2*cols-1)+cols) < len(self._ionMapping):
             raise ValueError("processCircuit: not enough traps")
-        #print(f' measurement ions: {[ion.label for ion in self._measurementIons]}')
-        #print(f' data ions: {[ion.label for ion in self._dataIons]}')
         clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
         #print(f"clusters = {clusters}")
         #clusters=regularColorPartition_vectorised(self._measurementIons, self._dataIons, trapCapacity)
-        """ temp cluster printing"""
+
+        #  temp cluster printing
         def visualize_clusters(clusters, trapCapacity):
             # Set up the figure size
             plt.figure(figsize=(10, 6))
             plt.title(f"Ion Clusters (Trap Capacity: {trapCapacity})")
             
-            # Iterate through each cluster
             for ci, c in enumerate(clusters):
-                # Extract the (x, y) coordinates from the ion objects
                 points = [ion.pos for ion in c[0]]
-                
-                # Skip if the cluster is empty
+
                 if not points:
                     continue
-                    
-                # Unzip the list of tuples into separate X and Y lists
+
                 x_coords, y_coords = zip(*points)
                 
-                # Plot the cluster points
-                # matplotlib will automatically assign a new color to each cluster
+                # plot the cluster points
                 scatter = plt.scatter(x_coords, y_coords, label=f'Cluster {ci}', s=100, alpha=0.7)
                 
-                # Plot the centroid (c[1])
                 if len(c) > 1 and c[1] is not None:
                     centroid_x, centroid_y = c[1]
-                    
-                    # Match the centroid color to the cluster points, use an 'X' marker, and add a black edge
                     plt.scatter(centroid_x, centroid_y, color=scatter.get_facecolor()[0], 
                                 marker='X', s=100, edgecolor='black', zorder=3, alpha=0.5)
                     
-            # Add labels and grid for readability
             plt.xlabel("X Position")
             plt.ylabel("Y Position")
             plt.grid(True, linestyle='--', alpha=0.5)
             plt.gca().invert_yaxis()
-            # Place the legend outside the plot so it doesn't cover your data
             plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
             
-            # Adjust layout and display the plot right in the Jupyter cell output
             plt.tight_layout()
             #plt.savefig(f'plots/tri_dist_bounded_nn_clusters_tc={trapCapacity}_d=5.png')  # Save the figure as a PNG file
             plt.show()

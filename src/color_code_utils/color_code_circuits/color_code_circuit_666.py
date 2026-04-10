@@ -244,6 +244,3 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         if addnoise:
             circuit.append("DEPOLARIZE1", self.qubits, noise)
 
-
-    def add_noise_model_to_circuit(self):
-        pass

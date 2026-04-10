@@ -63048,3 +63048,315 @@ MainProcess - INFO - Processing operations using Forwarding for distance 9, capa
 MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 60 and tesselation (6, 6, 6)
 MainProcess - INFO - 9 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.061815}, 'Operations': {'Forwarding': 2143}, 'MeanConcurrency': {'Forwarding': 1.7230024213075061}, 'QubitOperations': {'Forwarding': 2012}, 'LogicalErrorRates': {'Forwarding': [0.49871]}, 'PhysicalZErrorRates': {'Forwarding': [0.05461646137899828]}, 'PhysicalXErrorRates': {'Forwarding': [0.05448719330782954]}, 'Electrodes': {'Forwarding': 2430}, 'DACs': {'Forwarding': 2430}, 'Capacity': 60, 'Distance': 9}
 MainProcess - INFO - Finished processing for distance 9 and capacity 60
+MainProcess - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing circuit with 25 qubits and 7 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 5, capacity 4 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 5, capacity 4 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing circuit with 25 qubits and 7 rows
+MainProcess - INFO - Processing circuit with 25 qubits and 7 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 5, capacity 4 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 5, capacity 4 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - process shutting down
+MainProcess - INFO - process shutting down
+MainProcess - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - process shutting down
+MainProcess - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 2 and tesselation (6, 6, 6)
+MainProcess - INFO - 3 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.009489999999999998}, 'Operations': {'Forwarding': 483}, 'MeanConcurrency': {'Forwarding': 2.7872340425531914}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.15577]}, 'PhysicalZErrorRates': {'Forwarding': [0.007868707740596982]}, 'PhysicalXErrorRates': {'Forwarding': [0.007118378262958979]}, 'Electrodes': {'Forwarding': 550}, 'DACs': {'Forwarding': 550}, 'Capacity': 2, 'Distance': 3}
+MainProcess - INFO - Finished processing for distance 3 and capacity 2
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (6, 6, 6)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 5 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 5 and tesselation (6, 6, 6)
+MainProcess - INFO - 3 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.009160000000000003}, 'Operations': {'Forwarding': 334}, 'MeanConcurrency': {'Forwarding': 2.163568773234201}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.19084]}, 'PhysicalZErrorRates': {'Forwarding': [0.012967991679964323]}, 'PhysicalXErrorRates': {'Forwarding': [0.012672762360379784]}, 'Electrodes': {'Forwarding': 520}, 'DACs': {'Forwarding': 520}, 'Capacity': 5, 'Distance': 3}
+MainProcess - INFO - 3 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.009160000000000003}, 'Operations': {'Forwarding': 334}, 'MeanConcurrency': {'Forwarding': 2.163568773234201}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.19084]}, 'PhysicalZErrorRates': {'Forwarding': [0.012967991679964323]}, 'PhysicalXErrorRates': {'Forwarding': [0.012672762360379784]}, 'Electrodes': {'Forwarding': 520}, 'DACs': {'Forwarding': 520}, 'Capacity': 5, 'Distance': 3}
+MainProcess - INFO - Finished processing for distance 3 and capacity 5
+MainProcess - INFO - Finished processing for distance 3 and capacity 5
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 10 and tesselation (6, 6, 6)
+MainProcess - INFO - 3 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.008920000000000003}, 'Operations': {'Forwarding': 252}, 'MeanConcurrency': {'Forwarding': 1.4602510460251046}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.22111]}, 'PhysicalZErrorRates': {'Forwarding': [0.015243080356164732]}, 'PhysicalXErrorRates': {'Forwarding': [0.015150759385737195]}, 'Electrodes': {'Forwarding': 920}, 'DACs': {'Forwarding': 920}, 'Capacity': 10, 'Distance': 3}
+MainProcess - INFO - 3 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.008920000000000003}, 'Operations': {'Forwarding': 252}, 'MeanConcurrency': {'Forwarding': 1.4602510460251046}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.22111]}, 'PhysicalZErrorRates': {'Forwarding': [0.015243080356164732]}, 'PhysicalXErrorRates': {'Forwarding': [0.015150759385737195]}, 'Electrodes': {'Forwarding': 920}, 'DACs': {'Forwarding': 920}, 'Capacity': 10, 'Distance': 3}
+MainProcess - INFO - 3 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.008920000000000003}, 'Operations': {'Forwarding': 252}, 'MeanConcurrency': {'Forwarding': 1.4602510460251046}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.22111]}, 'PhysicalZErrorRates': {'Forwarding': [0.015243080356164732]}, 'PhysicalXErrorRates': {'Forwarding': [0.015150759385737195]}, 'Electrodes': {'Forwarding': 920}, 'DACs': {'Forwarding': 920}, 'Capacity': 10, 'Distance': 3}
+MainProcess - INFO - Finished processing for distance 3 and capacity 10
+MainProcess - INFO - Finished processing for distance 3 and capacity 10
+MainProcess - INFO - Finished processing for distance 3 and capacity 10
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - 3 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.009729999999999999}, 'Operations': {'Forwarding': 511}, 'MeanConcurrency': {'Forwarding': 2.7837837837837838}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.09645]}, 'PhysicalZErrorRates': {'Forwarding': [0.009100557895033855]}, 'PhysicalXErrorRates': {'Forwarding': [0.008119879916328194]}, 'Electrodes': {'Forwarding': 580}, 'DACs': {'Forwarding': 580}, 'Capacity': 2, 'Distance': 3}
+MainProcess - INFO - 3 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.009729999999999999}, 'Operations': {'Forwarding': 511}, 'MeanConcurrency': {'Forwarding': 2.7837837837837838}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.09645]}, 'PhysicalZErrorRates': {'Forwarding': [0.009100557895033855]}, 'PhysicalXErrorRates': {'Forwarding': [0.008119879916328194]}, 'Electrodes': {'Forwarding': 580}, 'DACs': {'Forwarding': 580}, 'Capacity': 2, 'Distance': 3}
+MainProcess - INFO - 3 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.009729999999999999}, 'Operations': {'Forwarding': 511}, 'MeanConcurrency': {'Forwarding': 2.7837837837837838}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.09645]}, 'PhysicalZErrorRates': {'Forwarding': [0.009100557895033855]}, 'PhysicalXErrorRates': {'Forwarding': [0.008119879916328194]}, 'Electrodes': {'Forwarding': 580}, 'DACs': {'Forwarding': 580}, 'Capacity': 2, 'Distance': 3}
+MainProcess - INFO - 3 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.009729999999999999}, 'Operations': {'Forwarding': 511}, 'MeanConcurrency': {'Forwarding': 2.7837837837837838}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.09645]}, 'PhysicalZErrorRates': {'Forwarding': [0.009100557895033855]}, 'PhysicalXErrorRates': {'Forwarding': [0.008119879916328194]}, 'Electrodes': {'Forwarding': 580}, 'DACs': {'Forwarding': 580}, 'Capacity': 2, 'Distance': 3}
+MainProcess - INFO - Finished processing for distance 3 and capacity 2
+MainProcess - INFO - Finished processing for distance 3 and capacity 2
+MainProcess - INFO - Finished processing for distance 3 and capacity 2
+MainProcess - INFO - Finished processing for distance 3 and capacity 2
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - 3 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.009685000000000003}, 'Operations': {'Forwarding': 364}, 'MeanConcurrency': {'Forwarding': 1.8642384105960266}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.17637]}, 'PhysicalZErrorRates': {'Forwarding': [0.01381090035978996]}, 'PhysicalXErrorRates': {'Forwarding': [0.013352771977561677]}, 'Electrodes': {'Forwarding': 520}, 'DACs': {'Forwarding': 520}, 'Capacity': 5, 'Distance': 3}
+MainProcess - INFO - 3 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.009685000000000003}, 'Operations': {'Forwarding': 364}, 'MeanConcurrency': {'Forwarding': 1.8642384105960266}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.17637]}, 'PhysicalZErrorRates': {'Forwarding': [0.01381090035978996]}, 'PhysicalXErrorRates': {'Forwarding': [0.013352771977561677]}, 'Electrodes': {'Forwarding': 520}, 'DACs': {'Forwarding': 520}, 'Capacity': 5, 'Distance': 3}
+MainProcess - INFO - 3 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.009685000000000003}, 'Operations': {'Forwarding': 364}, 'MeanConcurrency': {'Forwarding': 1.8642384105960266}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.17637]}, 'PhysicalZErrorRates': {'Forwarding': [0.01381090035978996]}, 'PhysicalXErrorRates': {'Forwarding': [0.013352771977561677]}, 'Electrodes': {'Forwarding': 520}, 'DACs': {'Forwarding': 520}, 'Capacity': 5, 'Distance': 3}
+MainProcess - INFO - 3 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.009685000000000003}, 'Operations': {'Forwarding': 364}, 'MeanConcurrency': {'Forwarding': 1.8642384105960266}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.17637]}, 'PhysicalZErrorRates': {'Forwarding': [0.01381090035978996]}, 'PhysicalXErrorRates': {'Forwarding': [0.013352771977561677]}, 'Electrodes': {'Forwarding': 520}, 'DACs': {'Forwarding': 520}, 'Capacity': 5, 'Distance': 3}
+MainProcess - INFO - 3 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.009685000000000003}, 'Operations': {'Forwarding': 364}, 'MeanConcurrency': {'Forwarding': 1.8642384105960266}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.17637]}, 'PhysicalZErrorRates': {'Forwarding': [0.01381090035978996]}, 'PhysicalXErrorRates': {'Forwarding': [0.013352771977561677]}, 'Electrodes': {'Forwarding': 520}, 'DACs': {'Forwarding': 520}, 'Capacity': 5, 'Distance': 3}
+MainProcess - INFO - Finished processing for distance 3 and capacity 5
+MainProcess - INFO - Finished processing for distance 3 and capacity 5
+MainProcess - INFO - Finished processing for distance 3 and capacity 5
+MainProcess - INFO - Finished processing for distance 3 and capacity 5
+MainProcess - INFO - Finished processing for distance 3 and capacity 5
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing circuit with 10 qubits and 5 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - 3 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.009305}, 'Operations': {'Forwarding': 219}, 'MeanConcurrency': {'Forwarding': 1.1545893719806763}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.16543]}, 'PhysicalZErrorRates': {'Forwarding': [0.014255421499910301]}, 'PhysicalXErrorRates': {'Forwarding': [0.014475554673788044]}, 'Electrodes': {'Forwarding': 430}, 'DACs': {'Forwarding': 430}, 'Capacity': 10, 'Distance': 3}
+MainProcess - INFO - 3 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.009305}, 'Operations': {'Forwarding': 219}, 'MeanConcurrency': {'Forwarding': 1.1545893719806763}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.16543]}, 'PhysicalZErrorRates': {'Forwarding': [0.014255421499910301]}, 'PhysicalXErrorRates': {'Forwarding': [0.014475554673788044]}, 'Electrodes': {'Forwarding': 430}, 'DACs': {'Forwarding': 430}, 'Capacity': 10, 'Distance': 3}
+MainProcess - INFO - 3 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.009305}, 'Operations': {'Forwarding': 219}, 'MeanConcurrency': {'Forwarding': 1.1545893719806763}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.16543]}, 'PhysicalZErrorRates': {'Forwarding': [0.014255421499910301]}, 'PhysicalXErrorRates': {'Forwarding': [0.014475554673788044]}, 'Electrodes': {'Forwarding': 430}, 'DACs': {'Forwarding': 430}, 'Capacity': 10, 'Distance': 3}
+MainProcess - INFO - 3 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.009305}, 'Operations': {'Forwarding': 219}, 'MeanConcurrency': {'Forwarding': 1.1545893719806763}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.16543]}, 'PhysicalZErrorRates': {'Forwarding': [0.014255421499910301]}, 'PhysicalXErrorRates': {'Forwarding': [0.014475554673788044]}, 'Electrodes': {'Forwarding': 430}, 'DACs': {'Forwarding': 430}, 'Capacity': 10, 'Distance': 3}
+MainProcess - INFO - 3 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.009305}, 'Operations': {'Forwarding': 219}, 'MeanConcurrency': {'Forwarding': 1.1545893719806763}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.16543]}, 'PhysicalZErrorRates': {'Forwarding': [0.014255421499910301]}, 'PhysicalXErrorRates': {'Forwarding': [0.014475554673788044]}, 'Electrodes': {'Forwarding': 430}, 'DACs': {'Forwarding': 430}, 'Capacity': 10, 'Distance': 3}
+MainProcess - INFO - 3 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.009305}, 'Operations': {'Forwarding': 219}, 'MeanConcurrency': {'Forwarding': 1.1545893719806763}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.16543]}, 'PhysicalZErrorRates': {'Forwarding': [0.014255421499910301]}, 'PhysicalXErrorRates': {'Forwarding': [0.014475554673788044]}, 'Electrodes': {'Forwarding': 430}, 'DACs': {'Forwarding': 430}, 'Capacity': 10, 'Distance': 3}
+MainProcess - INFO - Finished processing for distance 3 and capacity 10
+MainProcess - INFO - Finished processing for distance 3 and capacity 10
+MainProcess - INFO - Finished processing for distance 3 and capacity 10
+MainProcess - INFO - Finished processing for distance 3 and capacity 10
+MainProcess - INFO - Finished processing for distance 3 and capacity 10
+MainProcess - INFO - Finished processing for distance 3 and capacity 10
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 2 and tesselation (4, 8, 8)
+MainProcess - INFO - 9 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.03490499999999999}, 'Operations': {'Forwarding': 5946}, 'MeanConcurrency': {'Forwarding': 9.764817150063053}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.21167]}, 'PhysicalZErrorRates': {'Forwarding': [0.014321817560865304]}, 'PhysicalXErrorRates': {'Forwarding': [0.012339113416063453]}, 'Electrodes': {'Forwarding': 4240}, 'DACs': {'Forwarding': 4240}, 'Capacity': 2, 'Distance': 9}
+MainProcess - INFO - 9 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.03490499999999999}, 'Operations': {'Forwarding': 5946}, 'MeanConcurrency': {'Forwarding': 9.764817150063053}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.21167]}, 'PhysicalZErrorRates': {'Forwarding': [0.014321817560865304]}, 'PhysicalXErrorRates': {'Forwarding': [0.012339113416063453]}, 'Electrodes': {'Forwarding': 4240}, 'DACs': {'Forwarding': 4240}, 'Capacity': 2, 'Distance': 9}
+MainProcess - INFO - 9 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.03490499999999999}, 'Operations': {'Forwarding': 5946}, 'MeanConcurrency': {'Forwarding': 9.764817150063053}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.21167]}, 'PhysicalZErrorRates': {'Forwarding': [0.014321817560865304]}, 'PhysicalXErrorRates': {'Forwarding': [0.012339113416063453]}, 'Electrodes': {'Forwarding': 4240}, 'DACs': {'Forwarding': 4240}, 'Capacity': 2, 'Distance': 9}
+MainProcess - INFO - 9 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.03490499999999999}, 'Operations': {'Forwarding': 5946}, 'MeanConcurrency': {'Forwarding': 9.764817150063053}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.21167]}, 'PhysicalZErrorRates': {'Forwarding': [0.014321817560865304]}, 'PhysicalXErrorRates': {'Forwarding': [0.012339113416063453]}, 'Electrodes': {'Forwarding': 4240}, 'DACs': {'Forwarding': 4240}, 'Capacity': 2, 'Distance': 9}
+MainProcess - INFO - 9 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.03490499999999999}, 'Operations': {'Forwarding': 5946}, 'MeanConcurrency': {'Forwarding': 9.764817150063053}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.21167]}, 'PhysicalZErrorRates': {'Forwarding': [0.014321817560865304]}, 'PhysicalXErrorRates': {'Forwarding': [0.012339113416063453]}, 'Electrodes': {'Forwarding': 4240}, 'DACs': {'Forwarding': 4240}, 'Capacity': 2, 'Distance': 9}
+MainProcess - INFO - 9 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.03490499999999999}, 'Operations': {'Forwarding': 5946}, 'MeanConcurrency': {'Forwarding': 9.764817150063053}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.21167]}, 'PhysicalZErrorRates': {'Forwarding': [0.014321817560865304]}, 'PhysicalXErrorRates': {'Forwarding': [0.012339113416063453]}, 'Electrodes': {'Forwarding': 4240}, 'DACs': {'Forwarding': 4240}, 'Capacity': 2, 'Distance': 9}
+MainProcess - INFO - 9 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.03490499999999999}, 'Operations': {'Forwarding': 5946}, 'MeanConcurrency': {'Forwarding': 9.764817150063053}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.21167]}, 'PhysicalZErrorRates': {'Forwarding': [0.014321817560865304]}, 'PhysicalXErrorRates': {'Forwarding': [0.012339113416063453]}, 'Electrodes': {'Forwarding': 4240}, 'DACs': {'Forwarding': 4240}, 'Capacity': 2, 'Distance': 9}
+MainProcess - INFO - Finished processing for distance 9 and capacity 2
+MainProcess - INFO - Finished processing for distance 9 and capacity 2
+MainProcess - INFO - Finished processing for distance 9 and capacity 2
+MainProcess - INFO - Finished processing for distance 9 and capacity 2
+MainProcess - INFO - Finished processing for distance 9 and capacity 2
+MainProcess - INFO - Finished processing for distance 9 and capacity 2
+MainProcess - INFO - Finished processing for distance 9 and capacity 2
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 5 and tesselation (4, 8, 8)
+MainProcess - INFO - 9 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03584499999999998}, 'Operations': {'Forwarding': 3401}, 'MeanConcurrency': {'Forwarding': 6.026615969581749}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.30507]}, 'PhysicalZErrorRates': {'Forwarding': [0.01736757170668679]}, 'PhysicalXErrorRates': {'Forwarding': [0.016721335533041504]}, 'Electrodes': {'Forwarding': 3240}, 'DACs': {'Forwarding': 3240}, 'Capacity': 5, 'Distance': 9}
+MainProcess - INFO - 9 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03584499999999998}, 'Operations': {'Forwarding': 3401}, 'MeanConcurrency': {'Forwarding': 6.026615969581749}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.30507]}, 'PhysicalZErrorRates': {'Forwarding': [0.01736757170668679]}, 'PhysicalXErrorRates': {'Forwarding': [0.016721335533041504]}, 'Electrodes': {'Forwarding': 3240}, 'DACs': {'Forwarding': 3240}, 'Capacity': 5, 'Distance': 9}
+MainProcess - INFO - 9 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03584499999999998}, 'Operations': {'Forwarding': 3401}, 'MeanConcurrency': {'Forwarding': 6.026615969581749}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.30507]}, 'PhysicalZErrorRates': {'Forwarding': [0.01736757170668679]}, 'PhysicalXErrorRates': {'Forwarding': [0.016721335533041504]}, 'Electrodes': {'Forwarding': 3240}, 'DACs': {'Forwarding': 3240}, 'Capacity': 5, 'Distance': 9}
+MainProcess - INFO - 9 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03584499999999998}, 'Operations': {'Forwarding': 3401}, 'MeanConcurrency': {'Forwarding': 6.026615969581749}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.30507]}, 'PhysicalZErrorRates': {'Forwarding': [0.01736757170668679]}, 'PhysicalXErrorRates': {'Forwarding': [0.016721335533041504]}, 'Electrodes': {'Forwarding': 3240}, 'DACs': {'Forwarding': 3240}, 'Capacity': 5, 'Distance': 9}
+MainProcess - INFO - 9 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03584499999999998}, 'Operations': {'Forwarding': 3401}, 'MeanConcurrency': {'Forwarding': 6.026615969581749}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.30507]}, 'PhysicalZErrorRates': {'Forwarding': [0.01736757170668679]}, 'PhysicalXErrorRates': {'Forwarding': [0.016721335533041504]}, 'Electrodes': {'Forwarding': 3240}, 'DACs': {'Forwarding': 3240}, 'Capacity': 5, 'Distance': 9}
+MainProcess - INFO - 9 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03584499999999998}, 'Operations': {'Forwarding': 3401}, 'MeanConcurrency': {'Forwarding': 6.026615969581749}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.30507]}, 'PhysicalZErrorRates': {'Forwarding': [0.01736757170668679]}, 'PhysicalXErrorRates': {'Forwarding': [0.016721335533041504]}, 'Electrodes': {'Forwarding': 3240}, 'DACs': {'Forwarding': 3240}, 'Capacity': 5, 'Distance': 9}
+MainProcess - INFO - 9 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03584499999999998}, 'Operations': {'Forwarding': 3401}, 'MeanConcurrency': {'Forwarding': 6.026615969581749}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.30507]}, 'PhysicalZErrorRates': {'Forwarding': [0.01736757170668679]}, 'PhysicalXErrorRates': {'Forwarding': [0.016721335533041504]}, 'Electrodes': {'Forwarding': 3240}, 'DACs': {'Forwarding': 3240}, 'Capacity': 5, 'Distance': 9}
+MainProcess - INFO - 9 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03584499999999998}, 'Operations': {'Forwarding': 3401}, 'MeanConcurrency': {'Forwarding': 6.026615969581749}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.30507]}, 'PhysicalZErrorRates': {'Forwarding': [0.01736757170668679]}, 'PhysicalXErrorRates': {'Forwarding': [0.016721335533041504]}, 'Electrodes': {'Forwarding': 3240}, 'DACs': {'Forwarding': 3240}, 'Capacity': 5, 'Distance': 9}
+MainProcess - INFO - Finished processing for distance 9 and capacity 5
+MainProcess - INFO - Finished processing for distance 9 and capacity 5
+MainProcess - INFO - Finished processing for distance 9 and capacity 5
+MainProcess - INFO - Finished processing for distance 9 and capacity 5
+MainProcess - INFO - Finished processing for distance 9 and capacity 5
+MainProcess - INFO - Finished processing for distance 9 and capacity 5
+MainProcess - INFO - Finished processing for distance 9 and capacity 5
+MainProcess - INFO - Finished processing for distance 9 and capacity 5
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing circuit with 73 qubits and 10 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (4, 8, 8)
+MainProcess - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.04202500000000001}, 'Operations': {'Forwarding': 2602}, 'MeanConcurrency': {'Forwarding': 4.209994051160024}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.37155]}, 'PhysicalZErrorRates': {'Forwarding': [0.019189193377829362]}, 'PhysicalXErrorRates': {'Forwarding': [0.01936445998892056]}, 'Electrodes': {'Forwarding': 2440}, 'DACs': {'Forwarding': 2440}, 'Capacity': 10, 'Distance': 9}
+MainProcess - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.04202500000000001}, 'Operations': {'Forwarding': 2602}, 'MeanConcurrency': {'Forwarding': 4.209994051160024}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.37155]}, 'PhysicalZErrorRates': {'Forwarding': [0.019189193377829362]}, 'PhysicalXErrorRates': {'Forwarding': [0.01936445998892056]}, 'Electrodes': {'Forwarding': 2440}, 'DACs': {'Forwarding': 2440}, 'Capacity': 10, 'Distance': 9}
+MainProcess - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.04202500000000001}, 'Operations': {'Forwarding': 2602}, 'MeanConcurrency': {'Forwarding': 4.209994051160024}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.37155]}, 'PhysicalZErrorRates': {'Forwarding': [0.019189193377829362]}, 'PhysicalXErrorRates': {'Forwarding': [0.01936445998892056]}, 'Electrodes': {'Forwarding': 2440}, 'DACs': {'Forwarding': 2440}, 'Capacity': 10, 'Distance': 9}
+MainProcess - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.04202500000000001}, 'Operations': {'Forwarding': 2602}, 'MeanConcurrency': {'Forwarding': 4.209994051160024}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.37155]}, 'PhysicalZErrorRates': {'Forwarding': [0.019189193377829362]}, 'PhysicalXErrorRates': {'Forwarding': [0.01936445998892056]}, 'Electrodes': {'Forwarding': 2440}, 'DACs': {'Forwarding': 2440}, 'Capacity': 10, 'Distance': 9}
+MainProcess - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.04202500000000001}, 'Operations': {'Forwarding': 2602}, 'MeanConcurrency': {'Forwarding': 4.209994051160024}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.37155]}, 'PhysicalZErrorRates': {'Forwarding': [0.019189193377829362]}, 'PhysicalXErrorRates': {'Forwarding': [0.01936445998892056]}, 'Electrodes': {'Forwarding': 2440}, 'DACs': {'Forwarding': 2440}, 'Capacity': 10, 'Distance': 9}
+MainProcess - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.04202500000000001}, 'Operations': {'Forwarding': 2602}, 'MeanConcurrency': {'Forwarding': 4.209994051160024}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.37155]}, 'PhysicalZErrorRates': {'Forwarding': [0.019189193377829362]}, 'PhysicalXErrorRates': {'Forwarding': [0.01936445998892056]}, 'Electrodes': {'Forwarding': 2440}, 'DACs': {'Forwarding': 2440}, 'Capacity': 10, 'Distance': 9}
+MainProcess - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.04202500000000001}, 'Operations': {'Forwarding': 2602}, 'MeanConcurrency': {'Forwarding': 4.209994051160024}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.37155]}, 'PhysicalZErrorRates': {'Forwarding': [0.019189193377829362]}, 'PhysicalXErrorRates': {'Forwarding': [0.01936445998892056]}, 'Electrodes': {'Forwarding': 2440}, 'DACs': {'Forwarding': 2440}, 'Capacity': 10, 'Distance': 9}
+MainProcess - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.04202500000000001}, 'Operations': {'Forwarding': 2602}, 'MeanConcurrency': {'Forwarding': 4.209994051160024}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.37155]}, 'PhysicalZErrorRates': {'Forwarding': [0.019189193377829362]}, 'PhysicalXErrorRates': {'Forwarding': [0.01936445998892056]}, 'Electrodes': {'Forwarding': 2440}, 'DACs': {'Forwarding': 2440}, 'Capacity': 10, 'Distance': 9}
+MainProcess - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.04202500000000001}, 'Operations': {'Forwarding': 2602}, 'MeanConcurrency': {'Forwarding': 4.209994051160024}, 'QubitOperations': {'Forwarding': 1562}, 'LogicalErrorRates': {'Forwarding': [0.37155]}, 'PhysicalZErrorRates': {'Forwarding': [0.019189193377829362]}, 'PhysicalXErrorRates': {'Forwarding': [0.01936445998892056]}, 'Electrodes': {'Forwarding': 2440}, 'DACs': {'Forwarding': 2440}, 'Capacity': 10, 'Distance': 9}
+MainProcess - INFO - Finished processing for distance 9 and capacity 10
+MainProcess - INFO - Finished processing for distance 9 and capacity 10
+MainProcess - INFO - Finished processing for distance 9 and capacity 10
+MainProcess - INFO - Finished processing for distance 9 and capacity 10
+MainProcess - INFO - Finished processing for distance 9 and capacity 10
+MainProcess - INFO - Finished processing for distance 9 and capacity 10
+MainProcess - INFO - Finished processing for distance 9 and capacity 10
+MainProcess - INFO - Finished processing for distance 9 and capacity 10
+MainProcess - INFO - Finished processing for distance 9 and capacity 10

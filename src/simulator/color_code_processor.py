@@ -27,7 +27,7 @@ NDE_LZ = 10
 NDE_JZ = 20
 NSE_Z = 10
 
-def process_color_code_circuit(distance, rounds, capacity, gate_improvements, num_shots, tesselation):
+def process_color_code_circuit(distance, rounds, capacity, gate_improvements, num_shots, tesselation, basis='Z'):
     logger = get_logger()
     logger.setLevel(logging.INFO)
     handler = logging.FileHandler("process_log_color_code.txt")
@@ -37,17 +37,20 @@ def process_color_code_circuit(distance, rounds, capacity, gate_improvements, nu
 
     logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and tesselation {tesselation}")
   
-    circuit = QCCDCircuit.generate_color_code(distance, rounds=rounds, tesselation=tesselation)
+    circuit = QCCDCircuit.generate_color_code(distance, rounds=rounds, tesselation=tesselation, basis=basis)
     #for single ancilla circuits (6.6.6)
     if tesselation == (6,6,6):
         nqubitsNeeded = (9*distance**2 -1)//8
-    #for dual ancilla circuits
+    elif tesselation == (4,8,8):
+        nqubitsNeeded = (3*distance**2 +6*distance -5)//4
+    
+    #for dual ancilla (6.6.6) circuits
     #nqubitsNeeded = 3*(distance**2 - 1)//4 + (3*distance**2 + 1)//4
     nrowsNeeded = int(np.sqrt(nqubitsNeeded))+2
 
     logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {nrowsNeeded} rows")
 
-    arch, (instructions, _) = circuit.processColorCircuitAugmentedGrid(rows=nrowsNeeded, cols=nrowsNeeded, trapCapacity=capacity, dataQubitIdxs=circuit.dataQubitsIdxs)
+    arch, (instructions, _) = circuit.processColorCircuitAugmentedGrid(rows=nrowsNeeded, cols=nrowsNeeded, trapCapacity=capacity, dataQubitIdxs=circuit.dataQubitsIdxs, measureQubitIdxs=circuit.measureQubitsIdxs)
    
     arch.refreshGraph()
 
@@ -248,7 +251,7 @@ def process_model_color_code_circuit(distance, capacity, gate_improvements, num_
     logger.info(f"Finished processing for model circuit distance {distance}, capacity {capacity}")
     return results
 
-def process_color_code_circuit_wise_arch(distance, capacity, gate_improvements, num_shots, tesselation):
+def process_color_code_circuit_wise_arch(distance, capacity, gate_improvements, num_shots, tesselation, basis='Z'):
     logger = get_logger()
     logger.setLevel(logging.INFO)
     handler = logging.FileHandler("process_log_color_code_wise.txt")
@@ -258,7 +261,7 @@ def process_color_code_circuit_wise_arch(distance, capacity, gate_improvements, 
 
     logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and tesselation {tesselation}")
   
-    circuit = QCCDCircuit.generate_color_code(distance, rounds=2, tesselation=(6,6,6))
+    circuit = QCCDCircuit.generate_color_code(distance, rounds=2, tesselation=tesselation, basis=basis)
     nqubitsNeeded = (9*distance**2 -1)//8
 
     nrowsNeeded = int(np.sqrt(nqubitsNeeded))+2
