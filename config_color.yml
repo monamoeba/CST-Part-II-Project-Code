@@ -1,5 +1,5 @@
 hardware:
-  trap_capacity: [2,5,10,15,30,60,120] 
+  trap_capacity: [2,5,10,15,60,120] 
   topology: "grid" 
 
 # QEC Code Properties
