@@ -53916,3 +53916,13 @@ MainProcess - INFO - Processed results for distance 9, capacity 14.
 MainProcess - INFO - Processed results for distance 9, capacity 30.
 MainProcess - INFO - Processed results for distance 9, capacity 60.
 MainProcess - INFO - Processed results for distance 9, capacity 120.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
