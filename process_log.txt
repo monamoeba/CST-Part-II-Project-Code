@@ -54179,3 +54179,48 @@ This problem can unfortunately be quite difficult to debug. Likely causes are:
 
 MainProcess - INFO - Processed results for distance 5, capacity 60.
 MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 15.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 120.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 120.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 120.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 15.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 120.
