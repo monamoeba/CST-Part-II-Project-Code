@@ -27,7 +27,17 @@ NDE_LZ = 10
 NDE_JZ = 20
 NSE_Z = 10
 
-def process_color_code_circuit(distance, rounds, capacity, gate_improvements, num_shots, tesselation, basis='Z'):
+def process_color_code_circuit(
+    distance,
+    rounds,
+    capacity,
+    gate_improvements,
+    num_shots,
+    tesselation,
+    basis='Z',
+    cluster_merge_strategy='kdtree',
+    cluster_merge_threshold=2.5,
+):
     logger = get_logger()
     logger.setLevel(logging.INFO)
     handler = logging.FileHandler("process_log_color_code.txt")
@@ -50,7 +60,15 @@ def process_color_code_circuit(distance, rounds, capacity, gate_improvements, nu
 
     logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {nrowsNeeded} rows")
 
-    arch, (instructions, _) = circuit.processColorCircuitAugmentedGrid(rows=nrowsNeeded, cols=nrowsNeeded, trapCapacity=capacity, dataQubitIdxs=circuit.dataQubitsIdxs, measureQubitIdxs=circuit.measureQubitsIdxs)
+    arch, (instructions, _) = circuit.processColorCircuitAugmentedGrid(
+        rows=nrowsNeeded,
+        cols=nrowsNeeded,
+        trapCapacity=capacity,
+        dataQubitIdxs=circuit.dataQubitsIdxs,
+        measureQubitIdxs=circuit.measureQubitsIdxs,
+        cluster_merge_strategy=cluster_merge_strategy,
+        cluster_merge_threshold=cluster_merge_threshold,
+    )
    
     arch.refreshGraph()
 
@@ -124,7 +142,7 @@ def process_color_code_circuit(distance, rounds, capacity, gate_improvements, nu
     logger.info(f"Finished processing for distance {distance} and capacity {capacity}")
     return results
 
-def process_model_color_code_circuit(distance, capacity, gate_improvements, num_shots, circtype):
+def process_model_color_code_circuit(distance, capacity, gate_improvements, num_shots, circtype, cluster_merge_strategy='kdtree', cluster_merge_threshold=2.5):
     logger = get_logger()
     logger.setLevel(logging.INFO)
     handler = logging.FileHandler("process_log_color_code.txt")
@@ -177,7 +195,14 @@ def process_model_color_code_circuit(distance, capacity, gate_improvements, num_
 
     logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {nrowsNeeded} rows")
 
-    arch, (instructions, _) = circuit.processColorCircuitAugmentedGrid(rows=nrowsNeeded, cols=nrowsNeeded, trapCapacity=capacity, dataQubitIdxs=circuit.dataQubitsIdxs)
+    arch, (instructions, _) = circuit.processColorCircuitAugmentedGrid(
+        rows=nrowsNeeded,
+        cols=nrowsNeeded,
+        trapCapacity=capacity,
+        dataQubitIdxs=circuit.dataQubitsIdxs,
+        cluster_merge_strategy=cluster_merge_strategy,
+        cluster_merge_threshold=cluster_merge_threshold,
+    )
    
     arch.refreshGraph()
 

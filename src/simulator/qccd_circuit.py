@@ -481,13 +481,21 @@ class QCCDCircuit(stim.Circuit):
         padding: int = 1,
         dataQubitIdxs: Optional[Sequence[int]]=None,
         measureQubitIdxs: Optional[Sequence[int]]=None,
+        cluster_merge_strategy: str = "kdtree",
+        cluster_merge_threshold: float = 2.5,
     ) -> Tuple[QCCDArch, Tuple[Sequence[QubitOperation], Sequence[int]]]:        
-        instructions, barriers = self._parseCircuitString(dataQubitsIdxs=dataQubitIdxs, measureQubitsIdxs=measureQubitIdxs)
+        instructions, barriers = self._parseCircuitString(dataQubitIdxs=dataQubitIdxs, measureQubitIdxs=measureQubitIdxs)
         if (trapCapacity-1) * ((rows-1) * (2*cols-1)+cols) < len(self._ionMapping):
             raise ValueError("processCircuit: not enough traps")
         #clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
         #print(f"clusters = {clusters}")
-        clusters=regularColorPartition_vectorised(self._measurementIons, self._dataIons, trapCapacity)
+        clusters = regularColorPartition_vectorised(
+            self._measurementIons,
+            self._dataIons,
+            trapCapacity,
+            merge_strategy=cluster_merge_strategy,
+            merge_threshold=cluster_merge_threshold,
+        )
 
         #  temp cluster printing
         def visualize_clusters(clusters, trapCapacity):

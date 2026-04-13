@@ -4,8 +4,8 @@ hardware:
 
 # QEC Code Properties
 qec:
-  code_type: "surface_code:rotated_memory_z"
-  distances: [3,5,7]  
+  code_type: (6.6.6)
+  distances: [3,5,7,9]  
   gate_improvements: [1.0, 2.5, 5.0, 7.5, 10.0, 12.5, 15.0]
 
 # Simulation Settings

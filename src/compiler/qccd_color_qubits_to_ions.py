@@ -93,12 +93,14 @@ def TriangularPartitionIons(
 
 
 def TriangularPartitionIons_vectorised(
-    ions: Sequence[Ion], coords: npt.NDArray[np.float64], trapCapacity: int
+    ions: Sequence[Ion],
+    coords: npt.NDArray[np.float64],
+    trapCapacity: int,
+    merge_strategy: str = "kdtree",
+    merge_threshold: float = 2.5,
 ) -> Sequence[Tuple[Sequence[Ion], Tuple[float, float]]]:
     """
-    Vectorised draft of TriangularPartitionIons for benchmarking.
-    Same API as TriangularPartitionIons but classifies points per triangle
-    using batched NumPy operations instead of a Python loop.
+    Valid merge_strategy options: 'bounded', 'unbounded_nn', 'knn'
     """
     A = np.array([np.min(coords[:, 0]) - 1.0, np.min(coords[:, 1]) - 1.0])
     B = np.array([np.max(coords[:, 0]) + 1.0, np.min(coords[:, 1]) - 1.0])
@@ -170,13 +172,22 @@ def TriangularPartitionIons_vectorised(
         result.append((clust, clusterCentre))
 
     coordsToIons = {(c[0], c[1]): i for c, i in zip(coords, ions)}
-    # Use KD-tree based merging if SciPy is available; otherwise fall back to the original method
-    """if cKDTree is not None:
-        final_clusters = _mergeUnderfilledClusters_kdtree(result, trapCapacity, coordsToIons)
-    else:
-        final_clusters = _mergeUnderfilledClusters(result, trapCapacity, coordsToIons)"""
-    #temp testing merging methods
-    final_clusters = _mergeUnderfilledClusters_kdtree(result, trapCapacity, coordsToIons)
+
+    merge_methods = {
+        "bounded": lambda clusters, cap, mapping: _mergeUnderfilledClusters_kdtree(
+            clusters, cap, mapping, thresh=merge_threshold
+        ),
+        "unbounded_nn": _merge_unbounded_nn,
+        "knn": _merge_knn,
+    }
+    merge_func = merge_methods.get(merge_strategy)
+    if merge_func is None:
+        raise ValueError(
+            f"Unsupported merge_strategy {merge_strategy!r}. "
+            f"Valid strategies are: {', '.join(sorted(merge_methods))}"
+        )
+
+    final_clusters = merge_func(result, trapCapacity, coordsToIons)
     return final_clusters
 
 
@@ -187,8 +198,7 @@ def _mergeUnderfilledClusters_kdtree(
     thresh: float = 2.5,
 ) -> Sequence[Tuple[Sequence[Ion], Tuple[float, float]]]:
     """
-    KD-tree based variant of _mergeUnderfilledClusters for benchmarking.
-    Uses a spatial index on cluster centres to avoid exhaustive pairwise scans.
+    KD-tree variant of _mergeUnderfilledClusters - uses a spatial index on cluster centres to avoid exhaustive pairwise scans
     """
 
     # Initialise cluster records
@@ -503,13 +513,12 @@ def regularColorPartition(measurementIons: Sequence[Ion], dataIons: Sequence[Ion
 
 
 def regularColorPartition_vectorised(
-    measurementIons: Sequence[Ion], dataIons: Sequence[Ion], trapCapacity: int
+    measurementIons: Sequence[Ion],
+    dataIons: Sequence[Ion],
+    trapCapacity: int,
+    merge_strategy: str = "kdtree",
+    merge_threshold: float = 2.5,
 ):
-    """
-    Vectorised version of regularColorPartition for benchmarking.
-    Uses TriangularPartitionIons_vectorised (with KD-tree merging if available)
-    to assess the impact of clustering optimisations on the full compilation pass.
-    """
     measurementIonsL = list(measurementIons)
     measurementIonCoords = np.array([list(ion.pos) for ion in measurementIonsL]).reshape(-1, 2)
     dataIonsL = list(dataIons)
@@ -518,7 +527,13 @@ def regularColorPartition_vectorised(
     ids = measurementIonsL + dataIonsL
     coords = np.concatenate([measurementIonCoords, dataIonCoords])
 
-    clusters = TriangularPartitionIons_vectorised(ids, coords, trapCapacity - 1)
+    clusters = TriangularPartitionIons_vectorised(
+        ids,
+        coords,
+        trapCapacity - 1,
+        merge_strategy=merge_strategy,
+        merge_threshold=merge_threshold,
+    )
 
     return clusters
       

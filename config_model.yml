@@ -5,7 +5,7 @@ hardware:
 
 # QEC Code Properties
 qec:
-  code_type: "surface_code:rotated_memory_z"
+  code_type: (6.6.6)
   distances: [3,5,7,9]  
   gate_improvements: [1.0]
 
