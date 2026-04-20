@@ -5310,3 +5310,1163 @@ SpawnProcess-2 - INFO - process exiting with exitcode 0
 SpawnProcess-2 - INFO - process exiting with exitcode 0
 SpawnProcess-2 - INFO - process exiting with exitcode 0
 SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 5 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 9 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 11 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 13 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-4 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-4 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-4 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-4 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-4 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-4 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-4 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 15 rows
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 17 rows
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 10 traps in a linear chain
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 3 traps in a linear chain
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 2 traps in a linear chain
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 28 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 28 traps in a linear chain
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 7 traps in a linear chain
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 4 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 4 traps in a linear chain
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 55 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 55 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 55 traps in a linear chain
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - 3 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.008575000000000003}, 'Operations': {'Forwarding': 599}, 'MeanConcurrency': {'Forwarding': 3.0732600732600734}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.110585, 0.046488, 0.023595]}, 'PhysicalZErrorRates': {'Forwarding': [0.006901938865392449, 0.0027607755461569778, 0.0013803877730784889]}, 'PhysicalXErrorRates': {'Forwarding': [0.006334636180284795, 0.0025338544721139186, 0.0012669272360569593]}, 'Electrodes': {'Forwarding': 700}, 'DACs': {'Forwarding': 700}, 'Capacity': 2, 'Distance': 3}
+SpawnProcess-1 - INFO - Finished processing for distance 3 and capacity 2
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 14 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 14 traps in a linear chain
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 7 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 7 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 7 traps in a linear chain
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 91 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 91 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 91 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 91 traps in a linear chain
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - 3 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.011250000000000001}, 'Operations': {'Forwarding': 352}, 'MeanConcurrency': {'Forwarding': 1.6612903225806452}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.21411, 0.094685, 0.04935]}, 'PhysicalZErrorRates': {'Forwarding': [0.013528715363814213, 0.0054114861455256845, 0.0027057430727628422]}, 'PhysicalXErrorRates': {'Forwarding': [0.013148880932162727, 0.005259552372865089, 0.0026297761864325447]}, 'Electrodes': {'Forwarding': 390}, 'DACs': {'Forwarding': 390}, 'Capacity': 5, 'Distance': 3}
+SpawnProcess-4 - INFO - Finished processing for distance 3 and capacity 5
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 23 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 23 traps in a linear chain
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 11 traps in a linear chain
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 136 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 136 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 136 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 136 traps in a linear chain
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 34 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 34 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 34 traps in a linear chain
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 16 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 16 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 16 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 16 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 16 traps in a linear chain
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 190 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 190 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 190 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 190 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 22 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 22 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 22 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 22 traps in a linear chain
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 64 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 64 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 64 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 64 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 64 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 64 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 29 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 29 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 29 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 29 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 29 traps in a linear chain
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-1 - INFO - process exiting with exitcode 1
+SpawnProcess-1 - INFO - process exiting with exitcode 1
+SpawnProcess-1 - INFO - process exiting with exitcode 1
+SpawnProcess-1 - INFO - process exiting with exitcode 1
+SpawnProcess-1 - INFO - process exiting with exitcode 1
+SpawnProcess-1 - INFO - process exiting with exitcode 1
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-2 - INFO - process exiting with exitcode 0
+SpawnProcess-3 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-4 - INFO - process exiting with exitcode 0
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 10 traps in a linear chain
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 3 traps in a linear chain
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 2 traps in a linear chain
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 28 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 28 qubits and 28 traps in a linear chain
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 7 traps in a linear chain
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 4 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 4 traps in a linear chain
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 55 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 55 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 55 traps in a linear chain
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - 3 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.011250000000000001}, 'Operations': {'Forwarding': 352}, 'MeanConcurrency': {'Forwarding': 1.6612903225806452}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.213929, 0.094886, 0.048916]}, 'PhysicalZErrorRates': {'Forwarding': [0.013528715363814213, 0.0054114861455256845, 0.0027057430727628422]}, 'PhysicalXErrorRates': {'Forwarding': [0.013148880932162727, 0.005259552372865089, 0.0026297761864325447]}, 'Electrodes': {'Forwarding': 390}, 'DACs': {'Forwarding': 390}, 'Capacity': 5, 'Distance': 3}
+SpawnProcess-3 - INFO - Finished processing for distance 3 and capacity 5
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 14 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 14 traps in a linear chain
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - 3 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.008575000000000003}, 'Operations': {'Forwarding': 599}, 'MeanConcurrency': {'Forwarding': 3.0732600732600734}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.110525, 0.046151, 0.0237]}, 'PhysicalZErrorRates': {'Forwarding': [0.006901938865392449, 0.0027607755461569778, 0.0013803877730784889]}, 'PhysicalXErrorRates': {'Forwarding': [0.006334636180284795, 0.0025338544721139186, 0.0012669272360569593]}, 'Electrodes': {'Forwarding': 700}, 'DACs': {'Forwarding': 700}, 'Capacity': 2, 'Distance': 3}
+SpawnProcess-1 - INFO - Finished processing for distance 3 and capacity 2
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 7 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 7 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 7 traps in a linear chain
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 91 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 91 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 23 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 23 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 23 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 23 traps in a linear chain
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 11 traps in a linear chain
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 136 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 136 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 136 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 136 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 136 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 136 traps in a linear chain
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 34 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 34 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 34 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 34 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 34 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 34 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 136 qubits and 34 traps in a linear chain
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 16 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 16 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 16 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 16 traps in a linear chain
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 190 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 190 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 190 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 190 qubits and 48 traps in a linear chain
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 253 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 64 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 64 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 64 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 253 qubits and 64 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 29 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 29 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 29 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 29 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 29 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 253 qubits and 29 traps in a linear chain
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-1 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process shutting down
+SpawnProcess-4 - INFO - process exiting with exitcode 1
+SpawnProcess-4 - INFO - process exiting with exitcode 1
+SpawnProcess-4 - INFO - process exiting with exitcode 1
+SpawnProcess-4 - INFO - process exiting with exitcode 1
+SpawnProcess-4 - INFO - process exiting with exitcode 1
+SpawnProcess-4 - INFO - process exiting with exitcode 1
+SpawnProcess-1 - INFO - process exiting with exitcode 1
+SpawnProcess-1 - INFO - process exiting with exitcode 1
+SpawnProcess-1 - INFO - process exiting with exitcode 1
+SpawnProcess-1 - INFO - process exiting with exitcode 1
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 20 traps in a linear chain
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 6 traps in a linear chain
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 4 traps in a linear chain
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 28 qubits and 56 traps in a linear chain
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - 3 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.011205000000000003}, 'Operations': {'Forwarding': 307}, 'MeanConcurrency': {'Forwarding': 1.6115107913669064}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.214546, 0.095357, 0.049506]}, 'PhysicalZErrorRates': {'Forwarding': [0.01385143692294019, 0.005540574769176076, 0.002770287384588038]}, 'PhysicalXErrorRates': {'Forwarding': [0.013438065848732634, 0.005375226339493054, 0.002687613169746527]}, 'Electrodes': {'Forwarding': 690}, 'DACs': {'Forwarding': 690}, 'Capacity': 10, 'Distance': 3}
+SpawnProcess-3 - INFO - Finished processing for distance 3 and capacity 10
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - 3 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.011250000000000001}, 'Operations': {'Forwarding': 352}, 'MeanConcurrency': {'Forwarding': 1.6612903225806452}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.214148, 0.095096, 0.049121]}, 'PhysicalZErrorRates': {'Forwarding': [0.013528715363814213, 0.0054114861455256845, 0.0027057430727628422]}, 'PhysicalXErrorRates': {'Forwarding': [0.013148880932162727, 0.005259552372865089, 0.0026297761864325447]}, 'Electrodes': {'Forwarding': 390}, 'DACs': {'Forwarding': 390}, 'Capacity': 5, 'Distance': 3}
+SpawnProcess-1 - INFO - Finished processing for distance 3 and capacity 5
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 14 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 28 qubits and 14 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 8 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 28 qubits and 8 traps in a linear chain
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - 3 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.008575000000000003}, 'Operations': {'Forwarding': 599}, 'MeanConcurrency': {'Forwarding': 3.0732600732600734}, 'QubitOperations': {'Forwarding': 167}, 'LogicalErrorRates': {'Forwarding': [0.110478, 0.046822, 0.023452]}, 'PhysicalZErrorRates': {'Forwarding': [0.006901938865392449, 0.0027607755461569778, 0.0013803877730784889]}, 'PhysicalXErrorRates': {'Forwarding': [0.006334636180284795, 0.0025338544721139186, 0.0012669272360569593]}, 'Electrodes': {'Forwarding': 700}, 'DACs': {'Forwarding': 700}, 'Capacity': 2, 'Distance': 3}
+SpawnProcess-2 - INFO - Finished processing for distance 3 and capacity 2
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 110 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 55 qubits and 110 traps in a linear chain
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - 5 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.02773999999999999}, 'Operations': {'Forwarding': 987}, 'MeanConcurrency': {'Forwarding': 2.110970996216898}, 'QubitOperations': {'Forwarding': 557}, 'LogicalErrorRates': {'Forwarding': [0.276309, 0.108477, 0.051456]}, 'PhysicalZErrorRates': {'Forwarding': [0.016887653769630105, 0.006755061507852045, 0.0033775307539260224]}, 'PhysicalXErrorRates': {'Forwarding': [0.016712253276972733, 0.006684901310789093, 0.0033424506553945466]}, 'Electrodes': {'Forwarding': 1380}, 'DACs': {'Forwarding': 1380}, 'Capacity': 10, 'Distance': 5}
+SpawnProcess-1 - INFO - 5 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.02773999999999999}, 'Operations': {'Forwarding': 987}, 'MeanConcurrency': {'Forwarding': 2.110970996216898}, 'QubitOperations': {'Forwarding': 557}, 'LogicalErrorRates': {'Forwarding': [0.276309, 0.108477, 0.051456]}, 'PhysicalZErrorRates': {'Forwarding': [0.016887653769630105, 0.006755061507852045, 0.0033775307539260224]}, 'PhysicalXErrorRates': {'Forwarding': [0.016712253276972733, 0.006684901310789093, 0.0033424506553945466]}, 'Electrodes': {'Forwarding': 1380}, 'DACs': {'Forwarding': 1380}, 'Capacity': 10, 'Distance': 5}
+SpawnProcess-1 - INFO - Finished processing for distance 5 and capacity 10
+SpawnProcess-1 - INFO - Finished processing for distance 5 and capacity 10
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 28 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 28 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 28 traps in a linear chain
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - 5 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.02348}, 'Operations': {'Forwarding': 1265}, 'MeanConcurrency': {'Forwarding': 3.070030895983522}, 'QubitOperations': {'Forwarding': 557}, 'LogicalErrorRates': {'Forwarding': [0.192307, 0.04465, 0.012892]}, 'PhysicalZErrorRates': {'Forwarding': [0.015272812790791563, 0.006109125116316629, 0.0030545625581583145]}, 'PhysicalXErrorRates': {'Forwarding': [0.014804403610053904, 0.005921761444021561, 0.0029608807220107805]}, 'Electrodes': {'Forwarding': 1170}, 'DACs': {'Forwarding': 1170}, 'Capacity': 5, 'Distance': 5}
+SpawnProcess-3 - INFO - 5 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.02348}, 'Operations': {'Forwarding': 1265}, 'MeanConcurrency': {'Forwarding': 3.070030895983522}, 'QubitOperations': {'Forwarding': 557}, 'LogicalErrorRates': {'Forwarding': [0.192307, 0.04465, 0.012892]}, 'PhysicalZErrorRates': {'Forwarding': [0.015272812790791563, 0.006109125116316629, 0.0030545625581583145]}, 'PhysicalXErrorRates': {'Forwarding': [0.014804403610053904, 0.005921761444021561, 0.0029608807220107805]}, 'Electrodes': {'Forwarding': 1170}, 'DACs': {'Forwarding': 1170}, 'Capacity': 5, 'Distance': 5}
+SpawnProcess-3 - INFO - Finished processing for distance 5 and capacity 5
+SpawnProcess-3 - INFO - Finished processing for distance 5 and capacity 5
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 14 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 14 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 14 traps in a linear chain
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - 7 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.041074999999999987}, 'Operations': {'Forwarding': 2386}, 'MeanConcurrency': {'Forwarding': 3.5294117647058822}, 'QubitOperations': {'Forwarding': 1172}, 'LogicalErrorRates': {'Forwarding': [0.308799, 0.062362, 0.011945]}, 'PhysicalZErrorRates': {'Forwarding': [0.019367791394965955, 0.007747116557986385, 0.0038735582789931923]}, 'PhysicalXErrorRates': {'Forwarding': [0.019226170278787848, 0.00769046811151513, 0.003845234055757565]}, 'Electrodes': {'Forwarding': 2300}, 'DACs': {'Forwarding': 2300}, 'Capacity': 10, 'Distance': 7}
+SpawnProcess-3 - INFO - 7 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.041074999999999987}, 'Operations': {'Forwarding': 2386}, 'MeanConcurrency': {'Forwarding': 3.5294117647058822}, 'QubitOperations': {'Forwarding': 1172}, 'LogicalErrorRates': {'Forwarding': [0.308799, 0.062362, 0.011945]}, 'PhysicalZErrorRates': {'Forwarding': [0.019367791394965955, 0.007747116557986385, 0.0038735582789931923]}, 'PhysicalXErrorRates': {'Forwarding': [0.019226170278787848, 0.00769046811151513, 0.003845234055757565]}, 'Electrodes': {'Forwarding': 2300}, 'DACs': {'Forwarding': 2300}, 'Capacity': 10, 'Distance': 7}
+SpawnProcess-3 - INFO - 7 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.041074999999999987}, 'Operations': {'Forwarding': 2386}, 'MeanConcurrency': {'Forwarding': 3.5294117647058822}, 'QubitOperations': {'Forwarding': 1172}, 'LogicalErrorRates': {'Forwarding': [0.308799, 0.062362, 0.011945]}, 'PhysicalZErrorRates': {'Forwarding': [0.019367791394965955, 0.007747116557986385, 0.0038735582789931923]}, 'PhysicalXErrorRates': {'Forwarding': [0.019226170278787848, 0.00769046811151513, 0.003845234055757565]}, 'Electrodes': {'Forwarding': 2300}, 'DACs': {'Forwarding': 2300}, 'Capacity': 10, 'Distance': 7}
+SpawnProcess-3 - INFO - Finished processing for distance 7 and capacity 10
+SpawnProcess-3 - INFO - Finished processing for distance 7 and capacity 10
+SpawnProcess-3 - INFO - Finished processing for distance 7 and capacity 10
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 182 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 182 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 182 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 91 qubits and 182 traps in a linear chain
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - 7 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.02946500000000002}, 'Operations': {'Forwarding': 3142}, 'MeanConcurrency': {'Forwarding': 5.494037478705281}, 'QubitOperations': {'Forwarding': 1172}, 'LogicalErrorRates': {'Forwarding': [0.245429, 0.040814, 0.007689]}, 'PhysicalZErrorRates': {'Forwarding': [0.01619916296410766, 0.0064796651856430555, 0.0032398325928215278]}, 'PhysicalXErrorRates': {'Forwarding': [0.015698502796440264, 0.006279401118576107, 0.0031397005592880534]}, 'Electrodes': {'Forwarding': 1950}, 'DACs': {'Forwarding': 1950}, 'Capacity': 5, 'Distance': 7}
+SpawnProcess-1 - INFO - 7 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.02946500000000002}, 'Operations': {'Forwarding': 3142}, 'MeanConcurrency': {'Forwarding': 5.494037478705281}, 'QubitOperations': {'Forwarding': 1172}, 'LogicalErrorRates': {'Forwarding': [0.245429, 0.040814, 0.007689]}, 'PhysicalZErrorRates': {'Forwarding': [0.01619916296410766, 0.0064796651856430555, 0.0032398325928215278]}, 'PhysicalXErrorRates': {'Forwarding': [0.015698502796440264, 0.006279401118576107, 0.0031397005592880534]}, 'Electrodes': {'Forwarding': 1950}, 'DACs': {'Forwarding': 1950}, 'Capacity': 5, 'Distance': 7}
+SpawnProcess-1 - INFO - 7 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.02946500000000002}, 'Operations': {'Forwarding': 3142}, 'MeanConcurrency': {'Forwarding': 5.494037478705281}, 'QubitOperations': {'Forwarding': 1172}, 'LogicalErrorRates': {'Forwarding': [0.245429, 0.040814, 0.007689]}, 'PhysicalZErrorRates': {'Forwarding': [0.01619916296410766, 0.0064796651856430555, 0.0032398325928215278]}, 'PhysicalXErrorRates': {'Forwarding': [0.015698502796440264, 0.006279401118576107, 0.0031397005592880534]}, 'Electrodes': {'Forwarding': 1950}, 'DACs': {'Forwarding': 1950}, 'Capacity': 5, 'Distance': 7}
+SpawnProcess-1 - INFO - Finished processing for distance 7 and capacity 5
+SpawnProcess-1 - INFO - Finished processing for distance 7 and capacity 5
+SpawnProcess-1 - INFO - Finished processing for distance 7 and capacity 5
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 46 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 46 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 46 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 91 qubits and 46 traps in a linear chain
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - 5 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.011155000000000002}, 'Operations': {'Forwarding': 2069}, 'MeanConcurrency': {'Forwarding': 8.202643171806168}, 'QubitOperations': {'Forwarding': 557}, 'LogicalErrorRates': {'Forwarding': [0.053577, 0.009236, 0.002531]}, 'PhysicalZErrorRates': {'Forwarding': [0.007253976911045391, 0.002901590764418158, 0.001450795382209079]}, 'PhysicalXErrorRates': {'Forwarding': [0.006648373158311285, 0.002659349263324516, 0.001329674631662258]}, 'Electrodes': {'Forwarding': 1960}, 'DACs': {'Forwarding': 1960}, 'Capacity': 2, 'Distance': 5}
+SpawnProcess-4 - INFO - Finished processing for distance 5 and capacity 2
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 22 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 22 traps in a linear chain
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.04859499999999997}, 'Operations': {'Forwarding': 3966}, 'MeanConcurrency': {'Forwarding': 5.174868609651218}, 'QubitOperations': {'Forwarding': 2012}, 'LogicalErrorRates': {'Forwarding': [0.361056, 0.062377, 0.008096]}, 'PhysicalZErrorRates': {'Forwarding': [0.01969834773503007, 0.007879339094012039, 0.003939669547006019]}, 'PhysicalXErrorRates': {'Forwarding': [0.01958039559261008, 0.007832158237044041, 0.003916079118522021]}, 'Electrodes': {'Forwarding': 3450}, 'DACs': {'Forwarding': 3450}, 'Capacity': 10, 'Distance': 9}
+SpawnProcess-4 - INFO - 9 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.04859499999999997}, 'Operations': {'Forwarding': 3966}, 'MeanConcurrency': {'Forwarding': 5.174868609651218}, 'QubitOperations': {'Forwarding': 2012}, 'LogicalErrorRates': {'Forwarding': [0.361056, 0.062377, 0.008096]}, 'PhysicalZErrorRates': {'Forwarding': [0.01969834773503007, 0.007879339094012039, 0.003939669547006019]}, 'PhysicalXErrorRates': {'Forwarding': [0.01958039559261008, 0.007832158237044041, 0.003916079118522021]}, 'Electrodes': {'Forwarding': 3450}, 'DACs': {'Forwarding': 3450}, 'Capacity': 10, 'Distance': 9}
+SpawnProcess-4 - INFO - Finished processing for distance 9 and capacity 10
+SpawnProcess-4 - INFO - Finished processing for distance 9 and capacity 10
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 272 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 272 traps in a linear chain
+SpawnProcess-4 - INFO - Processing circuit with 136 qubits and 272 traps in a linear chain
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - 9 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03656999999999999}, 'Operations': {'Forwarding': 5303}, 'MeanConcurrency': {'Forwarding': 8.422488631665978}, 'QubitOperations': {'Forwarding': 2012}, 'LogicalErrorRates': {'Forwarding': [0.269988, 0.031374, 0.003629]}, 'PhysicalZErrorRates': {'Forwarding': [0.01593664114504455, 0.006374656458017823, 0.0031873282290089113]}, 'PhysicalXErrorRates': {'Forwarding': [0.015410089571659786, 0.006164035828663906, 0.003082017914331953]}, 'Electrodes': {'Forwarding': 3510}, 'DACs': {'Forwarding': 3510}, 'Capacity': 5, 'Distance': 9}
+SpawnProcess-1 - INFO - 9 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03656999999999999}, 'Operations': {'Forwarding': 5303}, 'MeanConcurrency': {'Forwarding': 8.422488631665978}, 'QubitOperations': {'Forwarding': 2012}, 'LogicalErrorRates': {'Forwarding': [0.269988, 0.031374, 0.003629]}, 'PhysicalZErrorRates': {'Forwarding': [0.01593664114504455, 0.006374656458017823, 0.0031873282290089113]}, 'PhysicalXErrorRates': {'Forwarding': [0.015410089571659786, 0.006164035828663906, 0.003082017914331953]}, 'Electrodes': {'Forwarding': 3510}, 'DACs': {'Forwarding': 3510}, 'Capacity': 5, 'Distance': 9}
+SpawnProcess-1 - INFO - 9 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03656999999999999}, 'Operations': {'Forwarding': 5303}, 'MeanConcurrency': {'Forwarding': 8.422488631665978}, 'QubitOperations': {'Forwarding': 2012}, 'LogicalErrorRates': {'Forwarding': [0.269988, 0.031374, 0.003629]}, 'PhysicalZErrorRates': {'Forwarding': [0.01593664114504455, 0.006374656458017823, 0.0031873282290089113]}, 'PhysicalXErrorRates': {'Forwarding': [0.015410089571659786, 0.006164035828663906, 0.003082017914331953]}, 'Electrodes': {'Forwarding': 3510}, 'DACs': {'Forwarding': 3510}, 'Capacity': 5, 'Distance': 9}
+SpawnProcess-1 - INFO - 9 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03656999999999999}, 'Operations': {'Forwarding': 5303}, 'MeanConcurrency': {'Forwarding': 8.422488631665978}, 'QubitOperations': {'Forwarding': 2012}, 'LogicalErrorRates': {'Forwarding': [0.269988, 0.031374, 0.003629]}, 'PhysicalZErrorRates': {'Forwarding': [0.01593664114504455, 0.006374656458017823, 0.0031873282290089113]}, 'PhysicalXErrorRates': {'Forwarding': [0.015410089571659786, 0.006164035828663906, 0.003082017914331953]}, 'Electrodes': {'Forwarding': 3510}, 'DACs': {'Forwarding': 3510}, 'Capacity': 5, 'Distance': 9}
+SpawnProcess-1 - INFO - Finished processing for distance 9 and capacity 5
+SpawnProcess-1 - INFO - Finished processing for distance 9 and capacity 5
+SpawnProcess-1 - INFO - Finished processing for distance 9 and capacity 5
+SpawnProcess-1 - INFO - Finished processing for distance 9 and capacity 5
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 68 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 68 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 68 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 68 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 68 traps in a linear chain
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - 11 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.038234999999999984}, 'Operations': {'Forwarding': 8007}, 'MeanConcurrency': {'Forwarding': 11.92995579734784}, 'QubitOperations': {'Forwarding': 3077}, 'LogicalErrorRates': {'Forwarding': [0.30439, 0.026265, 0.001959]}, 'PhysicalZErrorRates': {'Forwarding': [0.015781574013665027, 0.00631262960546602, 0.00315631480273301]}, 'PhysicalXErrorRates': {'Forwarding': [0.01538769040800328, 0.006155076163201312, 0.003077538081600656]}, 'Electrodes': {'Forwarding': 4680}, 'DACs': {'Forwarding': 4680}, 'Capacity': 5, 'Distance': 11}
+SpawnProcess-1 - INFO - 11 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.038234999999999984}, 'Operations': {'Forwarding': 8007}, 'MeanConcurrency': {'Forwarding': 11.92995579734784}, 'QubitOperations': {'Forwarding': 3077}, 'LogicalErrorRates': {'Forwarding': [0.30439, 0.026265, 0.001959]}, 'PhysicalZErrorRates': {'Forwarding': [0.015781574013665027, 0.00631262960546602, 0.00315631480273301]}, 'PhysicalXErrorRates': {'Forwarding': [0.01538769040800328, 0.006155076163201312, 0.003077538081600656]}, 'Electrodes': {'Forwarding': 4680}, 'DACs': {'Forwarding': 4680}, 'Capacity': 5, 'Distance': 11}
+SpawnProcess-1 - INFO - 11 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.038234999999999984}, 'Operations': {'Forwarding': 8007}, 'MeanConcurrency': {'Forwarding': 11.92995579734784}, 'QubitOperations': {'Forwarding': 3077}, 'LogicalErrorRates': {'Forwarding': [0.30439, 0.026265, 0.001959]}, 'PhysicalZErrorRates': {'Forwarding': [0.015781574013665027, 0.00631262960546602, 0.00315631480273301]}, 'PhysicalXErrorRates': {'Forwarding': [0.01538769040800328, 0.006155076163201312, 0.003077538081600656]}, 'Electrodes': {'Forwarding': 4680}, 'DACs': {'Forwarding': 4680}, 'Capacity': 5, 'Distance': 11}
+SpawnProcess-1 - INFO - 11 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.038234999999999984}, 'Operations': {'Forwarding': 8007}, 'MeanConcurrency': {'Forwarding': 11.92995579734784}, 'QubitOperations': {'Forwarding': 3077}, 'LogicalErrorRates': {'Forwarding': [0.30439, 0.026265, 0.001959]}, 'PhysicalZErrorRates': {'Forwarding': [0.015781574013665027, 0.00631262960546602, 0.00315631480273301]}, 'PhysicalXErrorRates': {'Forwarding': [0.01538769040800328, 0.006155076163201312, 0.003077538081600656]}, 'Electrodes': {'Forwarding': 4680}, 'DACs': {'Forwarding': 4680}, 'Capacity': 5, 'Distance': 11}
+SpawnProcess-1 - INFO - 11 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.038234999999999984}, 'Operations': {'Forwarding': 8007}, 'MeanConcurrency': {'Forwarding': 11.92995579734784}, 'QubitOperations': {'Forwarding': 3077}, 'LogicalErrorRates': {'Forwarding': [0.30439, 0.026265, 0.001959]}, 'PhysicalZErrorRates': {'Forwarding': [0.015781574013665027, 0.00631262960546602, 0.00315631480273301]}, 'PhysicalXErrorRates': {'Forwarding': [0.01538769040800328, 0.006155076163201312, 0.003077538081600656]}, 'Electrodes': {'Forwarding': 4680}, 'DACs': {'Forwarding': 4680}, 'Capacity': 5, 'Distance': 11}
+SpawnProcess-1 - INFO - Finished processing for distance 11 and capacity 5
+SpawnProcess-1 - INFO - Finished processing for distance 11 and capacity 5
+SpawnProcess-1 - INFO - Finished processing for distance 11 and capacity 5
+SpawnProcess-1 - INFO - Finished processing for distance 11 and capacity 5
+SpawnProcess-1 - INFO - Finished processing for distance 11 and capacity 5
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 32 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 32 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 32 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 32 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 32 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 136 qubits and 32 traps in a linear chain
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 380 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 380 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 380 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 380 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 380 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 380 traps in a linear chain
+SpawnProcess-1 - INFO - Processing circuit with 190 qubits and 380 traps in a linear chain
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 13, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - 7 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.011175000000000001}, 'Operations': {'Forwarding': 4412}, 'MeanConcurrency': {'Forwarding': 16.901315789473685}, 'QubitOperations': {'Forwarding': 1172}, 'LogicalErrorRates': {'Forwarding': [0.048592, 0.005022, 0.000812]}, 'PhysicalZErrorRates': {'Forwarding': [0.007360171024011512, 0.002944068409604609, 0.0014720342048023046]}, 'PhysicalXErrorRates': {'Forwarding': [0.0067500678847938304, 0.0027000271539175244, 0.0013500135769587622]}, 'Electrodes': {'Forwarding': 3850}, 'DACs': {'Forwarding': 3850}, 'Capacity': 2, 'Distance': 7}
+SpawnProcess-2 - INFO - 7 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.011175000000000001}, 'Operations': {'Forwarding': 4412}, 'MeanConcurrency': {'Forwarding': 16.901315789473685}, 'QubitOperations': {'Forwarding': 1172}, 'LogicalErrorRates': {'Forwarding': [0.048592, 0.005022, 0.000812]}, 'PhysicalZErrorRates': {'Forwarding': [0.007360171024011512, 0.002944068409604609, 0.0014720342048023046]}, 'PhysicalXErrorRates': {'Forwarding': [0.0067500678847938304, 0.0027000271539175244, 0.0013500135769587622]}, 'Electrodes': {'Forwarding': 3850}, 'DACs': {'Forwarding': 3850}, 'Capacity': 2, 'Distance': 7}
+SpawnProcess-2 - INFO - Finished processing for distance 7 and capacity 2
+SpawnProcess-2 - INFO - Finished processing for distance 7 and capacity 2
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 96 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 96 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 96 traps in a linear chain
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 13, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - 13 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.037759999999999995}, 'Operations': {'Forwarding': 10741}, 'MeanConcurrency': {'Forwarding': 16.75240623962828}, 'QubitOperations': {'Forwarding': 4367}, 'LogicalErrorRates': {'Forwarding': [0.353571, 0.027356, 0.001341]}, 'PhysicalZErrorRates': {'Forwarding': [0.01681265551707607, 0.0067250622068304455, 0.0033625311034152228]}, 'PhysicalXErrorRates': {'Forwarding': [0.016117384797286544, 0.006446953918914632, 0.003223476959457316]}, 'Electrodes': {'Forwarding': 8060}, 'DACs': {'Forwarding': 8060}, 'Capacity': 5, 'Distance': 13}
+SpawnProcess-2 - INFO - 13 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.037759999999999995}, 'Operations': {'Forwarding': 10741}, 'MeanConcurrency': {'Forwarding': 16.75240623962828}, 'QubitOperations': {'Forwarding': 4367}, 'LogicalErrorRates': {'Forwarding': [0.353571, 0.027356, 0.001341]}, 'PhysicalZErrorRates': {'Forwarding': [0.01681265551707607, 0.0067250622068304455, 0.0033625311034152228]}, 'PhysicalXErrorRates': {'Forwarding': [0.016117384797286544, 0.006446953918914632, 0.003223476959457316]}, 'Electrodes': {'Forwarding': 8060}, 'DACs': {'Forwarding': 8060}, 'Capacity': 5, 'Distance': 13}
+SpawnProcess-2 - INFO - 13 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.037759999999999995}, 'Operations': {'Forwarding': 10741}, 'MeanConcurrency': {'Forwarding': 16.75240623962828}, 'QubitOperations': {'Forwarding': 4367}, 'LogicalErrorRates': {'Forwarding': [0.353571, 0.027356, 0.001341]}, 'PhysicalZErrorRates': {'Forwarding': [0.01681265551707607, 0.0067250622068304455, 0.0033625311034152228]}, 'PhysicalXErrorRates': {'Forwarding': [0.016117384797286544, 0.006446953918914632, 0.003223476959457316]}, 'Electrodes': {'Forwarding': 8060}, 'DACs': {'Forwarding': 8060}, 'Capacity': 5, 'Distance': 13}
+SpawnProcess-2 - INFO - Finished processing for distance 13 and capacity 5
+SpawnProcess-2 - INFO - Finished processing for distance 13 and capacity 5
+SpawnProcess-2 - INFO - Finished processing for distance 13 and capacity 5
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 44 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 44 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 44 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 190 qubits and 44 traps in a linear chain
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 13, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - 13 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.06941999999999994}, 'Operations': {'Forwarding': 9285}, 'MeanConcurrency': {'Forwarding': 9.781764229835446}, 'QubitOperations': {'Forwarding': 4367}, 'LogicalErrorRates': {'Forwarding': [0.448539, 0.077773, 0.005347]}, 'PhysicalZErrorRates': {'Forwarding': [0.021568523694456384, 0.00862740947778254, 0.00431370473889127]}, 'PhysicalXErrorRates': {'Forwarding': [0.021370659887728686, 0.008548263955091475, 0.0042741319775457375]}, 'Electrodes': {'Forwarding': 7360}, 'DACs': {'Forwarding': 7360}, 'Capacity': 10, 'Distance': 13}
+SpawnProcess-2 - INFO - 13 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.06941999999999994}, 'Operations': {'Forwarding': 9285}, 'MeanConcurrency': {'Forwarding': 9.781764229835446}, 'QubitOperations': {'Forwarding': 4367}, 'LogicalErrorRates': {'Forwarding': [0.448539, 0.077773, 0.005347]}, 'PhysicalZErrorRates': {'Forwarding': [0.021568523694456384, 0.00862740947778254, 0.00431370473889127]}, 'PhysicalXErrorRates': {'Forwarding': [0.021370659887728686, 0.008548263955091475, 0.0042741319775457375]}, 'Electrodes': {'Forwarding': 7360}, 'DACs': {'Forwarding': 7360}, 'Capacity': 10, 'Distance': 13}
+SpawnProcess-2 - INFO - 13 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.06941999999999994}, 'Operations': {'Forwarding': 9285}, 'MeanConcurrency': {'Forwarding': 9.781764229835446}, 'QubitOperations': {'Forwarding': 4367}, 'LogicalErrorRates': {'Forwarding': [0.448539, 0.077773, 0.005347]}, 'PhysicalZErrorRates': {'Forwarding': [0.021568523694456384, 0.00862740947778254, 0.00431370473889127]}, 'PhysicalXErrorRates': {'Forwarding': [0.021370659887728686, 0.008548263955091475, 0.0042741319775457375]}, 'Electrodes': {'Forwarding': 7360}, 'DACs': {'Forwarding': 7360}, 'Capacity': 10, 'Distance': 13}
+SpawnProcess-2 - INFO - 13 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.06941999999999994}, 'Operations': {'Forwarding': 9285}, 'MeanConcurrency': {'Forwarding': 9.781764229835446}, 'QubitOperations': {'Forwarding': 4367}, 'LogicalErrorRates': {'Forwarding': [0.448539, 0.077773, 0.005347]}, 'PhysicalZErrorRates': {'Forwarding': [0.021568523694456384, 0.00862740947778254, 0.00431370473889127]}, 'PhysicalXErrorRates': {'Forwarding': [0.021370659887728686, 0.008548263955091475, 0.0042741319775457375]}, 'Electrodes': {'Forwarding': 7360}, 'DACs': {'Forwarding': 7360}, 'Capacity': 10, 'Distance': 13}
+SpawnProcess-2 - INFO - Finished processing for distance 13 and capacity 10
+SpawnProcess-2 - INFO - Finished processing for distance 13 and capacity 10
+SpawnProcess-2 - INFO - Finished processing for distance 13 and capacity 10
+SpawnProcess-2 - INFO - Finished processing for distance 13 and capacity 10
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 506 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 506 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 506 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 506 traps in a linear chain
+SpawnProcess-2 - INFO - Processing circuit with 253 qubits and 506 traps in a linear chain
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 15, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - 9 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.011175000000000001}, 'Operations': {'Forwarding': 7628}, 'MeanConcurrency': {'Forwarding': 28.708333333333332}, 'QubitOperations': {'Forwarding': 2012}, 'LogicalErrorRates': {'Forwarding': [0.044129, 0.00239, 0.000257]}, 'PhysicalZErrorRates': {'Forwarding': [0.007408972614806361, 0.0029635890459225375, 0.0014817945229612687]}, 'PhysicalXErrorRates': {'Forwarding': [0.006799654852554394, 0.0027198619410217575, 0.0013599309705108788]}, 'Electrodes': {'Forwarding': 6370}, 'DACs': {'Forwarding': 6370}, 'Capacity': 2, 'Distance': 9}
+SpawnProcess-3 - INFO - 9 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.011175000000000001}, 'Operations': {'Forwarding': 7628}, 'MeanConcurrency': {'Forwarding': 28.708333333333332}, 'QubitOperations': {'Forwarding': 2012}, 'LogicalErrorRates': {'Forwarding': [0.044129, 0.00239, 0.000257]}, 'PhysicalZErrorRates': {'Forwarding': [0.007408972614806361, 0.0029635890459225375, 0.0014817945229612687]}, 'PhysicalXErrorRates': {'Forwarding': [0.006799654852554394, 0.0027198619410217575, 0.0013599309705108788]}, 'Electrodes': {'Forwarding': 6370}, 'DACs': {'Forwarding': 6370}, 'Capacity': 2, 'Distance': 9}
+SpawnProcess-3 - INFO - 9 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.011175000000000001}, 'Operations': {'Forwarding': 7628}, 'MeanConcurrency': {'Forwarding': 28.708333333333332}, 'QubitOperations': {'Forwarding': 2012}, 'LogicalErrorRates': {'Forwarding': [0.044129, 0.00239, 0.000257]}, 'PhysicalZErrorRates': {'Forwarding': [0.007408972614806361, 0.0029635890459225375, 0.0014817945229612687]}, 'PhysicalXErrorRates': {'Forwarding': [0.006799654852554394, 0.0027198619410217575, 0.0013599309705108788]}, 'Electrodes': {'Forwarding': 6370}, 'DACs': {'Forwarding': 6370}, 'Capacity': 2, 'Distance': 9}
+SpawnProcess-3 - INFO - 9 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.011175000000000001}, 'Operations': {'Forwarding': 7628}, 'MeanConcurrency': {'Forwarding': 28.708333333333332}, 'QubitOperations': {'Forwarding': 2012}, 'LogicalErrorRates': {'Forwarding': [0.044129, 0.00239, 0.000257]}, 'PhysicalZErrorRates': {'Forwarding': [0.007408972614806361, 0.0029635890459225375, 0.0014817945229612687]}, 'PhysicalXErrorRates': {'Forwarding': [0.006799654852554394, 0.0027198619410217575, 0.0013599309705108788]}, 'Electrodes': {'Forwarding': 6370}, 'DACs': {'Forwarding': 6370}, 'Capacity': 2, 'Distance': 9}
+SpawnProcess-3 - INFO - Finished processing for distance 9 and capacity 2
+SpawnProcess-3 - INFO - Finished processing for distance 9 and capacity 2
+SpawnProcess-3 - INFO - Finished processing for distance 9 and capacity 2
+SpawnProcess-3 - INFO - Finished processing for distance 9 and capacity 2
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 128 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 128 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 128 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 128 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 128 traps in a linear chain
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 15, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - 15 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03992}, 'Operations': {'Forwarding': 15368}, 'MeanConcurrency': {'Forwarding': 22.46664774340051}, 'QubitOperations': {'Forwarding': 5882}, 'LogicalErrorRates': {'Forwarding': [0.377829, 0.022692, 0.000737]}, 'PhysicalZErrorRates': {'Forwarding': [0.016665874224659375, 0.006666349689863757, 0.0033331748449318783]}, 'PhysicalXErrorRates': {'Forwarding': [0.01601420365859107, 0.006405681463436439, 0.0032028407317182196]}, 'Electrodes': {'Forwarding': 10140}, 'DACs': {'Forwarding': 10140}, 'Capacity': 5, 'Distance': 15}
+SpawnProcess-3 - INFO - 15 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03992}, 'Operations': {'Forwarding': 15368}, 'MeanConcurrency': {'Forwarding': 22.46664774340051}, 'QubitOperations': {'Forwarding': 5882}, 'LogicalErrorRates': {'Forwarding': [0.377829, 0.022692, 0.000737]}, 'PhysicalZErrorRates': {'Forwarding': [0.016665874224659375, 0.006666349689863757, 0.0033331748449318783]}, 'PhysicalXErrorRates': {'Forwarding': [0.01601420365859107, 0.006405681463436439, 0.0032028407317182196]}, 'Electrodes': {'Forwarding': 10140}, 'DACs': {'Forwarding': 10140}, 'Capacity': 5, 'Distance': 15}
+SpawnProcess-3 - INFO - 15 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03992}, 'Operations': {'Forwarding': 15368}, 'MeanConcurrency': {'Forwarding': 22.46664774340051}, 'QubitOperations': {'Forwarding': 5882}, 'LogicalErrorRates': {'Forwarding': [0.377829, 0.022692, 0.000737]}, 'PhysicalZErrorRates': {'Forwarding': [0.016665874224659375, 0.006666349689863757, 0.0033331748449318783]}, 'PhysicalXErrorRates': {'Forwarding': [0.01601420365859107, 0.006405681463436439, 0.0032028407317182196]}, 'Electrodes': {'Forwarding': 10140}, 'DACs': {'Forwarding': 10140}, 'Capacity': 5, 'Distance': 15}
+SpawnProcess-3 - INFO - 15 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03992}, 'Operations': {'Forwarding': 15368}, 'MeanConcurrency': {'Forwarding': 22.46664774340051}, 'QubitOperations': {'Forwarding': 5882}, 'LogicalErrorRates': {'Forwarding': [0.377829, 0.022692, 0.000737]}, 'PhysicalZErrorRates': {'Forwarding': [0.016665874224659375, 0.006666349689863757, 0.0033331748449318783]}, 'PhysicalXErrorRates': {'Forwarding': [0.01601420365859107, 0.006405681463436439, 0.0032028407317182196]}, 'Electrodes': {'Forwarding': 10140}, 'DACs': {'Forwarding': 10140}, 'Capacity': 5, 'Distance': 15}
+SpawnProcess-3 - INFO - 15 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.03992}, 'Operations': {'Forwarding': 15368}, 'MeanConcurrency': {'Forwarding': 22.46664774340051}, 'QubitOperations': {'Forwarding': 5882}, 'LogicalErrorRates': {'Forwarding': [0.377829, 0.022692, 0.000737]}, 'PhysicalZErrorRates': {'Forwarding': [0.016665874224659375, 0.006666349689863757, 0.0033331748449318783]}, 'PhysicalXErrorRates': {'Forwarding': [0.01601420365859107, 0.006405681463436439, 0.0032028407317182196]}, 'Electrodes': {'Forwarding': 10140}, 'DACs': {'Forwarding': 10140}, 'Capacity': 5, 'Distance': 15}
+SpawnProcess-3 - INFO - Finished processing for distance 15 and capacity 5
+SpawnProcess-3 - INFO - Finished processing for distance 15 and capacity 5
+SpawnProcess-3 - INFO - Finished processing for distance 15 and capacity 5
+SpawnProcess-3 - INFO - Finished processing for distance 15 and capacity 5
+SpawnProcess-3 - INFO - Finished processing for distance 15 and capacity 5
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 58 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 58 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 58 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 58 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 58 traps in a linear chain
+SpawnProcess-3 - INFO - Processing circuit with 253 qubits and 58 traps in a linear chain
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 15, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 15, capacity 10 and tesselation (6, 6, 6)

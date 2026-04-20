@@ -225,7 +225,7 @@ class ColorCodeCircuit488(AbstractColorCodeCircuit):
         #normal rounds
         circ += (self.rounds-1)*self._measure_rounds(qa_index_map, measures_per_round=2*len(self._tiles), chrom_annot=chrom_annot, noise=noise) #noise=noise)
 
-        circ += self._measure_rounds(qa_index_map, measures_per_round=2*len(self._tiles), chrom_annot=chrom_annot, noise=None)
+        #circ += self._measure_rounds(qa_index_map, measures_per_round=2*len(self._tiles), chrom_annot=chrom_annot, noise=None)
         
         # measure qubits
         sorted_qs = sorted(list(qubit_coords))

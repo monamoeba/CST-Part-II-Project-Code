@@ -479,12 +479,12 @@ class QCCDCircuit(stim.Circuit):
         rows: int = 1,
         cols: int = 5,
         padding: int = 1,
-        dataQubitIdxs: Optional[Sequence[int]]=None,
-        measureQubitIdxs: Optional[Sequence[int]]=None,
+        dataQubitsIdxs: Optional[Sequence[int]]=None,
+        measureQubitsIdxs: Optional[Sequence[int]]=None,
         cluster_merge_strategy: str = "kdtree",
         cluster_merge_threshold: float = 2.5,
     ) -> Tuple[QCCDArch, Tuple[Sequence[QubitOperation], Sequence[int]]]:        
-        instructions, barriers = self._parseCircuitString(dataQubitIdxs=dataQubitIdxs, measureQubitIdxs=measureQubitIdxs)
+        instructions, barriers = self._parseCircuitString(dataQubitsIdxs=dataQubitsIdxs, measureQubitsIdxs=measureQubitsIdxs)
         if (trapCapacity-1) * ((rows-1) * (2*cols-1)+cols) < len(self._ionMapping):
             raise ValueError("processCircuit: not enough traps")
         #clusters = regularPartition(self._measurementIons, self._dataIons, trapCapacity)
@@ -677,7 +677,7 @@ class QCCDCircuit(stim.Circuit):
             raise ValueError("processCircuit: not enough traps")
            
         clusters=regularPartition(self._measurementIons, self._dataIons, trapCapacity)
-
+        
         allGridPos = []
         for r in range(traps):
             allGridPos.append((0, r))
@@ -736,19 +736,30 @@ class QCCDCircuit(stim.Circuit):
     def processColorCircuitNetworkedGrid(self,
         trapCapacity: int = 2,
         traps: int = 1,
-        dataQubitIdxs: Optional[Sequence[int]]=None
+        dataQubitsIdxs: Optional[Sequence[int]]=None,
+        measureQubitsIdxs: Optional[Sequence[int]]=None,
+        cluster_merge_strategy: str = "kdtree",
+        cluster_merge_threshold: float = 2.5,
         # capacityIsInTermsOfDataIons: bool = False
     ) -> Tuple[QCCDArch, Tuple[Sequence[QubitOperation], Sequence[int]]]:        
-        instructions, barriers = self._parseCircuitString(dataQubitsIdxs=dataQubitIdxs)
+        instructions, barriers = self._parseCircuitString(dataQubitsIdxs=dataQubitsIdxs, measureQubitsIdxs=measureQubitsIdxs)
         if (trapCapacity-1) * traps< len(self._ionMapping):
             raise ValueError("processCircuit: not enough traps")
            
-        clusters=regularColorPartition(self._measurementIons, self._dataIons, trapCapacity)
+        #clusters=regularPartition(self._measurementIons, self._dataIons, trapCapacity)
+        clusters = regularColorPartition_vectorised(
+            self._measurementIons,
+            self._dataIons,
+            trapCapacity,
+            merge_strategy=cluster_merge_strategy,
+            merge_threshold=cluster_merge_threshold,
+        )
+        
+        #clusters=regularColorPartition(self._measurementIons, self._dataIons, trapCapacity)
 
         allGridPos = []
         for r in range(traps):
             allGridPos.append((0, r))
-
         gridPositions = arrangeClusters(clusters, allGridPos=allGridPos)
 
         trap_for_grid = {

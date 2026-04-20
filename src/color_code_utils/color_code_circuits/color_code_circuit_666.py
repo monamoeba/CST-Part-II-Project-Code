@@ -99,7 +99,7 @@ class ColorCodeCircuit666(AbstractColorCodeCircuit):
         circ += (self.rounds-1) * self._measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot, noise=noise)
         
         #comment out temporarily for single round compilation testing
-        circ += self._measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot, noise=None)
+        #circ += self._measure_rounds(tiles, qa_index_map, measures_per_round=2*len(tiles), chrom_annot=chrom_annot, noise=None)
         # measure qubits
         sorted_qs = sorted(list(qubitsCoords))
         q_idxs = [qa_index_map[q] for q in sorted_qs]

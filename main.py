@@ -4,7 +4,7 @@ import logging
 import concurrent.futures
 from typing import Any, Dict
 from src.simulator.qccd_circuit import process_circuit, process_circuit_wise_arch
-from src.simulator.color_code_processor import process_color_code_circuit, process_color_code_circuit_wise_arch, process_model_color_code_circuit
+from src.simulator.color_code_processor import process_color_code_circuit, process_color_code_circuit_wise_arch, process_color_code_circuit_linear_arch
 from datetime import datetime
 from tqdm import tqdm
 import json  
@@ -39,6 +39,7 @@ def main(config_path: str):
 
     distances = qec["distances"]
     capacities = hardware["trap_capacity"]
+    topology = hardware["topology"]
     gate_improvements = qec["gate_improvements"]
     num_shots = simulation["num_shots"]
     rounds = simulation["rounds"]
@@ -52,13 +53,19 @@ def main(config_path: str):
 
     logger.info("Starting parallel processing of circuits")
     with concurrent.futures.ProcessPoolExecutor(max_workers=num_cores) as executor:
-        futures = [
-            #executor.submit(process_color_code_circuit, d, c, gate_improvements, num_shots, (6,6,6))
-            executor.submit(process_color_code_circuit, d, rounds, c, gate_improvements, num_shots, (6,6,6))
-            for d in distances for c in capacities
-            #executor.submit(process_color_code_circuit, d, c, gate_improvements, num_shots, (6,6,6))
-            #for d in distances for c in capacities
-        ]
+        if topology == "grid":
+            futures = [
+                #executor.submit(process_color_code_circuit, d, c, gate_improvements, num_shots, (6,6,6))
+                executor.submit(process_color_code_circuit, d, rounds, c, gate_improvements, num_shots, (6,6,6))
+                for d in distances for c in capacities
+                #executor.submit(process_color_code_circuit, d, c, gate_improvements, num_shots, (6,6,6))
+                #for d in distances for c in capacities
+            ]
+        elif topology == "linear":
+            futures = [
+                executor.submit(process_color_code_circuit_linear_arch, d, rounds, c, gate_improvements, num_shots, (6,6,6))
+                for d in distances for c in capacities
+            ]
 
         pbar = tqdm(total=(len(distances)*len(capacities)*len(gate_improvements)))
 
