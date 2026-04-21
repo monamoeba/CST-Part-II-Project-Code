@@ -3,7 +3,7 @@ import numpy as np
 # Assuming these imports are correct in your local environment
 from src.utils.qccd_nodes import QubitIon
 from src.compiler.qccd_qubits_to_ions import arrangeClusters
-from src.compiler.qccd_color_qubits_to_ions import regularColorPartition
+from src.compiler.qccd_color_qubits_to_ions import regularColorPartition, regularColorPartition_vectorised
 from src.color_code_utils.color_code_circuits.color_code_circuit_666 import ColorCodeCircuit666
 from src.color_code_utils.color_code_circuits.color_code_circuit_488 import ColorCodeCircuit488
 
@@ -121,3 +121,29 @@ def test_arrange_clusters(create_ions):
     arranged_positions = arrangeClusters(clusters, grid_positions)
     for (_, clpos), pos in zip(clusters, arranged_positions):
         assert np.array_equal(clpos, pos)
+
+def test_vectorised_partition_bounded(initialise_positions):
+    mions, dions = initialise_positions(5)
+    trap_capacity = 3
+    clusters = regularColorPartition_vectorised(mions, dions, trap_capacity, merge_strategy="bounded")
+    total_qubits_in = len(mions) + len(dions)
+    total_qubits_out = sum(len(cluster[0]) for cluster in clusters)
+    assert total_qubits_in == total_qubits_out
+
+
+def test_vectorised_partition_unbounded_nn(initialise_positions):
+    mions, dions = initialise_positions(5)
+    trap_capacity = 3
+    clusters = regularColorPartition_vectorised(mions, dions, trap_capacity, merge_strategy="unbounded_nn")
+    total_qubits_in = len(mions) + len(dions)
+    total_qubits_out = sum(len(cluster[0]) for cluster in clusters)
+    assert total_qubits_in == total_qubits_out
+
+
+def test_vectorised_partition_knn(initialise_positions):
+    mions, dions = initialise_positions(5)
+    trap_capacity = 3
+    clusters = regularColorPartition_vectorised(mions, dions, trap_capacity, merge_strategy="knn")
+    total_qubits_in = len(mions) + len(dions)
+    total_qubits_out = sum(len(cluster[0]) for cluster in clusters)
+    assert total_qubits_in == total_qubits_out

@@ -96,7 +96,7 @@ def TriangularPartitionIons_vectorised(
     ions: Sequence[Ion],
     coords: npt.NDArray[np.float64],
     trapCapacity: int,
-    merge_strategy: str = "kdtree",
+    merge_strategy: str = "bounded",
     merge_threshold: float = 2.5,
 ) -> Sequence[Tuple[Sequence[Ion], Tuple[float, float]]]:
     """
@@ -496,8 +496,8 @@ def _merge_knn(
         for t in toCheck if t["active"]
     ]
 def regularColorPartition(measurementIons: Sequence[Ion], dataIons: Sequence[Ion], trapCapacity: int):
-    """Arranges ions into clusters based on a regular triangular partitioning
-    scheme filling with at most trapCapacity-1 ions to allow for movement in routing"""
+    """Arranges ions into clusters using regular triangular partitioning
+    scheme filling to at most trapCapacity-1 ions to allow for movement in routing"""
     
     measurementIonsL = list(measurementIons)
     measurementIonCoords = np.array([list(ion.pos) for ion in measurementIonsL]).reshape(-1, 2)
@@ -516,7 +516,7 @@ def regularColorPartition_vectorised(
     measurementIons: Sequence[Ion],
     dataIons: Sequence[Ion],
     trapCapacity: int,
-    merge_strategy: str = "kdtree",
+    merge_strategy: str = "bounded",
     merge_threshold: float = 2.5,
 ):
     measurementIonsL = list(measurementIons)

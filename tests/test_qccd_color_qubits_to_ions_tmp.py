@@ -4,8 +4,6 @@ from src.utils.qccd_nodes import QubitIon
 from src.compiler.qccd_color_qubits_to_ions import (
     regularColorPartition,
     regularColorPartition_vectorised,
-    TriangularPartitionIons,
-    TriangularPartitionIons_vectorised,
     _mergeUnderfilledClusters,
     _mergeUnderfilledClusters_kdtree,
     _merge_unbounded_nn,
@@ -61,37 +59,53 @@ def initialise_488_positions(create_ions):
         return (mions, dions)
     return _initPos
 
-# --- Parametrized tests for partitioning strategies ---
-@pytest.mark.parametrize("partition_func", [
-    regularColorPartition,
-    regularColorPartition_vectorised,
+
+# --- Parametrized tests for partitioning strategies and merge strategies ---
+@pytest.mark.parametrize("partition_func,merge_strategy", [
+    (regularColorPartition, None),
+    (regularColorPartition_vectorised, "bounded"),
+    (regularColorPartition_vectorised, "unbounded_nn"),
+    (regularColorPartition_vectorised, "knn"),
 ])
-def test_qubits_in_equals_qubits_out_all(partition_func, initialise_positions):
+def test_qubits_in_equals_qubits_out_all(partition_func, merge_strategy, initialise_positions):
     mions, dions = initialise_positions(5)
     trap_capacity = 3
-    clusters = partition_func(mions, dions, trap_capacity)
+    if merge_strategy is None:
+        clusters = partition_func(mions, dions, trap_capacity)
+    else:
+        clusters = partition_func(mions, dions, trap_capacity, merge_strategy=merge_strategy)
     total_qubits_in = len(mions) + len(dions)
     total_qubits_out = sum(len(cluster[0]) for cluster in clusters)
     assert total_qubits_in == total_qubits_out
 
-@pytest.mark.parametrize("partition_func", [
-    regularColorPartition,
-    regularColorPartition_vectorised,
+@pytest.mark.parametrize("partition_func,merge_strategy", [
+    (regularColorPartition, None),
+    (regularColorPartition_vectorised, "bounded"),
+    (regularColorPartition_vectorised, "unbounded_nn"),
+    (regularColorPartition_vectorised, "knn"),
 ])
-def test_high_capacity_single_cluster(partition_func, initialise_positions):
+def test_high_capacity_single_cluster(partition_func, merge_strategy, initialise_positions):
     mions, dions = initialise_positions(5)
     trap_capacity = 100
-    clusters = partition_func(mions, dions, trap_capacity)
+    if merge_strategy is None:
+        clusters = partition_func(mions, dions, trap_capacity)
+    else:
+        clusters = partition_func(mions, dions, trap_capacity, merge_strategy=merge_strategy)
     assert len(clusters) == 1
 
-@pytest.mark.parametrize("partition_func", [
-    regularColorPartition,
-    regularColorPartition_vectorised,
+@pytest.mark.parametrize("partition_func,merge_strategy", [
+    (regularColorPartition, None),
+    (regularColorPartition_vectorised, "bounded"),
+    (regularColorPartition_vectorised, "unbounded_nn"),
+    (regularColorPartition_vectorised, "knn"),
 ])
-def test_small_capacity_many_clusters(partition_func, initialise_positions):
+def test_small_capacity_many_clusters(partition_func, merge_strategy, initialise_positions):
     mions, dions = initialise_positions(5)
     trap_capacity = 2
-    clusters = partition_func(mions, dions, trap_capacity)
+    if merge_strategy is None:
+        clusters = partition_func(mions, dions, trap_capacity)
+    else:
+        clusters = partition_func(mions, dions, trap_capacity, merge_strategy=merge_strategy)
     assert all(len(cluster[0]) <= trap_capacity - 1 for cluster in clusters)
 
 # --- Direct tests for merging methods ---
@@ -128,22 +142,33 @@ def test_merge_methods_basic(create_ions, merge_func):
     # No cluster should exceed trap_capacity
     assert all(len(c[0]) <= trap_capacity for c in merged)
 
+
 # --- Vectorised vs non-vectorised consistency ---
-def test_vectorised_vs_nonvectorised_consistency(initialise_positions):
+@pytest.mark.parametrize("merge_strategy", ["bounded", "unbounded_nn", "knn"])
+def test_vectorised_vs_nonvectorised_consistency(initialise_positions, merge_strategy):
     mions, dions = initialise_positions(5)
     trap_capacity = 3
     clusters1 = regularColorPartition(mions, dions, trap_capacity)
-    clusters2 = regularColorPartition_vectorised(mions, dions, trap_capacity)
-    # Compare sorted sets of ion indices in clusters
+    clusters2 = regularColorPartition_vectorised(mions, dions, trap_capacity, merge_strategy=merge_strategy)
     def all_ion_indices(clusters):
         return set(ion.idx for group in clusters for ion in group[0])
     assert all_ion_indices(clusters1) == all_ion_indices(clusters2)
 
-# --- Test with 488 code ---
-def test_qubits_in_equals_qubits_out_488(initialise_488_positions):
+
+# --- Test with 488 code (parametrized) ---
+@pytest.mark.parametrize("partition_func,merge_strategy", [
+    (regularColorPartition, None),
+    (regularColorPartition_vectorised, "bounded"),
+    (regularColorPartition_vectorised, "unbounded_nn"),
+    (regularColorPartition_vectorised, "knn"),
+])
+def test_qubits_in_equals_qubits_out_488(partition_func, merge_strategy, initialise_488_positions):
     mions, dions = initialise_488_positions(5)
     trap_capacity = 3
-    clusters = regularColorPartition(mions, dions, trap_capacity)
+    if merge_strategy is None:
+        clusters = partition_func(mions, dions, trap_capacity)
+    else:
+        clusters = partition_func(mions, dions, trap_capacity, merge_strategy=merge_strategy)
     total_qubits_in = len(mions) + len(dions)
     total_qubits_out = sum(len(cluster[0]) for cluster in clusters)
     assert total_qubits_in == total_qubits_out
