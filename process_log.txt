@@ -57515,3 +57515,129 @@ MainProcess - INFO - Processed results for distance 11, capacity 5.
 MainProcess - INFO - Processed results for distance 7, capacity 2.
 MainProcess - INFO - Processed results for distance 9, capacity 2.
 MainProcess - INFO - Processed results for distance 11, capacity 2.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 9, capacity 30.
+MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 144, in process_color_code_circuit
+    logicalErrors, physicalZErrors, physicalXErrors = simulate_and_collect_errors(circuit, allOps, gate_improvements, num_shots)
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 48, in simulate_and_collect_errors
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 333, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 345, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00873102) D12 D15 D21 D23
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [12, 15, 21, 23]
+    Detector data:
+        D12: coords=[7, 3, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D15: coords=[4, 4, 1, 5] ColorBasis{.color=B, .basis=Z}
+        D21: coords=[10, 6, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D23: coords=[7, 7, 1, 5] ColorBasis{.color=B, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 74, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00873102) D12 D15 D21 D23
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [12, 15, 21, 23]
+    Detector data:
+        D12: coords=[7, 3, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D15: coords=[4, 4, 1, 5] ColorBasis{.color=B, .basis=Z}
+        D21: coords=[10, 6, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D23: coords=[7, 7, 1, 5] ColorBasis{.color=B, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - INFO - Processed results for distance 11, capacity 30.
+MainProcess - INFO - Processed results for distance 11, capacity 5.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 144, in process_color_code_circuit
+    logicalErrors, physicalZErrors, physicalXErrors = simulate_and_collect_errors(circuit, allOps, gate_improvements, num_shots)
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 48, in simulate_and_collect_errors
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 333, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 345, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00890571) D27 D30 D36 D38
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [27, 30, 36, 38]
+    Detector data:
+        D27: coords=[10, 6, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D30: coords=[7, 7, 1, 5] ColorBasis{.color=B, .basis=Z}
+        D36: coords=[13, 9, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D38: coords=[10, 10, 1, 5] ColorBasis{.color=B, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 74, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00890571) D27 D30 D36 D38
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [27, 30, 36, 38]
+    Detector data:
+        D27: coords=[10, 6, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D30: coords=[7, 7, 1, 5] ColorBasis{.color=B, .basis=Z}
+        D36: coords=[13, 9, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D38: coords=[10, 10, 1, 5] ColorBasis{.color=B, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+

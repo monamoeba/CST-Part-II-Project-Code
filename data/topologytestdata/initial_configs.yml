@@ -1,12 +1,12 @@
 hardware:
-  trap_capacity: [2,5,30]
-  topology: "grid" 
+  trap_capacity: [2,5,10,30]
+  topology: "linear" 
 
 # QEC Code Properties
 qec:
   code_type: (6.6.6)
   distances: [3,5,7,9,11]  
-  gate_improvements: [1.0, 5.0, 10.0]
+  gate_improvements: [1.0, 2.5, 5.0]
 
 # Simulation Settings
 simulation:
