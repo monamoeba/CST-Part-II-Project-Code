@@ -1,6 +1,6 @@
 hardware:
   trap_capacity: [2,5,30]
-  topology: "grid" 
+  topology: "linear" 
 
 # QEC Code Properties
 qec:
