@@ -57689,3 +57689,134 @@ MainProcess - INFO - Processed results for distance 7, capacity 5.
 MainProcess - INFO - Processed results for distance 9, capacity 30.
 MainProcess - INFO - Processed results for distance 5, capacity 2.
 MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 9, capacity 30.
+MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - INFO - Processed results for distance 11, capacity 5.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 261, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 327, in process_color_code_circuit_linear_arch
+    arch, (instructions, _) = circuit.processColorCircuitNetworkedGrid(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 763, in processColorCircuitNetworkedGrid
+    gridPositions = arrangeClusters(clusters, allGridPos=allGridPos)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 278, in arrangeClusters
+    return _arrangeClusters(clusters, allGridPos, nearestNeighbourCount, biasY)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 176, in _arrangeClusters
+    raise ValueError("Not enough traps")
+ValueError: Not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 74, in main
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Not enough traps
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 30.
+MainProcess - INFO - Processed results for distance 9, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - INFO - Processed results for distance 9, capacity 30.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 261, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 327, in process_color_code_circuit_linear_arch
+    arch, (instructions, _) = circuit.processColorCircuitLinearGrid(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 836, in processColorCircuitLinearGrid
+    gridPositions = arrangeClusters(clusters, allGridPos=allGridPos)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 278, in arrangeClusters
+    return _arrangeClusters(clusters, allGridPos, nearestNeighbourCount, biasY)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 176, in _arrangeClusters
+    raise ValueError("Not enough traps")
+ValueError: Not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 74, in main
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Not enough traps
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 261, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 327, in process_color_code_circuit_linear_arch
+    arch, (instructions, _) = circuit.processColorCircuitLinearGrid(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 836, in processColorCircuitLinearGrid
+    gridPositions = arrangeClusters(clusters, allGridPos=allGridPos)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 278, in arrangeClusters
+    return _arrangeClusters(clusters, allGridPos, nearestNeighbourCount, biasY)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 176, in _arrangeClusters
+    raise ValueError("Not enough traps")
+ValueError: Not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 74, in main
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Not enough traps
+MainProcess - INFO - Processed results for distance 11, capacity 5.
+MainProcess - INFO - Processed results for distance 9, capacity 2.
+MainProcess - INFO - Processed results for distance 11, capacity 2.

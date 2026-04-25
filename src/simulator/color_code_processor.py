@@ -306,7 +306,7 @@ def process_color_code_circuit_linear_arch(
     basis='Z',
     cluster_merge_strategy='bounded',
     cluster_merge_threshold=2.5):
-    logger = setup_logger("process_log_color_code_wise.txt")
+    logger = setup_logger("process_log_color_code_linear.txt")
 
     logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and tesselation {tesselation}")
   
@@ -324,7 +324,7 @@ def process_color_code_circuit_linear_arch(
 
     logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {trapsrequired} traps in a linear chain")
 
-    arch, (instructions, _) = circuit.processColorCircuitNetworkedGrid(
+    arch, (instructions, _) = circuit.processColorCircuitLinearGrid(
         trapCapacity=capacity,
         traps = trapsrequired,
         dataQubitsIdxs=circuit.dataQubitsIdxs,

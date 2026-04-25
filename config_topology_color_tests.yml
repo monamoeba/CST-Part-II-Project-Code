@@ -1,5 +1,5 @@
 hardware:
-  trap_capacity: [2,5,30]
+  trap_capacity: [2,5,10,30]
   topology: "linear" 
 
 # QEC Code Properties
