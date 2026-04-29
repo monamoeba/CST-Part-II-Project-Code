@@ -736,7 +736,7 @@ class QCCDCircuit(stim.Circuit):
     def processColorCircuitNetworkedGrid(self,
         trapCapacity: int = 2,
         traps: int = 1,
-        dataQubitIdxs: Optional[Sequence[int]]=None,
+        dataQubitsIdxs: Optional[Sequence[int]]=None,
         measureQubitsIdxs: Optional[Sequence[int]]=None,
         cluster_merge_strategy: str = "kdtree",
         cluster_merge_threshold: float = 2.5,

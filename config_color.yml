@@ -5,8 +5,8 @@ hardware:
 # QEC Code Properties
 qec:
   code_type: (6.6.6)
-  distances: [3,5,7,9]  
-  gate_improvements: [1.0, 2.5, 5.0, 7.5, 10.0, 12.5, 15.0]
+  distances: [3,5,7,9,11]  
+  gate_improvements: [1.0, 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0]
 
 # Simulation Settings
 simulation:

@@ -4,7 +4,7 @@ import logging
 import concurrent.futures
 from typing import Any, Dict
 from src.simulator.qccd_circuit import process_circuit, process_circuit_wise_arch
-from src.simulator.color_code_processor import process_color_code_circuit, process_color_code_circuit_wise_arch, process_color_code_circuit_linear_arch
+from src.simulator.color_code_processor import process_color_code_circuit, process_color_code_circuit_wise_arch, process_color_code_circuit_linear_arch, process_color_code_circuit_switch_arch
 from datetime import datetime
 from tqdm import tqdm
 import json  
@@ -64,6 +64,11 @@ def main(config_path: str):
         elif topology == "linear":
             futures = [
                 executor.submit(process_color_code_circuit_linear_arch, d, rounds, c, gate_improvements, num_shots, (6,6,6))
+                for d in distances for c in capacities
+            ]
+        elif topology == "switch":
+            futures = [
+                executor.submit(process_color_code_circuit_switch_arch, d, rounds, c, gate_improvements, num_shots, (6,6,6))
                 for d in distances for c in capacities
             ]
 

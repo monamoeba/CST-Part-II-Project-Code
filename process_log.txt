@@ -59314,3 +59314,893 @@ This problem can unfortunately be quite difficult to debug. Likely causes are:
     (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
 
 MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 327, in process_color_code_circuit_linear_arch
+    arch, (instructions, _) = circuit.processColorCircuitLinearGrid(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        trapCapacity=capacity,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        cluster_merge_threshold=cluster_merge_threshold,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 836, in processColorCircuitLinearGrid
+    gridPositions = arrangeClusters(clusters, allGridPos=allGridPos)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 278, in arrangeClusters
+    return _arrangeClusters(clusters, allGridPos, nearestNeighbourCount, biasY)[0]
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 176, in _arrangeClusters
+    raise ValueError("Not enough traps")
+ValueError: Not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 74, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Not enough traps
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 30.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 345, in process_color_code_circuit_linear_arch
+    logicalErrors, physicalZErrors, physicalXErrors = simulate_and_collect_errors(circuit, allOps, gate_improvements, num_shots)
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 48, in simulate_and_collect_errors
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 333, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 345, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00023968) D25 D36 D37 D42 D51 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [36, 37, 42]
+    Decomposed piece: D25 D51
+    The undecomposed observable mask: L0
+    Detector data:
+        D25: coords=[17, 3, 1, 2] ColorBasis{.color=B, .basis=X}
+        D36: coords=[13, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D37: coords=[13, 3, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D42: coords=[20, 6, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D51: coords=[13, 0, 2, 1] ColorBasis{.color=G, .basis=X}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 74, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00023968) D25 D36 D37 D42 D51 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [36, 37, 42]
+    Decomposed piece: D25 D51
+    The undecomposed observable mask: L0
+    Detector data:
+        D25: coords=[17, 3, 1, 2] ColorBasis{.color=B, .basis=X}
+        D36: coords=[13, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D37: coords=[13, 3, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D42: coords=[20, 6, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D51: coords=[13, 0, 2, 1] ColorBasis{.color=G, .basis=X}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 30.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 345, in process_color_code_circuit_linear_arch
+    logicalErrors, physicalZErrors, physicalXErrors = simulate_and_collect_errors(circuit, allOps, gate_improvements, num_shots)
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 48, in simulate_and_collect_errors
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 333, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 345, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000160326) D25 D36 D37 D42 D51 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [36, 37, 42]
+    Decomposed piece: D25 D51
+    The undecomposed observable mask: L0
+    Detector data:
+        D25: coords=[17, 3, 1, 2] ColorBasis{.color=B, .basis=X}
+        D36: coords=[13, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D37: coords=[13, 3, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D42: coords=[20, 6, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D51: coords=[13, 0, 2, 1] ColorBasis{.color=G, .basis=X}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 74, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.000160326) D25 D36 D37 D42 D51 L0
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [36, 37, 42]
+    Decomposed piece: D25 D51
+    The undecomposed observable mask: L0
+    Detector data:
+        D25: coords=[17, 3, 1, 2] ColorBasis{.color=B, .basis=X}
+        D36: coords=[13, 0, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D37: coords=[13, 3, 2, 3] ColorBasis{.color=R, .basis=Z}
+        D42: coords=[20, 6, 2, 4] ColorBasis{.color=G, .basis=Z}
+        D51: coords=[13, 0, 2, 1] ColorBasis{.color=G, .basis=X}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 3.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 390, in process_color_code_circuit_switch_arch
+    arch, (instructions, _) = circuit.processColorCircuitNetworkedGrid(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        trapCapacity=capacity,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        cluster_merge_threshold=cluster_merge_threshold,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 763, in processColorCircuitNetworkedGrid
+    gridPositions = arrangeClusters(clusters, allGridPos=allGridPos)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 278, in arrangeClusters
+    return _arrangeClusters(clusters, allGridPos, nearestNeighbourCount, biasY)[0]
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 176, in _arrangeClusters
+    raise ValueError("Not enough traps")
+ValueError: Not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Not enough traps
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 390, in process_color_code_circuit_switch_arch
+    arch, (instructions, _) = circuit.processColorCircuitNetworkedGrid(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        trapCapacity=capacity,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        cluster_merge_threshold=cluster_merge_threshold,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 763, in processColorCircuitNetworkedGrid
+    gridPositions = arrangeClusters(clusters, allGridPos=allGridPos)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 278, in arrangeClusters
+    return _arrangeClusters(clusters, allGridPos, nearestNeighbourCount, biasY)[0]
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 176, in _arrangeClusters
+    raise ValueError("Not enough traps")
+ValueError: Not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Not enough traps
+MainProcess - INFO - Processed results for distance 5, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 390, in process_color_code_circuit_switch_arch
+    arch, (instructions, _) = circuit.processColorCircuitNetworkedGrid(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        trapCapacity=capacity,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        cluster_merge_threshold=cluster_merge_threshold,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 763, in processColorCircuitNetworkedGrid
+    gridPositions = arrangeClusters(clusters, allGridPos=allGridPos)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 278, in arrangeClusters
+    return _arrangeClusters(clusters, allGridPos, nearestNeighbourCount, biasY)[0]
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 176, in _arrangeClusters
+    raise ValueError("Not enough traps")
+ValueError: Not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Not enough traps
+MainProcess - INFO - Processed results for distance 9, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 9, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 3.
+MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - INFO - Processed results for distance 11, capacity 15.
+MainProcess - INFO - Processed results for distance 11, capacity 60.
+MainProcess - ERROR - An error occurred during processing
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+MainProcess - ERROR - An error occurred during processing
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+MainProcess - ERROR - An error occurred during processing
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+MainProcess - ERROR - An error occurred during processing
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+MainProcess - ERROR - An error occurred during processing
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+MainProcess - ERROR - An error occurred during processing
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 3.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 3.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 15.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 9, capacity 10.
+MainProcess - INFO - Processed results for distance 9, capacity 15.
+MainProcess - INFO - Processed results for distance 9, capacity 60.
+MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - INFO - Processed results for distance 9, capacity 3.
+MainProcess - INFO - Processed results for distance 9, capacity 2.
+MainProcess - INFO - Processed results for distance 11, capacity 10.
+MainProcess - INFO - Processed results for distance 11, capacity 15.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 148, in process_color_code_circuit
+    logicalErrors, physicalZErrors, physicalXErrors = simulate_and_collect_errors(circuit, allOps, gate_improvements, num_shots)
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 48, in simulate_and_collect_errors
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 333, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 345, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00891654) D9 D11 D17
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [9, 11, 17]
+    Detector data:
+        D9: coords=[13, 11, 1, 3] ColorBasis{.color=R, .basis=Z}
+        D11: coords=[17, 7, 1, 3] ColorBasis{.color=R, .basis=Z}
+        D17: coords=[21, 7, 1, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00891654) D9 D11 D17
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [9, 11, 17]
+    Detector data:
+        D9: coords=[13, 11, 1, 3] ColorBasis{.color=R, .basis=Z}
+        D11: coords=[17, 7, 1, 3] ColorBasis{.color=R, .basis=Z}
+        D17: coords=[21, 7, 1, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - INFO - Processed results for distance 11, capacity 5.
+MainProcess - INFO - Processed results for distance 11, capacity 60.
+MainProcess - INFO - Processed results for distance 11, capacity 2.
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 3, capacity 3.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - INFO - Processed results for distance 5, capacity 3.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 15.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 9, capacity 10.
+MainProcess - INFO - Processed results for distance 9, capacity 15.
+MainProcess - INFO - Processed results for distance 9, capacity 60.
+MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 148, in process_color_code_circuit
+    logicalErrors, physicalZErrors, physicalXErrors = simulate_and_collect_errors(circuit, allOps, gate_improvements, num_shots)
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 48, in simulate_and_collect_errors
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 333, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 345, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00873102) D12 D15 D21 D23
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [12, 15, 21, 23]
+    Detector data:
+        D12: coords=[7, 3, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D15: coords=[4, 4, 1, 5] ColorBasis{.color=B, .basis=Z}
+        D21: coords=[10, 6, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D23: coords=[7, 7, 1, 5] ColorBasis{.color=B, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00873102) D12 D15 D21 D23
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [12, 15, 21, 23]
+    Detector data:
+        D12: coords=[7, 3, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D15: coords=[4, 4, 1, 5] ColorBasis{.color=B, .basis=Z}
+        D21: coords=[10, 6, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D23: coords=[7, 7, 1, 5] ColorBasis{.color=B, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - INFO - Processed results for distance 9, capacity 3.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 148, in process_color_code_circuit
+    logicalErrors, physicalZErrors, physicalXErrors = simulate_and_collect_errors(circuit, allOps, gate_improvements, num_shots)
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 48, in simulate_and_collect_errors
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 333, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 345, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00851564) D11 D15 D24 D27
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [11, 15, 24, 27]
+    Detector data:
+        D11: coords=[10, 2, 1, 3] ColorBasis{.color=R, .basis=Z}
+        D15: coords=[7, 3, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D24: coords=[13, 5, 1, 3] ColorBasis{.color=R, .basis=Z}
+        D27: coords=[10, 6, 1, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00851564) D11 D15 D24 D27
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [11, 15, 24, 27]
+    Detector data:
+        D11: coords=[10, 2, 1, 3] ColorBasis{.color=R, .basis=Z}
+        D15: coords=[7, 3, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D24: coords=[13, 5, 1, 3] ColorBasis{.color=R, .basis=Z}
+        D27: coords=[10, 6, 1, 4] ColorBasis{.color=G, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - INFO - Processed results for distance 11, capacity 15.
+MainProcess - INFO - Processed results for distance 11, capacity 10.
+MainProcess - INFO - Processed results for distance 11, capacity 5.
+MainProcess - INFO - Processed results for distance 11, capacity 60.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 148, in process_color_code_circuit
+    logicalErrors, physicalZErrors, physicalXErrors = simulate_and_collect_errors(circuit, allOps, gate_improvements, num_shots)
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 48, in simulate_and_collect_errors
+    logicalError, physicalXError, physicalZError = circuit.simulate(allOps, num_shots=num_shots, error_scaling=gate_improvement)
+                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 333, in simulate
+    logicalError = self._sample(circuit, num_shots=num_shots)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 345, in _sample
+    decoder = chromobius.compile_decoder_for_dem(detector_error_model)
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00890571) D27 D30 D36 D38
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [27, 30, 36, 38]
+    Detector data:
+        D27: coords=[10, 6, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D30: coords=[7, 7, 1, 5] ColorBasis{.color=B, .basis=Z}
+        D36: coords=[13, 9, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D38: coords=[10, 10, 1, 5] ColorBasis{.color=B, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Failed to decompose a complex error instruction into basic errors.
+    The instruction (after shifting): error(0.00890571) D27 D30 D36 D38
+    The undecomposed X detectors: []
+    The undecomposed Z detectors: [27, 30, 36, 38]
+    Detector data:
+        D27: coords=[10, 6, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D30: coords=[7, 7, 1, 5] ColorBasis{.color=B, .basis=Z}
+        D36: coords=[13, 9, 1, 4] ColorBasis{.color=G, .basis=Z}
+        D38: coords=[10, 10, 1, 5] ColorBasis{.color=B, .basis=Z}
+This problem can unfortunately be quite difficult to debug. Likely causes are:
+    (1) The source circuit has detectors with invalid color/basis annotations.
+    (2) The source circuit is producing errors too complex to decompose (e.g. more than 6 symptoms in one basis).
+    (3) chromobius is missing logic for a corner case present in the source circuit; a corner case that didn't appear in the test circuits used during development.
+
+MainProcess - INFO - Starting parallel processing of circuits
+MainProcess - INFO - Processed results for distance 3, capacity 10.
+MainProcess - INFO - Processed results for distance 3, capacity 5.
+MainProcess - INFO - Processed results for distance 3, capacity 60.
+MainProcess - INFO - Processed results for distance 3, capacity 15.
+MainProcess - INFO - Processed results for distance 3, capacity 3.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 390, in process_color_code_circuit_switch_arch
+    arch, (instructions, _) = circuit.processColorCircuitNetworkedGrid(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        trapCapacity=capacity,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        cluster_merge_threshold=cluster_merge_threshold,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 763, in processColorCircuitNetworkedGrid
+    gridPositions = arrangeClusters(clusters, allGridPos=allGridPos)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 278, in arrangeClusters
+    return _arrangeClusters(clusters, allGridPos, nearestNeighbourCount, biasY)[0]
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 176, in _arrangeClusters
+    raise ValueError("Not enough traps")
+ValueError: Not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Not enough traps
+MainProcess - INFO - Processed results for distance 3, capacity 2.
+MainProcess - INFO - Processed results for distance 5, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 15.
+MainProcess - INFO - Processed results for distance 5, capacity 5.
+MainProcess - INFO - Processed results for distance 5, capacity 60.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 390, in process_color_code_circuit_switch_arch
+    arch, (instructions, _) = circuit.processColorCircuitNetworkedGrid(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        trapCapacity=capacity,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        cluster_merge_threshold=cluster_merge_threshold,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 763, in processColorCircuitNetworkedGrid
+    gridPositions = arrangeClusters(clusters, allGridPos=allGridPos)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 278, in arrangeClusters
+    return _arrangeClusters(clusters, allGridPos, nearestNeighbourCount, biasY)[0]
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 176, in _arrangeClusters
+    raise ValueError("Not enough traps")
+ValueError: Not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Not enough traps
+MainProcess - INFO - Processed results for distance 5, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 10.
+MainProcess - INFO - Processed results for distance 7, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 5.
+MainProcess - ERROR - An error occurred during processing
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python313\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\color_code_processor.py", line 390, in process_color_code_circuit_switch_arch
+    arch, (instructions, _) = circuit.processColorCircuitNetworkedGrid(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        trapCapacity=capacity,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        cluster_merge_threshold=cluster_merge_threshold,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py", line 763, in processColorCircuitNetworkedGrid
+    gridPositions = arrangeClusters(clusters, allGridPos=allGridPos)
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 278, in arrangeClusters
+    return _arrangeClusters(clusters, allGridPos, nearestNeighbourCount, biasY)[0]
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\compiler\qccd_qubits_to_ions.py", line 176, in _arrangeClusters
+    raise ValueError("Not enough traps")
+ValueError: Not enough traps
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\monam\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\main.py", line 79, in main
+    result = future.result()
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Not enough traps
+MainProcess - INFO - Processed results for distance 9, capacity 10.
+MainProcess - INFO - Processed results for distance 5, capacity 2.
+MainProcess - INFO - Processed results for distance 9, capacity 60.
+MainProcess - INFO - Processed results for distance 7, capacity 3.
+MainProcess - INFO - Processed results for distance 9, capacity 5.
+MainProcess - INFO - Processed results for distance 11, capacity 15.
+MainProcess - INFO - Processed results for distance 11, capacity 60.
+MainProcess - INFO - Processed results for distance 11, capacity 5.
+MainProcess - INFO - Processed results for distance 9, capacity 3.
+MainProcess - INFO - Processed results for distance 7, capacity 2.
+MainProcess - INFO - Processed results for distance 11, capacity 3.
+MainProcess - INFO - Processed results for distance 9, capacity 2.
+MainProcess - INFO - Processed results for distance 11, capacity 2.

@@ -91,6 +91,13 @@ def finalize_and_log(results, distance, capacity, label, logger, extra_msg=""):
     logger.info(f"Finished processing{extra_msg} for distance {distance} and capacity {capacity}")
     return results
 
+def get_circuit_qubit_count(distance, tesselation):
+    if tesselation == (6,6,6):
+        return (9*distance**2 -1)//8
+    elif tesselation == (4,8,8):
+        return (3*distance**2 +6*distance -5)//4
+    else:
+        raise ValueError("Unsupported tesselation type")
 
 def process_color_code_circuit(
     distance,
@@ -109,10 +116,7 @@ def process_color_code_circuit(
   
     circuit = QCCDCircuit.generate_color_code(distance, rounds=rounds, tesselation=tesselation, basis=basis)
     #for single ancilla circuits (6.6.6)
-    if tesselation == (6,6,6):
-        nqubitsNeeded = (9*distance**2 -1)//8
-    elif tesselation == (4,8,8):
-        nqubitsNeeded = (3*distance**2 +6*distance -5)//4
+    nqubitsNeeded = get_circuit_qubit_count(distance, tesselation)
     
     #for dual ancilla (6.6.6) circuits
     #nqubitsNeeded = 3*(distance**2 - 1)//4 + (3*distance**2 + 1)//4
@@ -311,11 +315,7 @@ def process_color_code_circuit_linear_arch(
     logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and tesselation {tesselation}")
   
     circuit = QCCDCircuit.generate_color_code(distance, rounds=rounds, tesselation=tesselation, basis=basis)
-    if tesselation == (6,6,6):
-        nqubitsNeeded = (9*distance**2 -1)//8
-        nqubitsNeeded = len(circuit.dataQubitsIdxs) + len(circuit.measureQubitsIdxs)
-    elif tesselation == (4,8,8):
-        nqubitsNeeded = (3*distance**2 +6*distance -5)//4
+    nqubitsNeeded = get_circuit_qubit_count(distance, tesselation)
     
     #for dual ancilla (6.6.6) circuits
     #nqubitsNeeded = 3*(distance**2 - 1)//4 + (3*distance**2 + 1)//4
@@ -325,6 +325,69 @@ def process_color_code_circuit_linear_arch(
     logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {trapsrequired} traps in a linear chain")
 
     arch, (instructions, _) = circuit.processColorCircuitLinearGrid(
+        trapCapacity=capacity,
+        traps = trapsrequired,
+        dataQubitsIdxs=circuit.dataQubitsIdxs,
+        measureQubitsIdxs=circuit.measureQubitsIdxs,
+        cluster_merge_strategy=cluster_merge_strategy,
+        cluster_merge_threshold=cluster_merge_threshold,
+    )
+
+    arch.refreshGraph()
+
+    results = initialize_results()
+    label ="Forwarding"
+
+    logger.info(f"Processing operations using {label} for distance {distance}, capacity {capacity} and tesselation {tesselation}")
+    allOps, barriers = ionRouting(arch, instructions, capacity)
+ 
+    parallelOpsMap = paralleliseOperationsWithBarriers(allOps, barriers)
+    logicalErrors, physicalZErrors, physicalXErrors = simulate_and_collect_errors(circuit, allOps, gate_improvements, num_shots)
+
+    logger.info(f"Simulated {label} method with gate improvements for distance {distance}, capacity {capacity} and tesselation {tesselation}")
+    
+    
+    for op in parallelOpsMap.values():
+        op.calculateOperationTime()
+        op.calculateFidelity()
+
+    circuit.resetArch()
+    arch.refreshGraph()
+
+    populate_results(results, label, parallelOpsMap, allOps, instructions, logicalErrors, physicalZErrors, physicalXErrors, capacity, distance)
+
+
+    Num_electrodes, Num_DACs = calculate_electrodes_and_dacs(allOps, capacity, nqubitsNeeded, 'augmented')
+    results["DACs"][label] = Num_DACs
+    results["Electrodes"][label] = Num_electrodes
+
+    return finalize_and_log(results, distance, capacity, label, logger)
+
+def process_color_code_circuit_switch_arch(
+    distance,
+    rounds,
+    capacity,
+    gate_improvements, 
+    num_shots,
+    tesselation,
+    basis='Z',
+    cluster_merge_strategy='bounded',
+    cluster_merge_threshold=2.5):
+    logger = setup_logger("process_log_color_code_switch.txt")
+
+    logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and tesselation {tesselation}")
+  
+    circuit = QCCDCircuit.generate_color_code(distance, rounds=rounds, tesselation=tesselation, basis=basis)
+    nqubitsNeeded = get_circuit_qubit_count(distance, tesselation)
+    
+    #for dual ancilla (6.6.6) circuits
+    #nqubitsNeeded = 3*(distance**2 - 1)//4 + (3*distance**2 + 1)//4
+    #nrowsNeeded = int(np.sqrt(nqubitsNeeded))+2
+    trapsrequired = int(np.ceil(nqubitsNeeded/(capacity-1))) * 2
+
+    logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {trapsrequired} traps in a switch topology")
+
+    arch, (instructions, _) = circuit.processColorCircuitNetworkedGrid(
         trapCapacity=capacity,
         traps = trapsrequired,
         dataQubitsIdxs=circuit.dataQubitsIdxs,
