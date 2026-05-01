@@ -68,7 +68,7 @@ def main(config_path: str):
             ]
         elif topology == "switch":
             futures = [
-                executor.submit(process_color_code_circuit_switch_arch, d, rounds, c, gate_improvements, num_shots, (6,6,6))
+                executor.submit(process_color_code_circuit_switch_arch, d, d*4, c, gate_improvements, num_shots, (6,6,6))
                 for d in distances for c in capacities
             ]
 

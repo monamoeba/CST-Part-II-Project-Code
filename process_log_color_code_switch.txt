@@ -643,3 +643,213 @@ SpawnProcess-2 - INFO - process exiting with exitcode 0
 SpawnProcess-2 - INFO - process exiting with exitcode 0
 SpawnProcess-2 - INFO - process shutting down
 SpawnProcess-2 - INFO - process shutting down
+SpawnProcess-2 - INFO - Starting circuit generation for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 10 qubits and 20 traps in a switch topology
+SpawnProcess-6 - INFO - Processing circuit with 10 qubits and 6 traps in a switch topology
+SpawnProcess-3 - INFO - Processing circuit with 10 qubits and 4 traps in a switch topology
+SpawnProcess-1 - INFO - Starting circuit generation for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 10 qubits and 2 traps in a switch topology
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 10 qubits and 2 traps in a switch topology
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 10 qubits and 2 traps in a switch topology
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 28 qubits and 56 traps in a switch topology
+SpawnProcess-10 - INFO - Processing circuit with 28 qubits and 14 traps in a switch topology
+SpawnProcess-7 - INFO - Processing circuit with 28 qubits and 8 traps in a switch topology
+SpawnProcess-9 - INFO - Processing circuit with 28 qubits and 4 traps in a switch topology
+SpawnProcess-11 - INFO - Processing circuit with 28 qubits and 2 traps in a switch topology
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 28 qubits and 2 traps in a switch topology
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - 3 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.1109749999999998}, 'Operations': {'Forwarding': 3563}, 'MeanConcurrency': {'Forwarding': np.float64(1.4616074096205558)}, 'QubitOperations': {'Forwarding': 1817}, 'LogicalErrorRates': {'Forwarding': [0.499874, 0.47914, 0.392799, 0.319903, 0.265541, 0.226459, 0.197402, 0.174891, 0.157071]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.01809915722505174), np.float64(0.0072396628900206934), np.float64(0.0036198314450103467), np.float64(0.0024132209633402333), np.float64(0.0018099157225051734), np.float64(0.0014479325780041377), np.float64(0.0012066104816701167), np.float64(0.0010342375557172428), np.float64(0.0009049578612525867)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01781944706824268), np.float64(0.0071277788272970715), np.float64(0.0035638894136485358), np.float64(0.0023759262757656885), np.float64(0.0017819447068242679), np.float64(0.001425555765459414), np.float64(0.0011879631378828442), np.float64(0.0010182541181852967), np.float64(0.0008909723534121339)]}, 'Electrodes': {'Forwarding': 690}, 'DACs': {'Forwarding': 690}, 'Capacity': 10, 'Distance': 3}
+SpawnProcess-3 - INFO - Finished processing for distance 3 and capacity 10
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Starting circuit generation for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 110 traps in a switch topology
+SpawnProcess-3 - INFO - Processing circuit with 55 qubits and 110 traps in a switch topology
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - Processing operations using Forwarding for distance 7, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - 3 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.11959999999999978}, 'Operations': {'Forwarding': 4004}, 'MeanConcurrency': {'Forwarding': np.float64(1.5182541861103487)}, 'QubitOperations': {'Forwarding': 1817}, 'LogicalErrorRates': {'Forwarding': [0.500057, 0.474435, 0.385392, 0.30943, 0.256744, 0.218457, 0.190702, 0.168599, 0.15121]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.017444508647800935), np.float64(0.0069778034591203774), np.float64(0.0034889017295601887), np.float64(0.002325934486373457), np.float64(0.0017444508647800944), np.float64(0.0013955606918240725), np.float64(0.0011629672431867286), np.float64(0.0009968290655886236), np.float64(0.0008722254323900472)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.01723413527911035), np.float64(0.006893654111644143), np.float64(0.0034468270558220713), np.float64(0.00229788470388138), np.float64(0.0017234135279110357), np.float64(0.0013787308223288288), np.float64(0.00114894235194069), np.float64(0.000984807730234877), np.float64(0.0008617067639555178)]}, 'Electrodes': {'Forwarding': 390}, 'DACs': {'Forwarding': 390}, 'Capacity': 5, 'Distance': 3}
+SpawnProcess-6 - INFO - Finished processing for distance 3 and capacity 5
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 55 qubits and 28 traps in a switch topology
+SpawnProcess-6 - INFO - Processing circuit with 55 qubits and 28 traps in a switch topology
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 7, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - 3 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.053659999999999285}, 'Operations': {'Forwarding': 1817}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 1817}, 'LogicalErrorRates': {'Forwarding': [0.499955, 0.481413, 0.39742, 0.321863, 0.268076, 0.228698, 0.199179, 0.175745, 0.157278]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020615932501237045), np.float64(0.00824637300049482), np.float64(0.00412318650024741), np.float64(0.0027487910001649453), np.float64(0.002061593250123705), np.float64(0.0016492746000989628), np.float64(0.0013743955000824727), np.float64(0.0011780532857849754), np.float64(0.0010307966250618526)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.020965000338765496), np.float64(0.008386000135506213), np.float64(0.004193000067753107), np.float64(0.002795333378502078), np.float64(0.0020965000338765533), np.float64(0.001677200027101229), np.float64(0.001397666689251039), np.float64(0.0011980000193580293), np.float64(0.0010482500169382767)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 3}
+SpawnProcess-4 - INFO - Finished processing for distance 3 and capacity 60
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 14 traps in a switch topology
+SpawnProcess-4 - INFO - Processing circuit with 55 qubits and 14 traps in a switch topology
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 7, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - 3 15 Forwarding = {'ElapsedTime': {'Forwarding': 0.053659999999999285}, 'Operations': {'Forwarding': 1817}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 1817}, 'LogicalErrorRates': {'Forwarding': [0.499604, 0.4804, 0.397065, 0.321995, 0.267744, 0.227955, 0.199598, 0.176275, 0.157472]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020615932501237045), np.float64(0.00824637300049482), np.float64(0.00412318650024741), np.float64(0.0027487910001649453), np.float64(0.002061593250123705), np.float64(0.0016492746000989628), np.float64(0.0013743955000824727), np.float64(0.0011780532857849754), np.float64(0.0010307966250618526)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.020965000338765496), np.float64(0.008386000135506213), np.float64(0.004193000067753107), np.float64(0.002795333378502078), np.float64(0.0020965000338765533), np.float64(0.001677200027101229), np.float64(0.001397666689251039), np.float64(0.0011980000193580293), np.float64(0.0010482500169382767)]}, 'Electrodes': {'Forwarding': 300}, 'DACs': {'Forwarding': 300}, 'Capacity': 15, 'Distance': 3}
+SpawnProcess-1 - INFO - Finished processing for distance 3 and capacity 15
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 8 traps in a switch topology
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 8 traps in a switch topology
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Starting circuit generation for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 2 traps in a switch topology
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 2 traps in a switch topology
+SpawnProcess-1 - INFO - Processing circuit with 55 qubits and 2 traps in a switch topology
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-1 - INFO - Processing operations using Forwarding for distance 7, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - 3 120 Forwarding = {'ElapsedTime': {'Forwarding': 0.053659999999999285}, 'Operations': {'Forwarding': 1817}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 1817}, 'LogicalErrorRates': {'Forwarding': [0.49978, 0.480894, 0.396037, 0.322061, 0.26694, 0.227636, 0.198848, 0.17557, 0.157532]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.020615932501237045), np.float64(0.00824637300049482), np.float64(0.00412318650024741), np.float64(0.0027487910001649453), np.float64(0.002061593250123705), np.float64(0.0016492746000989628), np.float64(0.0013743955000824727), np.float64(0.0011780532857849754), np.float64(0.0010307966250618526)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.020965000338765496), np.float64(0.008386000135506213), np.float64(0.004193000067753107), np.float64(0.002795333378502078), np.float64(0.0020965000338765533), np.float64(0.001677200027101229), np.float64(0.001397666689251039), np.float64(0.0011980000193580293), np.float64(0.0010482500169382767)]}, 'Electrodes': {'Forwarding': 2400}, 'DACs': {'Forwarding': 2400}, 'Capacity': 120, 'Distance': 3}
+SpawnProcess-8 - INFO - Finished processing for distance 3 and capacity 120
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Starting circuit generation for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing circuit with 55 qubits and 2 traps in a switch topology
+SpawnProcess-8 - INFO - Processing circuit with 55 qubits and 2 traps in a switch topology
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-8 - INFO - Processing operations using Forwarding for distance 7, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Simulated Forwarding method with gate improvements for distance 3, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - 3 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.10306499999999971}, 'Operations': {'Forwarding': 7001}, 'MeanConcurrency': {'Forwarding': np.float64(2.8834695491695226)}, 'QubitOperations': {'Forwarding': 1817}, 'LogicalErrorRates': {'Forwarding': [0.491923, 0.396611, 0.264627, 0.197117, 0.155494, 0.128863, 0.110169, 0.095971, 0.084883]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.009736573346193874), np.float64(0.003894629338477557), np.float64(0.0019473146692387784), np.float64(0.0012982097794925164), np.float64(0.0009736573346193892), np.float64(0.0007789258676955114), np.float64(0.0006491048897462582), np.float64(0.0005563756197825068), np.float64(0.0004868286673096946)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.009513308503742235), np.float64(0.003805323401496892), np.float64(0.001902661700748446), np.float64(0.0012684411338322983), np.float64(0.000951330850374223), np.float64(0.0007610646802993796), np.float64(0.0006342205669161491), np.float64(0.00054361762878527), np.float64(0.0004756654251871115)]}, 'Electrodes': {'Forwarding': 700}, 'DACs': {'Forwarding': 700}, 'Capacity': 2, 'Distance': 3}
+SpawnProcess-2 - INFO - Finished processing for distance 3 and capacity 2
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Starting circuit generation for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 182 traps in a switch topology
+SpawnProcess-2 - INFO - Processing circuit with 91 qubits and 182 traps in a switch topology
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-2 - INFO - Processing operations using Forwarding for distance 9, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - 5 10 Forwarding = {'ElapsedTime': {'Forwarding': 0.4761949999999989}, 'Operations': {'Forwarding': 19303}, 'MeanConcurrency': {'Forwarding': np.float64(1.7459578922880075)}, 'QubitOperations': {'Forwarding': 10247}, 'LogicalErrorRates': {'Forwarding': [0.500302, 0.499595, 0.486705, 0.429695, 0.358957, 0.299568, 0.249722, 0.213933, 0.183857]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.03010308702143251), np.float64(0.012041234808573057), np.float64(0.0060206174042865285), np.float64(0.004013744936191034), np.float64(0.0030103087021432643), np.float64(0.0024082469617146027), np.float64(0.002006872468095517), np.float64(0.0017201764012247211), np.float64(0.0015051543510716321)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.029314654228469263), np.float64(0.011725861691387684), np.float64(0.005862930845693842), np.float64(0.003908620563795906), np.float64(0.002931465422846921), np.float64(0.0023451723382775344), np.float64(0.001954310281897953), np.float64(0.0016751230987696692), np.float64(0.0014657327114234605)]}, 'Electrodes': {'Forwarding': 1380}, 'DACs': {'Forwarding': 1380}, 'Capacity': 10, 'Distance': 5}
+SpawnProcess-7 - INFO - Finished processing for distance 5 and capacity 10
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Starting circuit generation for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 46 traps in a switch topology
+SpawnProcess-7 - INFO - Processing circuit with 91 qubits and 46 traps in a switch topology
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-7 - INFO - Processing operations using Forwarding for distance 9, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - 5 5 Forwarding = {'ElapsedTime': {'Forwarding': 0.4228250000000008}, 'Operations': {'Forwarding': 24627}, 'MeanConcurrency': {'Forwarding': np.float64(2.5767311608961303)}, 'QubitOperations': {'Forwarding': 10247}, 'LogicalErrorRates': {'Forwarding': [0.500127, 0.498832, 0.418883, 0.289009, 0.198202, 0.140381, 0.104247, 0.081324, 0.065069]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.023953868182313424), np.float64(0.00958154727292532), np.float64(0.00479077363646266), np.float64(0.003193849090975105), np.float64(0.00239538681823133), np.float64(0.0019163094545850648), np.float64(0.0015969245454875525), np.float64(0.001368792467560764), np.float64(0.001197693409115665)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.02321150767139461), np.float64(0.009284603068557839), np.float64(0.0046423015342789194), np.float64(0.0030948676895192874), np.float64(0.0023211507671394597), np.float64(0.0018569206137115713), np.float64(0.0015474338447596437), np.float64(0.0013263718669368372), np.float64(0.0011605753835697299)]}, 'Electrodes': {'Forwarding': 1170}, 'DACs': {'Forwarding': 1170}, 'Capacity': 5, 'Distance': 5}
+SpawnProcess-10 - INFO - Finished processing for distance 5 and capacity 5
+SpawnProcess-10 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing circuit with 91 qubits and 22 traps in a switch topology
+SpawnProcess-10 - INFO - Processing circuit with 91 qubits and 22 traps in a switch topology
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 9, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 14 traps in a switch topology
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 14 traps in a switch topology
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 14 traps in a switch topology
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Starting circuit generation for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 4 traps in a switch topology
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 4 traps in a switch topology
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 4 traps in a switch topology
+SpawnProcess-4 - INFO - Processing circuit with 91 qubits and 4 traps in a switch topology
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-4 - INFO - Processing operations using Forwarding for distance 9, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - 5 15 Forwarding = {'ElapsedTime': {'Forwarding': 0.5134099999999997}, 'Operations': {'Forwarding': 17100}, 'MeanConcurrency': {'Forwarding': np.float64(1.3733357762306095)}, 'QubitOperations': {'Forwarding': 10247}, 'LogicalErrorRates': {'Forwarding': [0.500195, 0.499528, 0.497255, 0.458635, 0.392089, 0.32619, 0.271453, 0.226655, 0.192438]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.03888728454752782), np.float64(0.015554913819011135), np.float64(0.0077774569095055675), np.float64(0.0051849712730037256), np.float64(0.0038887284547527838), np.float64(0.0031109827638022333), np.float64(0.0025924856365018628), np.float64(0.0022221305455730226), np.float64(0.0019443642273763919)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.037937848661533324), np.float64(0.015175139464613274), np.float64(0.007587569732306637), np.float64(0.005058379821537784), np.float64(0.0037937848661533185), np.float64(0.003035027892922657), np.float64(0.002529189910768892), np.float64(0.002167877066373325), np.float64(0.0018968924330766592)]}, 'Electrodes': {'Forwarding': 1320}, 'DACs': {'Forwarding': 1320}, 'Capacity': 15, 'Distance': 5}
+SpawnProcess-9 - INFO - Finished processing for distance 5 and capacity 15
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Starting circuit generation for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing circuit with 91 qubits and 2 traps in a switch topology
+SpawnProcess-9 - INFO - Processing circuit with 91 qubits and 2 traps in a switch topology
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-9 - INFO - Processing operations using Forwarding for distance 9, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Starting circuit generation for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing circuit with 136 qubits and 272 traps in a switch topology
+SpawnProcess-6 - INFO - Processing circuit with 136 qubits and 272 traps in a switch topology
+SpawnProcess-6 - INFO - Processing circuit with 136 qubits and 272 traps in a switch topology
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-6 - INFO - Processing operations using Forwarding for distance 11, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 2 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - 5 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.2706699999999994}, 'Operations': {'Forwarding': 40487}, 'MeanConcurrency': {'Forwarding': np.float64(6.786095895042943)}, 'QubitOperations': {'Forwarding': 10247}, 'LogicalErrorRates': {'Forwarding': [0.500348, 0.446134, 0.232517, 0.127174, 0.080108, 0.055666, 0.041594, 0.032195, 0.026357]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.012063535550183795), np.float64(0.00482541422007348), np.float64(0.00241270711003674), np.float64(0.0016084714066911705), np.float64(0.00120635355501837), np.float64(0.0009650828440146977), np.float64(0.0008042357033455853), np.float64(0.0006893448885819303), np.float64(0.000603176777509185)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.0116882645335481), np.float64(0.004675305813419244), np.float64(0.002337652906709622), np.float64(0.0015584352711397454), np.float64(0.001168826453354811), np.float64(0.0009350611626838481), np.float64(0.0007792176355698727), np.float64(0.0006679008304884621), np.float64(0.0005844132266774055)]}, 'Electrodes': {'Forwarding': 1960}, 'DACs': {'Forwarding': 1960}, 'Capacity': 2, 'Distance': 5}
+SpawnProcess-5 - INFO - Finished processing for distance 5 and capacity 2
+SpawnProcess-5 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Starting circuit generation for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing circuit with 136 qubits and 68 traps in a switch topology
+SpawnProcess-5 - INFO - Processing circuit with 136 qubits and 68 traps in a switch topology
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-5 - INFO - Processing operations using Forwarding for distance 11, capacity 5 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - 5 120 Forwarding = {'ElapsedTime': {'Forwarding': 0.27680000000002186}, 'Operations': {'Forwarding': 10247}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 10247}, 'LogicalErrorRates': {'Forwarding': [0.500366, 0.499489, 0.497611, 0.462513, 0.39192, 0.316481, 0.25447, 0.205545, 0.169359]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.04214908565453069), np.float64(0.016859634261812334), np.float64(0.008429817130906167), np.float64(0.005619878087270792), np.float64(0.0042149085654530835), np.float64(0.003371926852362474), np.float64(0.002809939043635396), np.float64(0.002408519180258909), np.float64(0.0021074542827265418)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.04203052292547854), np.float64(0.016812209170191383), np.float64(0.008406104585095692), np.float64(0.005604069723397171), np.float64(0.004203052292547846), np.float64(0.0033624418340382255), np.float64(0.0028020348616985854), np.float64(0.0024017441671702285), np.float64(0.002101526146273923)]}, 'Electrodes': {'Forwarding': 2400}, 'DACs': {'Forwarding': 2400}, 'Capacity': 120, 'Distance': 5}
+SpawnProcess-12 - INFO - Finished processing for distance 5 and capacity 120
+SpawnProcess-12 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 11, capacity 10 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 136 qubits and 32 traps in a switch topology
+SpawnProcess-12 - INFO - Processing circuit with 136 qubits and 32 traps in a switch topology
+SpawnProcess-12 - INFO - Starting circuit generation for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Starting circuit generation for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing circuit with 136 qubits and 20 traps in a switch topology
+SpawnProcess-12 - INFO - Processing circuit with 136 qubits and 20 traps in a switch topology
+SpawnProcess-12 - INFO - Processing circuit with 136 qubits and 20 traps in a switch topology
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-12 - INFO - Processing operations using Forwarding for distance 11, capacity 15 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - 5 60 Forwarding = {'ElapsedTime': {'Forwarding': 0.27680000000002186}, 'Operations': {'Forwarding': 10247}, 'MeanConcurrency': {'Forwarding': np.float64(1.0)}, 'QubitOperations': {'Forwarding': 10247}, 'LogicalErrorRates': {'Forwarding': [0.49917, 0.499331, 0.497849, 0.463201, 0.390858, 0.316706, 0.254959, 0.206454, 0.168443]}, 'PhysicalZErrorRates': {'Forwarding': [np.float64(0.04214908565453069), np.float64(0.016859634261812334), np.float64(0.008429817130906167), np.float64(0.005619878087270792), np.float64(0.0042149085654530835), np.float64(0.003371926852362474), np.float64(0.002809939043635396), np.float64(0.002408519180258909), np.float64(0.0021074542827265418)]}, 'PhysicalXErrorRates': {'Forwarding': [np.float64(0.04203052292547854), np.float64(0.016812209170191383), np.float64(0.008406104585095692), np.float64(0.005604069723397171), np.float64(0.004203052292547846), np.float64(0.0033624418340382255), np.float64(0.0028020348616985854), np.float64(0.0024017441671702285), np.float64(0.002101526146273923)]}, 'Electrodes': {'Forwarding': 1200}, 'DACs': {'Forwarding': 1200}, 'Capacity': 60, 'Distance': 5}
+SpawnProcess-11 - INFO - Finished processing for distance 5 and capacity 60
+SpawnProcess-11 - INFO - Starting circuit generation for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Starting circuit generation for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing circuit with 136 qubits and 6 traps in a switch topology
+SpawnProcess-11 - INFO - Processing circuit with 136 qubits and 6 traps in a switch topology
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-11 - INFO - Processing operations using Forwarding for distance 11, capacity 60 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Starting circuit generation for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing circuit with 136 qubits and 4 traps in a switch topology
+SpawnProcess-10 - INFO - Processing circuit with 136 qubits and 4 traps in a switch topology
+SpawnProcess-10 - INFO - Processing circuit with 136 qubits and 4 traps in a switch topology
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-10 - INFO - Processing operations using Forwarding for distance 11, capacity 120 and tesselation (6, 6, 6)
+SpawnProcess-3 - INFO - process exiting with exitcode 1
+SpawnProcess-3 - INFO - process exiting with exitcode 1
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-3 - INFO - process shutting down
+SpawnProcess-6 - INFO - process exiting with exitcode 1
+SpawnProcess-6 - INFO - process exiting with exitcode 1
+SpawnProcess-6 - INFO - process exiting with exitcode 1
+SpawnProcess-6 - INFO - process shutting down
+SpawnProcess-6 - INFO - process shutting down
+SpawnProcess-6 - INFO - process shutting down
+SpawnProcess-7 - INFO - process shutting down
+SpawnProcess-7 - INFO - process shutting down
+SpawnProcess-8 - INFO - process exiting with exitcode 1
+SpawnProcess-8 - INFO - process exiting with exitcode 1
+SpawnProcess-8 - INFO - process shutting down
+SpawnProcess-8 - INFO - process shutting down
