@@ -18,8 +18,8 @@ def parse_qasm_ancilla_order(qasm_text, n_data, n_ancilla):
     return ancilla_indices
 
 def generate_metadata():
-    renamed_dir = 'renamed_qasm_files'
-    metadata_dir = 'stabilizer_metadata'
+    renamed_dir = 'renamed_qasm_files_decomp'
+    metadata_dir = 'stabilizer_metadata_decomp'
     os.makedirs(metadata_dir, exist_ok=True)
 
     for fname in os.listdir(renamed_dir):

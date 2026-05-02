@@ -2,8 +2,8 @@ import os
 import re
 from collections import Counter
 
-INPUT_DIR = "qasmfiles"        # folder with original files
-OUTPUT_DIR = "renamed_qasm_files"    # new folder
+INPUT_DIR = "qasmfiles/decompqasmfiles"        # folder with original files
+OUTPUT_DIR = "renamed_qasm_files_decomp"    # new folder
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
