@@ -67224,3 +67224,9 @@ SpawnProcess-8 - INFO - process exiting with exitcode 0
 SpawnProcess-1 - INFO - process shutting down
 SpawnProcess-10 - INFO - process shutting down
 SpawnProcess-8 - INFO - process shutting down
+MainProcess - INFO - Starting circuit generation for distance 5, capacity 2 and tesselation (6, 6, 6)
+MainProcess - INFO - Processing circuit with 28 qubits and 7 rows
+MainProcess - INFO - Processing operations using Forwarding for distance 5, capacity 2 and tesselation (6, 6, 6)
+MainProcess - INFO - Simulated Forwarding method with gate improvements for distance 5, capacity 2 and tesselation (6, 6, 6)
+MainProcess - INFO - 5 2 Forwarding = {'ElapsedTime': {'Forwarding': 0.02249500000000001}, 'Operations': {'Forwarding': 2181}, 'MeanConcurrency': {'Forwarding': 5.41497461928934}, 'QubitOperations': {'Forwarding': 557}, 'LogicalErrorRates': {'Forwarding': [0.22041]}, 'PhysicalZErrorRates': {'Forwarding': [0.015307981654913465]}, 'PhysicalXErrorRates': {'Forwarding': [0.013141183531061989]}, 'Electrodes': {'Forwarding': 1600}, 'DACs': {'Forwarding': 1600}, 'Capacity': 2, 'Distance': 5}
+MainProcess - INFO - Finished processing for distance 5 and capacity 2
