@@ -109,6 +109,7 @@ def process_color_code_circuit(
     basis='Z',
     cluster_merge_strategy='bounded',
     cluster_merge_threshold=2.5,
+    placement_strategy='hill_climb',
 ):
     logger = setup_logger("process_log_color_code.txt")
 
@@ -132,8 +133,9 @@ def process_color_code_circuit(
         measureQubitsIdxs=circuit.measureQubitsIdxs,
         cluster_merge_strategy=cluster_merge_strategy,
         cluster_merge_threshold=cluster_merge_threshold,
+        placement_strategy=placement_strategy,
     )
-   
+
     arch.refreshGraph()
 
     results = initialize_results()
@@ -166,7 +168,7 @@ def process_color_code_circuit(
 
     return finalize_and_log(results, distance, capacity, label, logger)
 
-def process_model_color_code_circuit(distance, capacity, gate_improvements, num_shots, circtype, cluster_merge_strategy='kdtree', cluster_merge_threshold=2.5):
+def process_model_color_code_circuit(distance, capacity, gate_improvements, num_shots, circtype, cluster_merge_strategy='kdtree', cluster_merge_threshold=2.5, placement_strategy='hill_climb'):
     logger = setup_logger("process_log_color_code.txt")
 
     logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and type {circtype}")
@@ -221,6 +223,7 @@ def process_model_color_code_circuit(distance, capacity, gate_improvements, num_
         dataQubitsIdxs=circuit.dataQubitsIdxs,
         cluster_merge_strategy=cluster_merge_strategy,
         cluster_merge_threshold=cluster_merge_threshold,
+        placement_strategy=placement_strategy,
     )
    
     arch.refreshGraph()

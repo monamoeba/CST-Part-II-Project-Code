@@ -483,6 +483,7 @@ class QCCDCircuit(stim.Circuit):
         measureQubitsIdxs: Optional[Sequence[int]]=None,
         cluster_merge_strategy: str = "kdtree",
         cluster_merge_threshold: float = 2.5,
+        placement_strategy: str = "hill_climb",
     ) -> Tuple[QCCDArch, Tuple[Sequence[QubitOperation], Sequence[int]]]:        
         instructions, barriers = self._parseCircuitString(dataQubitsIdxs=dataQubitsIdxs, measureQubitsIdxs=measureQubitsIdxs)
         if (trapCapacity-1) * ((rows-1) * (2*cols-1)+cols) < len(self._ionMapping):
@@ -536,9 +537,12 @@ class QCCDCircuit(stim.Circuit):
             for c in range(cs):
                 allGridPos.append((2*c, 2*r))
                 if c < cs-1 and r<rs-1:
-                    allGridPos.append((2*c+1, 2*r+1)) 
+                    allGridPos.append((2*c+1, 2*r+1))
 
-        gridPositions = hillClimbOnArrangeClusters(clusters, allGridPos=allGridPos)
+        if placement_strategy == "direct_coordinate":
+            gridPositions = directCoordinateMapping(clusters, allGridPos)
+        else:
+            gridPositions = hillClimbOnArrangeClusters(clusters, allGridPos=allGridPos)
         gridPositions = [(c+padding, r+padding) for (c, r) in gridPositions]
         rows = rows+2*padding
         cols = cols+2*padding

@@ -44,6 +44,7 @@ def main(config_path: str):
     num_shots = simulation["num_shots"]
     rounds = simulation["rounds"]
     num_cores = hardware.get("num_cores", os.cpu_count())
+    placement_strategy = hardware.get("placement_strategy", "hill_climb")
     logger = get_logger(simulation["log_file"])
     data: Dict[str, Dict[str, Dict[int, Dict[int, Any]]]] = {
         "ElapsedTime": {}, "Operations": {}, "MeanConcurrency": {}, 
@@ -55,11 +56,8 @@ def main(config_path: str):
     with concurrent.futures.ProcessPoolExecutor(max_workers=num_cores) as executor:
         if topology == "grid":
             futures = [
-                #executor.submit(process_color_code_circuit, d, c, gate_improvements, num_shots, (6,6,6))
-                executor.submit(process_color_code_circuit, d, rounds, c, gate_improvements, num_shots, (6,6,6))
+                executor.submit(process_color_code_circuit, d, rounds, c, gate_improvements, num_shots, (6,6,6), placement_strategy=placement_strategy)
                 for d in distances for c in capacities
-                #executor.submit(process_color_code_circuit, d, c, gate_improvements, num_shots, (6,6,6))
-                #for d in distances for c in capacities
             ]
         elif topology == "linear":
             futures = [

@@ -1,11 +1,13 @@
 import numpy as np
 import numpy.typing as npt
 from typing import (
+    List,
     Sequence,
     Tuple,
 )
 from collections import deque
-from scipy.spatial import cKDTree
+from scipy.spatial import cKDTree, distance_matrix
+from scipy.optimize import linear_sum_assignment
 from src.utils.qccd_nodes import *
 from src.utils.qccd_operations import *
 from src.utils.qccd_operations_on_qubits import *
@@ -537,6 +539,29 @@ def regularColorPartition_vectorised(
 
     return clusters
       
+def directCoordinateMapping(
+    clusters: Sequence[Tuple[Sequence[Ion], Tuple[float, float]]],
+    allGridPos: Sequence[Tuple[int, int]],
+    margin: float = 2.0,
+) -> List[Tuple[int, int]]:
+    
+    A = np.array([c[1] for c in clusters], dtype=float)   # (n_clusters, 2)
+    B = np.array(allGridPos, dtype=float)                  # (n_positions, 2)
+
+    min_coord = A.min(axis=0) - margin
+    max_coord = A.max(axis=0) + margin
+    in_box = np.all((B >= min_coord) & (B <= max_coord), axis=1)
+    candidate_indices = np.where(in_box)[0]
+
+    if len(candidate_indices) < len(A):
+        candidate_indices = np.arange(len(B))
+
+    B_candidates = B[candidate_indices]
+    cost_matrix = distance_matrix(A, B_candidates)
+    _, col_ind = linear_sum_assignment(cost_matrix)
+    return [allGridPos[candidate_indices[j]] for j in col_ind]
+
+
 def _ShapePartitionions(
     ions: Sequence[Ion], coords: npt.NDArray[np.float64], trapCapacity: int
 ) -> Sequence[Tuple[Sequence[Ion], npt.NDArray[np.float64]]]:
