@@ -12,6 +12,9 @@ import json
 def get_logger(log_file: str) -> logging.Logger:
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
+    log_dir = os.path.dirname(log_file)
+    if log_dir:
+        os.makedirs(log_dir, exist_ok=True)
     handler = logging.FileHandler(log_file)
     formatter = logging.Formatter('%(processName)s - %(levelname)s - %(message)s')
     handler.setFormatter(formatter)
@@ -45,6 +48,7 @@ def main(config_path: str):
     rounds = simulation["rounds"]
     num_cores = hardware.get("num_cores", os.cpu_count())
     placement_strategy = hardware.get("placement_strategy", "hill_climb")
+    code_type = qec.get("code_type", "color_code")
     logger = get_logger(simulation["log_file"])
     data: Dict[str, Dict[str, Dict[int, Dict[int, Any]]]] = {
         "ElapsedTime": {}, "Operations": {}, "MeanConcurrency": {}, 
@@ -54,21 +58,31 @@ def main(config_path: str):
 
     logger.info("Starting parallel processing of circuits")
     with concurrent.futures.ProcessPoolExecutor(max_workers=num_cores) as executor:
-        if topology == "grid":
+        if code_type == "surface_code":
             futures = [
-                executor.submit(process_color_code_circuit, d, rounds, c, gate_improvements, num_shots, (6,6,6), placement_strategy=placement_strategy)
+                executor.submit(process_circuit, d, c, gate_improvements, num_shots)
                 for d in distances for c in capacities
             ]
-        elif topology == "linear":
-            futures = [
-                executor.submit(process_color_code_circuit_linear_arch, d, rounds, c, gate_improvements, num_shots, (6,6,6))
-                for d in distances for c in capacities
-            ]
-        elif topology == "switch":
-            futures = [
-                executor.submit(process_color_code_circuit_switch_arch, d, d*4, c, gate_improvements, num_shots, (6,6,6))
-                for d in distances for c in capacities
-            ]
+        elif code_type == "color_code":
+            if topology == "grid":
+                futures = [
+                    executor.submit(process_color_code_circuit, d, rounds, c, gate_improvements, num_shots, (6,6,6), placement_strategy=placement_strategy)
+                    for d in distances for c in capacities
+                ]
+            elif topology == "linear":
+                futures = [
+                    executor.submit(process_color_code_circuit_linear_arch, d, rounds, c, gate_improvements, num_shots, (6,6,6))
+                    for d in distances for c in capacities
+                ]
+            elif topology == "switch":
+                futures = [
+                    executor.submit(process_color_code_circuit_switch_arch, d, rounds, c, gate_improvements, num_shots, (6,6,6))
+                    for d in distances for c in capacities
+                ]
+            else:
+                raise ValueError(f"Unsupported topology for color_code: {topology!r}")
+        else:
+            raise ValueError(f"Unsupported code_type: {code_type!r}")
 
         pbar = tqdm(total=(len(distances)*len(capacities)*len(gate_improvements)))
 
@@ -95,7 +109,7 @@ def main(config_path: str):
             except Exception as e:
                 logger.error("An error occurred during processing", exc_info=e)
         pbar.close()
-    save_results(data, output_dir="data")
+    save_results(data, output_dir=simulation.get("output_dir", "data"))
 
 if __name__ == "__main__":
     import argparse

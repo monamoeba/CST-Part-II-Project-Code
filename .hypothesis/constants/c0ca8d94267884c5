@@ -1,4 +1,0 @@
-# file: C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\color_code_utils\color_code_circuits\color_code_circuit_488.py
-# hypothesis_version: 6.151.10
-
-['CNOT', 'DEPOLARIZE1', 'DEPOLARIZE2', 'DETECTOR', 'M', 'MX', 'OBSERVABLE_INCLUDE', 'QUBIT_COORDS', 'R', 'RX', 'SHIFT_COORDS', 'TICK', 'X', 'X_ERROR', 'Z', 'Z_ERROR', 'blue', 'green', 'red']

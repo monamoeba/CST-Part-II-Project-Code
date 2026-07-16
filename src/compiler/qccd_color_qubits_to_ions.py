@@ -560,9 +560,3 @@ def directCoordinateMapping(
     cost_matrix = distance_matrix(A, B_candidates)
     _, col_ind = linear_sum_assignment(cost_matrix)
     return [allGridPos[candidate_indices[j]] for j in col_ind]
-
-
-def _ShapePartitionions(
-    ions: Sequence[Ion], coords: npt.NDArray[np.float64], trapCapacity: int
-) -> Sequence[Tuple[Sequence[Ion], npt.NDArray[np.float64]]]:
-    pass

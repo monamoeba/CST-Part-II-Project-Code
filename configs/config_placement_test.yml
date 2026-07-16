@@ -1,0 +1,14 @@
+hardware:
+  trap_capacity: [2]
+  topology: "grid"
+  placement_strategy: "direct_coordinate"
+
+qec:
+  code_type: "color_code"
+  distances: [3, 5, 7, 9, 11]
+  gate_improvements: [1.0, 5.0, 10.0, 15.0]
+
+simulation:
+  rounds: 1
+  num_shots: 100000
+  log_file: process_log_placement_test.txt

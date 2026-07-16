@@ -15,19 +15,15 @@ from src.utils.qccd_operations_on_qubits import *
 from src.utils.qccd_arch import *
 
 
-def _determineRouted(ion1:Ion, ion2:Ion):
-    """ Determines the ion that will be routed between the pair """
-    if ion1.label[0]==ion2.label[0]:
-        # Same type - tiebreak with index
-        r_ion, s_ion = sorted(
-            (ion1, ion2), key=lambda ion: ion.idx
-        )
+def _determineRouted(ion1: Ion, ion2: Ion, qccdArch: QCCDArch):
+    if ion1.label[0] == ion2.label[0]:
+        d1 = nx.shortest_path_length(qccdArch.graph, ion1.idx, ion2.parent.idx)
+        d2 = nx.shortest_path_length(qccdArch.graph, ion2.idx, ion1.parent.idx)
+        r_ion, s_ion = (ion1, ion2) if d1 <= d2 else (ion2, ion1)
     else:
-        # prioritise routing ancilla otherwise
         r_ion, s_ion = sorted(
-            (ion1, ion2), key=lambda ion: ion.label[0]=="D"
+            (ion1, ion2), key=lambda ion: ion.label[0] == "D"
         )
-
     return (r_ion, s_ion)
     
 def naiveAltIonRouting(
@@ -36,16 +32,14 @@ def naiveAltIonRouting(
     trapCapacity: int
 ) -> Tuple[Sequence[Operation], Sequence[int]]:
 
-    twoQubitGates: defaultdict[int, Tuple[int, List[Tuple[int,TwoQubitMSGate]]]] = defaultdict(list)
-    #stores r_idx: [(s_idx, op), ...]
-    
+    twoQubitGates: defaultdict[int, List[Tuple[int, TwoQubitMSGate]]] = defaultdict(list)
+    opToRouting: Dict[TwoQubitMSGate, Tuple[int, int]] = {}
+
     for op in operations:
         if isinstance(op, TwoQubitMSGate):
-            # routed and stationary ion
-            # give preference to route ancilla 
-            r_ion, s_ion = _determineRouted(*op.ions)
-            trap = r_ion.parent
+            r_ion, s_ion = _determineRouted(*op.ions, qccdArch)
             twoQubitGates[r_ion.idx].append((s_ion.idx, op))
+            opToRouting[op] = (r_ion.idx, s_ion.idx)
 
     opPriorities: Dict[Operation, int] = {op:i for i, op in enumerate(operations)}
 
@@ -72,16 +66,17 @@ def naiveAltIonRouting(
                 allOps.append(op)
                 operationsRemaining.remove(op)
                 if isinstance(op, TwoQubitMSGate):
-                    r_ion, s_ion = _determineRouted(*op.ions)
-                    twoQubitGates[r_ion.idx].remove((s_ion.idx, op))
-                    # ensure stationary ion is not left permanently reserved
-                    ionReserved[s_ion.idx] = False
+                    r_idx, s_idx = opToRouting[op]
+                    twoQubitGates[r_idx].remove((s_idx, op))
+                    ionReserved[s_idx] = False
 
             if len(toRemove) == 0:
                 break
 
         for rIdx in twoQubitGates.keys():
             if rIdx in toMoveCandidates:
+                continue
+            if ionReserved[rIdx]:
                 continue
             if len(twoQubitGates[rIdx]) == 0:
                 continue
@@ -105,11 +100,13 @@ def naiveAltIonRouting(
 
         #determining path each routing operation should take
         for rIdx, op in toMove:
-            r_ion, s_ion = _determineRouted(*op.ions)
-            # destination trap (where stationary ion is)
+            r_ion, s_ion = _determineRouted(*op.ions, qccdArch)
+            if s_ion.idx in toMoveCandidates:
+                continue
             trap = s_ion.parent
             if not isinstance(trap, Trap):
-                raise ValueError(f"Data Ion not in trap {trap}")
+                ionReserved[s_ion.idx] = False
+                continue
 
             src = rIdx
             dest = trap.idx
@@ -167,12 +164,13 @@ def naiveAltIonRouting(
                 elif qccdNode.numIons == trapCapacity:
                     fullQccdNodes.add(qccdNode)
 
-        # send back routed ion to og trap
         toForward: Dict[TwoQubitMSGate, Tuple[int, List[QCCDNode], Trap, Optional[Trap]]] = {}
         for rIdx, (op, qccdNodes, destTrap) in movements.items():
-            goBackTrap = qccdNodes[0]
-            # naive impl reroute ion back to original trap 
-            destTrap.numIons -= 1
+            if destTrap.numIons == trapCapacity:
+                goBackTrap = qccdNodes[0]
+                destTrap.numIons -= 1
+            else:
+                goBackTrap = None
             toForward[op] = (rIdx, qccdNodes, goBackTrap)
 
         startedGoingBack = {op:False for op in toForward.keys()}
@@ -184,8 +182,7 @@ def naiveAltIonRouting(
                 if not ionsInvolved.isdisjoint(op.ions):
                     continue
 
-                r_idx, s_idx = (i.idx for i in _determineRouted(*op.ions))
-                # include stationary ion (to ensure it is actually stationary
+                r_idx, s_idx = opToRouting[op]
                 ionsInvolvedNow = [qccdArch.ions[r_idx], qccdArch.ions[s_idx]]
 
                 n1 = rIdx

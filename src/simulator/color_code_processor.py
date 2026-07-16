@@ -1,3 +1,5 @@
+from os import path
+
 import numpy as np
 import numpy.typing as npt
 from typing import (
@@ -110,6 +112,7 @@ def process_color_code_circuit(
     cluster_merge_strategy='bounded',
     cluster_merge_threshold=2.5,
     placement_strategy='hill_climb',
+    routing='original'
 ):
     logger = setup_logger("process_log_color_code.txt")
 
@@ -144,7 +147,10 @@ def process_color_code_circuit(
     label ="Forwarding"
 
     logger.info(f"Processing operations using {label} for distance {distance}, capacity {capacity} and tesselation {tesselation}")
-    allOps, barriers = ionRouting(arch, instructions, capacity)
+    if routing == 'original':
+        allOps, barriers = ionRouting(arch, instructions, capacity)
+    else:
+        allOps, barriers = naiveAltIonRouting(arch, instructions, capacity)
  
     parallelOpsMap = paralleliseOperationsWithBarriers(allOps, barriers)
     logicalErrors, physicalZErrors, physicalXErrors = simulate_and_collect_errors(circuit, allOps, gate_improvements, num_shots)
@@ -167,96 +173,6 @@ def process_color_code_circuit(
     results["Electrodes"][label] = Num_electrodes
 
     return finalize_and_log(results, distance, capacity, label, logger)
-
-def process_model_color_code_circuit(distance, capacity, gate_improvements, num_shots, circtype, cluster_merge_strategy='kdtree', cluster_merge_threshold=2.5, placement_strategy='hill_climb'):
-    logger = setup_logger("process_log_color_code.txt")
-
-    logger.info(f"Starting circuit generation for distance {distance}, capacity {capacity} and type {circtype}")
-    
-    """ path = f'.\\color_code_experiments\\r={distance*4},d={distance},p=0.001,noise=uniform,c={circtype},gates=all.stim'
-    with open(path, 'r') as f:
-        raw = f.read()
-    lines = raw.split('\n')
-    qcount = 0
-    m_qubit_ids = set()
-    d_qubit_ids = set()
-    for line in lines:
-        if line.startswith("QUBIT_COORDS"):
-            qcount += 1
-            d_qubit_ids.add(int(line.split(' ')[2]))
-        if line.startswith("MX(0.001)"):
-            splitline = line.split(' ')
-            ids = [int(i) for i in splitline[1:]]
-            m_qubit_ids.update(ids)
-        if line.startswith("M(0.001)"):
-            splitline = line.split(' ')
-            ids = [int(i) for i in splitline[1:]]
-            m_qubit_ids.update(ids)
-            break
-
-    for mqubit in m_qubit_ids:
-        d_qubit_ids.remove(mqubit) """
-    
-    path = r".\\color_code_experiments\\superdense_color_code_d5_r20_p1000.stim"
-
-    with open(path, "r") as f:
-        raw = f.read()
-    s = "0 2 5 7 8 10 12 14 16 18 20 22 24 26 28 30 32 34 35"
-    d_qubit_ids = list(int(i) for i in s.strip().split(" "))
-    qcount = 37
-
-    circuit = QCCDCircuit(raw)
-    circuit.dataQubitsIdxs = list(d_qubit_ids)
-    circuit.iscolorcode = True #ensure chromobius used when simulate
-
-    #for single ancilla circuits
-    nqubitsNeeded = qcount
-
-    nrowsNeeded = int(np.sqrt(nqubitsNeeded))+2
-
-    logger.info(f"Processing circuit with {nqubitsNeeded} qubits and {nrowsNeeded} rows")
-
-    arch, (instructions, _) = circuit.processColorCircuitAugmentedGrid(
-        rows=nrowsNeeded,
-        cols=nrowsNeeded,
-        trapCapacity=capacity,
-        dataQubitsIdxs=circuit.dataQubitsIdxs,
-        cluster_merge_strategy=cluster_merge_strategy,
-        cluster_merge_threshold=cluster_merge_threshold,
-        placement_strategy=placement_strategy,
-    )
-   
-    arch.refreshGraph()
-
-    results = initialize_results()
-
-    # FIXME legacy formatting!
-    label ="Forwarding"
-
-    logger.info(f"Processing operations using {label} for distance {distance}, capacity {capacity} and type {type}")
-    allOps, barriers = naiveAltIonRouting(arch, instructions, capacity)
- 
-    parallelOpsMap = paralleliseOperationsWithBarriers(allOps, barriers)
-    logicalErrors, physicalZErrors, physicalXErrors = simulate_and_collect_errors(circuit, allOps, gate_improvements, num_shots)
-
-    logger.info(f"Simulated {label} method with gate improvements for distance {distance}, capacity {capacity} and type {circtype}")
-    
-    
-    for op in parallelOpsMap.values():
-        op.calculateOperationTime()
-        op.calculateFidelity()
-
-    circuit.resetArch()
-    arch.refreshGraph()
-
-    populate_results(results, label, parallelOpsMap, allOps, instructions, logicalErrors, physicalZErrors, physicalXErrors, capacity, distance)
-
-
-    Num_electrodes, Num_DACs = calculate_electrodes_and_dacs(allOps, capacity, nqubitsNeeded, 'augmented')
-    results["DACs"][label] = Num_DACs
-    results["Electrodes"][label] = Num_electrodes
-
-    return finalize_and_log(results, distance, capacity, label, logger, " for model circuit")
 
 def process_color_code_circuit_wise_arch(distance, capacity, gate_improvements, num_shots, tesselation, basis='Z'):
     logger = setup_logger("process_log_color_code_wise.txt")

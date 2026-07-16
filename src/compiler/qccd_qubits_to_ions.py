@@ -254,18 +254,6 @@ def _arrangeClusters(
             if currentScore==0:
                 break
 
-        # if True:   
-        #     # do not assume regularity in code topology boundary conditions
-        #     for notGauranteedInBSubset in itertools.combinations(nextWindow, cardinalityA-len(gauranteedInBSubset)):
-        #         BSubset = np.array(list(notGauranteedInBSubset)+gauranteedInBSubset)
-        #         RelBSubset = np.divide((BSubset-centralizerMatrix), dividerMatrix)
-        #         cost_matrix = distance_matrix(A, RelBSubset)
-        #         # the Hungarian algorithm 
-        #         row_ind, col_ind = linear_sum_assignment(cost_matrix)
-        #         total_cost = cost_matrix[row_ind, col_ind].sum()
-        #         if total_cost<bestcost:
-        #             bestmap = [BSubset[idx] for idx in col_ind]
-        #             bestcost = total_cost
     return bestmap, bestcost
 
 

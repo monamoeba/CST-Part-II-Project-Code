@@ -373,8 +373,8 @@ class QCCDCircuit(stim.Circuit):
         clusters=regularPartition(self._measurementIons, self._dataIons, trapCapacity)
 
         #print(f"printing clusters for capacity {trapCapacity}")
-        for ci, c in enumerate(clusters):
-            print(f'cluster {ci}: {[ion.pos for ion in c[0]]}')
+        #for ci, c in enumerate(clusters):
+        #    print(f'cluster {ci}: {[ion.pos for ion in c[0]]}')
         
         cs, rs = cols, rows
         allGridPos = []
@@ -530,6 +530,13 @@ class QCCDCircuit(stim.Circuit):
         
         if DEBUG:
             visualize_clusters(clusters, trapCapacity)
+
+        if placement_strategy == "direct_coordinate":
+            all_centroids = np.array([c[1] for c in clusters])
+            max_centroid = all_centroids.max()
+            min_dim_needed = int(np.ceil(max_centroid / 2)) + 2
+            rows = max(rows, min_dim_needed)
+            cols = max(cols, min_dim_needed)
 
         cs, rs = cols, rows
         allGridPos = []

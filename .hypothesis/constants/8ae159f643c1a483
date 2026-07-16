@@ -1,4 +1,0 @@
-# file: C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\utils\qccd_operations_on_qubits.py
-# hypothesis_version: 6.151.10
-
-[5e-06, 4e-05, 5e-05, 0.0004, 0.001, 0.003680029, 0.005, 2.2, 'AM2', 'Measurement', 'OneQubitGate', 'QCCDComponent', 'QubitOperation', 'QubitReset', 'RX', 'RY', 'TwoQubitMSGate', 'trap']

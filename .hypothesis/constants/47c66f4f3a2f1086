@@ -1,4 +1,0 @@
-# file: C:\Users\monam\OneDrive\Desktop\UNI\II\PartIIProject\CST-Part-II-Project-Code\src\simulator\qccd_circuit.py
-# hypothesis_version: 6.151.10
-
-[0.0, 0.5, 0.7, 1.0, 1.05, 2.5, 100, 1000, 10000, 100000, ')', ',', '--', 'BARRIER', 'CNOT', 'Capacity', 'D', 'DACs', 'DETECTOR', 'Distance', 'ElapsedTime', 'Electrodes', 'Forwarding', 'H', 'LogicalErrorRates', 'M', 'MeanConcurrency', 'OBSERVABLE', 'Operations', 'P', 'PhysicalXErrorRates', 'PhysicalZErrorRates', 'QCCDCircuit', 'QUBIT_COORDS', 'QUBIT_COORDS(', 'QubitOperations', 'R', 'TICK', 'X', 'X Position', 'Y Position', 'Z', 'black', 'cnot', 'grey', 'kdtree', 'lightblue', 'orange', 'process_log.txt', 'process_log_wise.txt', 'red', 'upper left']

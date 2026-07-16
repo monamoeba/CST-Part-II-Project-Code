@@ -1,0 +1,15 @@
+hardware:
+  trap_capacity: [2]
+  topology: "grid"
+  placement_strategy: "hill_climb"
+
+qec:
+  code_type: "surface_code"
+  distances: [3, 5, 7, 9]
+  gate_improvements: [1.0, 5.0, 10.0, 20.0]
+
+simulation:
+  rounds: 1
+  num_shots: 1000000
+  log_file: "logs/comparison_sc_grid.txt"
+  output_dir: "data/sc_cc_comparison/sc_grid"
