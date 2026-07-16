@@ -8,8 +8,6 @@ This repository is a fork of [scottjones03/public-material-2025](https://github.
 
 This fork adds a **color code compiler**: qubit-to-ion mapping, ion routing, circuit definitions, and simulation support for the (6,6,6) and (4,8,8) color codes, on top of the original surface-code infrastructure.
 
-> **Licensing note:** the upstream repository does not currently specify a license. Terms for this fork are pending clarification with the original author before reuse beyond personal/academic reference.
-
 ## What this fork adds
 
 The original repository compiles and simulates QEC cycles for the surface code only. This fork extends it to color codes, reusing the original hardware model, routing scheduler, and resource-estimation pipeline wherever it already generalised, and adding new components where it didn't:
@@ -123,8 +121,6 @@ simulation:
   output_dir: data                  # optional
 ```
 
-`configs/config.yml` is the default (surface code, grid topology). `configs/config_comparison_*.yml` are matched surface/color code × grid/switch configs used by `run_comparison.py`.
-
 ## Setup and Usage
 
 Requires Python 3.11.
@@ -141,22 +137,3 @@ make reset                              # clean + remove venv
 ```
 
 `make` auto-detects Windows vs. POSIX venv layouts (`Scripts/` vs `bin/`).
-
-## Tests
-
-Seven test modules under `tests/`, run with `make test`:
-
-| File | Coverage |
-|---|---|
-| `test_qccd_arch.py` | Hardware graph construction |
-| `test_qccd_parallelisation.py` | Gate scheduling |
-| `test_qccd_qubits_to_ions.py` | Surface code qubit mapping |
-| `test_qccd_ion_routing.py` | Surface code ion routing |
-| `test_qccd_alt_ion_routing.py` | Alternative routing |
-| `test_qccd_color_qubits_to_ions.py` | Color code qubit mapping — partitioning strategies, merge functions, and vectorised/reference consistency |
-| `test_qccd_color_mapping_invariants.py` | Mapping correctness invariants (property-based, via `hypothesis`) |
-
-## Documentation
-
-- `paper.pdf` — the write-up accompanying this project.
-- `DetailedCompilerExplanationWithProof.pdf`, `IonRoutingConcreteExample.pdf` — detailed compiler and routing walkthroughs.
