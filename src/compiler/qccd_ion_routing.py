@@ -6,6 +6,7 @@ from typing import (
     Optional,
     Set,
     Dict,
+    Union,
 )
 import networkx as nx
 from src.utils.qccd_nodes import *
@@ -38,6 +39,8 @@ def ionRouting(
     barriers: List[int] = []
     operationsLeft = list(operations)
     toMoveCandidates: Dict[int, TwoQubitMSGate] = {}
+    # Components touched since the last refreshGraph() call; reset there.
+    dirty: Set[Union[Trap, Junction, Crossing]] = set()
 
     while operationsLeft:
 
@@ -56,6 +59,7 @@ def ionRouting(
 
             for op in toRemove:
                 op.run()
+                dirty.update(dirtyComponentsForOp(op))
                 allOps.append(op)
                 operationsLeft.remove(op)
                 if isinstance(op, TwoQubitMSGate):
@@ -212,9 +216,11 @@ def ionRouting(
                     if isinstance(m, GateSwap) and m._ion1==m._ion2:
                         continue
                     m.run()
+                    dirty.update(dirtyComponentsForOp(m))
                     allOps.append(m)
-                
-                qccdArch.refreshGraph()
+
+                qccdArch.refreshGraph(dirty)
+                dirty = set()
                 ionsInvolved = ionsInvolved.union(ionsInvolvedNow)
 
         barriers.append(len(allOps))

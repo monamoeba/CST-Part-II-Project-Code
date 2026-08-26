@@ -6,6 +6,10 @@ from typing import (
     Optional,
     Mapping,
     Dict,
+    Set,
+    Union,
+    FrozenSet,
+    Iterable,
 )
 from matplotlib import pyplot as plt
 import networkx as nx
@@ -14,6 +18,12 @@ from matplotlib.patches import Ellipse
 from src.utils.qccd_nodes import *
 from src.utils.qccd_operations import *
 from src.utils.qccd_operations_on_qubits import *
+
+
+def dirtyComponentsForOp(op: Operation) -> Set[Union[Trap, Junction, Crossing]]:
+    """Traps/Junctions/Crossings touched by `op`; pass to refreshGraph(dirty=...) after op.run()."""
+    return {c for c in op.involvedComponents if isinstance(c, (Trap, Junction, Crossing))}
+
 
 class QCCDArch:
     SIZING = 1
@@ -45,6 +55,13 @@ class QCCDArch:
         self._inActiveEdges: List[int] = []
         self._centralities: Mapping
         self._originalArrangement: Dict[Ion, Trap] = {}
+        # Incremental refreshGraph(): last-rebuilt state per component, so a
+        # later rebuild knows what to remove before re-adding.
+        self._trapMemberIdxs: Dict[Trap, FrozenSet[int]] = {}
+        self._crossingBoundaryIdxs: Dict[Crossing, Tuple[int, int]] = {}
+        self._crossingInTransitIdx: Dict[Crossing, Optional[int]] = {}
+        self._crossingsByComponent: Optional[Dict[QCCDNode, List[Crossing]]] = None
+        self._graphInitialized: bool = False
 
     @property
     def graph(self):
@@ -126,98 +143,169 @@ class QCCDArch:
         self._nextIdx += 1
         return junction
 
-    def refreshGraph(self) -> None:
+    def _removeTrapEdges(self, trap: Trap, g: nx.DiGraph) -> None:
+        """Removes trap's edges from the last rebuild. Separate from _addTrapEdges so a batch's removals all run before its additions (see _refreshComponents)."""
+        staleIdxs = self._trapMemberIdxs.get(trap)
+        if staleIdxs:
+            staleEdges = [(idx, trap.idx) for idx in staleIdxs]
+            staleEdges += [(a, b) for a in staleIdxs for b in staleIdxs if a != b]
+            g.remove_edges_from(staleEdges)
+
+    def _addTrapEdges(self, trap: Trap, g: nx.DiGraph) -> None:
+        trapEdges = []
+        for ion1 in trap.ions:
+            g.add_edge(ion1.idx, trap.idx, operations=[])
+            for ion2 in trap.ions:
+                if ion1 == ion2:
+                    continue
+                trapEdges.append((ion1.idx, ion2.idx))
+                trapEdges.append((ion2.idx, ion1.idx))
+                g.add_edge(
+                    ion1.idx,
+                    ion2.idx,
+                    operations=[GateSwap.physicalOperation(trap=trap, ion1=ion1, ion2=ion2)],
+                )
+                g.add_edge(
+                    ion2.idx,
+                    ion1.idx,
+                    operations=[GateSwap.physicalOperation(trap=trap, ion1=ion2, ion2=ion1)],
+                )
+        self._trapEdges[trap.idx] = trapEdges
+        self._trapMemberIdxs[trap] = frozenset(ion.idx for ion in trap.ions)
+
+    def _removeCrossingEdges(self, crossing: Crossing, g: nx.DiGraph) -> Optional[int]:
+        """Removes crossing's edges from the last rebuild. Returns its previous in-transit-ion node id so the caller can clean it up once the whole batch's additions are done."""
+        staleBoundary = self._crossingBoundaryIdxs.get(crossing)
+        if staleBoundary is not None:
+            staleN1Idx, staleN2Idx = staleBoundary
+            g.remove_edges_from([(staleN1Idx, staleN2Idx), (staleN2Idx, staleN1Idx)])
+            self._crossingEdges.pop((staleN1Idx, staleN2Idx), None)
+            self._crossingEdges.pop((staleN2Idx, staleN1Idx), None)
+        return self._crossingInTransitIdx.get(crossing)
+
+    def _addCrossingEdges(self, crossing: Crossing, g: nx.DiGraph) -> None:
+        n1, n2 = crossing.connection
+        n1Idx = crossing.getEdgeIon(n1).idx if n1.ions else n1.idx
+        n2Idx = crossing.getEdgeIon(n2).idx if n2.ions else n2.idx
+        self._crossingEdges[(n1Idx, n2Idx)] = crossing
+        self._crossingEdges[(n2Idx, n1Idx)] = crossing
+        ion1 = crossing.getEdgeIon(n1) if n1.ions else None
+        ion2 = crossing.getEdgeIon(n2) if n2.ions else None
+        doRotation1 = [GateSwap.physicalOperation(trap=n1,ion1=ion1,ion2=ion1)] if len(n1.ions)==1 else []
+        doRotation2 = [GateSwap.physicalOperation(trap=n2,ion1=ion2,ion2=ion2)] if len(n2.ions)==1 else []
+        if isinstance(n1, Trap) and isinstance(n2, Junction):
+            ops1 = doRotation1+[
+                Split.physicalOperation(n1, crossing, ion1),
+                Move.physicalOperation(crossing, ion1),
+                JunctionCrossing.physicalOperation(n2, crossing, ion1),
+            ]
+            ops2 = [
+                JunctionCrossing.physicalOperation(n2, crossing, ion2),
+                Move.physicalOperation(crossing, ion2),
+                Merge.physicalOperation(n1, crossing, ion2),
+            ]
+        elif isinstance(n1, Junction) and isinstance(n2, Trap):
+            ops1 = [
+                JunctionCrossing.physicalOperation(n1, crossing, ion1),
+                Move.physicalOperation(crossing, ion1),
+                Merge.physicalOperation(n2, crossing, ion1),
+            ]
+            ops2 = doRotation2+[
+                Split.physicalOperation(n2, crossing, ion2),
+                Move.physicalOperation(crossing, ion2),
+                JunctionCrossing.physicalOperation(n1, crossing, ion2),
+            ]
+        elif isinstance(n1, Junction) and isinstance(n2, Junction):
+            ops1 = [
+                JunctionCrossing.physicalOperation(n1, crossing, ion1),
+                Move.physicalOperation(crossing, ion1),
+                JunctionCrossing.physicalOperation(n2, crossing, ion1),
+            ]
+            ops2 = [
+                JunctionCrossing.physicalOperation(n2, crossing, ion2),
+                Move.physicalOperation(crossing, ion2),
+                JunctionCrossing.physicalOperation(n1, crossing, ion2),
+            ]
+        else:
+            ops1 = doRotation1+[
+                Split.physicalOperation(n1, crossing, ion1),
+                Move.physicalOperation(crossing, ion1),
+                Merge.physicalOperation(n2, crossing, ion1),
+            ]
+            ops2 = doRotation2+[
+                Split.physicalOperation(n2, crossing, ion2),
+                Move.physicalOperation(crossing, ion2),
+                Merge.physicalOperation(n1, crossing, ion2),
+            ]
+        g.add_edge(n1Idx, n2Idx, operations=ops1)
+        g.add_edge(n2Idx, n1Idx, operations=ops2)
+        self._crossingBoundaryIdxs[crossing] = (n1Idx, n2Idx)
+
+        if crossing.ion:
+            g.add_node(crossing.ion.idx, pos=crossing.ion.pos)
+            self._crossingInTransitIdx[crossing] = crossing.ion.idx
+        else:
+            self._crossingInTransitIdx[crossing] = None
+
+    def _syncCounts(self) -> None:
+        """Resets numIons on every trap/junction, unconditionally (not just dirty ones): routing algorithms also use numIons as a speculative reservation counter on nodes elsewhere on a candidate path, which only a full pass reliably clears."""
+        for j in self._junctions:
+            j.numIons = len(j.ions)
+        for t in self._manipulationTraps:
+            t.numIons = len(t.ions)
+        self._centralities = None
+        self._routingTable = {ion.idx: {} for ion in self.ions.values()}
+
+    def _buildCrossingsByComponent(self) -> Dict[QCCDNode, List[Crossing]]:
+        """Trap/Junction -> incident Crossings. Topology is fixed after construction, so built once."""
+        byComponent: Dict[QCCDNode, List[Crossing]] = {}
+        for crossing in self._crossings:
+            for node in crossing.connection:
+                byComponent.setdefault(node, []).append(crossing)
+        return byComponent
+
+    def _refreshComponents(
+        self, traps: Sequence[Trap], crossings: Sequence[Crossing], g: nx.DiGraph
+    ) -> None:
+        """
+        Rebuilds `traps` and `crossings` in `g` in three phases: remove all
+        their stale edges, then add all fresh edges, then clean up any
+        now-unused in-transit marker nodes. Removals must all happen before
+        any additions: an ion leaving a trap can become a crossing's new
+        boundary node on the exact (u, v) pair the trap used to have an
+        edge on, so interleaving removal/addition per-component would let a
+        same-batch addition get clobbered by an unrelated same-batch
+        removal, depending on processing order. In-transit cleanup runs
+        last for the same reason - "still unused" is only answerable once
+        every addition in the batch has happened.
+        """
+        staleInTransitIdxs = [self._removeCrossingEdges(c, g) for c in crossings]
+        for trap in traps:
+            self._removeTrapEdges(trap, g)
+
+        for trap in traps:
+            self._addTrapEdges(trap, g)
+        for crossing in crossings:
+            self._addCrossingEdges(crossing, g)
+
+        # Only stale if this crossing's in-transit ion actually changed -
+        # it may still legitimately be there, in which case "add" above
+        # re-added the same (edge-less) node, so degree alone can't tell.
+        for crossing, staleIdx in zip(crossings, staleInTransitIdxs):
+            if staleIdx is None or staleIdx == self._crossingInTransitIdx.get(crossing):
+                continue
+            if g.has_node(staleIdx) and g.degree(staleIdx) == 0:
+                g.remove_node(staleIdx)
+
+    def _fullRefresh(self) -> None:
         g = nx.DiGraph()
 
         for j in self._junctions:
             j.subgraph(g)
-            j.numIons = len(j.ions)
-
         for t in self._manipulationTraps:
             t.subgraph(g)
-            t.numIons = len(t.ions)
 
-        for trap in self._manipulationTraps:
-            trapEdges = []
-            for ion1 in trap.ions:
-                g.add_edge(ion1.idx, trap.idx, operations=[])
-                for ion2 in trap.ions:
-                    if ion1 == ion2:
-                        continue
-                    trapEdges.append((ion1.idx, ion2.idx))
-                    trapEdges.append((ion2.idx, ion1.idx))
-                    g.add_edge(
-                        ion1.idx,
-                        ion2.idx,
-                        operations=[GateSwap.physicalOperation(trap=trap, ion1=ion1, ion2=ion2)],
-                    )
-                    g.add_edge(
-                        ion2.idx,
-                        ion1.idx,
-                        operations=[GateSwap.physicalOperation(trap=trap, ion1=ion2, ion2=ion1)],
-                    )
-            self._trapEdges[trap.idx] = trapEdges
-
-        crossingEdges = {}
-        for crossing in self._crossings:
-            n1, n2 = crossing.connection
-            n1Idx = crossing.getEdgeIon(n1).idx if n1.ions else n1.idx
-            n2Idx = crossing.getEdgeIon(n2).idx if n2.ions else n2.idx
-            crossingEdges[(n1Idx, n2Idx)] = crossing
-            crossingEdges[(n2Idx, n1Idx)] = crossing
-            ion1 = crossing.getEdgeIon(n1) if n1.ions else None
-            ion2 = crossing.getEdgeIon(n2) if n2.ions else None
-            doRotation1 = [GateSwap.physicalOperation(trap=n1,ion1=ion1,ion2=ion1)] if len(n1.ions)==1 else []
-            doRotation2 = [GateSwap.physicalOperation(trap=n2,ion1=ion2,ion2=ion2)] if len(n2.ions)==1 else []
-            if isinstance(n1, Trap) and isinstance(n2, Junction):
-                ops1 = doRotation1+[
-                    Split.physicalOperation(n1, crossing, ion1),
-                    Move.physicalOperation(crossing, ion1),
-                    JunctionCrossing.physicalOperation(n2, crossing, ion1),
-                ]
-                ops2 = [
-                    JunctionCrossing.physicalOperation(n2, crossing, ion2),
-                    Move.physicalOperation(crossing, ion2),
-                    Merge.physicalOperation(n1, crossing, ion2),
-                ]
-            elif isinstance(n1, Junction) and isinstance(n2, Trap):
-                ops1 = [
-                    JunctionCrossing.physicalOperation(n1, crossing, ion1),
-                    Move.physicalOperation(crossing, ion1),
-                    Merge.physicalOperation(n2, crossing, ion1),
-                ]
-                ops2 = doRotation2+[
-                    Split.physicalOperation(n2, crossing, ion2),
-                    Move.physicalOperation(crossing, ion2),
-                    JunctionCrossing.physicalOperation(n1, crossing, ion2),
-                ]
-            elif isinstance(n1, Junction) and isinstance(n2, Junction):
-                ops1 = [
-                    JunctionCrossing.physicalOperation(n1, crossing, ion1),
-                    Move.physicalOperation(crossing, ion1),
-                    JunctionCrossing.physicalOperation(n2, crossing, ion1),
-                ]
-                ops2 = [
-                    JunctionCrossing.physicalOperation(n2, crossing, ion2),
-                    Move.physicalOperation(crossing, ion2),
-                    JunctionCrossing.physicalOperation(n1, crossing, ion2),
-                ]
-            else:
-                ops1 = doRotation1+[
-                    Split.physicalOperation(n1, crossing, ion1),
-                    Move.physicalOperation(crossing, ion1),
-                    Merge.physicalOperation(n2, crossing, ion1),
-                ]
-                ops2 = doRotation2+[
-                    Split.physicalOperation(n2, crossing, ion2),
-                    Move.physicalOperation(crossing, ion2),
-                    Merge.physicalOperation(n1, crossing, ion2),
-                ]
-            g.add_edge(n1Idx, n2Idx, operations=ops1)
-            g.add_edge(n2Idx, n1Idx, operations=ops2)
-            if crossing.ion:
-                g.add_node(crossing.ion.idx, pos=crossing.ion.pos)
-        self._crossingEdges = crossingEdges
+        self._refreshComponents(self._manipulationTraps, self._crossings, g)
 
         for n2Idx in self._inActiveEdges:
             graphEdges = [
@@ -227,9 +315,44 @@ class QCCDArch:
                 and (v in self.nodes[n2Idx].nodes)
             ]
             g.remove_edges_from(graphEdges)
+
         self._graph = g
-        self._centralities = None
-        self._routingTable = {ion.idx: {} for ion in self.ions.values()}
+        self._crossingsByComponent = self._buildCrossingsByComponent()
+        self._graphInitialized = True
+
+    def _incrementalRefresh(self, dirty: Iterable[Union[Trap, Junction, Crossing]]) -> None:
+        if self._crossingsByComponent is None:
+            self._crossingsByComponent = self._buildCrossingsByComponent()
+
+        # A dirty trap/junction can change which ion a neighbouring crossing
+        # treats as its boundary, so its incident crossings must be
+        # recomputed too even if their own ion count didn't change.
+        expanded: Set[Union[Trap, Junction, Crossing]] = set()
+        for component in dirty:
+            expanded.add(component)
+            if isinstance(component, (Trap, Junction)):
+                expanded.update(self._crossingsByComponent.get(component, ()))
+
+        # Sorted by idx rather than left in set-iteration order: default
+        # object hashing is address-based and varies run to run, and since
+        # processing order changes edge *insertion* order, an unstable
+        # order changes how networkx breaks path-length ties in the
+        # routing algorithms - making compiled output non-deterministic.
+        traps = sorted((c for c in expanded if isinstance(c, Trap)), key=lambda c: c.idx)
+        crossings = sorted((c for c in expanded if isinstance(c, Crossing)), key=lambda c: c.idx)
+        self._refreshComponents(traps, crossings, self._graph)
+
+    def refreshGraph(self, dirty: Optional[Iterable[Union[Trap, Junction, Crossing]]] = None) -> None:
+        """dirty=None: full rebuild. dirty=<iterable, possibly empty>: patch only those components (+ incident crossings) in place."""
+        if dirty is not None:
+            if not self._graphInitialized:
+                raise RuntimeError(
+                    "refreshGraph(dirty=...) called before an initial full refreshGraph()"
+                )
+            self._incrementalRefresh(dirty)
+        else:
+            self._fullRefresh()
+        self._syncCounts()
 
     def display(
         self,

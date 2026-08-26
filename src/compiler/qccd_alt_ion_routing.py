@@ -6,6 +6,7 @@ from typing import (
     Optional,
     Set,
     Dict,
+    Union,
 )
 import networkx as nx
 from collections import defaultdict
@@ -48,6 +49,8 @@ def naiveAltIonRouting(
     operationsRemaining = list(operations)
     toMoveCandidates: Dict[int, TwoQubitMSGate] = {}
     ionReserved: defaultdict[int, bool] = defaultdict(bool)
+    # Components touched since the last refreshGraph() call; reset there.
+    dirty: Set[Union[Trap, Junction, Crossing]] = set()
     while operationsRemaining:
         prevOperationsRemaining = len(operationsRemaining)
         # Find and run ops that don't need routing
@@ -63,6 +66,7 @@ def naiveAltIonRouting(
 
             for op in toRemove:
                 op.run()
+                dirty.update(dirtyComponentsForOp(op))
                 allOps.append(op)
                 operationsRemaining.remove(op)
                 if isinstance(op, TwoQubitMSGate):
@@ -227,9 +231,11 @@ def naiveAltIonRouting(
                     if isinstance(m, GateSwap) and m._ion1==m._ion2:
                         continue
                     m.run()
+                    dirty.update(dirtyComponentsForOp(m))
                     allOps.append(m)
-                    
-                qccdArch.refreshGraph()
+
+                qccdArch.refreshGraph(dirty)
+                dirty = set()
                 ionsInvolved = ionsInvolved.union(ionsInvolvedNow)
 
         barriers.append(len(allOps))
